@@ -2,7 +2,7 @@
  "id": "r3",
  "name": "Convertible bond arbitrage",
  "heading": "The Structural Opportunity: Convertible Bond Pricing Discounts",
- "caseLead": "Convertible bond arbitrage seeks to earn the difference between a convertible bond's market price and the combined value of its debt and equity-option components. The discount persists because issuers sell new bonds at a discount to a narrow group of specialist buyers, and rules on short selling and bank leverage limit how much capital can be used to close it.",
+ "caseLead": "Convertible bond arbitrage seeks to earn the difference between a convertible bond's market price and the combined value of its debt and equity-option components. The discount can persist because specialist investors require compensation for credit and liquidity risk, while short-selling restrictions and funding costs limit the capital available to close it.",
  "caseRest": "Convertible bonds can lose value when financing conditions tighten and investors sell similar positions at the same time, even if the equity hedge performs as expected. This happened in 2008 and again in March 2020, when lenders cut financing, credit spreads widened and the bonds cheapened further. A second risk is that an issuer's credit quality deteriorates, so a rise in credit spreads can outweigh the gains from the hedge.",
  "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
