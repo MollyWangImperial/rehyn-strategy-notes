@@ -2,9 +2,9 @@
  "id": "d3",
  "name": "Safe haven currency allocation",
  "heading": "The Structural Opportunity: Safe Haven Currency Demand",
- "caseLead": "The investment case rests on the tendency of the Swiss franc and the Japanese yen to strengthen when investors reduce risk, because both countries run current account surpluses and hold large net foreign assets. The pattern persists because residents bring foreign holdings home in a sell-off and because carry trades funded in yen and francs are closed, which creates demand for both currencies when geopolitical or policy tension increases.",
- "caseRest": "The main risk is that these currencies can weaken for long periods when interest rates abroad are higher and appetite for risk is strong. Central banks can also lean against strength, as the Swiss National Bank did when it set a floor under EUR/CHF in 2011 and the G7 did when it sold yen in March 2011. The strategy therefore tends to lose steadily in calm markets, because holding low yielding currencies costs the interest rate gap, and the protection it provides is uneven.",
- "figNote": "The large figure on each card shows the percentage change in USD/JPY, the number of Japanese yen needed to buy one US dollar, over the episode. A negative figure means the yen strengthened against the dollar, which benefits holders of yen.",
+ "caseLead": "The Japanese yen and Swiss franc often strengthen when investors reduce risk, supported by their countries' external asset positions and the unwinding of funded trades. The pattern persists because residents bring foreign holdings home in a sell-off and because carry trades funded in yen and francs are closed, which creates demand for both currencies when geopolitical or policy tension increases.",
+ "caseRest": "The yen and Swiss franc can weaken for extended periods when interest rates abroad are higher and investors favour riskier assets. Central banks can also lean against strength, as the Swiss National Bank did when it set a floor under EUR/CHF in 2011 and the G7 did when it sold yen in March 2011. The strategy therefore tends to lose steadily in calm markets, because holding low yielding currencies costs the interest rate gap, and the protection it provides is uneven.",
+ "figNote": "Each card shows the percentage change in USD/JPY, the number of Japanese yen needed to buy one US dollar, over the episode. A negative figure means the yen strengthened against the dollar, which benefits holders of yen.",
  "events": [
   {
    "date": "September 2008",
