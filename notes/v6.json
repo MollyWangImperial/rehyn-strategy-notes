@@ -2,9 +2,9 @@
  "id": "v6",
  "name": "FX value investing",
  "heading": "The Structural Opportunity: Slow Currency Mispricing",
- "caseLead": "The investment case rests on the tendency of currencies to move back towards purchasing power parity because sustained price differences eventually alter trade flows, investment and corporate sourcing. The opportunity persists because monetary policy, capital controls, reserve management and geopolitical risk can keep exchange rates away from fair value for years, while many investors cannot tolerate the interim losses.",
- "caseRest": "The main risk is that an undervalued currency becomes cheaper when growth weakens, capital leaves or policy credibility deteriorates. Short-term losses can be large because safe-haven demand and interest-rate differences dominate relative prices during crises, even when the long-term valuation signal remains intact. The tested strategy returned 6.1% a year with 7.4% volatility, but its 14.0% worst fall and -0.1 return skew show that convergence is neither steady nor timely.",
- "figNote": "The large figure on each card shows the estimated return of a diversified purchasing power parity currency basket during the episode. Positive figures indicate that undervalued currencies rose against expensive currencies, while negative figures indicate that valuation gaps widened.",
+ "caseLead": "FX value investing seeks to benefit when currencies trading far from purchasing power parity gradually adjust as trade and investment respond to relative prices. The opportunity persists because monetary policy, capital controls, reserve management and geopolitical risk can keep exchange rates away from fair value for years, while many investors cannot tolerate the interim losses.",
+ "caseRest": "An undervalued currency can weaken further if growth slows, investors withdraw capital or confidence in economic policy deteriorates. Short-term losses can be large because safe-haven demand and interest-rate differences dominate relative prices during crises, even when the long-term valuation signal remains intact. The tested strategy returned 6.1% a year with 7.4% volatility, but its 14.0% worst fall and -0.1 return skew show that convergence is neither steady nor timely.",
+ "figNote": "Each card shows the estimated return of a diversified purchasing power parity currency basket during the episode. Positive figures indicate that undervalued currencies rose against expensive currencies, while negative figures indicate that valuation gaps widened.",
  "events": [
   {
    "date": "October 2008",
