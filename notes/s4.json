@@ -2,7 +2,7 @@
  "id": "s4",
  "name": "Long gamma scalping",
  "heading": "The Structural Opportunity: Profiting from Realised Volatility",
- "caseLead": "Long gamma scalping can generate returns when realised price moves are large enough to cover the cost of options and repeated hedging. The opportunity persists because insurers, structured product issuers and yield-seeking funds supply options at prices based on average conditions, while geopolitical and policy events produce bursts of movement that those averages understate.",
+ "caseLead": "Long gamma scalping can generate returns when realised price moves are large enough to cover the cost of options and repeated hedging. The strategy depends on the relationship between realised and implied volatility, with sharp market moves creating potential hedging gains but quiet periods reducing option value.",
  "caseRest": "The strategy loses option premium to time decay when realised volatility is too low to cover the cost of the position and its hedges. Each hedge also costs a small amount in spreads and slippage, so a long period of calm can produce losses over many months. Rehyn estimates that a prolonged low-volatility period, such as 2017, is the most damaging condition because gains from hedging arrive only when moves are large.",
  "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
