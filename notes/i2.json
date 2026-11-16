@@ -2,7 +2,7 @@
  "id": "i2",
  "name": "Barbell bond allocation",
  "heading": "The Structural Opportunity: Capturing the Term Premium",
- "caseLead": "A barbell bond portfolio combines the higher yield available on long-dated government bonds with the liquidity and flexibility of short-dated securities. The premium persists because heavy government borrowing, trade policy and geopolitical tension keep inflation and bond supply uncertain, and few investors will hold long maturities without compensation.",
+ "caseLead": "A barbell bond portfolio combines the higher yield available on long-dated government bonds with the liquidity and flexibility of short-dated securities. The long-dated allocation earns a term premium for bearing interest rate and inflation risk, while the short-dated allocation provides cash for reinvestment as yields change.",
  "caseRest": "Sustained inflation and higher interest rates can reduce the value of long-dated bonds faster than the short-dated allocation can offset. Because the long leg carries most of the portfolio's interest rate sensitivity, a rise of 100 basis points in long yields removes a large part of the income earned over several years. The 2022 rate cycle shows this exposure, as Treasury prices fell while inflation rose and the short leg reinvested at higher yields only after the loss had occurred.",
  "figNote": "Each card shows the change in the 10-year US Treasury yield over the episode, in basis points, where 100 basis points equal one percentage point. A fall in yields raises bond prices and a rise lowers them, so the sign shows the direction of the move that mattered for the long-dated bonds.",
  "events": [
