@@ -2,7 +2,7 @@
  "id": "r4",
  "name": "ETF arbitrage",
  "heading": "The Structural Opportunity: Temporary ETF Pricing Gaps",
- "caseLead": "ETF arbitrage seeks to profit from small differences between an ETF's market price and the value of its underlying holdings. The gaps persist because they widen when markets are stressed, when the underlying market is closed or when arbitrage capital is limited, and they are largest in bond and international funds where the holdings are costly to trade, while trading halts and central bank purchases can also move them.",
+ "caseLead": "ETF arbitrage seeks to profit from small differences between an ETF's market price and the value of its underlying holdings. Authorised participants help keep ETF prices close to net asset value, but trading frictions and temporary imbalances can create gaps, particularly in less liquid bond or international markets.",
  "caseRest": "A pricing gap can widen rather than close when the underlying securities are illiquid or cannot be traded at quoted prices. This is most likely in stressed bond or foreign markets, where the underlying holdings stop trading while the ETF keeps trading, as in March 2020. Because the return on each trade is small, a few such episodes can offset months of steady gains.",
  "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
