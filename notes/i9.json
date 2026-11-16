@@ -2,9 +2,9 @@
  "id": "i9",
  "name": "Stablecoin yield lending",
  "heading": "The Structural Opportunity: Lending Dollars to Leveraged Traders",
- "caseLead": "The investment case rests on the demand of traders and market makers to borrow dollar stablecoins, which they use as leverage and as collateral to buy digital assets, and for which they pay interest above money market rates. The premium persists because many traders cannot borrow dollars from banks against digital assets, and US policy on stablecoins and banking access keeps part of this demand outside regulated lenders.",
- "caseRest": "The main risk is losing deposits when a lending platform fails or when a stablecoin loses its peg, which can happen within days. Losses are rare but large, because the yield earned is small compared with the amount lost if a platform cannot return deposits. A stable return history therefore overstates the safety of the strategy, as the failures of Celsius and of lenders exposed to FTX showed in 2022.",
- "figNote": "The large figure on each card shows the Bitcoin price at the extreme of the episode: its low in a sell-off or its high in a rally, in US dollars, where k means thousands. Bitcoin prices indicate how much leveraged trading was taking place, because borrowers of stablecoins are mostly traders who use leverage to buy digital assets.",
+ "caseLead": "Lending dollar stablecoins can earn interest from traders who borrow them for leverage, settlement and collateral in digital asset markets. Borrowing demand can remain high because access to traditional bank financing against digital assets is limited, but lending rates also reflect substantial counterparty and liquidity risk.",
+ "caseRest": "Lending platforms can fail and stablecoins can lose their peg, putting the principal at risk despite a history of regular interest payments. Losses are rare but large, because the yield earned is small compared with the amount lost if a platform cannot return deposits. A stable return history therefore overstates the safety of the strategy, as the failures of Celsius and of lenders exposed to FTX showed in 2022.",
+ "figNote": "Each card shows the Bitcoin price at the extreme of the episode: its low in a sell-off or its high in a rally, in US dollars, where k means thousands. Bitcoin prices indicate how much leveraged trading was taking place, because borrowers of stablecoins are mostly traders who use leverage to buy digital assets.",
  "events": [
   {
    "date": "November 2021",

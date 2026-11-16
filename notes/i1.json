@@ -2,9 +2,9 @@
  "id": "i1",
  "name": "Treasury bill laddering",
  "heading": "The Structural Opportunity: Short-Term Funding Demand",
- "caseLead": "The investment case rests on governments issuing short-dated bills to finance regular spending and central banks maintaining short-term rates to implement monetary policy, allowing a rolling ladder to earn close to the policy rate. The opportunity persists because fiscal funding needs, institutional demand for liquid collateral and geopolitical uncertainty create continuous issuance and trading, while staggered maturities reduce dependence on any single policy decision.",
- "caseRest": "The main risk is that rapid policy tightening raises bill yields before existing tranches mature, producing small mark-to-market losses that can temporarily exceed accrued income. A sustained cutting cycle also reduces returns because each maturing tranche must be reinvested at a lower yield, although existing bills record modest price gains. Inflation is the larger economic risk because it can reduce real income even when nominal returns remain positive and monthly volatility stays low.",
- "figNote": "The large figure on each card shows the upper bound of the Federal Reserve’s target rate at the end of the episode. This rate anchors Treasury bill yields, so a higher figure generally increases ladder income after maturing tranches have been reinvested.",
+ "caseLead": "A Treasury bill ladder earns income close to prevailing short-term interest rates while spreading maturities across several dates. Regular government borrowing and institutional demand for liquid collateral support an active bill market, while staggered maturities allow the portfolio to reinvest gradually as policy rates change.",
+ "caseRest": "A rapid rise in policy rates can cause small mark-to-market losses on outstanding bills before they mature. A sustained cutting cycle also reduces returns because each maturing tranche must be reinvested at a lower yield, although existing bills record modest price gains. Inflation is the larger economic risk because it can reduce real income even when nominal returns remain positive and monthly volatility stays low.",
+ "figNote": "Each card shows the upper bound of the Federal Reserve’s target rate at the end of the episode. This rate anchors Treasury bill yields, so a higher figure generally increases ladder income after maturing tranches have been reinvested.",
  "events": [
   {
    "date": "December 2008",

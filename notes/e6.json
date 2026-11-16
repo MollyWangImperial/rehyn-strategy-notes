@@ -2,9 +2,9 @@
  "id": "e6",
  "name": "Supply shock event trading",
  "heading": "The Structural Opportunity: Pricing Supply Disruptions",
- "caseLead": "The investment case rests on the tendency of energy and agricultural prices to respond sharply and predictably to supply disruptions, because inventories and spare capacity are limited and demand changes little in the short term. The opportunity persists because the size and duration of a disruption depend on political and military decisions that most investors cannot assess quickly, so prices often overshoot and then reverse, which comparable past episodes help to measure.",
- "caseRest": "The main risk is that a disruption proves smaller or shorter than comparable episodes suggest, so prices reverse before the position gains. Prices can also gap against the position because OPEC+ decisions, ceasefires and sanctions waivers are announced with little notice. The estimated 11.2% annual return therefore comes with 14.1% volatility and a 20.0% worst fall, although positive return skew means that large gains can come in a sharp disruption.",
- "figNote": "The large figure on each card shows the percentage change in the Brent crude futures price on the day of the main price move. Brent is the international benchmark for oil, so a rise or fall of 5% in one day is large and a move above 10% is rare.",
+ "caseLead": "Supply disruptions can move energy and agricultural prices sharply because inventories are limited and production cannot adjust quickly. Sanctions, production decisions and infrastructure disruptions can therefore create substantial price moves, especially when the duration of the supply loss is difficult to assess.",
+ "caseRest": "The main risk is that a supply disruption is smaller or shorter than expected, causing prices to reverse before the position becomes profitable. Prices can also gap against the position because OPEC+ decisions, ceasefires and sanctions waivers are announced with little notice. The estimated 11.2% annual return therefore comes with 14.1% volatility and a 20.0% worst fall, although positive return skew means that large gains can come in a sharp disruption.",
+ "figNote": "Each card shows the percentage change in the Brent crude futures price on the day of the main price move. Brent is the international benchmark for oil, so a rise or fall of 5% in one day is large and a move above 10% is rare.",
  "events": [
   {
    "date": "September 2019",

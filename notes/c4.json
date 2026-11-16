@@ -2,9 +2,9 @@
  "id": "c4",
  "name": "Gold real yield allocation",
  "heading": "The Structural Opportunity: Linking Gold to Real Yields",
- "caseLead": "The investment case rests on the tendency of gold, which pays no interest, to rise when real yields fall because the cost of holding it falls, so sizing a gold allocation from real yields, the US dollar and central bank purchases earns the return linked to these drivers. The relationship persists because investors treat gold as an alternative to government bonds when inflation protection is scarce, and sanctions on reserve assets and geopolitical tension have raised central bank demand since 2022, which supports prices independently of real yields.",
- "caseRest": "The main risk is that the link between real yields and gold breaks down for long periods, because central bank purchases and safe haven demand can lift prices while real yields stay high. A model that reduces gold because real yields are high would then miss gains, as it did in 2024 and 2025. Gold also falls sharply when yields and the dollar rise together, as in 2013 and 2022, so the allocation can lose 10% or more within a quarter.",
- "figNote": "The large figure on each card shows the price of gold in US dollars per ounce at the close of the peak or trough of the episode. Gold is priced in dollars and pays no income, so its price reflects what investors expect to earn from holding other assets instead.",
+ "caseLead": "Gold often benefits from falling real yields because lower inflation-adjusted interest rates reduce the opportunity cost of holding an asset that pays no income. Central bank reserve purchases and demand for assets outside the financial system also support prices, especially when sanctions or geopolitical tensions increase concerns about reserve security.",
+ "caseRest": "Gold's relationship with real yields is not stable enough to explain every price move. Central bank purchases and demand for safe assets can support prices even when real yields are high, as in 2024 and 2025. Conversely, higher yields combined with a stronger US dollar have contributed to large declines, including in 2013 and 2022, so the allocation remains exposed to substantial short-term losses.",
+ "figNote": "Each card shows the price of gold in US dollars per ounce at the close of the peak or trough of the episode. Gold is priced in dollars and pays no income, so its price reflects what investors expect to earn from holding other assets instead.",
  "events": [
   {
    "date": "September 2011",
@@ -92,7 +92,7 @@
  "size": "Set to a 13% annualised volatility target",
  "exit": "Position halved when the real yield exceeds its 12-month average by 30 basis points",
  "stop": "Position closed if gold falls 12% from its monthly high",
- "marketWatch": "The 10-year US real yield, the US dollar index and central bank gold purchases are the main indicators for this strategy. Rehyn also tracks sanctions on reserve assets and geopolitical tension because they can raise official demand for gold without any change in real yields. Federal Reserve meetings and inflation data matter most because they move real yields within hours.",
+ "marketWatch": "The 10-year US real yield, the US dollar index and central bank gold purchases are key indicators. Rehyn also tracks sanctions on reserve assets and geopolitical tension because they can raise official demand for gold without any change in real yields. Federal Reserve meetings and inflation data matter most because they move real yields within hours.",
  "favourable": [
   {
    "heading": "Falling real yields",

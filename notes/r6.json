@@ -2,9 +2,9 @@
  "id": "r6",
  "name": "Commodity spread trading",
  "heading": "The Structural Opportunity: Temporary Commodity Price Gaps",
- "caseLead": "The investment case rests on the tendency of price gaps between related commodity contracts, such as different delivery months or crude oil against refined fuels, to return to levels set by storage costs and refining margins. The gaps persist because producers, refiners and airlines hedge in specific contracts while storage and shipping capacity are limited, and sanctions, production quotas and attacks on infrastructure can distort individual contracts for weeks.",
- "caseRest": "The main risk is that a gap widens further because physical supply or storage conditions have changed, so the historical range no longer applies. This happened in April 2020 when storage was almost full and in March 2022 when sanctions made immediate supply scarce. Losses can therefore exceed what normal price movements suggest, because a position held for a gap to close is exposed to the full widening.",
- "figNote": "The large figure on each card shows the settlement price of the front-month US crude oil futures contract (WTI) at the key point of the episode, in US dollars per barrel. The front month is the contract closest to delivery, and its price moves most when supply or storage is under stress.",
+ "caseLead": "Commodity spread trading seeks to profit when temporary price differences between related contracts move back towards levels supported by physical supply and demand. Hedging demand, storage constraints and transport costs can affect different contracts unevenly, while sanctions or production disruptions can temporarily widen those differences.",
+ "caseRest": "A commodity price spread can widen further when inventories, storage capacity or physical supply conditions change. This happened in April 2020 when storage was almost full and in March 2022 when sanctions made immediate supply scarce. Losses can therefore exceed what normal price movements suggest, because a position held for a gap to close is exposed to the full widening.",
+ "figNote": "Each card shows the settlement price of the front-month US crude oil futures contract (WTI) at the key point of the episode, in US dollars per barrel. The front month is the contract closest to delivery, and its price moves most when supply or storage is under stress.",
  "events": [
   {
    "date": "July 2008",

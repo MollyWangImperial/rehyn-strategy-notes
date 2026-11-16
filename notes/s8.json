@@ -2,9 +2,9 @@
  "id": "s8",
  "name": "Oil event volatility trading",
  "heading": "The Structural Opportunity: Underpriced Oil Supply Disruption Risk",
- "caseLead": "The investment case rests on oil options often pricing smaller price moves than supply disruptions can cause, because most geopolitical threats pass without reducing the oil that reaches the market. The pricing gap persists because sellers of oil options earn steady income in quiet periods, so option prices rarely allow fully for the rare disruption that moves oil by 10% or more in a day.",
- "caseRest": "The main risk is a long run of small losses when threats pass without a disruption and the options expire worthless. Implied volatility often rises before an event, so positions bought after the market has already priced the risk can lose even when the event occurs. Rehyn estimates that returns depend on a small number of large winning events, which makes results uneven and difficult to forecast.",
- "figNote": "The large figure on each card shows the change in the Brent crude oil price on the first trading day after the event. Brent typically moves by about 2% in a day, so a move of 7% or more indicates a significant disruption in the market.",
+ "caseLead": "Oil options can underestimate the price impact of a major supply disruption, providing potential gains when an event moves crude prices further than expected. The opportunity is concentrated in events that materially interrupt production or transport, since many geopolitical threats do not reduce actual oil supply.",
+ "caseRest": "The strategy can incur repeated option premium losses when expected supply disruptions do not occur. Implied volatility often rises before an event, so positions bought after the market has already priced the risk can lose even when the event occurs. Rehyn estimates that returns depend on a small number of large winning events, which makes results uneven and difficult to forecast.",
+ "figNote": "Each card shows the change in the Brent crude oil price on the first trading day after the event. Brent typically moves by about 2% in a day, so a move of 7% or more indicates a significant disruption in the market.",
  "events": [
   {
    "date": "September 2019",

@@ -2,9 +2,9 @@
  "id": "r2",
  "name": "Crypto basis trading",
  "heading": "The Structural Opportunity: Futures Premium Over Spot",
- "caseLead": "The investment case rests on digital asset futures trading at a premium to the spot price when demand for leveraged long exposure is strong, so a buyer of the spot asset who sells the futures contract earns the premium as the two prices converge at expiry. The premium persists because speculators prefer to borrow through futures rather than hold the asset, and arbitrage capital is limited by exchange credit limits and bank funding, while regulatory decisions such as the approval of US spot bitcoin ETFs in January 2024 change who can access leverage.",
- "caseRest": "The main risk is counterparty failure, because the price hedge works only if the exchange or custodian holding the collateral stays solvent and open for withdrawals. In November 2022 the failure of FTX showed that collateral held on a venue can be frozen even when both legs of the trade are correctly hedged. A second risk is that the premium falls to zero in a sell-off, which leaves little return for the capital tied up, while forced liquidation of one leg during a sharp move can cause losses on the other.",
- "figNote": "The large figure on each card shows the change in the price of bitcoin over the month of the episode. A rise lifts demand for leveraged long positions and widens the futures premium, while a fall narrows it and can trigger forced liquidations.",
+ "caseLead": "Crypto basis trading earns the premium between futures and spot prices by buying the underlying asset and selling the futures contract. The premium reflects demand for leveraged long exposure and can persist when exchange credit limits, funding costs or regulatory barriers restrict arbitrage.",
+ "caseRest": "The main risk is failure of the exchange or custodian holding the assets and collateral, which can invalidate an otherwise hedged position. In November 2022 the failure of FTX showed that collateral held on a venue can be frozen even when both legs of the trade are correctly hedged. A second risk is that the premium falls to zero in a sell-off, which leaves little return for the capital tied up, while forced liquidation of one leg during a sharp move can cause losses on the other.",
+ "figNote": "Each card shows the change in the price of bitcoin over the month of the episode. A rise lifts demand for leveraged long positions and widens the futures premium, while a fall narrows it and can trigger forced liquidations.",
  "events": [
   {
    "date": "March 2020",

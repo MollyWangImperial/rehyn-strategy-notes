@@ -2,9 +2,9 @@
  "id": "s2",
  "name": "Earnings long straddle",
  "heading": "The Structural Opportunity: Underpriced Earnings Moves",
- "caseLead": "The investment case rests on the tendency of options to price smaller earnings reactions than some companies deliver, which allows buyers of straddles to earn a return from the minority of announcements that cause large moves. The pattern persists because option prices rely on the typical past reaction, while changes in guidance, trade policy and regulation can move individual stocks far more than that average.",
- "caseRest": "The main risk is a steady loss of premium when announcements produce moves smaller than the options imply. Most straddles expire with a small loss, so the return depends on a few large winners and can be negative for several quarters in a row. Rehyn estimates that results are weakest when implied volatility is already high across the market, because straddles then cost more and the stock must move further to cover the premium.",
- "figNote": "The large figure on each card shows the share price move on the first trading day after results. Options on large US companies usually price a move of about 4% to 8% on results day, so the straddle gains when the actual move is larger and loses when it is smaller.",
+ "caseLead": "Buying a straddle before an earnings announcement can be profitable when the stock moves more than the option market had priced in. These opportunities arise when changes in company guidance, regulation or trade policy generate larger earnings reactions than historical averages used to price options.",
+ "caseRest": "The main risk is paying option premiums for earnings announcements that produce smaller price moves than expected. Most straddles expire with a small loss, so the return depends on a few large winners and can be negative for several quarters in a row. Rehyn estimates that results are weakest when implied volatility is already high across the market, because straddles then cost more and the stock must move further to cover the premium.",
+ "figNote": "Each card shows the share price move on the first trading day after results. Options on large US companies usually price a move of about 4% to 8% on results day, so the straddle gains when the actual move is larger and loses when it is smaller.",
  "events": [
   {
    "date": "January 2013",

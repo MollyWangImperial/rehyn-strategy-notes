@@ -2,9 +2,9 @@
  "id": "e2",
  "name": "Post-earnings announcement drift",
  "heading": "The Structural Opportunity: Slow Reaction to Earnings News",
- "caseLead": "The investment case rests on the tendency of share prices to adjust gradually to earnings news, because analysts and investors revise their forecasts slowly after a large positive surprise. The effect persists because institutional investors trade in stages to limit market impact and give limited attention to each company in busy reporting periods, while policy changes such as tax and tariff announcements keep forcing companies to revise guidance.",
- "caseRest": "The main risk is that the drift disappears when markets move on macro news rather than company results, so a broad sell-off or a sudden rotation away from recent winners can cause losses within days. The strategy holds shares long, which means that it falls with the market in a sell-off, as in March 2020. The estimated 11.4% annual return therefore comes with 11.2% volatility and a 19.0% worst fall, so the premium should not be treated as stable.",
- "figNote": "The large figure on each card shows the percentage change in the S&P 500 over the calendar month of the episode. Post-earnings drift is earned over several weeks, so a broad market move in the same month shows whether general conditions supported the effect or overwhelmed it.",
+ "caseLead": "Share prices often continue to adjust after earnings surprises as analysts and investors revise their expectations over several weeks. This adjustment can continue because institutional investors trade gradually and analyst forecasts take time to reflect new information, particularly when tariffs or other policy changes affect company guidance.",
+ "caseRest": "The strategy is vulnerable when broad market or sector moves outweigh company earnings news, reversing the expected post-announcement trend. The strategy holds shares long, which means that it falls with the market in a sell-off, as in March 2020. The estimated 11.4% annual return therefore comes with 11.2% volatility and a 19.0% worst fall, so the premium should not be treated as stable.",
+ "figNote": "Each card shows the percentage change in the S&P 500 over the calendar month of the episode. Post-earnings drift is earned over several weeks, so a broad market move in the same month shows whether general conditions supported the effect or overwhelmed it.",
  "events": [
   {
    "date": "October 2008",

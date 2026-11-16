@@ -2,9 +2,9 @@
  "id": "c8",
  "name": "Autocallable note laddering",
  "heading": "The Structural Opportunity: Selling Equity Downside Risk",
- "caseLead": "The investment case rests on the coupon that autocallable notes pay in return for the investor accepting losses if an equity index falls below a barrier, a coupon that has usually exceeded the losses investors have suffered in practice. The premium persists because long-dated index options are consistently priced above the losses they pay out, as institutional investors buy protection against falls regardless of price, and geopolitical and policy uncertainty keeps that demand high.",
- "caseRest": "The main risk is a loss of principal if an index closes below its barrier on the final date, because the loss is then the full fall in the index from its starting level. Several notes can reach their barriers at the same time because they refer to the same markets, so a single market fall affects the whole ladder. A high coupon therefore overstates the safety of the return, as it does not compensate for the rare periods when equity indices fall by more than 30%.",
- "figNote": "The large figure on each card shows the change in the S&P 500 over the episode, measured from the last high to the low in a fall and from the low to the high in a rally. Autocallable notes depend on where the index closes on set observation dates, so the figure shows how close the index came to the level that triggers early redemption or a loss of principal.",
+ "caseLead": "Autocallable notes offer higher coupons in exchange for the risk of substantial capital losses if the underlying equity index breaches its barrier at maturity. Their coupons reflect the value of equity downside risk and demand for structured income, while geopolitical and policy uncertainty can increase the cost of that embedded protection.",
+ "caseRest": "A substantial equity decline can breach a note's capital barrier, exposing investors to losses on the underlying index. Several notes may cross their barriers together if they reference markets that fall at the same time. The regular coupon income offers limited protection against a severe decline, particularly when indices fall by more than 30%.",
+ "figNote": "Each card shows the change in the S&P 500 over the episode, measured from the last high to the low in a fall and from the low to the high in a rally. Autocallable notes depend on where the index closes on set observation dates, so the figure shows how close the index came to the level that triggers early redemption or a loss of principal.",
  "events": [
   {
    "date": "August 2011",
@@ -92,7 +92,7 @@
  "size": "No more than 20% of capital in one note and 70% in all notes",
  "exit": "Notes held until early redemption or maturity, whichever comes first",
  "stop": "New notes paused if any index is more than 15% below its 12-month high",
- "marketWatch": "The level of each index relative to its note barrier, implied volatility and the coupon offered on new notes are the main indicators for this strategy. Rehyn tracks central bank decisions and geopolitical events because they can move several indices below their redemption levels at once. A rise in correlation between the S&P 500, the Euro Stoxx 50 and the Nikkei 225 matters because it reduces the benefit of holding notes on different markets.",
+ "marketWatch": "The level of each index relative to its note barrier, implied volatility and the coupon offered on new notes are key indicators. Rehyn tracks central bank decisions and geopolitical events because they can move several indices below their redemption levels at once. A rise in correlation between the S&P 500, the Euro Stoxx 50 and the Nikkei 225 matters because it reduces the benefit of holding notes on different markets.",
  "favourable": [
   {
    "heading": "Steady equity market gains",

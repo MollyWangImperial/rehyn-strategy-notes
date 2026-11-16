@@ -2,9 +2,9 @@
  "id": "i4",
  "name": "Dividend quality investing",
  "heading": "The Structural Opportunity: Reliable Dividend Income",
- "caseLead": "The investment case rests on companies that pay dividends well covered by free cash flow, because those payments are cut less often and tend to grow with earnings. The opportunity persists because many investors chase headline yield without checking cash flow, which leaves companies with covered and growing payouts priced like the average company, while tax changes, bank payout limits and tariffs keep altering which payouts are safe.",
- "caseRest": "The main risk is a fall in share prices larger than the income collected, because dividend shares still carry the full risk of the equity market. Dividends are cut in recessions when profits fall, as in March 2020 when many companies suspended payments to preserve cash. Higher bond yields also reduce the appeal of dividend income, so rate-sensitive holdings such as utilities can fall even when earnings are stable.",
- "figNote": "The large figure on each card shows the change in the S&P 500 over the episode, measured from its high before the event to its low, or from its low to its high in a rally. It is a simple measure of how severe the move in the equity market was, so readers can compare how a dividend portfolio behaved against it.",
+ "caseLead": "Companies with dividends supported by free cash flow can provide relatively reliable income and increase payouts as earnings grow. The distinction matters because a high dividend yield alone may reflect financial weakness, while strong cash generation provides more scope to maintain payouts through slower growth and policy changes.",
+ "caseRest": "A fall in share prices can exceed the dividends collected because dividend-paying stocks remain exposed to equity market risk. Dividends are cut in recessions when profits fall, as in March 2020 when many companies suspended payments to preserve cash. Higher bond yields also reduce the appeal of dividend income, so rate-sensitive holdings such as utilities can fall even when earnings are stable.",
+ "figNote": "Each card shows the change in the S&P 500 over the episode, measured from its high before the event to its low, or from its low to its high in a rally. It is a simple measure of how severe the move in the equity market was, so readers can compare how a dividend portfolio behaved against it.",
  "events": [
   {
    "date": "August 2011",

@@ -2,9 +2,9 @@
  "id": "s1",
  "name": "Variance risk premium harvesting",
  "heading": "The Structural Opportunity: Monetizing Volatility Risk",
- "caseLead": "The investment case rests on the persistent tendency of short-dated S&P 500 index options to price larger moves than the market ultimately delivers, allowing sellers of protection to earn the variance risk premium. The premium persists because pension funds, insurers and portfolios with loss limits buy protection largely regardless of price, while few investors can absorb crash risk, and geopolitical and policy tensions sustain demand even though most events do not materially affect the index.",
- "caseRest": "The main risk is a return profile with small, frequent gains and rare, large losses that can develop within days when volatility rises sharply. Several years of accumulated premium can be lost in a single episode because option prices and realised market moves can rise together as investors rush to reduce risk. A strong Sharpe ratio therefore overstates the safety of the return because it gives too little weight to the speed and scale of losses in stressed markets.",
- "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "caseLead": "Short-dated S&P 500 index options tend to price in larger market moves than actually occur, allowing sellers of protection to earn the variance risk premium. This premium persists because institutional investors have a steady demand for downside protection, while relatively few investors are willing to bear crash risk, and geopolitical or policy uncertainty can increase that demand even when the market impact is limited.",
+ "caseRest": "The strategy typically earns small, frequent premiums but can suffer large losses when equity markets fall and volatility rises sharply. During periods of market stress, option prices and realised volatility can rise together, potentially wiping out years of accumulated premiums within days. A high Sharpe ratio can therefore understate the strategy's downside risk, particularly the size and speed of losses during market crises.",
+ "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
   {
    "date": "February 2018",
@@ -92,7 +92,7 @@
  "size": "Set to a 9% annualised volatility target",
  "exit": "Position closed at 50% of premium collected, or 21 days before expiry",
  "stop": "All positions closed if the VIX closes above 35",
- "marketWatch": "One-month S&P 500 implied volatility is about 3.1 points above realised volatility, close to its long-run average spread. A central bank rate decision is due this week. Around past decisions, index option prices have tended to rise before the announcement and fall back afterwards.",
+ "marketWatch": "The gap between implied and realised S&P 500 volatility is a key indicator of the premium available to option sellers. The level and term structure of implied volatility help assess the cost of protection and the risk of sudden repricing. Central bank decisions, trade policy announcements and geopolitical developments matter because they can raise both demand for hedging and realised market volatility.",
  "favourable": [
   {
    "heading": "Priced geopolitical risk stays contained",

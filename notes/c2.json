@@ -2,9 +2,9 @@
  "id": "c2",
  "name": "Yield curve steepener trade",
  "heading": "The Structural Opportunity: Positioning for Curve Steepening",
- "caseLead": "The investment case rests on the tendency of short-term Treasury yields to fall faster than long-term yields when the Federal Reserve starts cutting rates, because short-term yields follow the policy rate while long-term yields reflect growth, inflation and the supply of debt. The pattern persists because central banks cut when growth weakens, while large government deficits and heavy Treasury issuance keep investors demanding extra yield for holding long-dated bonds, and trade policy and geopolitical risks can raise that demand further.",
- "caseRest": "The main risk is that the curve flattens, which happens when the Federal Reserve raises rates faster than expected or when long-term bonds rally on safe haven buying. In 2022, short-term yields rose above long-term yields as inflation forced rapid rate rises, and the position lost for months. A strategy that is correct on the direction of rates can therefore still lose, because its return depends on the gap between maturities rather than on the level of yields.",
- "figNote": "The large figure on each card shows the change in the Federal Reserve's target policy rate during the episode, in basis points, where 100 basis points equal one percentage point. The strategy tends to gain when expected cuts pull short-term yields down faster than long-term yields, and to lose when rate rises lift short-term yields above them.",
+ "caseLead": "A yield curve steepener benefits when short-term Treasury yields fall relative to long-term yields, often as the Federal Reserve begins to cut interest rates. The trade can benefit from the difference between policy-sensitive short-term yields and long-term yields driven by growth, inflation and Treasury supply, particularly when government borrowing puts upward pressure on long-term rates.",
+ "caseRest": "The main risk is a flatter yield curve, either because short-term rates rise faster than expected or because long-term bonds rally. In 2022, short-term yields rose above long-term yields as inflation forced rapid rate rises, and the position lost for months. A strategy that is correct on the direction of rates can therefore still lose, because its return depends on the gap between maturities rather than on the level of yields.",
+ "figNote": "Each card shows the change in the Federal Reserve's target policy rate during the episode, in basis points, where 100 basis points equal one percentage point. The strategy tends to gain when expected cuts pull short-term yields down faster than long-term yields, and to lose when rate rises lift short-term yields above them.",
  "events": [
   {
    "date": "January 2008",
@@ -92,7 +92,7 @@
  "size": "Set to a 6% annualised volatility target",
  "exit": "Position closed when the spread has widened by 40 basis points, or after 6 months",
  "stop": "All positions closed if the 2-year yield rises 50 basis points in a month",
- "marketWatch": "The gap between 2-year and 10-year Treasury yields, the policy rate path priced by the market and the level of long-term yields relative to inflation expectations are the main indicators for this strategy. Rehyn watches labour market data and Federal Reserve meetings because they change the expected pace of rate cuts. Large Treasury auctions and fiscal policy announcements also matter because higher long-term yields can steepen the curve through the 10-year leg.",
+ "marketWatch": "The gap between 2-year and 10-year Treasury yields, the policy rate path priced by the market and the level of long-term yields relative to inflation expectations are key indicators. Rehyn watches labour market data and Federal Reserve meetings because they change the expected pace of rate cuts. Large Treasury auctions and fiscal policy announcements also matter because higher long-term yields can steepen the curve through the 10-year leg.",
  "favourable": [
   {
    "heading": "Expected central bank rate cuts",

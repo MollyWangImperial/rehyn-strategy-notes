@@ -2,9 +2,9 @@
  "id": "m7",
  "name": "Fixed income trend following",
  "heading": "The Structural Opportunity: Persistent Interest Rate Cycles",
- "caseLead": "The investment case rests on government bond yields trending in one direction for months, because central banks change policy rates in a sequence of small steps and signal their path in advance. The pattern persists because growth, inflation and borrowing news arrive gradually, so investors adjust their holdings over time, and shifts in trade policy and government borrowing can push yields in one direction for long periods.",
- "caseRest": "The main risk is a sudden change in interest rate expectations that reverses a trend within days, usually after a surprise in inflation, growth or central bank guidance. The strategy then holds positions in the wrong direction and loses the gains of several weeks. It also earns little when yields move sideways, because trend signals reverse repeatedly and each trade incurs costs.",
- "figNote": "The large figure on each card shows the change in the US 10-year Treasury yield over the period described in the text, in basis points, where 100 basis points equal one percentage point. Bond trend following earns from sustained moves in yields in either direction, so a larger move offers more to follow.",
+ "caseLead": "Government bond yields can trend for several months as central banks adjust policy rates and investors revise expectations for growth and inflation. Economic data and policy guidance arrive over time, while changes in government borrowing and trade policy can sustain shifts in longer-term yield expectations.",
+ "caseRest": "Unexpected inflation data or central bank guidance can reverse a bond yield trend and cause losses before positions are adjusted. The strategy then holds positions in the wrong direction and loses the gains of several weeks. It also earns little when yields move sideways, because trend signals reverse repeatedly and each trade incurs costs.",
+ "figNote": "Each card shows the change in the US 10-year Treasury yield over the period described in the text, in basis points, where 100 basis points equal one percentage point. Bond trend following earns from sustained moves in yields in either direction, so a larger move offers more to follow.",
  "events": [
   {
    "date": "May 2013",

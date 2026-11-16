@@ -2,9 +2,9 @@
  "id": "v2",
  "name": "Quality at a reasonable price",
  "heading": "The Structural Opportunity: Mispricing Durable Corporate Quality",
- "caseLead": "The investment case rests on buying companies with high returns on capital and strong balance sheets when short-term concerns push their shares below estimated intrinsic value. The opportunity persists because investors often overreact to earnings setbacks and policy or geopolitical risks, while mandates tied to benchmarks and quarterly performance discourage the patience needed to wait for valuation gaps to close.",
- "caseRest": "The main risk is that an apparently cheap company suffers a lasting decline in earnings power, turning a valuation discount into a value trap. Losses can also be substantial during recessions because even financially strong companies face weaker demand, lower margins and falling market valuations. The estimated -0.3 return skew and -31.0% worst fall show that valuation discipline reduces risk but does not prevent large equity drawdowns.",
- "figNote": "The large figure on each card shows the S&P 500 price return during the calendar month. The index provides a consistent measure of the broad equity environment, with negative figures indicating a falling US market and positive figures indicating a rising market.",
+ "caseLead": "Quality-at-a-reasonable-price investing seeks financially strong companies whose share prices have fallen below estimates of their long-term value. Temporary earnings setbacks and policy uncertainty can depress valuations, while benchmark constraints and short performance horizons limit demand from investors willing to wait for a recovery.",
+ "caseRest": "A company may remain undervalued because its long-term earnings outlook has deteriorated, rather than because investors have overreacted to a temporary setback. Losses can also be substantial during recessions because even financially strong companies face weaker demand, lower margins and falling market valuations. The estimated -0.3 return skew and -31.0% worst fall show that valuation discipline reduces risk but does not prevent large equity drawdowns.",
+ "figNote": "Each card shows the S&P 500 price return during the calendar month. The index provides a consistent measure of the broad equity environment, with negative figures indicating a falling US market and positive figures indicating a rising market.",
  "events": [
   {
    "date": "October 2008",

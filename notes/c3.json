@@ -2,9 +2,9 @@
  "id": "c3",
  "name": "Commodity roll yield carry",
  "heading": "The Structural Opportunity: Capturing Commodity Futures Roll Yield",
- "caseLead": "The investment case rests on the tendency of futures prices in backwardated commodity markets to rise towards higher spot prices as contracts approach delivery, so holding them earns a roll yield even when spot prices are unchanged. The return persists because consumers pay a premium for immediate supply when inventories are low, and sanctions, export restrictions and underinvestment in production keep inventories tight, while few investors are willing to take on the cost and risk of storing physical commodities.",
- "caseRest": "The main risk is that prices fall by more than the roll yield earns, so a downturn in demand can produce large losses. Backwardated markets are usually those in which supply is already disrupted, so the end of a disruption or a drop in demand can reverse prices and remove the roll yield at the same time. A high carry return therefore gives little protection in the sharp falls that follow a supply shock, as in March 2020 and December 2022.",
- "figNote": "The large figure on each card shows the Brent crude oil settlement price, in US dollars per barrel, at the peak or trough of the episode. Brent is the main global benchmark for oil, so it shows how strongly energy markets moved while the strategy held its positions.",
+ "caseLead": "Commodity futures in backwardation can generate positive roll yield as their prices converge towards higher spot prices, even if the spot price is unchanged. Backwardation can persist when low inventories and limited spare capacity make immediate supply more valuable, particularly during sanctions, export restrictions and production disruptions.",
+ "caseRest": "A fall in commodity prices can outweigh positive roll yield, especially when demand weakens or supply disruptions ease. Backwardated markets are usually those in which supply is already disrupted, so the end of a disruption or a drop in demand can reverse prices and remove the roll yield at the same time. A high carry return therefore gives little protection in the sharp falls that follow a supply shock, as in March 2020 and December 2022.",
+ "figNote": "Each card shows the Brent crude oil settlement price, in US dollars per barrel, at the peak or trough of the episode. Brent is the main global benchmark for oil, so it shows how strongly energy markets moved while the strategy held its positions.",
  "events": [
   {
    "date": "January 2016",
@@ -92,7 +92,7 @@
  "size": "Set to a 9% annualised volatility target",
  "exit": "Position closed when the curve slope falls below 2%, or at the next monthly roll",
  "stop": "A position is closed if it loses 8% from its entry price",
- "marketWatch": "Inventory levels, the slope of futures curves in oil and metals and the pace of OPEC+ output decisions are the main indicators for this strategy. Rehyn tracks sanctions, export restrictions and shipping disruptions because they can tighten supply quickly and steepen backwardation. A sudden fall in demand or the end of a supply disruption matters because either can remove the roll yield within days.",
+ "marketWatch": "Inventory levels, the slope of futures curves in oil and metals and the pace of OPEC+ output decisions are key indicators. Rehyn tracks sanctions, export restrictions and shipping disruptions because they can tighten supply quickly and steepen backwardation. A sudden fall in demand or the end of a supply disruption matters because either can remove the roll yield within days.",
  "favourable": [
   {
    "heading": "Tight inventories and supply disruption",

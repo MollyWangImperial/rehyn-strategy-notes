@@ -2,9 +2,9 @@
  "id": "e5",
  "name": "Special situations credit investing",
  "heading": "The Structural Opportunity: Forced Selling in Corporate Bonds",
- "caseLead": "The investment case rests on corporate bonds whose prices fall below their estimated recovery value when refinancings, spin-offs and rating changes force holders to sell. The opportunity persists because many bond funds and insurers must follow rating and index rules regardless of price, while sanctions, trade restrictions and changes in monetary policy keep creating new stressed issuers.",
- "caseRest": "The main risk is that a stressed issuer fails to recover, so the bond falls towards a low recovery value instead of rising towards the estimated one. Losses can also arrive together because forced selling spreads across many bonds in a market sell-off, as in December 2008 and March 2020. The estimated 9.4% annual return therefore comes with 8.8% volatility, an 18.0% worst fall and negative return skew, so a run of recoveries can hide the size of the loss in a stressed year.",
- "figNote": "The large figure on each card shows the highest level of the US high yield credit spread during the episode, which is the extra yield investors demand over Treasuries to hold lower-rated corporate bonds. The spread has averaged about 5% over the long run, while readings above 8% signal severe stress in the corporate bond market.",
+ "caseLead": "Stressed corporate bonds can trade below their likely recovery value when rating changes, refinancings or corporate transactions force investors to sell. These discounts can persist because rating restrictions and index rules force some investors to sell, while assessing recovery values requires detailed credit and legal analysis.",
+ "caseRest": "The main risk is that the issuer's financial position worsens and bond recoveries fall short of expectations. Losses can also arrive together because forced selling spreads across many bonds in a market sell-off, as in December 2008 and March 2020. The estimated 9.4% annual return therefore comes with 8.8% volatility, an 18.0% worst fall and negative return skew, so a run of recoveries can hide the size of the loss in a stressed year.",
+ "figNote": "Each card shows the highest level of the US high yield credit spread during the episode, which is the extra yield investors demand over Treasuries to hold lower-rated corporate bonds. The spread has averaged about 5% over the long run, while readings above 8% signal severe stress in the corporate bond market.",
  "events": [
   {
    "date": "December 2008",

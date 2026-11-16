@@ -2,9 +2,9 @@
  "id": "s3",
  "name": "VIX roll yield capture",
  "heading": "The Structural Opportunity: Earning the VIX Futures Premium",
- "caseLead": "The investment case rests on VIX futures usually trading above the VIX itself, so a seller of futures earns the decline in price as each contract moves towards the spot level. The premium persists because investors pay for protection against equity sell-offs and often hold it regardless of price, while few participants can absorb losses when volatility rises, and geopolitical and policy uncertainty keeps demand for protection high even when markets stay calm.",
- "caseRest": "The main risk is a return profile with steady small gains and rare, very large losses when the VIX rises sharply. When a sell-off begins, the futures curve can move from contango, where futures are priced above spot, to backwardation within days, so short positions lose on both the roll and the rise in spot volatility. Rehyn estimates that a single episode can remove several years of accumulated roll yield, which is why the largest drawdown is far bigger than the volatility of normal months suggests.",
- "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "caseLead": "VIX futures frequently trade above the spot VIX, allowing short futures positions to earn a return if prices decline as contracts approach expiry. The premium reflects demand for volatility protection and the cost of bearing losses during sudden market declines, when VIX futures can rise sharply.",
+ "caseRest": "Short VIX futures positions can suffer large losses when expected volatility rises sharply during an equity sell-off. When a sell-off begins, the futures curve can move from contango, where futures are priced above spot, to backwardation within days, so short positions lose on both the roll and the rise in spot volatility. Rehyn estimates that a single episode can remove several years of accumulated roll yield, which is why the largest drawdown is far bigger than the volatility of normal months suggests.",
+ "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
   {
    "date": "August 2011",
@@ -92,7 +92,7 @@
  "size": "Set to a 10% annualised volatility target and halved when the VIX closes above 25",
  "exit": "Position reduced as futures converge towards spot and closed 5 days before expiry",
  "stop": "All short positions closed if the VIX closes above 30",
- "marketWatch": "The slope of the VIX futures curve and the gap between implied and realised volatility are the main indicators for this strategy now. Scheduled central bank decisions, major trade announcements and geopolitical deadlines matter because they can lift near-term volatility before the curve has time to adjust. Rehyn also watches the size of positions in volatility products, since crowded short positions have tended to amplify spikes.",
+ "marketWatch": "The slope of the VIX futures curve and the gap between implied and realised volatility are key indicators now. Scheduled central bank decisions, major trade announcements and geopolitical deadlines matter because they can lift near-term volatility before the curve has time to adjust. Rehyn also watches the size of positions in volatility products, since crowded short positions have tended to amplify spikes.",
  "favourable": [
   {
    "heading": "Calm markets with a steep curve",
@@ -144,7 +144,7 @@
   }
  ],
  "ahead": [
-  -31.0,
+  -31,
   -4.5,
   -0.8,
   0.9

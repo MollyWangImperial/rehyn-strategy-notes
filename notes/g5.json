@@ -2,9 +2,9 @@
  "id": "g5",
  "name": "Pre-IPO growth equity",
  "heading": "The Structural Opportunity: Funding Late-Stage Growth",
- "caseLead": "The investment case rests on buying late-stage private companies before public investors can access them, allowing capital to earn from revenue growth, operational scale and the valuation uplift that often accompanies a successful listing. The opportunity persists because private companies accept an illiquidity discount in exchange for patient capital, while listing rules, industrial policy and geopolitical controls restrict both the timing of exits and the supply of institutional funding.",
- "caseRest": "The main risk is that public growth multiples fall before an exit, forcing private valuations lower even when revenue continues to rise. Losses can deepen because funding rounds become less frequent, weaker companies accept punitive terms and IPO proceeds remain unavailable for several years. The estimated 15.2% annual return therefore comes with 24.0% volatility, a 48.0% worst fall and negative return skew, so reported quarterly values understate the speed of economic losses.",
- "figNote": "The large figure on each card shows the Nasdaq Composite’s calendar-year percentage change during the episode. The index is a useful measure of the public growth valuation backdrop because technology and other high-growth companies account for much of its market value.",
+ "caseLead": "Late-stage private equity gives investors exposure to growing companies before their shares become publicly traded, with returns driven by earnings growth and eventual exits. The potential return reflects business growth and the valuation achieved at exit, while investors receive compensation for limited liquidity and the risk of delayed listings.",
+ "caseRest": "An exit at a lower valuation than expected can reduce returns even when a private company's revenue continues to grow. Losses can deepen because funding rounds become less frequent, weaker companies accept punitive terms and IPO proceeds remain unavailable for several years. The estimated 15.2% annual return therefore comes with 24.0% volatility, a 48.0% worst fall and negative return skew, so reported quarterly values understate the speed of economic losses.",
+ "figNote": "Each card shows the Nasdaq Composite’s calendar-year percentage change during the episode. The index is a useful measure of the public growth valuation backdrop because technology and other high-growth companies account for much of its market value.",
  "events": [
   {
    "date": "September 2008",

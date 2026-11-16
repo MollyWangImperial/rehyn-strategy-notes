@@ -2,9 +2,9 @@
  "id": "i5",
  "name": "Covered call writing",
  "heading": "The Structural Opportunity: Earning Equity Option Premium",
- "caseLead": "The investment case rests on the tendency of call options on shares and stock indices to be priced above the volatility that the market ultimately delivers, so call sellers collect a premium on top of the dividend yield. The premium persists because investors pay for upside and protection, and geopolitical and policy uncertainty keep demand for options strong even in years when the market moves little.",
- "caseRest": "The main risk is that the strategy keeps most of the fall in share prices but gives up most of the gain in strong rallies. The premium collected covers only a small part of a large sell-off, as in March 2020 when shares fell about 34% in five weeks. Rebounds after sell-offs also cap returns, because calls sold at lower prices are exercised when the market recovers.",
- "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "caseLead": "Covered call writing earns option premiums on an existing equity position, providing additional income in exchange for limiting some upside. The premium can be attractive when implied volatility exceeds subsequent market moves, but its value depends on the balance between option income and the upside forgone.",
+ "caseRest": "Covered calls provide limited downside protection while capping some gains when the underlying shares rise sharply. The premium collected covers only a small part of a large sell-off, as in March 2020 when shares fell about 34% in five weeks. Rebounds after sell-offs also cap returns, because calls sold at lower prices are exercised when the market recovers.",
+ "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
   {
    "date": "October 2008",

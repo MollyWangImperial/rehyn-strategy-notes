@@ -2,9 +2,9 @@
  "id": "e3",
  "name": "Scenario-based hedged allocation",
  "heading": "The Structural Opportunity: Positioning Before Event Repricing",
- "caseLead": "The investment case rests on identifying geopolitical and policy events before markets fully price their effect on sectors, currencies and commodities, and then holding the ETFs that carry that exposure alongside hedges against the main risks. The opportunity persists because most investors react to an event after it has happened, while ETFs make a precise exposure easy to trade and few portfolios review scenario probabilities frequently.",
- "caseRest": "The main risk is that events develop differently from the scenarios, so the exposures and the hedges lose money together. During broad liquidations, assets that normally offset each other, such as equities, gold and long-dated Treasuries, can fall at the same time. The estimated 9.2% annual return therefore comes with 9.0% volatility and a 12.0% worst fall, and the hedges reduce these losses without removing them.",
- "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "caseLead": "Scenario-based allocations seek to benefit when geopolitical or policy developments change the outlook for particular sectors, currencies or commodities before prices fully adjust. The opportunity depends on identifying the sectors and instruments most exposed to an event and assessing how much of its potential impact is already reflected in prices.",
+ "caseRest": "The main risk is that an event develops differently from the expected scenario, causing both the selected exposures and their hedges to lose value. During broad liquidations, assets that normally offset each other, such as equities, gold and long-dated Treasuries, can fall at the same time. The estimated 9.2% annual return therefore comes with 9.0% volatility and a 12.0% worst fall, and the hedges reduce these losses without removing them.",
+ "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
   {
    "date": "August 2011",

@@ -2,9 +2,9 @@
  "id": "c7",
  "name": "Global macro futures overlay",
  "heading": "The Structural Opportunity: Capturing Macro Policy Repricing",
- "caseLead": "The investment case rests on the tendency of markets to adjust slowly to changes in growth, inflation and central bank policy, which allows directional positions in equity index, bond and currency futures to earn a return as prices adjust. The opportunity persists because central banks change policy gradually, investors with fixed mandates adjust their holdings slowly, and geopolitical events and trade policy change the outlook for inflation and growth faster than most portfolios can react.",
- "caseRest": "The main risk is a wrong view on the economy or policy, because the strategy takes directional positions that do not offset each other. Losses can build quickly when markets reverse after a policy announcement or a geopolitical event, as the same view often appears in several futures markets at once. Diversifying across equity, bond and currency futures therefore reduces risk only when the markets respond to different drivers, and it gives little protection when they move together.",
- "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "caseLead": "Global macro strategies seek returns as markets adjust to changes in growth, inflation and monetary policy, taking positions across equity, bond and currency futures. Policy changes often unfold over several meetings, while large investors adjust positions gradually, allowing price trends to persist as the economic outlook changes.",
+ "caseRest": "A macroeconomic or policy view can be wrong, leaving several directional futures positions exposed to the same unexpected market move. Losses can build quickly when markets reverse after a policy announcement or a geopolitical event, as the same view often appears in several futures markets at once. Diversifying across equity, bond and currency futures therefore reduces risk only when the markets respond to different drivers, and it gives little protection when they move together.",
+ "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
   {
    "date": "August 2011",
@@ -92,7 +92,7 @@
  "size": "Set to an 8% annualised volatility target",
  "exit": "Position closed when two of three signals turn, or after 12 weeks",
  "stop": "Position closed if it loses 3% of capital from entry",
- "marketWatch": "Inflation data, central bank guidance and the slope of bond and currency forward curves are the main indicators for this strategy. Rehyn tracks scheduled policy decisions, elections and trade negotiations because they can change growth and inflation expectations across several markets at once. Agreement among the signals matters because it determines how large positions can become.",
+ "marketWatch": "Inflation data, central bank guidance and the slope of bond and currency forward curves are key indicators. Rehyn tracks scheduled policy decisions, elections and trade negotiations because they can change growth and inflation expectations across several markets at once. Agreement among the signals matters because it determines how large positions can become.",
  "favourable": [
   {
    "heading": "Clear policy divergence",

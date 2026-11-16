@@ -2,9 +2,9 @@
  "id": "c5",
  "name": "Risk parity allocation",
  "heading": "The Structural Opportunity: Harvesting Diversified Risk Premiums",
- "caseLead": "The investment case rests on the observation that equities carry most of the risk in a conventional portfolio, so allocating risk rather than capital across equities, bonds, inflation-linked bonds and commodities earns the premium of each while limiting dependence on any one. The approach persists because many investors cannot use leverage, which leaves low-volatility assets such as government bonds with higher returns per unit of risk, and because inflation, growth and geopolitical shocks affect each asset class differently.",
- "caseRest": "The main risk is that stocks and bonds fall together, which removes the diversification that supports the strategy. Because the portfolio holds bonds with leverage, rising inflation and higher interest rates cause losses on its largest positions, as in 2022 when both asset classes recorded double-digit falls. A diversified allocation therefore does not protect against inflation shocks, and losses can be larger than those of a conventional portfolio over the same period.",
- "figNote": "The large figure on each card shows the change in the S&P 500 over the episode, measured at the daily close from the last high to the low in a fall. A fall of 20% or more is usually called a bear market, and the figure shows how much equity risk the portfolio carried when bonds either offset it or failed to.",
+ "caseLead": "Risk parity allocates portfolio risk rather than capital across asset classes, reducing dependence on equities and seeking returns from several sources. The approach reflects differences in the volatility of stocks, bonds and commodities and may benefit from return diversification when growth, inflation and policy expectations affect these markets differently.",
+ "caseRest": "Stocks and bonds can fall together during inflation shocks, reducing the diversification that risk parity relies on. Because the portfolio holds bonds with leverage, rising inflation and higher interest rates cause losses on its largest positions, as in 2022 when both asset classes recorded double-digit falls. A diversified allocation therefore does not protect against inflation shocks, and losses can be larger than those of a conventional portfolio over the same period.",
+ "figNote": "Each card shows the change in the S&P 500 over the episode, measured at the daily close from the last high to the low in a fall. A fall of 20% or more is usually called a bear market, and the figure shows how much equity risk the portfolio carried when bonds either offset it or failed to.",
  "events": [
   {
    "date": "August 2011",
@@ -98,7 +98,7 @@
  "size": "Set to a 9% annualised volatility target",
  "exit": "Positions reduced when an asset's 60-day volatility doubles",
  "stop": "Leverage removed if the portfolio falls 15% from its high",
- "marketWatch": "The correlation between equity and bond returns, inflation expectations and the path of central bank policy rates are the main indicators for this strategy. Rehyn watches inflation data and Treasury auctions because a positive correlation between stocks and bonds reduces the benefit of diversification. Upcoming trade policy decisions and energy price moves matter because they can raise inflation and push stocks and bonds down together.",
+ "marketWatch": "The correlation between equity and bond returns, inflation expectations and the path of central bank policy rates are key indicators. Rehyn watches inflation data and Treasury auctions because a positive correlation between stocks and bonds reduces the benefit of diversification. Upcoming trade policy decisions and energy price moves matter because they can raise inflation and push stocks and bonds down together.",
  "favourable": [
   {
    "heading": "Stable low inflation",

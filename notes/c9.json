@@ -2,9 +2,9 @@
  "id": "c9",
  "name": "Inflation-linked infrastructure investing",
  "heading": "The Structural Opportunity: Earning Inflation-Linked Cash Flows",
- "caseLead": "The investment case rests on infrastructure assets such as regulated utilities, toll roads and airports whose contracts or regulators allow prices to rise with inflation, so the owner earns cash flows that keep pace with the cost of living. The return persists because these assets are costly to build and hard to replace, governments rely on private capital for energy, transport and digital networks, and regulators generally approve inflation-linked price increases.",
- "caseRest": "The main risk is that rising interest rates reduce the value of long-term cash flows by more than inflation increases them, so valuations can fall even when revenues are rising. Regulatory decisions, political intervention and falls in traffic volumes can also reduce income, as in the pandemic of 2020. A stable income stream therefore does not protect the capital value, and the strategy can lose 20% or more when real yields rise sharply, as in 2022 and 2023.",
- "figNote": "The large figure on each card shows the yield on the US 10-year Treasury at its high or low during the episode. Infrastructure assets are valued by discounting long-term cash flows, so lower yields usually raise their value and higher yields lower it.",
+ "caseLead": "Infrastructure assets such as regulated utilities, toll roads and airports can provide inflation-linked income when contracts or regulation allow prices to rise with inflation. High construction costs and regulatory limits on competition can support these cash flows, although government policy remains important to the terms under which operators can raise charges.",
+ "caseRest": "Higher interest rates can reduce infrastructure valuations even when inflation-linked revenues continue to rise. Regulatory decisions, political intervention and falls in traffic volumes can also reduce income, as in the pandemic of 2020. A stable income stream therefore does not protect the capital value, and the strategy can lose 20% or more when real yields rise sharply, as in 2022 and 2023.",
+ "figNote": "Each card shows the yield on the US 10-year Treasury at its high or low during the episode. Infrastructure assets are valued by discounting long-term cash flows, so lower yields usually raise their value and higher yields lower it.",
  "events": [
   {
    "date": "September 2013",
@@ -92,7 +92,7 @@
  "size": "Set to an 11% annualised volatility target",
  "exit": "Assets sold when inflation-linked revenue falls below 60% or the price exceeds estimated value by 20%",
  "stop": "Exposure halved if the 10-year real yield rises 100 basis points in a quarter",
- "marketWatch": "The 10-year real yield, regulatory rate reviews and traffic volumes at toll roads and airports are the main indicators for this strategy. Rehyn tracks inflation data and central bank decisions because they change the discount rate applied to long-term cash flows. Upcoming regulatory price decisions and energy transition policies matter because they set the revenue that utilities and network owners may earn.",
+ "marketWatch": "The 10-year real yield, regulatory rate reviews and traffic volumes at toll roads and airports are key indicators. Rehyn tracks inflation data and central bank decisions because they change the discount rate applied to long-term cash flows. Upcoming regulatory price decisions and energy transition policies matter because they set the revenue that utilities and network owners may earn.",
  "favourable": [
   {
    "heading": "Falling real yields",
