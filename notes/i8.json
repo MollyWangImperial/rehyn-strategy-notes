@@ -2,9 +2,9 @@
  "id": "i8",
  "name": "Multi-asset income ETF allocation",
  "heading": "The Structural Opportunity: Diversified Income Sources",
- "caseLead": "The investment case rests on combining income from government and corporate bonds, dividend-paying shares and listed property, because these sources are paid for different risks and do not always fall together. The income persists because bond issuers must pay coupons, companies distribute profits and property owners pass through rents, and investors keep asking for yield when central banks cut rates or policy shifts raise uncertainty.",
- "caseRest": "The main risk is that bonds, shares and property fall at the same time, which removes the diversification that the strategy relies on. In 2022 higher inflation and rising policy rates lowered the value of every income source together. Funds also charge management fees and can trade below net asset value in a sell-off, so returns can fall short of the income collected.",
- "figNote": "The large figure on each card shows the change in the S&P 500 over the episode, measured from its high before the event to its low, or from its low to its high in a rally. It is a simple measure of how severe the move in the equity market was, so readers can compare how a mix of income funds behaved against it.",
+ "caseLead": "Multi-asset income funds combine distributions from bonds, dividend-paying equities and listed property, with each source exposed to different risks. The income persists because bond issuers must pay coupons, companies distribute profits and property owners pass through rents, and investors keep asking for yield when central banks cut rates or policy shifts raise uncertainty.",
+ "caseRest": "Diversification can weaken when bonds, shares and property fall together, particularly during periods of rising inflation and interest rates. In 2022 higher inflation and rising policy rates lowered the value of every income source together. Funds also charge management fees and can trade below net asset value in a sell-off, so returns can fall short of the income collected.",
+ "figNote": "Each card shows the change in the S&P 500 over the episode, measured from its high before the event to its low, or from its low to its high in a rally. It is a simple measure of how severe the move in the equity market was, so readers can compare how a mix of income funds behaved against it.",
  "events": [
   {
    "date": "August 2011",
