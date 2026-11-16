@@ -2,7 +2,7 @@
  "id": "d1",
  "name": "Tail risk hedging",
  "heading": "The Structural Opportunity: Insurance Against Market Crashes",
- "caseLead": "S&P 500 put options can provide substantial protection during sharp equity sell-offs because their value generally rises as the index falls and implied volatility increases. The opportunity persists because crashes are rare, so most investors hold little protection in calm markets, while geopolitical and policy shocks such as tariff announcements and central bank surprises can lift demand for puts within days.",
+ "caseLead": "S&P 500 put options can provide substantial protection during sharp equity sell-offs because their value generally rises as the index falls and implied volatility increases. This protection remains costly because severe sell-offs are infrequent, but demand for puts can rise quickly when geopolitical or policy events increase concerns about equity losses.",
  "caseRest": "The main cost is the repeated option premium paid during periods without a major market decline. This cost can accumulate for years, so the strategy can lose money in most months before a single sell-off repays it. As a result, the hedge is useful only if the portfolio can tolerate repeated small losses and the premium budget is kept small.",
  "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
