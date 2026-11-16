@@ -2,9 +2,9 @@
  "id": "m1",
  "name": "Cross-asset trend following",
  "heading": "The Structural Opportunity: Persistent Cross-Asset Trends",
- "caseLead": "The investment case rests on the tendency of large price moves in equities, bonds, currencies and commodities to continue for weeks or months, because central banks, governments and large investors change their positions gradually rather than all at once. The pattern persists because policy responses are slow and portfolio changes are often delayed, and geopolitical and policy shocks that reshape inflation, growth and interest rate expectations tend to produce multi-month trends rather than one-day jumps.",
- "caseRest": "The main risk is a sharp reversal after a trend is established, which can erase several weeks of gains within days. Losses are most likely when markets move sideways or when a central bank or government decision reverses a trend that has attracted heavy positioning. The strategy can therefore lag for long periods, and its protection in equity sell-offs depends on those sell-offs developing gradually rather than reversing quickly.",
- "figNote": "The large figure on each card shows how far the S&P 500 moved during the episode, over the period described in the text. Trend following earns from sustained moves in either direction, so the size of the move shows how much trend there was to follow.",
+ "caseLead": "Major trends in equity, bond, currency and commodity prices can persist for months as central banks, governments and large investors adjust their positions gradually. The pattern persists because policy responses are slow and portfolio changes are often delayed, and geopolitical and policy shocks that reshape inflation, growth and interest rate expectations tend to produce multi-month trends rather than one-day jumps.",
+ "caseRest": "Sudden trend reversals can erase several weeks of gains in a matter of days. Losses are most likely when markets move sideways or when a central bank or government decision reverses a trend that has attracted heavy positioning. The strategy can therefore lag for long periods, and its protection in equity sell-offs depends on those sell-offs developing gradually rather than reversing quickly.",
+ "figNote": "Each card shows how far the S&P 500 moved during the episode, over the period described in the text. Trend following earns from sustained moves in either direction, so the size of the move shows how much trend there was to follow.",
  "events": [
   {
    "date": "October 2008",
