@@ -2,7 +2,7 @@
  "id": "s6",
  "name": "FX volatility carry trade",
  "heading": "The Structural Opportunity: Selling Currency Volatility Premium",
- "caseLead": "Currency option sellers can earn premiums when realised exchange rate moves remain smaller than those priced into options. The premium persists because exporters, global investors and banks buy currency options to hedge exposures at almost any price, while central banks often act to slow disorderly moves and political and policy tensions keep demand for protection high even though most do not change the exchange rate.",
+ "caseLead": "Currency option sellers can earn premiums when realised exchange rate moves remain smaller than those priced into options. Demand from companies and investors hedging currency exposure can keep option premiums elevated, particularly when central bank decisions or political developments create exchange rate uncertainty.",
  "caseRest": "A sudden currency move can generate losses far larger than the premiums collected, particularly after an unexpected central bank decision. Such moves often follow central bank decisions, such as the Swiss National Bank's removal of its exchange rate floor in January 2015, and can leave no time to adjust hedges. Rehyn estimates that a single episode can erase many months of premium, so the strategy's smooth monthly returns understate the risk of rare losses.",
  "figNote": "Each card shows the move in the main exchange rate from its level before the event to its low or high during the episode. Currency option sellers earn premium when moves are small and lose when the exchange rate moves by more than the options imply.",
  "events": [
