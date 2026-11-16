@@ -2,7 +2,7 @@
  "id": "s3",
  "name": "VIX roll yield capture",
  "heading": "The Structural Opportunity: Earning the VIX Futures Premium",
- "caseLead": "VIX futures frequently trade above the spot VIX, allowing short futures positions to earn a return if prices decline as contracts approach expiry. The premium persists because investors pay for protection against equity sell-offs and often hold it regardless of price, while few participants can absorb losses when volatility rises, and geopolitical and policy uncertainty keeps demand for protection high even when markets stay calm.",
+ "caseLead": "VIX futures frequently trade above the spot VIX, allowing short futures positions to earn a return if prices decline as contracts approach expiry. The premium reflects demand for volatility protection and the cost of bearing losses during sudden market declines, when VIX futures can rise sharply.",
  "caseRest": "Short VIX futures positions can suffer large losses when expected volatility rises sharply during an equity sell-off. When a sell-off begins, the futures curve can move from contango, where futures are priced above spot, to backwardation within days, so short positions lose on both the roll and the rise in spot volatility. Rehyn estimates that a single episode can remove several years of accumulated roll yield, which is why the largest drawdown is far bigger than the volatility of normal months suggests.",
  "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
