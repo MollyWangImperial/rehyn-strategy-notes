@@ -2,7 +2,7 @@
  "id": "s7",
  "name": "Crypto volatility arbitrage",
  "heading": "The Structural Opportunity: Mispriced Digital Asset Volatility",
- "caseLead": "Differences between implied and realised volatility in Bitcoin and Ether options can create opportunities for hedged volatility strategies. The mispricing persists because retail demand for upside exposure, forced selling by leveraged traders and the pace of regulatory and geopolitical news keep option demand uneven, and few institutions can hold the inventory needed to close the gaps.",
+ "caseLead": "Differences between implied and realised volatility in Bitcoin and Ether options can create opportunities for hedged volatility strategies. Differences in investor demand and limited arbitrage capacity across exchanges can sustain these gaps, particularly around regulatory decisions and large changes in leveraged positions.",
  "caseRest": "A large digital asset price move or exchange failure can overwhelm hedges and prevent positions from being adjusted. Digital asset prices can fall by more than a third in a day, and exchange margin rules or withdrawal restrictions can prevent positions from being adjusted when it matters most. Rehyn estimates that these gaps explain why the largest losses are far bigger than the strategy's typical monthly variation suggests.",
  "figNote": "Each card shows the one-day change in the Bitcoin price on the main day of the episode. Bitcoin typically moves by about 2% to 3% in a day, so figures far above that indicate market stress.",
  "events": [
