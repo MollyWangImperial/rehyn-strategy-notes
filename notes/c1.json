@@ -3,7 +3,7 @@
  "name": "G10 FX carry trade",
  "heading": "The Structural Opportunity: Earning Interest Rate Differentials",
  "caseLead": "Higher-yielding currencies have historically fallen by less than their interest rate advantage would imply, allowing carry investors to earn the difference when exchange rates remain relatively stable. This return can persist because central banks set rates to manage domestic inflation and growth, while demand for safe funding currencies such as the yen and Swiss franc helps maintain interest rate differences.",
- "caseRest": "Carry strategies can earn steady interest income but suffer sharp losses when investors unwind positions in higher-yielding currencies. In these episodes, high-yielding currencies fall while funding currencies such as the yen and Swiss franc rise, so the strategy loses on both sides of the trade within days. A strong risk-adjusted return can therefore understate the downside risk, as the losses coincide with falls in equity markets and are hard to avoid by selling beforehand.",
+ "caseRest": "Carry strategies can earn steady interest income but suffer sharp losses when investors unwind positions in higher-yielding currencies. In a sell-off, higher-yielding currencies typically weaken while funding currencies such as the yen and Swiss franc strengthen, creating losses on both sides of the trade. These losses often coincide with equity market declines, so a strong Sharpe ratio in normal conditions may understate the strategy's exposure to market stress.",
  "figNote": "Each card shows the level of USD/JPY, the number of yen needed to buy one US dollar, at its high or low during the episode. A higher figure means a weaker yen, which favours investors who hold higher-yielding currencies funded in yen.",
  "events": [
   {
@@ -92,7 +92,7 @@
  "size": "Set to an 8% annualised volatility target",
  "exit": "Positions rebalanced monthly, or closed when the rate ranking changes",
  "stop": "Exposure halved if the VIX closes above 30",
- "marketWatch": "G10 interest rate differentials, central bank decisions and implied currency volatility are the key indicators for this strategy. Rehyn tracks the Federal Reserve, the Bank of Japan and the Reserve Bank of Australia because changes in expected policy rates alter the gap that the strategy earns. Upcoming central bank meetings and warnings of intervention in the yen matter most because they can reverse positions within days.",
+ "marketWatch": "Interest rate differentials across G10 currencies, central bank decisions and implied currency volatility are the main indicators. Decisions by the Federal Reserve, the Bank of Japan and the Reserve Bank of Australia matter because they can change both the available carry and the direction of exchange rates. Intervention in funding currencies is another important risk because it can trigger a rapid reversal.",
  "favourable": [
   {
    "heading": "Stable policy rate differences",
