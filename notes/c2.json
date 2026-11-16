@@ -1,172 +1,172 @@
 {
-  "id": "c2",
-  "name": "Yield curve steepener trade",
-  "heading": "The Structural Opportunity: Positioning for Curve Steepening",
-  "caseLead": "A yield curve steepener benefits when short-term Treasury yields fall relative to long-term yields, often as the Federal Reserve begins to cut interest rates. The pattern persists because central banks cut when growth weakens, while large government deficits and heavy Treasury issuance keep investors demanding extra yield for holding long-dated bonds, and trade policy and geopolitical risks can raise that demand further.",
-  "caseRest": "The main risk is that the curve flattens, which happens when the Federal Reserve raises rates faster than expected or when long-term bonds rally on safe haven buying. In 2022, short-term yields rose above long-term yields as inflation forced rapid rate rises, and the position lost for months. A strategy that is correct on the direction of rates can therefore still lose, because its return depends on the gap between maturities rather than on the level of yields.",
-  "figNote": "The large figure on each card shows the change in the Federal Reserve's target policy rate during the episode, in basis points, where 100 basis points equal one percentage point. The strategy tends to gain when expected cuts pull short-term yields down faster than long-term yields, and to lose when rate rises lift short-term yields above them.",
-  "events": [
-    {
-      "date": "January 2008",
-      "theme": "Recession fears",
-      "fig": "−125bp",
-      "effect": "up",
-      "title": "Emergency cuts steepen the Treasury curve",
-      "text": "The Federal Reserve cut its policy rate by 125 basis points in January 2008, including an emergency cut, as recession risks grew. The strategy gained because the 2-year yield fell about 1 percentage point, more than twice the fall in the 10-year yield."
-    },
-    {
-      "date": "December 2008",
-      "theme": "Quantitative easing",
-      "fig": "−75bp",
-      "effect": "down",
-      "title": "Bond purchases pull long-term yields lower",
-      "text": "The Federal Reserve cut its policy rate to a range of zero to 0.25% in December 2008 after announcing mortgage bond purchases, which pulled the 10-year yield down to 2.2%. The strategy lost because the 10-year yield fell by more than the 2-year yield."
-    },
-    {
-      "date": "March 2020",
-      "theme": "Pandemic",
-      "fig": "−150bp",
-      "effect": "mid",
-      "title": "Covid emergency cuts meet a Treasury sell-off",
-      "text": "The Federal Reserve cut its policy rate by 150 basis points in March 2020, while the 10-year yield rose from 0.5% to 1.3% in under two weeks. Results were mixed because the curve steepened but wider bid-ask spreads reduced the gain."
-    },
-    {
-      "date": "June 2022",
-      "theme": "Inflation",
-      "fig": "+75bp",
-      "effect": "down",
-      "title": "Fed rate rise flattens the Treasury curve",
-      "text": "The Federal Reserve raised its policy rate by 75 basis points in June 2022, the largest rise since 1994, as the war in Ukraine kept energy prices high. The strategy lost because the 2-year yield rose above the 10-year yield."
-    },
-    {
-      "date": "March 2023",
-      "theme": "Banking stress",
-      "fig": "+25bp",
-      "effect": "up",
-      "title": "Bank failures drag short-term yields lower",
-      "text": "The failure of Silicon Valley Bank in March 2023 pulled the 2-year yield down by about 1 percentage point in three days, while the Fed still raised rates. The strategy gained because short-term yields fell faster than long-term yields."
-    },
-    {
-      "date": "September 2024",
-      "theme": "Rate cuts",
-      "fig": "−50bp",
-      "effect": "up",
-      "title": "First Fed cut since 2020 steepens the curve",
-      "text": "The Federal Reserve cut its policy rate by 50 basis points in September 2024, its first cut since 2020, as the 2-year yield fell below the 10-year yield. The strategy gained as the curve moved from inversion to a positive slope."
-    }
-  ],
-  "worstWhen": "June 2022",
-  "startYear": 2010,
-  "period": "January 2010 to December 2025; 192 monthly observations",
-  "instrument": "US Treasury futures, 2-year and 10-year contracts; rolled quarterly",
-  "rules": "Long 2-year and short 10-year futures, weighted equally by duration risk; opened when the 2s10s spread is below its one-year average and cuts are priced in; reduced before inflation data and Federal Open Market Committee meetings",
-  "costs": "Estimated bid-ask spreads, commissions and roll costs deducted at each quarterly roll",
-  "constructionTitle": "Strategy construction, from curve slope to rate-rise protection",
-  "legs": [
-    {
-      "position": "Long 2-year Treasury futures",
-      "instrument": "US Treasury futures",
-      "purpose": "Gains when short-term yields fall",
-      "allocation": "12% margin"
-    },
-    {
-      "position": "Short 10-year Treasury futures",
-      "instrument": "US Treasury futures",
-      "purpose": "Offsets the interest rate risk of the long leg",
-      "allocation": "12% margin"
-    },
-    {
-      "position": "Put options on 2-year futures",
-      "instrument": "Treasury futures options",
-      "purpose": "Limits losses if short-term yields rise",
-      "allocation": "1%"
-    },
-    {
-      "position": "Treasury bills",
-      "instrument": "US Treasury bills",
-      "purpose": "Provides collateral and earns the cash rate",
-      "allocation": "75%"
-    }
-  ],
-  "entry": "2s10s spread below its one-year average and rate cuts priced in",
-  "size": "Set to a 6% annualised volatility target",
-  "exit": "Position closed when the spread has widened by 40 basis points, or after 6 months",
-  "stop": "All positions closed if the 2-year yield rises 50 basis points in a month",
-  "marketWatch": "The gap between 2-year and 10-year Treasury yields, the policy rate path priced by the market and the level of long-term yields relative to inflation expectations are the main indicators for this strategy. Rehyn watches labour market data and Federal Reserve meetings because they change the expected pace of rate cuts. Large Treasury auctions and fiscal policy announcements also matter because higher long-term yields can steepen the curve through the 10-year leg.",
-  "favourable": [
-    {
-      "heading": "Expected central bank rate cuts",
-      "text": "Expected rate cuts favour the strategy because they lower short-term yields, which follow the policy rate, by more than long-term yields, which depend on growth and inflation over a decade. In January 2008 the Fed cut by 125 basis points, and the 2-year yield fell more than twice as much as the 10-year yield."
-    },
-    {
-      "heading": "Rising term premium on long bonds",
-      "text": "A higher term premium favours the strategy because investors demand more compensation for holding long-dated bonds, which lifts the 10-year yield relative to the 2-year yield. In April 2025, concern about US trade policy and the budget deficit pushed the 10-year yield up by about 50 basis points in a week, while the 2-year yield rose by less."
-    },
-    {
-      "heading": "Banking or growth scares",
-      "text": "A banking or growth scare favours the strategy because investors expect the Fed to cut quickly, which lowers 2-year yields faster than 10-year yields. In March 2023 the 2-year yield fell about 1 percentage point in three days, while the 10-year yield fell by about 0.4."
-    }
-  ],
-  "adverse": [
-    {
-      "heading": "Rapid rate rises by the Fed",
-      "text": "Rapid policy tightening hurts the strategy because short-term yields rise above long-term yields, which inverts the curve. In 2022 the Fed raised its policy rate by 425 basis points, so the 2s10s spread fell from about 80 basis points to about minus 50."
-    },
-    {
-      "heading": "Rallies in long-dated bonds",
-      "text": "A rally in long-dated bonds hurts the strategy because the 10-year yield falls by more than the 2-year yield, which flattens the curve. In December 2008, bond purchases by the Fed pulled the 10-year yield down by about 70 basis points in a month, while the 2-year yield fell by about 20."
-    },
-    {
-      "heading": "Oil price shocks lifting inflation",
-      "text": "A supply shock that lifts oil prices hurts the strategy because higher inflation delays rate cuts and raises short-term yields. In March 2022, Brent crude rose above 120 dollars after Russia's invasion of Ukraine, the 2-year yield rose about 80 basis points in the month and the curve flattened."
-    }
-  ],
-  "past": [
-    {
-      "name": "Rate rise, Jun 2022",
-      "value": -8
-    },
-    {
-      "name": "Ukraine war, Mar 2022",
-      "value": -6
-    },
-    {
-      "name": "Operation Twist, Sep 2011",
-      "value": -4
-    },
-    {
-      "name": "Curve inversion, Aug 2019",
-      "value": -3
-    },
-    {
-      "name": "Brexit vote, Jun 2016",
-      "value": -2
-    }
-  ],
-  "ahead": [
-    1.4,
-    -1.6,
-    0.2,
-    2.4
-  ],
-  "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
-  "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in 2-year and 10-year Treasury yields and implied rate volatility, which are then applied to the strategy's current futures positions, including the protective options.",
-  "altTitle": "Where Else Can Investors Find Interest Rate Returns?",
-  "related": [
-    {
-      "id": "r5",
-      "why": "Trades kinks along the curve while staying neutral to its level and slope. Bears model risk, losing when kinks widen further.",
-      "cue": "Earns from curve shape, not slope"
-    },
-    {
-      "id": "m7",
-      "why": "Follows rate trends in either direction using bond futures. Bears reversals, losing when trends break down.",
-      "cue": "Profits when rate cycles run further"
-    },
-    {
-      "id": "d6",
-      "why": "Holds long Treasuries outright. Bears inflation and rising yields, losing when stocks and bonds fall together.",
-      "cue": "Holds duration, not curve slope"
-    }
-  ]
+ "id": "c2",
+ "name": "Yield curve steepener trade",
+ "heading": "The Structural Opportunity: Positioning for Curve Steepening",
+ "caseLead": "A yield curve steepener benefits when short-term Treasury yields fall relative to long-term yields, often as the Federal Reserve begins to cut interest rates. The trade can benefit from the difference between policy-sensitive short-term yields and long-term yields driven by growth, inflation and Treasury supply, particularly when government borrowing puts upward pressure on long-term rates.",
+ "caseRest": "The main risk is a flatter yield curve, either because short-term rates rise faster than expected or because long-term bonds rally. In 2022, short-term yields rose above long-term yields as inflation forced rapid rate rises, and the position lost for months. A strategy that is correct on the direction of rates can therefore still lose, because its return depends on the gap between maturities rather than on the level of yields.",
+ "figNote": "Each card shows the change in the Federal Reserve's target policy rate during the episode, in basis points, where 100 basis points equal one percentage point. The strategy tends to gain when expected cuts pull short-term yields down faster than long-term yields, and to lose when rate rises lift short-term yields above them.",
+ "events": [
+  {
+   "date": "January 2008",
+   "theme": "Recession fears",
+   "fig": "−125bp",
+   "effect": "up",
+   "title": "Emergency cuts steepen the Treasury curve",
+   "text": "The Federal Reserve cut its policy rate by 125 basis points in January 2008, including an emergency cut, as recession risks grew. The strategy gained because the 2-year yield fell about 1 percentage point, more than twice the fall in the 10-year yield."
+  },
+  {
+   "date": "December 2008",
+   "theme": "Quantitative easing",
+   "fig": "−75bp",
+   "effect": "down",
+   "title": "Bond purchases pull long-term yields lower",
+   "text": "The Federal Reserve cut its policy rate to a range of zero to 0.25% in December 2008 after announcing mortgage bond purchases, which pulled the 10-year yield down to 2.2%. The strategy lost because the 10-year yield fell by more than the 2-year yield."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−150bp",
+   "effect": "mid",
+   "title": "Covid emergency cuts meet a Treasury sell-off",
+   "text": "The Federal Reserve cut its policy rate by 150 basis points in March 2020, while the 10-year yield rose from 0.5% to 1.3% in under two weeks. Results were mixed because the curve steepened but wider bid-ask spreads reduced the gain."
+  },
+  {
+   "date": "June 2022",
+   "theme": "Inflation",
+   "fig": "+75bp",
+   "effect": "down",
+   "title": "Fed rate rise flattens the Treasury curve",
+   "text": "The Federal Reserve raised its policy rate by 75 basis points in June 2022, the largest rise since 1994, as the war in Ukraine kept energy prices high. The strategy lost because the 2-year yield rose above the 10-year yield."
+  },
+  {
+   "date": "March 2023",
+   "theme": "Banking stress",
+   "fig": "+25bp",
+   "effect": "up",
+   "title": "Bank failures drag short-term yields lower",
+   "text": "The failure of Silicon Valley Bank in March 2023 pulled the 2-year yield down by about 1 percentage point in three days, while the Fed still raised rates. The strategy gained because short-term yields fell faster than long-term yields."
+  },
+  {
+   "date": "September 2024",
+   "theme": "Rate cuts",
+   "fig": "−50bp",
+   "effect": "up",
+   "title": "First Fed cut since 2020 steepens the curve",
+   "text": "The Federal Reserve cut its policy rate by 50 basis points in September 2024, its first cut since 2020, as the 2-year yield fell below the 10-year yield. The strategy gained as the curve moved from inversion to a positive slope."
+  }
+ ],
+ "worstWhen": "June 2022",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "US Treasury futures, 2-year and 10-year contracts; rolled quarterly",
+ "rules": "Long 2-year and short 10-year futures, weighted equally by duration risk; opened when the 2s10s spread is below its one-year average and cuts are priced in; reduced before inflation data and Federal Open Market Committee meetings",
+ "costs": "Estimated bid-ask spreads, commissions and roll costs deducted at each quarterly roll",
+ "constructionTitle": "Strategy construction, from curve slope to rate-rise protection",
+ "legs": [
+  {
+   "position": "Long 2-year Treasury futures",
+   "instrument": "US Treasury futures",
+   "purpose": "Gains when short-term yields fall",
+   "allocation": "12% margin"
+  },
+  {
+   "position": "Short 10-year Treasury futures",
+   "instrument": "US Treasury futures",
+   "purpose": "Offsets the interest rate risk of the long leg",
+   "allocation": "12% margin"
+  },
+  {
+   "position": "Put options on 2-year futures",
+   "instrument": "Treasury futures options",
+   "purpose": "Limits losses if short-term yields rise",
+   "allocation": "1%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "75%"
+  }
+ ],
+ "entry": "2s10s spread below its one-year average and rate cuts priced in",
+ "size": "Set to a 6% annualised volatility target",
+ "exit": "Position closed when the spread has widened by 40 basis points, or after 6 months",
+ "stop": "All positions closed if the 2-year yield rises 50 basis points in a month",
+ "marketWatch": "The gap between 2-year and 10-year Treasury yields, the policy rate path priced by the market and the level of long-term yields relative to inflation expectations are key indicators. Rehyn watches labour market data and Federal Reserve meetings because they change the expected pace of rate cuts. Large Treasury auctions and fiscal policy announcements also matter because higher long-term yields can steepen the curve through the 10-year leg.",
+ "favourable": [
+  {
+   "heading": "Expected central bank rate cuts",
+   "text": "Expected rate cuts favour the strategy because they lower short-term yields, which follow the policy rate, by more than long-term yields, which depend on growth and inflation over a decade. In January 2008 the Fed cut by 125 basis points, and the 2-year yield fell more than twice as much as the 10-year yield."
+  },
+  {
+   "heading": "Rising term premium on long bonds",
+   "text": "A higher term premium favours the strategy because investors demand more compensation for holding long-dated bonds, which lifts the 10-year yield relative to the 2-year yield. In April 2025, concern about US trade policy and the budget deficit pushed the 10-year yield up by about 50 basis points in a week, while the 2-year yield rose by less."
+  },
+  {
+   "heading": "Banking or growth scares",
+   "text": "A banking or growth scare favours the strategy because investors expect the Fed to cut quickly, which lowers 2-year yields faster than 10-year yields. In March 2023 the 2-year yield fell about 1 percentage point in three days, while the 10-year yield fell by about 0.4."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Rapid rate rises by the Fed",
+   "text": "Rapid policy tightening hurts the strategy because short-term yields rise above long-term yields, which inverts the curve. In 2022 the Fed raised its policy rate by 425 basis points, so the 2s10s spread fell from about 80 basis points to about minus 50."
+  },
+  {
+   "heading": "Rallies in long-dated bonds",
+   "text": "A rally in long-dated bonds hurts the strategy because the 10-year yield falls by more than the 2-year yield, which flattens the curve. In December 2008, bond purchases by the Fed pulled the 10-year yield down by about 70 basis points in a month, while the 2-year yield fell by about 20."
+  },
+  {
+   "heading": "Oil price shocks lifting inflation",
+   "text": "A supply shock that lifts oil prices hurts the strategy because higher inflation delays rate cuts and raises short-term yields. In March 2022, Brent crude rose above 120 dollars after Russia's invasion of Ukraine, the 2-year yield rose about 80 basis points in the month and the curve flattened."
+  }
+ ],
+ "past": [
+  {
+   "name": "Rate rise, Jun 2022",
+   "value": -8
+  },
+  {
+   "name": "Ukraine war, Mar 2022",
+   "value": -6
+  },
+  {
+   "name": "Operation Twist, Sep 2011",
+   "value": -4
+  },
+  {
+   "name": "Curve inversion, Aug 2019",
+   "value": -3
+  },
+  {
+   "name": "Brexit vote, Jun 2016",
+   "value": -2
+  }
+ ],
+ "ahead": [
+  1.4,
+  -1.6,
+  0.2,
+  2.4
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in 2-year and 10-year Treasury yields and implied rate volatility, which are then applied to the strategy's current futures positions, including the protective options.",
+ "altTitle": "Where Else Can Investors Find Interest Rate Returns?",
+ "related": [
+  {
+   "id": "r5",
+   "why": "Trades kinks along the curve while staying neutral to its level and slope. Bears model risk, losing when kinks widen further.",
+   "cue": "Earns from curve shape, not slope"
+  },
+  {
+   "id": "m7",
+   "why": "Follows rate trends in either direction using bond futures. Bears reversals, losing when trends break down.",
+   "cue": "Profits when rate cycles run further"
+  },
+  {
+   "id": "d6",
+   "why": "Holds long Treasuries outright. Bears inflation and rising yields, losing when stocks and bonds fall together.",
+   "cue": "Holds duration, not curve slope"
+  }
+ ]
 }
