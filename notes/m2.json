@@ -2,7 +2,7 @@
  "id": "m2",
  "name": "Equity momentum investing",
  "heading": "The Structural Opportunity: Investor Underreaction and Herding",
- "caseLead": "Stocks with the strongest performance over the previous six to twelve months have often continued to outperform in the following months. It persists because investors adjust slowly to new information about earnings and policy, and because rising prices attract buying from funds that follow performance, while geopolitical and policy shifts that reorder sector leadership, such as the rise of energy shares after 2022, create new leaders gradually.",
+ "caseLead": "Stocks with the strongest performance over the previous six to twelve months have often continued to outperform in the following months. The persistence reflects gradual revisions to earnings expectations and institutional positions, although sudden changes in economic or policy conditions can reverse market leadership.",
  "caseRest": "Momentum strategies are vulnerable to abrupt reversals in market leadership, particularly after sharp equity sell-offs. These reversals tend to follow severe sell-offs, when the weakest shares rebound fastest, so the strategy can lose heavily just as markets recover. Because the portfolio holds only equities, it also falls with the market in a broad sell-off, so its drawdowns can be deep.",
  "figNote": "Each card shows how far the S&P 500 moved during the episode, over the period described in the text. Momentum returns depend on how leadership changes inside the market, so the index move shows the market backdrop rather than the strategy's return.",
  "events": [
