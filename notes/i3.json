@@ -2,7 +2,7 @@
  "id": "i3",
  "name": "Investment grade bond laddering",
  "heading": "The Structural Opportunity: Earning the Credit Spread",
- "caseLead": "Investment-grade corporate bonds offer additional yield over government bonds to compensate for credit and liquidity risk. The spread persists because investors price in rare but severe credit losses, and because geopolitical and policy shocks regularly raise the cost of corporate borrowing even though most investment grade issuers repay in full.",
+ "caseLead": "Investment-grade corporate bonds offer additional yield over government bonds to compensate for credit and liquidity risk. Credit spreads compensate investors for potential defaults and the difficulty of selling bonds in stressed markets, even though most investment-grade issuers repay their debt in full.",
  "caseRest": "Bond prices can fall sharply if credit spreads widen at the same time as government bond yields rise. A ladder reduces reinvestment risk, but it does not protect the market value of the bonds before they mature. In 2022 and in March 2020 the portfolio lost value even though almost all of the bonds were later repaid at par.",
  "figNote": "Each card shows the widest level of the investment grade credit spread during the episode. The spread is the extra yield that US investment grade corporate bonds pay over Treasuries, which has averaged about 1.5% over the long run, and readings above 3% signal severe stress.",
  "events": [
