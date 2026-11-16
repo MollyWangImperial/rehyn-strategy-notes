@@ -2,9 +2,9 @@
  "id": "i7",
  "name": "Direct lending",
  "heading": "The Structural Opportunity: Earning the Private Lending Premium",
- "caseLead": "The investment case rests on the premium that private lenders earn over syndicated loans for lending directly to mid-sized companies that are too small or complex for public bond and loan markets. The premium persists because banks hold less mid-market lending under capital rules, borrowers pay for speed, certainty and a single lender to negotiate with, and trade policy and geopolitical shocks keep banks cautious about riskier credit.",
- "caseRest": "The main risk is credit losses that build as borrowers with high debt face higher interest payments and weaker earnings. Because the loans are valued infrequently and cannot be sold quickly, reported volatility understates the true risk and losses appear with a delay. A rise in defaults in a recession could therefore reduce returns for several quarters after markets have recovered.",
- "figNote": "The large figure on each card shows the upper limit of the Federal Reserve's target range for its policy rate at the end of the episode. Direct loans pay a floating rate set above this benchmark, so the policy rate largely determines the base income before the lending margin.",
+ "caseLead": "Direct lenders can earn higher yields than investors in syndicated loans by providing tailored financing to mid-sized companies. The premium persists because banks hold less mid-market lending under capital rules, borrowers pay for speed, certainty and a single lender to negotiate with, and trade policy and geopolitical shocks keep banks cautious about riskier credit.",
+ "caseRest": "Credit losses can rise when highly indebted borrowers face weaker earnings and higher interest costs. Because the loans are valued infrequently and cannot be sold quickly, reported volatility understates the true risk and losses appear with a delay. A rise in defaults in a recession could therefore reduce returns for several quarters after markets have recovered.",
+ "figNote": "Each card shows the upper limit of the Federal Reserve's target range for its policy rate at the end of the episode. Direct loans pay a floating rate set above this benchmark, so the policy rate largely determines the base income before the lending margin.",
  "events": [
   {
    "date": "December 2018",
