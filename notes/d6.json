@@ -2,7 +2,7 @@
  "id": "d6",
  "name": "Long-duration Treasury hedge",
  "heading": "The Structural Opportunity: Protection When Growth Weakens",
- "caseLead": "Long-dated US Treasuries generally gain when growth expectations weaken or demand for safe assets rises, as falling yields increase their prices. The relationship persists because the Fed tends to cut rates in a downturn and because global investors hold US government debt as the main safe asset, so geopolitical stress usually adds to demand.",
+ "caseLead": "Long-dated US Treasuries generally gain when growth expectations weaken or demand for safe assets rises, as falling yields increase their prices. The hedge benefits from Federal Reserve easing and demand for safe assets during growth slowdowns, but its effectiveness depends on whether inflation is also falling.",
  "caseRest": "Rising inflation can undermine the hedge because higher yields reduce bond prices, sometimes alongside falling equities. In 2022 long-dated Treasuries lost about 30 per cent while the S&P 500 fell about 18 per cent, so the hedge failed when it was needed. As a result, the strategy protects against falling growth but not against rising inflation or heavy government borrowing.",
  "figNote": "Each card shows the change in the US ten year Treasury yield over the episode, in basis points, where 100 basis points equal one percentage point. A fall in yield raises the price of long-dated bonds, so a negative figure benefits this strategy.",
  "events": [
