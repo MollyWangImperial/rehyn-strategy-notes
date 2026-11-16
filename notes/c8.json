@@ -3,7 +3,7 @@
  "name": "Autocallable note laddering",
  "heading": "The Structural Opportunity: Selling Equity Downside Risk",
  "caseLead": "Autocallable notes offer higher coupons in exchange for the risk of substantial capital losses if the underlying equity index breaches its barrier at maturity. Their coupons reflect the value of equity downside risk and demand for structured income, while geopolitical and policy uncertainty can increase the cost of that embedded protection.",
- "caseRest": "A substantial equity decline can breach the note's capital protection barrier, leaving investors exposed to losses on the underlying index. Several notes can reach their barriers at the same time because they refer to the same markets, so a single market fall affects the whole ladder. A high coupon therefore overstates the safety of the return, as it does not compensate for the rare periods when equity indices fall by more than 30%.",
+ "caseRest": "A substantial equity decline can breach a note's capital barrier, exposing investors to losses on the underlying index. Several notes may cross their barriers together if they reference markets that fall at the same time. The regular coupon income offers limited protection against a severe decline, particularly when indices fall by more than 30%.",
  "figNote": "Each card shows the change in the S&P 500 over the episode, measured from the last high to the low in a fall and from the low to the high in a rally. Autocallable notes depend on where the index closes on set observation dates, so the figure shows how close the index came to the level that triggers early redemption or a loss of principal.",
  "events": [
   {
