@@ -2,7 +2,7 @@
  "id": "d4",
  "name": "Long volatility hedging",
  "heading": "The Structural Opportunity: Profiting from Volatility Spikes",
- "caseLead": "Long VIX futures positions can provide protection against sharp equity sell-offs because volatility futures typically rise as demand for hedging increases. The opportunity persists because volatility is more likely to jump than to fall steadily, and because geopolitical and policy events, such as tariff announcements and central bank surprises, can lift expected volatility within hours.",
+ "caseLead": "Long VIX futures positions can provide protection against sharp equity sell-offs because volatility futures typically rise as demand for hedging increases. The exposure is valuable during sudden increases in expected volatility, especially around geopolitical events and policy surprises, although holding it involves a recurring cost in calmer markets.",
  "caseRest": "The main cost is the loss on rolling VIX futures in a typical upward-sloping futures market. This roll cost accumulates in calm markets, so the strategy can lose money for years before a spike offsets the losses. As a result, the hedge is effective only if the portfolio can tolerate steady losses and the size is kept small.",
  "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
