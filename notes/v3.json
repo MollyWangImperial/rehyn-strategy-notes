@@ -2,7 +2,7 @@
  "id": "v3",
  "name": "Value factor investing",
  "heading": "The Structural Opportunity: Compensation for Investor Extrapolation",
- "caseLead": "Value investing benefits when shares priced for weak earnings subsequently perform better than investors expect. The premium persists because career risk discourages managers from holding unpopular companies, while regulation, industrial policy and geopolitical change repeatedly shift earnings towards previously discounted sectors.",
+ "caseLead": "Value investing benefits when shares priced for weak earnings subsequently perform better than investors expect. This mispricing can persist because investors favour companies with strong recent results, while career risk and changing sector policies discourage investment in less popular businesses.",
  "caseRest": "Low valuations do not guarantee recovery, especially when companies face persistent financial or competitive pressures. Value can also underperform for many years when falling interest rates and rapid technological change support long-duration growth shares, so investors may leave before the premium recovers. Negative return skew compounds this timing risk because recessions often expose financial leverage and weak margins across value-heavy sectors at the same time.",
  "figNote": "Each card shows the calendar-year return of the MSCI World Value Index relative to the MSCI World Growth Index, rounded to the nearest percentage point. A positive figure means value outperformed growth, while a negative figure means the value tilt detracted from relative returns.",
  "events": [
