@@ -2,9 +2,9 @@
  "id": "d1",
  "name": "Tail risk hedging",
  "heading": "The Structural Opportunity: Insurance Against Market Crashes",
- "caseLead": "The investment case rests on the tendency of S&P 500 index puts to gain several times their cost when equities fall sharply, which gives the portfolio a payoff that grows faster than the loss in the index. The opportunity persists because crashes are rare, so most investors hold little protection in calm markets, while geopolitical and policy shocks such as tariff announcements and central bank surprises can lift demand for puts within days.",
- "caseRest": "The main risk is the steady cost of the premium, because most puts expire with little or no value when the S&P 500 stays stable or rises. This cost can accumulate for years, so the strategy can lose money in most months before a single sell-off repays it. As a result, the hedge is useful only if the portfolio can tolerate repeated small losses and the premium budget is kept small.",
- "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "caseLead": "S&P 500 put options can provide substantial protection during sharp equity sell-offs because their value generally rises as the index falls and implied volatility increases. The opportunity persists because crashes are rare, so most investors hold little protection in calm markets, while geopolitical and policy shocks such as tariff announcements and central bank surprises can lift demand for puts within days.",
+ "caseRest": "The main cost is the repeated option premium paid during periods without a major market decline. This cost can accumulate for years, so the strategy can lose money in most months before a single sell-off repays it. As a result, the hedge is useful only if the portfolio can tolerate repeated small losses and the premium budget is kept small.",
+ "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
   {
    "date": "October 2008",
@@ -86,7 +86,7 @@
  "size": "Premium capped at 2% of capital a year",
  "exit": "Puts sold at 3 times cost or 30 days before expiry",
  "stop": "No new puts bought once the annual premium budget is spent",
- "marketWatch": "The cost of three month puts relative to recent realised volatility, the VIX term structure and the difference in implied volatility between downside and at-the-money options are the indicators that matter most. Scheduled central bank decisions, tariff announcements and elections can raise the likelihood of a large market move. Rehyn watches whether protection is cheap relative to the range of recent index moves.",
+ "marketWatch": "The cost of three month puts relative to recent realised volatility, the VIX term structure and the difference in implied volatility between downside and at-the-money options are key indicators. Scheduled central bank decisions, tariff announcements and elections can raise the likelihood of a large market move. Rehyn watches whether protection is cheap relative to the range of recent index moves.",
  "favourable": [
   {
    "heading": "Sudden equity sell-offs",
