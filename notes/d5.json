@@ -2,7 +2,7 @@
  "id": "d5",
  "name": "Minimum volatility equity",
  "heading": "The Structural Opportunity: Avoiding Overpriced Volatile Shares",
- "caseLead": "Stocks with relatively low volatility have historically delivered competitive returns with less price fluctuation than the broader market. The anomaly persists because many investors cannot use leverage, so they buy volatile shares to reach their return targets and push prices above fair value, while geopolitical and policy shocks tend to hurt volatile cyclical companies more than stable ones.",
+ "caseLead": "Stocks with relatively low volatility have historically delivered competitive returns with less price fluctuation than the broader market. The pattern can persist because investors seeking higher returns often favour volatile stocks, while economically defensive companies can be more resilient when growth and policy expectations weaken.",
  "caseRest": "The strategy can lag the wider market for extended periods when investors favour cyclical or high-growth shares. Valuations on stable shares can also become expensive because many investors buy them for protection, which makes the portfolio vulnerable when bond yields rise. The portfolio also loses money in a broad sell-off, because lower volatility reduces market risk but does not remove it.",
  "figNote": "Each card shows the percentage change in the S&P 500 over the episode, from its last high to its low in a sell-off or over the month in a rally. A minimum volatility portfolio is built to lose less than this figure in a fall and to gain less in a rally.",
  "events": [
