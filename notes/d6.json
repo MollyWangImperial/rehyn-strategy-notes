@@ -1,0 +1,172 @@
+{
+ "id": "d6",
+ "name": "Long-duration Treasury hedge",
+ "heading": "The Structural Opportunity: Protection When Growth Weakens",
+ "caseLead": "The investment case rests on the tendency of long-dated Treasuries to rise in price when growth slows or investors seek safety, because yields fall and long-dated bonds are highly sensitive to changes in yield. The relationship persists because the Fed tends to cut rates in a downturn and because global investors hold US government debt as the main safe asset, so geopolitical stress usually adds to demand.",
+ "caseRest": "The main risk is inflation, because rising prices push yields higher and cut the value of long-dated bonds at the same time as equities fall. In 2022 long-dated Treasuries lost about 30 per cent while the S&P 500 fell about 18 per cent, so the hedge failed when it was needed. As a result, the strategy protects against falling growth but not against rising inflation or heavy government borrowing.",
+ "figNote": "The large figure on each card shows the change in the US ten year Treasury yield over the episode, in basis points, where 100 basis points equal one percentage point. A fall in yield raises the price of long-dated bonds, so a negative figure benefits this strategy.",
+ "events": [
+  {
+   "date": "August 2011",
+   "theme": "Credit rating",
+   "fig": "−60bp",
+   "effect": "up",
+   "title": "US downgrade drives investors into Treasuries",
+   "text": "The US credit rating downgrade and euro area debt worries led investors to buy Treasuries, and the ten year yield fell about 60bp in August 2011. The strategy gained because lower yields raised the price of long-dated bonds."
+  },
+  {
+   "date": "June 2016",
+   "theme": "Brexit",
+   "fig": "−40bp",
+   "effect": "up",
+   "title": "Brexit vote pushes Treasury yields to record lows",
+   "text": "The June 2016 vote to leave the European Union led investors to buy Treasuries, and the ten year yield fell about 40bp to a record low in early July. The strategy gained because long-dated bonds rose in price by more than shorter-dated ones."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−100bp",
+   "effect": "mid",
+   "title": "Covid crash lifts Treasuries then forces selling",
+   "text": "The ten year Treasury yield fell about 100bp to 0.5 per cent by 9 March 2020 as investors expected emergency rate cuts. Results were mixed because the yield rose back above 1 per cent within nine days when funds sold Treasuries to raise cash."
+  },
+  {
+   "date": "February 2022",
+   "theme": "Inflation",
+   "fig": "+270bp",
+   "effect": "down",
+   "title": "Inflation and Fed rate rises hit long bonds",
+   "text": "Higher inflation, energy prices after Russia's invasion of Ukraine and Fed rate rises lifted the ten year yield about 270bp between the end of 2021 and October 2022. The strategy lost heavily because stocks and bonds fell together, so Treasuries gave no protection."
+  },
+  {
+   "date": "March 2023",
+   "theme": "Banking stress",
+   "fig": "−60bp",
+   "effect": "up",
+   "title": "Bank failures push investors into Treasuries",
+   "text": "The failures of Silicon Valley Bank and Signature Bank in March 2023 led the ten year yield to fall about 60bp in under two weeks. The strategy gained because long-dated bonds rose in price as markets priced in Fed rate cuts."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "+50bp",
+   "effect": "down",
+   "title": "US tariffs push Treasury yields higher",
+   "text": "After the April 2025 tariff announcement, the ten year yield rose about 50bp in a week even as equities fell. The strategy lost because long-dated Treasuries did not hedge equity losses, as investors sold US assets."
+  }
+ ],
+ "worstWhen": "October 2023",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "US Treasury bonds, ETFs and futures with 20 years or more to maturity; rolled quarterly",
+ "rules": "Constant duration of about 17 years; position halved if the ten year yield rises 100bp in three months; inflation-linked bonds held as a partial offset",
+ "costs": "Estimated bid-ask spreads, fund fees and futures roll costs deducted",
+ "constructionTitle": "Strategy construction, from bond price gains to inflation risk control",
+ "legs": [
+  {
+   "position": "Long 20 year plus Treasury fund",
+   "instrument": "Treasury ETFs",
+   "purpose": "Gains when yields fall",
+   "allocation": "50%"
+  },
+  {
+   "position": "Long Treasury bond futures",
+   "instrument": "US Treasury futures",
+   "purpose": "Adds duration at lower cost",
+   "allocation": "30%"
+  },
+  {
+   "position": "Inflation-linked Treasuries, 5 to 10 years",
+   "instrument": "TIPS funds",
+   "purpose": "Limits losses when inflation rises",
+   "allocation": "10%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides margin and earns the cash rate",
+   "allocation": "10%"
+  }
+ ],
+ "entry": "Bonds bought when inflation expectations are below 3%",
+ "size": "Set to an 11% annualised volatility target",
+ "exit": "Rebalanced quarterly to the target duration",
+ "stop": "Position halved if the ten year yield rises 100bp in three months",
+ "marketWatch": "Inflation expectations, the Fed's expected policy rate path and the supply of new Treasury bonds are the main indicators, because they determine whether yields fall when growth weakens. Scheduled inflation releases, central bank meetings and fiscal announcements can change the yield curve quickly. Rehyn also watches the correlation between stocks and bonds, because a positive correlation reduces the hedge.",
+ "favourable": [
+  {
+   "heading": "Banking or growth scares",
+   "text": "Sudden growth fears favour the strategy because investors expect the Fed to cut rates and buy Treasuries, which pushes down yields on long-dated bonds. In March 2023 the ten year yield fell about 60bp in under two weeks as bank failures raised expectations of rate cuts."
+  },
+  {
+   "heading": "Geopolitical stress with low inflation",
+   "text": "Geopolitical stress favours the strategy when inflation is low because investors buy US government bonds as a safe asset. After the vote to leave the European Union in June 2016, the ten year yield fell to a record low."
+  },
+  {
+   "heading": "Falling inflation expectations",
+   "text": "Lower inflation expectations favour the strategy because they allow the Fed to cut rates and raise the value of fixed coupons. In 2019 the ten year yield fell from about 2.7 per cent to about 1.9 per cent and long-dated Treasuries returned more than 10 per cent."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Inflation and aggressive rate rises",
+   "text": "Rising inflation hurts the strategy because investors demand higher yields and long-dated bonds lose the most value. In 2022 long-dated Treasuries lost about 30 per cent as the ten year yield rose about 270bp."
+  },
+  {
+   "heading": "Stocks and bonds falling together",
+   "text": "A positive correlation between stocks and bonds hurts the strategy because bonds fall at the same time as equities and no longer hedge them. In April 2025 the ten year yield rose about 50bp in a week while equities fell sharply."
+  },
+  {
+   "heading": "Heavy government borrowing",
+   "text": "Heavy government borrowing hurts the strategy because investors demand higher yields to hold more long-dated debt. Between August and October 2023, rising Treasury issuance and Fed rate guidance lifted the ten year yield to 5 per cent, its highest level since 2007."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": 9
+  },
+  {
+   "name": "Volatility spike, Feb 2018",
+   "value": -4
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": 17
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": 5
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -3
+  }
+ ],
+ "ahead": [
+  4.2,
+  -3.4,
+  0.3,
+  3.6
+ ],
+ "infoHist": "Historical results show the strategy's return over each event window, measured from the last market high before the shock to the market low using the default backtest parameters above. Positive figures mean Treasuries gained while equities fell.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in the S&P 500, inflation expectations and Treasury yields, which are then applied to the strategy's current bond and futures positions.",
+ "altTitle": "Where Else Can Investors Find Safe Asset Returns?",
+ "related": [
+  {
+   "id": "m7",
+   "why": "Follows bond price trends in both directions. Bears reversal risk, losing when yield trends change abruptly.",
+   "cue": "Can profit when yields rise"
+  },
+  {
+   "id": "d2",
+   "why": "Holds gold, which pays no income. Bears real yield risk, losing when yields rise.",
+   "cue": "Can offset losses when inflation rises"
+  },
+  {
+   "id": "d3",
+   "why": "Holds the yen and Swiss franc. Bears the interest rate gap, lagging when risk assets rally.",
+   "cue": "Safe haven without bond duration"
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "id": "r6",
+ "name": "Commodity spread trading",
+ "heading": "The Structural Opportunity: Temporary Commodity Price Gaps",
+ "caseLead": "The investment case rests on the tendency of price gaps between related commodity contracts, such as different delivery months or crude oil against refined fuels, to return to levels set by storage costs and refining margins. The gaps persist because producers, refiners and airlines hedge in specific contracts while storage and shipping capacity are limited, and sanctions, production quotas and attacks on infrastructure can distort individual contracts for weeks.",
+ "caseRest": "The main risk is that a gap widens further because physical supply or storage conditions have changed, so the historical range no longer applies. This happened in April 2020 when storage was almost full and in March 2022 when sanctions made immediate supply scarce. Losses can therefore exceed what normal price movements suggest, because a position held for a gap to close is exposed to the full widening.",
+ "figNote": "The large figure on each card shows the settlement price of the front-month US crude oil futures contract (WTI) at the key point of the episode, in US dollars per barrel. The front month is the contract closest to delivery, and its price moves most when supply or storage is under stress.",
+ "events": [
+  {
+   "date": "July 2008",
+   "theme": "Oil boom",
+   "fig": "$145",
+   "effect": "mid",
+   "title": "Record oil price lifts front contract spreads",
+   "text": "The July 2008 oil price peak came as strong demand from emerging economies met slow supply growth, and WTI settled at $145 a barrel on 3 July. Results were mixed because spreads widened with the rally, then reversed within months as demand fell."
+  },
+  {
+   "date": "November 2014",
+   "theme": "OPEC policy",
+   "fig": "$66",
+   "effect": "mid",
+   "title": "OPEC holds output and oil futures curve flips",
+   "text": "OPEC's decision on 27 November 2014 to keep output unchanged ended expectations of a supply cut, and WTI settled at $66 the next day. Results were mixed because near contracts fell faster than later ones, which widened spreads that took many months to narrow."
+  },
+  {
+   "date": "February 2016",
+   "theme": "Oversupply",
+   "fig": "$26",
+   "effect": "up",
+   "title": "Storage fills as oil prices reach a low",
+   "text": "Oil prices reached a low on 11 February 2016 as US shale output and slower Chinese demand filled storage, and WTI settled at $26. The strategy gained because the wide gap between near and later contracts narrowed as production fell."
+  },
+  {
+   "date": "September 2019",
+   "theme": "Gulf attack",
+   "fig": "$63",
+   "effect": "up",
+   "title": "Drone attack on Saudi facilities lifts near contracts",
+   "text": "The September 2019 attack on Saudi oil facilities halved the country's output, and WTI settled at $63 on 16 September, up almost 15% in one day. The strategy gained because the gap between near and later contracts closed within weeks as Saudi output returned."
+  },
+  {
+   "date": "April 2020",
+   "theme": "Pandemic",
+   "fig": "−$38",
+   "effect": "down",
+   "title": "WTI oil futures settle below zero",
+   "text": "On 20 April 2020 the May WTI contract settled at minus $38 because storage at Cushing was nearly full and holders could not take delivery. The strategy lost because the gap between near and later contracts widened far beyond normal ranges before closing."
+  },
+  {
+   "date": "March 2022",
+   "theme": "War",
+   "fig": "$124",
+   "effect": "down",
+   "title": "Russian sanctions push oil spreads wider",
+   "text": "Russia's invasion of Ukraine and the sanctions that followed lifted WTI to a settlement of $124 on 8 March 2022. The strategy lost because gaps between delivery months and between crude and fuels kept widening as buyers sought immediate supply."
+  }
+ ],
+ "worstWhen": "April 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Crude oil, fuel and grain futures; calendar spreads and crack spreads; positions held for several weeks",
+ "rules": "Spread opened when it is more than two standard deviations from its three-year seasonal average; legs matched by contract size; no position in the last week before delivery",
+ "costs": "Estimated bid-ask spreads, commissions and exchange fees deducted on each trade and roll",
+ "constructionTitle": "Strategy construction, from spread normalisation to storage-based limits",
+ "legs": [
+  {
+   "position": "Calendar spreads, near against later contracts",
+   "instrument": "WTI and Brent futures",
+   "purpose": "Earns the spread returning to storage cost",
+   "allocation": "40% of risk"
+  },
+  {
+   "position": "Crack spreads, crude against fuels",
+   "instrument": "Crude, gasoline and diesel futures",
+   "purpose": "Earns refining margins returning to their range",
+   "allocation": "35% of risk"
+  },
+  {
+   "position": "Seasonal grain spreads",
+   "instrument": "Wheat and corn futures",
+   "purpose": "Earns seasonal spread reversion",
+   "allocation": "25% of risk"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides margin and earns the cash rate",
+   "allocation": "90% of capital"
+  }
+ ],
+ "entry": "Spread at least 2 standard deviations from its seasonal average",
+ "size": "Set to a 7% annualised volatility target, with at most 25% of risk in one market",
+ "exit": "Position closed when the spread returns to its average, or after 30 days",
+ "stop": "Position closed if the spread moves a further 1.5 standard deviations",
+ "marketWatch": "The indicators that matter are crude oil inventories at Cushing, the shape of the futures curve, refinery utilisation and the freight cost of moving crude and fuels between regions. Upcoming OPEC meetings, sanctions announcements and hurricane forecasts can change the spread between delivery months and between crude and fuels without a move in the outright price.",
+ "favourable": [
+  {
+   "heading": "Ample storage and steady supply",
+   "text": "Ample storage and steady production favour the strategy because gaps between delivery months stay close to storage costs. In 2017 OPEC output cuts reduced stocks gradually, and spreads that widened tended to reverse."
+  },
+  {
+   "heading": "Short-lived supply disruptions",
+   "text": "Brief disruptions favour the strategy because spreads rise on immediate shortages and fall back when supply returns. After the September 2019 attack on Saudi facilities, near-dated spreads rose sharply and closed within about two weeks."
+  },
+  {
+   "heading": "Predictable seasonal demand",
+   "text": "Seasonal demand patterns favour the strategy because spreads tend to widen and narrow at the same points each year, which gives a reference for fair value. Gasoline margins have typically peaked before the summer driving season and narrowed afterwards."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Full storage capacity",
+   "text": "Full storage hurts the strategy because near-dated prices must fall until holders accept delivery, so spreads widen far beyond their normal range. In April 2020 the May WTI contract settled at minus $38 while later contracts stayed positive."
+  },
+  {
+   "heading": "Sanctions and export bans",
+   "text": "Sanctions and export bans hurt the strategy because they remove supply from one market and keep spreads wide while buyers search for alternatives. After sanctions on Russian energy in 2022, the gap between crude and diesel stayed elevated for months."
+  },
+  {
+   "heading": "Shifts in OPEC supply policy",
+   "text": "A sudden change in OPEC output policy hurts the strategy because it alters the expected balance of supply and demand, so a spread moves to a new range instead of reverting. After OPEC's decision in November 2014 to keep output unchanged, near contracts stayed below later ones for more than a year."
+  }
+ ],
+ "past": [
+  {
+   "name": "Negative oil price, Apr 2020",
+   "value": -12
+  },
+  {
+   "name": "Russia sanctions, Mar 2022",
+   "value": -7
+  },
+  {
+   "name": "OPEC decision, Nov 2014",
+   "value": -4
+  },
+  {
+   "name": "Oil price low, Feb 2016",
+   "value": 2
+  },
+  {
+   "name": "Gulf attack, Sep 2019",
+   "value": 3
+  }
+ ],
+ "ahead": [
+  -2.4,
+  -3.8,
+  -0.5,
+  0.4
+ ],
+ "infoHist": "Historical results show the strategy's return during each event, measured from its value at the last market high before the shock to its value at the market low, using the default backtest parameters above. Losses reflect spreads that widened further after the position was opened.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in crude oil, refined fuel prices, futures curve shape and storage levels, which are then applied to the strategy's current spread positions.",
+ "altTitle": "Where Else Can Investors Find Commodity Market Returns?",
+ "related": [
+  {
+   "id": "m5",
+   "why": "Follows price trends in energy, metals and farm products. Bears reversal risk, losing when trends stall.",
+   "cue": "Earns when commodity trends persist"
+  },
+  {
+   "id": "c3",
+   "why": "Holds futures where the curve slopes down to earn the roll. Bears curve risk, losing when the curve flattens.",
+   "cue": "Earns the curve shape this strategy trades"
+  },
+  {
+   "id": "e6",
+   "why": "Trades energy and farm disruptions using past episodes. Bears timing risk, losing when disruptions fade quickly.",
+   "cue": "Positions for supply shocks that widen spreads"
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "id": "r7",
+ "name": "Index futures mean reversion",
+ "heading": "The Structural Opportunity: Short-Term Index Overreaction",
+ "caseLead": "The investment case rests on the tendency of stock index futures to reverse part of a sharp one-day move that company earnings or economic data do not explain, because forced selling and large orders push prices past fair value. The reversal persists because index funds, leveraged investors and options hedgers trade at set times regardless of price, while policy announcements, tariff headlines and geopolitical news trigger moves that often fade as the information is absorbed.",
+ "caseRest": "The main risk is that a large fall marks the start of a sustained decline instead of a temporary overreaction, so buying after the fall adds to losses. This happened in October 2008 and March 2020, when falls continued for days or weeks as funding conditions worsened. Because the strategy earns small gains in most months, a single such episode can erase several months of returns.",
+ "figNote": "The large figure on each card shows the largest one-day fall in the S&P 500 during the episode. A one-day fall of more than 3% is uncommon, and it usually means that forced selling is driving prices.",
+ "events": [
+  {
+   "date": "October 2008",
+   "theme": "Financial crisis",
+   "fig": "−9.0%",
+   "effect": "down",
+   "title": "Bank failures extend the sell-off for weeks",
+   "text": "The October 2008 sell-off followed the Lehman Brothers failure, and the S&P 500 fell 9.0% on 15 October as credit markets froze. The strategy lost because falls continued for days after each decline, so buying after a large fall added to losses."
+  },
+  {
+   "date": "August 2011",
+   "theme": "Sovereign downgrade",
+   "fig": "−6.7%",
+   "effect": "up",
+   "title": "US credit downgrade triggers a sharp one-day fall",
+   "text": "The S&P 500 fell 6.7% on 8 August 2011, the first trading day after Standard and Poor's cut the US credit rating. The strategy gained because the index rose 4.7% the next day, so buying after the fall captured much of the rebound."
+  },
+  {
+   "date": "June 2016",
+   "theme": "Brexit vote",
+   "fig": "−3.6%",
+   "effect": "up",
+   "title": "UK vote to leave the EU shocks markets",
+   "text": "The S&P 500 fell 3.6% on 24 June 2016 after the United Kingdom voted to leave the European Union. The strategy gained because the index recovered most of the loss within a week as central banks signalled support."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−12.0%",
+   "effect": "down",
+   "title": "Covid lockdowns cause the largest fall since 1987",
+   "text": "The S&P 500 fell 12.0% on 16 March 2020, its largest one-day fall since 1987, as the pandemic forced lockdowns. The strategy lost because falls continued for another week, so buying each decline compounded losses."
+  },
+  {
+   "date": "August 2024",
+   "theme": "Carry trade",
+   "fig": "−3.0%",
+   "effect": "up",
+   "title": "Bank of Japan rate rise unwinds yen trades",
+   "text": "The S&P 500 fell 3.0% on 5 August 2024 as a Bank of Japan rate rise forced the unwinding of yen-funded positions. The strategy gained because the index rose 1.0% the next day and recovered most of the loss within two weeks."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "−6.0%",
+   "effect": "mid",
+   "title": "US tariffs cause a sharp fall and rebound",
+   "text": "The S&P 500 fell 6.0% on 4 April 2025 after the announcement of broad US tariffs, then rose 9.5% on 9 April when most were paused. Results were mixed because the index fell for two more days before the rebound began."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "S&P 500 and Nasdaq 100 futures; positions held for one to five days",
+ "rules": "Position opened against index moves of more than two standard deviations that occur without a scheduled economic release; sized by recent volatility; no new positions when the VIX is above 40",
+ "costs": "Estimated bid-ask spreads, commissions and futures roll costs deducted on each trade",
+ "constructionTitle": "Strategy construction, from short-term reversals to volatility limits",
+ "legs": [
+  {
+   "position": "Long or short S&P 500 futures against the move",
+   "instrument": "S&P 500 futures",
+   "purpose": "Earns the partial reversal",
+   "allocation": "6% margin"
+  },
+  {
+   "position": "Long or short Nasdaq 100 futures against the move",
+   "instrument": "Nasdaq 100 futures",
+   "purpose": "Earns the reversal in technology shares",
+   "allocation": "3% margin"
+  },
+  {
+   "position": "Out-of-the-money index options",
+   "instrument": "S&P 500 index options",
+   "purpose": "Limits losses if the move continues",
+   "allocation": "2%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "89%"
+  }
+ ],
+ "entry": "Index move at least 2 standard deviations without a scheduled data release",
+ "size": "Set to an 8% annualised volatility target",
+ "exit": "Position closed after a 50% retracement of the move, or after 5 days",
+ "stop": "Position closed if the index moves a further 1.5 standard deviations; no new trades when the VIX closes above 40",
+ "marketWatch": "The indicators that matter are the size of one-day index moves against their recent average, positioning in index futures and the cost of index options. Scheduled events such as central bank decisions, employment reports and tariff deadlines can turn a short-term reversal into a sustained move, so the strategy reduces its size around them.",
+ "favourable": [
+  {
+   "heading": "Falls caused by forced selling",
+   "text": "Falls caused by forced selling favour the strategy because the selling pressure ends once positions are closed, so prices recover. On 5 August 2024 the S&P 500 fell 3% as yen-funded positions were closed, and it recovered most of the loss within two weeks."
+  },
+  {
+   "heading": "Clear central bank backstop",
+   "text": "Clear central bank support favours the strategy because investors buy falls when they expect policy to limit losses. After the Brexit vote in June 2016, central banks signalled support and the S&P 500 recovered most of its fall within about a week."
+  },
+  {
+   "heading": "Range-bound markets",
+   "text": "Markets without a clear direction favour the strategy because rises and falls both reverse part of the way. The S&P 500 traded within a range from early 2015 to mid-2016, and short-term reversals were frequent."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Sustained sell-offs",
+   "text": "Sustained sell-offs hurt the strategy because each fall continues instead of reversing, so buying after a decline compounds losses. In October 2008 the S&P 500 had four daily falls of more than 5%, and in March 2020 it fell 12% in one day."
+  },
+  {
+   "heading": "Policy shocks that reset valuations",
+   "text": "A policy change that alters expected earnings hurts the strategy because the new price level is justified rather than an overreaction. In April 2025, broad tariff announcements cut the S&P 500 by more than 10% in two days before a pause reversed part of the fall."
+  },
+  {
+   "heading": "Surprises in inflation data",
+   "text": "Surprises in inflation or jobs data hurt the strategy because the move reflects new information, so it does not reverse. On 13 September 2022 the S&P 500 fell 4.3% after a higher inflation report and kept falling for most of the next month."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -12
+  },
+  {
+   "name": "Inflation shock, Sep 2022",
+   "value": -5
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -3
+  },
+  {
+   "name": "Brexit vote, Jun 2016",
+   "value": 2
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": 3
+  }
+ ],
+ "ahead": [
+  -9.5,
+  -0.8,
+  0.2,
+  0.4
+ ],
+ "infoHist": "Historical results show the strategy's return during each event, measured from its value at the last market high before the shock to its value at the market low, using the default backtest parameters above. Losses reflect index moves that continued after the position was opened.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in the S&P 500 and Nasdaq 100, implied volatility and interest rates, which are then applied to the strategy's current futures positions and protective options.",
+ "altTitle": "Where Else Can Investors Find Short-Term Reversal Returns?",
+ "related": [
+  {
+   "id": "m1",
+   "why": "Follows sustained price trends across asset classes. Bears whipsaw risk, losing when trends reverse repeatedly.",
+   "cue": "Tends to gain when this strategy loses"
+  },
+  {
+   "id": "r1",
+   "why": "Trades gaps between related stocks. Bears relationship risk, losing when a pair separates permanently.",
+   "cue": "Similar reversion, without index direction"
+  },
+  {
+   "id": "s1",
+   "why": "Sells index options priced for larger moves than occur. Bears crash risk, losing in rare large sell-offs.",
+   "cue": "Earns from the same overreaction in options"
+  }
+ ]
+}

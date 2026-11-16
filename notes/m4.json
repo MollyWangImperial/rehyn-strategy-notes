@@ -1,0 +1,172 @@
+{
+ "id": "m4",
+ "name": "FX trend following",
+ "heading": "The Structural Opportunity: Persistent Currency Trends",
+ "caseLead": "The investment case rests on currency trends continuing for weeks or months, because exchange rates follow interest rate differentials that central banks change slowly and in steps. The trends persist because policy divergence takes time to appear in capital flows and in the hedging decisions of companies and funds, while geopolitical and trade policy shifts add further directional moves.",
+ "caseRest": "The main risk is a sudden reversal after a trend is established, usually when a central bank changes course or investors close positions together. Such reversals can erase several weeks of gains within days, as the rise of the yen in August 2024 showed. The strategy also earns little in periods when central banks move together, because few currencies then trend.",
+ "figNote": "The large figure on each card shows the change in the main currency pair named in the text, over the period described. Currency trend following earns from sustained moves in exchange rates, so a larger move offers more to follow.",
+ "events": [
+  {
+   "date": "November 2012",
+   "theme": "Yen policy",
+   "fig": "+31%",
+   "effect": "up",
+   "title": "Abenomics weakens the yen for six months",
+   "text": "Between mid-November 2012 and May 2013, USD/JPY rose about 31% as the incoming Japanese government and the Bank of Japan committed to large-scale monetary easing. The strategy gained because the yen fell in a steady trend with few reversals."
+  },
+  {
+   "date": "May 2014",
+   "theme": "Policy divergence",
+   "fig": "−25%",
+   "effect": "up",
+   "title": "Diverging central banks lift the dollar",
+   "text": "From May 2014 to March 2015, EUR/USD fell about 25% as the ECB prepared bond purchases while the Fed ended its own and signalled rate rises. The strategy gained because the widening policy gap produced a steady dollar trend."
+  },
+  {
+   "date": "June 2016",
+   "theme": "Brexit",
+   "fig": "−8%",
+   "effect": "mid",
+   "title": "Brexit vote sends sterling sharply lower",
+   "text": "GBP/USD fell about 8% on 24 June 2016 after the United Kingdom voted to leave the European Union. Results were mixed because short sterling positions gained, but sharp reversals in other currencies reduced the gain."
+  },
+  {
+   "date": "March 2022",
+   "theme": "Rate divergence",
+   "fig": "+32%",
+   "effect": "up",
+   "title": "Fed rate rises widen the gap with Japan",
+   "text": "Between March and October 2022, USD/JPY rose about 32% as the Fed raised rates quickly while the Bank of Japan kept its cap on bond yields. The strategy gained because the dollar trend stayed in one direction for most of the period."
+  },
+  {
+   "date": "August 2024",
+   "theme": "Carry trade",
+   "fig": "−12.5%",
+   "effect": "down",
+   "title": "Bank of Japan rate rise reverses the yen",
+   "text": "USD/JPY fell about 12.5% between 3 July and 5 August 2024 after a Bank of Japan rate rise and weak US jobs data. The strategy lost because its long dollar positions against the yen reversed within days."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "+14%",
+   "effect": "down",
+   "title": "US tariffs reverse the dollar trend",
+   "text": "Between mid-January and 21 April 2025, EUR/USD rose about 14% as US tariffs raised doubts about American growth and weakened the dollar. The strategy lost because dollar positions built during the previous year reversed."
+  }
+ ],
+ "worstWhen": "August 2024",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Spot and forward contracts in G10 currency pairs; held for weeks; rebalanced weekly",
+ "rules": "Long a pair when its 1-month and 6-month trends both rise, short when both fall; no trade when the trends disagree; positions halved when currency volatility doubles",
+ "costs": "Estimated bid-ask spreads and forward points deducted at each rebalance",
+ "constructionTitle": "Strategy construction, from trend signals to volatility-based sizing",
+ "legs": [
+  {
+   "position": "Trend positions in EUR/USD and GBP/USD",
+   "instrument": "FX forwards",
+   "purpose": "Earns trends from policy divergence",
+   "allocation": "40% of risk"
+  },
+  {
+   "position": "Trend positions in USD/JPY and USD/CHF",
+   "instrument": "FX forwards",
+   "purpose": "Earns trends in safe haven currencies",
+   "allocation": "20% of risk"
+  },
+  {
+   "position": "Trend positions in AUD/USD, USD/CAD and NZD/USD",
+   "instrument": "FX forwards",
+   "purpose": "Earns trends linked to commodity prices",
+   "allocation": "25% of risk"
+  },
+  {
+   "position": "Trend positions in EUR/SEK and EUR/NOK",
+   "instrument": "FX forwards",
+   "purpose": "Earns trends in smaller G10 currencies",
+   "allocation": "15% of risk"
+  }
+ ],
+ "entry": "1-month and 6-month trends agree in direction",
+ "size": "Set to an 8% annualised volatility target, with each pair at most 15% of risk",
+ "exit": "Position closed when the 1-month trend turns against the 6-month trend",
+ "stop": "Pair position closed after a loss of 1.5% of portfolio value",
+ "marketWatch": "Rehyn watches the gap between policy interest rates in the major economies and the direction of rate expectations, because these gaps drive most sustained currency trends. Changes in currency implied volatility also matter, since falling volatility supports longer trends and rising volatility signals a higher risk of reversal. Central bank meetings, intervention warnings from finance ministries and trade policy announcements are the events most likely to turn a trend.",
+ "favourable": [
+  {
+   "heading": "Diverging central bank policy",
+   "text": "Policy divergence favours the strategy because interest rate differentials attract capital steadily towards the higher-yielding currency. In 2014 and 2015, the ECB's bond purchases and expected Fed rate rises pushed EUR/USD down by about 25%."
+  },
+  {
+   "heading": "Firm central bank commitments",
+   "text": "A central bank that holds to a stated policy for months favours the strategy because markets keep adjusting positions in the same direction. The Bank of Japan's cap on bond yields in 2022 supported a rise of about 32% in USD/JPY between March and October."
+  },
+  {
+   "heading": "Persistent commodity price trends",
+   "text": "Long-running commodity price moves favour the strategy because the currencies of producing countries follow them for months. As oil prices fell from mid-2014 to early 2016, USD/CAD rose from about 1.06 to above 1.45."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Policy turns that reverse trends",
+   "text": "A change of direction by a central bank hurts the strategy because positions built over months reverse within days. In August 2024, a Bank of Japan rate rise pushed USD/JPY down about 12.5% in five weeks."
+  },
+  {
+   "heading": "Government intervention in currencies",
+   "text": "Intervention by governments hurts the strategy because it caps a trend that the economic backdrop still supports and triggers sharp, brief reversals. In October 2022, Japan's Ministry of Finance bought yen and USD/JPY fell by several yen within hours."
+  },
+  {
+   "heading": "Range-bound markets with aligned policy",
+   "text": "Periods in which major central banks move together hurt the strategy because currency pairs trade sideways and trend signals repeatedly reverse. In 2019, EUR/USD stayed between about 1.09 and 1.15 for the full year."
+  }
+ ],
+ "past": [
+  {
+   "name": "Yen carry unwind, Aug 2024",
+   "value": -8
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -7
+  },
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -4
+  },
+  {
+   "name": "Swiss franc shock, Jan 2015",
+   "value": -3
+  },
+  {
+   "name": "Brexit vote, Jun 2016",
+   "value": -2
+  }
+ ],
+ "ahead": [
+  2.4,
+  0.7,
+  -0.3,
+  1.6
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in the major currency pairs and interest rate differentials, which are then applied to the strategy's current positions.",
+ "altTitle": "Where Else Can Investors Find Currency Premiums?",
+ "related": [
+  {
+   "id": "c1",
+   "why": "Earns the interest rate gap between currencies. Bears crash risk, losing when risk appetite falls.",
+   "cue": "Paid for rate gaps, not price trends"
+  },
+  {
+   "id": "v6",
+   "why": "Buys currencies priced below fair value. Bears drift risk, losing while undervalued currencies keep falling.",
+   "cue": "Slow valuation signal, opposite to trends"
+  },
+  {
+   "id": "m1",
+   "why": "Follows trends across equities, bonds, currencies and commodities. Bears reversal risk, losing in range-bound markets.",
+   "cue": "Same signal, spread across asset classes"
+  }
+ ]
+}

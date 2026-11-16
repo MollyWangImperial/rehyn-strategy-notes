@@ -1,0 +1,172 @@
+{
+ "id": "e7",
+ "name": "Catastrophe bond investing",
+ "heading": "The Structural Opportunity: Insurance Premiums for Disaster Risk",
+ "caseLead": "The investment case rests on the premium that catastrophe bond investors earn on top of the cash yield for bearing losses from natural disasters, which are largely unrelated to the economic cycle. The premium persists because insurers and reinsurers need capital from outside the industry to cover peak risks, while climate change, rising property values and changes in insurance regulation keep the demand for protection high.",
+ "caseRest": "The main risk is a major catastrophe that triggers losses on several bonds within weeks, which can remove several years of premium income. Losses are hard to diversify away because the largest storms and earthquakes affect the same regions that many bonds cover, and prices can also fall in a liquidity squeeze when no disaster has occurred. The estimated 8.8% annual return therefore comes with 6.0% volatility, a 15.0% worst fall and sharply negative return skew, so smooth results in quiet years understate the risk.",
+ "figNote": "The large figure on each card shows the upper limit of the Federal Reserve's target range at the time of the episode. Catastrophe bond coupons combine the cash yield earned on the collateral with an insurance premium, so this rate shows how much of the return came from interest rather than from insurance risk.",
+ "events": [
+  {
+   "date": "September 2008",
+   "theme": "Financial crisis",
+   "fig": "2.00%",
+   "effect": "down",
+   "title": "Lehman failure hits bonds despite no disaster",
+   "text": "Lehman Brothers' failure in September 2008 hurt catastrophe bonds because it was the swap counterparty holding the collateral on several issues. The strategy lost because those bonds fell sharply in price, although no catastrophe had occurred."
+  },
+  {
+   "date": "October 2012",
+   "theme": "Hurricane",
+   "fig": "0.25%",
+   "effect": "up",
+   "title": "Hurricane Sandy leaves catastrophe bonds largely unaffected",
+   "text": "Hurricane Sandy struck the US Northeast in October 2012 and became one of the costliest US storms on record. The strategy gained because most catastrophe bond triggers sat above the industry loss, so investors earned premiums with almost no principal loss."
+  },
+  {
+   "date": "September 2017",
+   "theme": "Hurricanes",
+   "fig": "1.25%",
+   "effect": "down",
+   "title": "Three hurricanes cause catastrophe bond losses",
+   "text": "Hurricanes Harvey, Irma and Maria caused insured losses of more than $80bn in 2017, and several catastrophe bonds lost principal. The strategy lost because bond prices fell as investors expected higher losses, and reinsurance prices rose at the next renewal."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "0.25%",
+   "effect": "mid",
+   "title": "Covid liquidity squeeze lowers bond prices",
+   "text": "The March 2020 sell-off pushed catastrophe bond prices lower as investors sold liquid assets to raise cash, although no disaster had occurred. Results were mixed because prices recovered within months after the Federal Reserve cut its policy rate to near zero and restored liquidity."
+  },
+  {
+   "date": "September 2022",
+   "theme": "Hurricane",
+   "fig": "3.25%",
+   "effect": "mid",
+   "title": "Hurricane Ian hits Florida as cash yields rise",
+   "text": "Hurricane Ian struck Florida in September 2022 with insured losses of around $50bn, while Federal Reserve rate rises lifted the cash yield on collateral. Results were mixed because bonds covering Florida lost value, but higher cash yields and wider spreads raised later returns."
+  },
+  {
+   "date": "January 2025",
+   "theme": "Wildfire",
+   "fig": "4.50%",
+   "effect": "up",
+   "title": "Los Angeles wildfires spare most catastrophe bonds",
+   "text": "Wildfires in Los Angeles in January 2025 caused insured losses of more than $30bn, yet few catastrophe bonds cover wildfire. The strategy gained because losses fell mainly on traditional reinsurers, while collateral earned a cash yield close to 4.5%."
+  }
+ ],
+ "worstWhen": "September 2017",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Catastrophe bonds linked to hurricane, earthquake and windstorm losses; about three years to maturity; priced monthly",
+ "rules": "Bonds selected with a modelled expected loss of 1% to 3% a year and a spread well above that loss; exposure limited by peril and region; held to maturity unless a trigger is near",
+ "costs": "Estimated bid-ask spreads, placement fees and manager fees deducted",
+ "constructionTitle": "Strategy construction, from insurance premium to diversified perils",
+ "legs": [
+  {
+   "position": "US hurricane and earthquake bonds",
+   "instrument": "Catastrophe bonds",
+   "purpose": "Earns the premium for peak US peril risk",
+   "allocation": "40%"
+  },
+  {
+   "position": "Japan, Europe and other perils",
+   "instrument": "Catastrophe bonds",
+   "purpose": "Diversifies away from US storm risk",
+   "allocation": "25%"
+  },
+  {
+   "position": "Parametric and index trigger bonds",
+   "instrument": "Catastrophe bonds",
+   "purpose": "Pays on measured events, reducing disputes over losses",
+   "allocation": "10%"
+  },
+  {
+   "position": "Short-dated Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Holds liquidity for redemptions and new bonds",
+   "allocation": "25%"
+  }
+ ],
+ "entry": "Spread at least 2.5 times the modelled expected loss",
+ "size": "Single bond capped at 3%; each peril and region capped at 25%",
+ "exit": "Held to maturity, or sold if the modelled loss probability doubles",
+ "stop": "New purchases paused if the portfolio falls 8% from its peak",
+ "marketWatch": "Reinsurance pricing and catastrophe bond spreads relative to modelled expected loss are the main indicators because they show how much premium investors earn for each unit of risk. Hurricane season forecasts, the cash rate on collateral and changes in rules for insurers in exposed regions such as Florida and California matter most when they alter the supply of coverage or the cost of capital.",
+ "favourable": [
+  {
+   "heading": "Quiet storm seasons",
+   "text": "Years with few major US hurricane landfalls favour the strategy because bonds pay their full coupons. Catastrophe bonds returned well above their long-run average in 2023, when large losses came mainly from other perils."
+  },
+  {
+   "heading": "Higher cash rates",
+   "text": "Higher cash rates favour the strategy because the coupon equals the yield on the collateral plus the insurance premium. After the Federal Reserve raised rates in 2022, the cash component of coupons rose from near zero to more than 4%."
+  },
+  {
+   "heading": "Higher premiums after large losses",
+   "text": "Rising spreads after large losses favour the strategy because new bonds are priced to pay more for the same risk. After Hurricane Ian in 2022, reinsurance rates rose sharply at the January 2023 renewal and catastrophe bond spreads widened."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Several large events occur together",
+   "text": "A series of major catastrophes hurts the strategy because losses on different bonds add up within one season. In 2017, Hurricanes Harvey, Irma and Maria hit the US and the Caribbean within weeks of each other."
+  },
+  {
+   "heading": "A storm hits an exposed region",
+   "text": "A major storm that strikes a densely insured region hurts the strategy because industry losses can reach the trigger of several bonds at once. Hurricane Ian caused around $50bn of insured losses in Florida in 2022."
+  },
+  {
+   "heading": "Liquidity falls in a sell-off",
+   "text": "A broad sell-off hurts the strategy because investors sell catastrophe bonds to raise cash even when no disaster has occurred. In March 2020, bond prices fell as investors sold liquid assets."
+  }
+ ],
+ "past": [
+  {
+   "name": "Hurricanes Irma and Maria, Sep 2017",
+   "value": -15
+  },
+  {
+   "name": "Hurricane Ian, Sep 2022",
+   "value": -12
+  },
+  {
+   "name": "Covid liquidity squeeze, Mar 2020",
+   "value": -6
+  },
+  {
+   "name": "Hurricane Michael, Oct 2018",
+   "value": -4
+  },
+  {
+   "name": "Hurricane Sandy, Oct 2012",
+   "value": 0.6
+  }
+ ],
+ "ahead": [
+  -3.4,
+  0.6,
+  0.7,
+  0.5
+ ],
+ "infoHist": "Historical results show the strategy's estimated peak-to-trough change in value during each event, using modelled principal losses, bond price changes and the cash yield on collateral. Each event window runs from the last high before the event to the low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in credit spreads, interest rates and market liquidity and applies them to the strategy's current bond holdings, while natural disaster losses are kept at their expected level.",
+ "altTitle": "Where Else Can Investors Find Insurance Premiums?",
+ "related": [
+  {
+   "id": "i7",
+   "why": "Lends to private companies at floating rates. Bears default and illiquidity risk, losing in recessions.",
+   "cue": "Economic risk instead of disaster risk"
+  },
+  {
+   "id": "c8",
+   "why": "Earns coupons from structured notes. Bears equity market risk, losing principal after large index declines.",
+   "cue": "Market risk instead of disaster risk"
+  },
+  {
+   "id": "s1",
+   "why": "Sells index options. Bears crash risk, losing when volatility rises sharply.",
+   "cue": "Another insurance premium, tied to markets"
+  }
+ ]
+}

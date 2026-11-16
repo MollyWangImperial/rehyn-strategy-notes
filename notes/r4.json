@@ -1,0 +1,172 @@
+{
+ "id": "r4",
+ "name": "ETF arbitrage",
+ "heading": "The Structural Opportunity: Temporary ETF Pricing Gaps",
+ "caseLead": "The investment case rests on authorised participants creating and redeeming ETF shares at the value of their holdings, which keeps the ETF price close to that value while leaving small gaps that can be traded. The gaps persist because they widen when markets are stressed, when the underlying market is closed or when arbitrage capital is limited, and they are largest in bond and international funds where the holdings are costly to trade, while trading halts and central bank purchases can also move them.",
+ "caseRest": "The main risk is that a gap widens before it closes because the hedge cannot be executed at the quoted price. This is most likely in stressed bond or foreign markets, where the underlying holdings stop trading while the ETF keeps trading, as in March 2020. Because the return on each trade is small, a few such episodes can offset months of steady gains.",
+ "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "events": [
+  {
+   "date": "August 2011",
+   "theme": "Sovereign downgrade",
+   "fig": "48",
+   "effect": "up",
+   "title": "US credit downgrade lifts ETF trading volumes",
+   "text": "The August 2011 sell-off followed the downgrade of the US credit rating by Standard and Poor's, and the VIX closed at 48. The strategy gained because heavy ETF selling pushed prices below the value of holdings and gave arbitrageurs wider gaps to close."
+  },
+  {
+   "date": "August 2015",
+   "theme": "China devaluation",
+   "fig": "41",
+   "effect": "mid",
+   "title": "Yuan devaluation leaves ETFs far below value",
+   "text": "The August 2015 sell-off followed China's currency devaluation, and the VIX closed at 41 on 24 August as many ETFs opened far below the value of their holdings. Results were mixed because gaps closed within a day, but trading halts blocked some hedges."
+  },
+  {
+   "date": "February 2018",
+   "theme": "Volatility products",
+   "fig": "37",
+   "effect": "mid",
+   "title": "Short volatility products collapse as bond yields rise",
+   "text": "The February 2018 volatility spike began when rising bond yields forced short volatility products to buy back exposure, and the VIX closed at 37. Results were mixed because ETF prices moved away from their holdings' value in the sell-off, then returned."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "83",
+   "effect": "down",
+   "title": "Bond ETFs trade below the value of holdings",
+   "text": "The March 2020 sell-off lifted the VIX to an 83 close, and investment grade bond ETFs traded about 5% below their holdings' value as dealers could not price the bonds. The strategy lost because bond hedges were costly to place until Federal Reserve purchases began."
+  },
+  {
+   "date": "August 2024",
+   "theme": "Carry trade",
+   "fig": "38",
+   "effect": "up",
+   "title": "Bank of Japan rate rise unwinds yen trades",
+   "text": "The August 2024 volatility spike followed a Bank of Japan rate rise that unwound yen-funded positions, and the VIX closed at 38. The strategy gained because ETF prices at the open moved away from the value of their holdings and then returned within hours."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "52",
+   "effect": "up",
+   "title": "US tariffs drive record ETF trading",
+   "text": "The April 2025 announcement of broad US tariffs lifted the VIX to a 52 close and sent ETF trading volumes to record levels. The strategy gained because heavy selling opened wide gaps between ETF prices and their holdings' value, which narrowed as trading steadied."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Listed ETFs against baskets of their holdings; US and European equity and bond funds; positions held for hours to days",
+ "rules": "ETF bought when it trades at least 0.2% below the value of its holdings and sold when 0.2% above; basket hedged with stocks or futures; only funds with high daily volume traded",
+ "costs": "Estimated bid-ask spreads, commissions, creation and redemption fees and borrowing costs deducted on each trade",
+ "constructionTitle": "Strategy construction, from ETF pricing gaps to hedged exposure",
+ "legs": [
+  {
+   "position": "Long ETFs trading below the value of holdings",
+   "instrument": "Listed ETFs",
+   "purpose": "Earns the gap closing",
+   "allocation": "45% of gross exposure"
+  },
+  {
+   "position": "Short the matching basket of holdings",
+   "instrument": "Stocks and bond futures",
+   "purpose": "Offsets market moves",
+   "allocation": "45% of gross exposure"
+  },
+  {
+   "position": "Index futures",
+   "instrument": "Equity and Treasury futures",
+   "purpose": "Hedges funds with baskets that are hard to trade",
+   "allocation": "5% margin"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "5% buffer"
+  }
+ ],
+ "entry": "ETF price at least 0.2% from the value of its holdings",
+ "size": "Set to a 3% annualised volatility target, with trades below 5% of daily fund volume",
+ "exit": "Position closed when the gap falls below 0.05%, or by the end of the next trading day",
+ "stop": "Position closed if the gap widens by a further 1.0%",
+ "marketWatch": "The indicators that matter are the average gap between ETF prices and the value of their holdings, the spread between bond ETF prices and bond index levels, and trading volume in the largest funds. Upcoming market holidays that close the underlying market while the ETF trades, and policy actions such as central bank bond purchases, tend to widen these gaps.",
+ "favourable": [
+  {
+   "heading": "Heavy trading in large funds",
+   "text": "High trading volume in large ETFs favours the strategy because many small gaps appear and close each day. The surge in volume during the August 2011 sell-off gave arbitrageurs more trades at wider gaps."
+  },
+  {
+   "heading": "Closed underlying markets",
+   "text": "Time differences between ETF trading and the underlying market favour the strategy because the ETF prices in news that the holdings have yet to reflect. In 2020, US-listed funds holding Asian shares often moved before the local markets reopened, and the gaps closed at the open."
+  },
+  {
+   "heading": "Central bank support for credit",
+   "text": "Central bank purchases of corporate bonds favour the strategy because they narrow discounts on bond ETFs and let positions close at a profit. After the Federal Reserve announced corporate bond and ETF purchases on 23 March 2020, discounts narrowed within days."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Stress in bond markets",
+   "text": "Stress in bond markets hurts the strategy because the holdings stop trading while the ETF continues, so the hedge cannot be placed at the quoted price. In March 2020, investment grade bond ETFs traded about 5% below the value of their holdings at the peak."
+  },
+  {
+   "heading": "Market makers withdrawing quotes",
+   "text": "Market makers withdrawing quotes hurts the strategy because gaps widen and trade prices become unreliable. On 6 May 2010, some ETFs traded far below the value of their holdings for several minutes, and many of those trades were later cancelled."
+  },
+  {
+   "heading": "Rising borrowing costs for hedges",
+   "text": "Higher borrowing fees on the hedge hurt the strategy because the expected gap no longer covers the cost of holding the position. This applies mainly to funds holding hard-to-borrow stocks, where fees rose sharply during the short squeezes of January 2021."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -4
+  },
+  {
+   "name": "China devaluation, Aug 2015",
+   "value": -1
+  },
+  {
+   "name": "Volatility spike, Feb 2018",
+   "value": 0.3
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": 0.8
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": 1.2
+  }
+ ],
+ "ahead": [
+  -1.8,
+  0.1,
+  0.2,
+  0.3
+ ],
+ "infoHist": "Historical results show the strategy's return during each event, measured from its value at the last market high before the shock to its value at the market low, using the default backtest parameters above. Losses reflect gaps that widened further after the position was opened.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in equity indices, bond yields, credit spreads and trading volumes, which are then applied to the strategy's current ETF and hedge positions, including the cost of wider gaps.",
+ "altTitle": "Where Else Can Investors Find Price Convergence Returns?",
+ "related": [
+  {
+   "id": "r1",
+   "why": "Trades gaps between related shares. Bears relationship risk, losing when a pair separates permanently.",
+   "cue": "Similar convergence, between single stocks"
+  },
+  {
+   "id": "r5",
+   "why": "Trades kinks in the Treasury yield curve. Bears liquidity risk, losing when leveraged funds close positions together.",
+   "cue": "Similar convergence, in government bonds"
+  },
+  {
+   "id": "r7",
+   "why": "Trades against sharp one-day index moves. Bears trend risk, losing when a fall continues for days.",
+   "cue": "Similar reversal, at index level"
+  }
+ ]
+}

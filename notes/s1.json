@@ -1,0 +1,172 @@
+{
+ "id": "s1",
+ "name": "Variance risk premium harvesting",
+ "heading": "The Structural Opportunity: Monetizing Volatility Risk",
+ "caseLead": "The investment case rests on the persistent tendency of short-dated S&P 500 index options to price larger moves than the market ultimately delivers, allowing sellers of protection to earn the variance risk premium. The premium persists because pension funds, insurers and portfolios with loss limits buy protection largely regardless of price, while few investors can absorb crash risk, and geopolitical and policy tensions sustain demand even though most events do not materially affect the index.",
+ "caseRest": "The main risk is a return profile with small, frequent gains and rare, large losses that can develop within days when volatility rises sharply. Several years of accumulated premium can be lost in a single episode because option prices and realised market moves can rise together as investors rush to reduce risk. A strong Sharpe ratio therefore overstates the safety of the return because it gives too little weight to the speed and scale of losses in stressed markets.",
+ "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "events": [
+  {
+   "date": "February 2018",
+   "theme": "Market structure",
+   "fig": "37",
+   "effect": "down",
+   "title": "Rising bond yields trigger a record VIX jump",
+   "text": "The February 2018 volatility spike began when rising bond yields forced short-volatility products to buy back volatility, and the VIX more than doubled to a 37 close in its largest one-day rise on record. The strategy lost because short-dated option prices rose faster than the value of further-out protection."
+  },
+  {
+   "date": "August 2022",
+   "theme": "Geopolitics",
+   "fig": "24",
+   "effect": "up",
+   "title": "Taiwan drills raise the cost of protection",
+   "text": "The August 2022 rise in protection demand followed China’s largest drills around Taiwan after a US congressional visit, lifting the VIX to a 24 close. The strategy benefited because the S&P 500 barely moved, leaving realised volatility below the level priced by options."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "83",
+   "effect": "down",
+   "title": "Covid turns into a global funding crisis",
+   "text": "The March 2020 sell-off began when a regional health emergency became a global rush for cash, lifting the VIX to an 83 close as realised volatility surged. The strategy suffered its worst loss because the market move far exceeded the protection provided by further-out options."
+  },
+  {
+   "date": "February 2022",
+   "theme": "War",
+   "fig": "36",
+   "effect": "mid",
+   "title": "Ukraine invasion keeps option prices high",
+   "text": "Russia’s February 2022 invasion of Ukraine disrupted energy and grain supplies, raising inflation and escalation risks as the VIX reached a 36 close. Results were mixed because option prices and realised volatility remained elevated for most of the year."
+  },
+  {
+   "date": "August 2024",
+   "theme": "Carry trade",
+   "fig": "38",
+   "effect": "up",
+   "title": "Bank of Japan rate rise unwinds yen trades",
+   "text": "The August 2024 volatility spike followed a Bank of Japan rate rise that triggered an unwind of yen-funded positions, lifting the VIX to a 38 close before it fell back within two weeks. The strategy benefited because further-out protection absorbed the realised spike and volatility reversed rapidly."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "52",
+   "effect": "mid",
+   "title": "US tariffs drive the largest spike since 2020",
+   "text": "The April 2025 announcement of sweeping US tariffs drove the largest volatility spike in five years, lifting the VIX to a 52 close as uncertainty kept option prices elevated for weeks. Results were mixed because short-dated losses offset gains as realised volatility fell back."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "S&P 500 index options; about one month to expiry; rolled monthly",
+ "rules": "Options sold when implied volatility exceeds realised volatility; protection bought further out of the money; size reduced before central bank meetings and other scheduled events",
+ "costs": "Estimated bid-ask spreads and commissions deducted at each roll",
+ "constructionTitle": "Strategy construction, from premium income to crash protection",
+ "legs": [
+  {
+   "position": "Short strangle, 30 days, 10 delta",
+   "instrument": "S&P 500 index options",
+   "purpose": "Earns option premium",
+   "allocation": "30% margin"
+  },
+  {
+   "position": "Out-of-the-money options, 5 delta",
+   "instrument": "S&P 500 index options",
+   "purpose": "Limits losses on a large move",
+   "allocation": "2%"
+  },
+  {
+   "position": "Call options ahead of scheduled events",
+   "instrument": "VIX options",
+   "purpose": "Hedges a sudden rise in volatility",
+   "allocation": "1%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "67%"
+  }
+ ],
+ "entry": "Implied volatility at least 2 points above realised volatility",
+ "size": "Set to a 9% annualised volatility target",
+ "exit": "Position closed at 50% of premium collected, or 21 days before expiry",
+ "stop": "All positions closed if the VIX closes above 35",
+ "marketWatch": "One-month S&P 500 implied volatility is about 3.1 points above realised volatility, close to its long-run average spread. A central bank rate decision is due this week. Around past decisions, index option prices have tended to rise before the announcement and fall back afterwards.",
+ "favourable": [
+  {
+   "heading": "Priced geopolitical risk stays contained",
+   "text": "Regional tensions favour the strategy when they raise index protection costs faster than realised S&P 500 volatility because most US earnings have little direct exposure. Tension in the Taiwan Strait or threats to Gulf shipping can therefore push implied volatility above realised volatility, creating the premium the strategy earns."
+  },
+  {
+   "heading": "Stable monetary policy guidance",
+   "text": "Clear forward guidance favours the strategy because it limits realised volatility around policy meetings while short-dated options continue to price event risk. Most of 2010 to 2019 followed this pattern, as policy outcomes rarely generated the moves embedded in option prices."
+  },
+  {
+   "heading": "Volatility normalises after shocks",
+   "text": "Falling realised volatility after a shock favours the strategy because implied volatility often remains elevated, restoring the gap earned on short-dated options. After the April 2025 tariff shock, this normalisation allowed premium sellers to recover much of the drawdown within months."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Regional shocks spread globally",
+   "text": "Regional shocks hurt the strategy when they spread into global funding markets, causing realised volatility to outrun both short-dated premiums and longer-dated protection. In March 2020, the VIX rose from about 15 to above 80 in four weeks, beyond the level covered by the protective options."
+  },
+  {
+   "heading": "Crowded positioning amplifies volatility spikes",
+   "text": "Crowded short-volatility positioning hurts the strategy when higher bond yields force funds to buy back exposure together, pushing volatility beyond the level justified by economic fundamentals. In February 2018, the VIX more than doubled in a single day, so losses reflected forced buying rather than economic news."
+  },
+  {
+   "heading": "Geopolitical escalation disrupts supply",
+   "text": "A prolonged supply disruption would hurt the strategy by raising inflation while reducing earnings, keeping volatility high for months rather than days and eroding repeated short-dated premiums. The stress tests below examine this scenario through a blockade of the Strait of Hormuz or Taiwan."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -26
+  },
+  {
+   "name": "Volatility spike, Feb 2018",
+   "value": -14
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": -9
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -7
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -6
+  }
+ ],
+ "ahead": [
+  -19.5,
+  -3.2,
+  0.6,
+  1.8
+ ],
+ "infoHist": "Historical results show the strategy’s peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn’s scenario engine projects moves in the S&P 500, implied volatility and interest rates, which are then applied to the strategy’s current positions, including the protective options.",
+ "altTitle": "Where Else Can Investors Find Volatility Premiums?",
+ "related": [
+  {
+   "id": "s5",
+   "why": "Sells index volatility and buys single-stock volatility. Bears correlation risk, losing when stocks fall together.",
+   "cue": "Similar premium, with less crash exposure"
+  },
+  {
+   "id": "s4",
+   "why": "Takes the opposite exposure by buying volatility. Bears time decay, losing steadily in calm markets.",
+   "cue": "Tends to gain when this strategy loses"
+  },
+  {
+   "id": "d1",
+   "why": "Buys the protection that this strategy sells. Bears the premium cost, paying in calm years and gaining in a crash.",
+   "cue": "Offsets this strategy’s worst months"
+  }
+ ]
+}

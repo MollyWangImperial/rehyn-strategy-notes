@@ -1,0 +1,172 @@
+{
+ "id": "v1",
+ "name": "Global deep value equity",
+ "heading": "The Structural Opportunity: Investor Neglect and Valuation Reversion",
+ "caseLead": "The opportunity exists because investors systematically avoid companies with weak recent earnings, complex restructuring needs or exposure to unpopular countries and industries, pushing prices below the value implied by normalised cash flow and assets. The discount persists because mandates, career risk and policy or geopolitical uncertainty constrain ownership, while the operational changes needed to restore earnings often take several years.",
+ "caseRest": "The main risk is that low valuations reflect permanent earnings pressure, financial weakness or state intervention rather than temporary investor neglect. The indicative record returned 11.2% a year with 17.5% volatility, but its worst fall was 42.0% because recessions can impair several cheap cyclical companies together. Return skew of -0.4 confirms that losses are concentrated in periods when credit conditions tighten and investors question whether weaker companies can survive.",
+ "figNote": "The large figure on each card shows the estimated total return of a representative global deep-value equity portfolio during the episode. The portfolio holds low-valued companies across developed and emerging markets, so the figure includes both share-price moves and currency effects for a US dollar investor.",
+ "events": [
+  {
+   "date": "September 2008",
+   "theme": "Banking crisis",
+   "fig": "−24%",
+   "effect": "down",
+   "title": "Bank failures expose value traps",
+   "text": "Lehman Brothers’ failure intensified funding stress and drove banks, insurers and cyclical companies sharply lower. The strategy lost because low valuations had not allowed for forced asset sales, credit losses and large capital increases."
+  },
+  {
+   "date": "March 2009",
+   "theme": "Policy support",
+   "fig": "+19%",
+   "effect": "up",
+   "title": "Bank support starts a value rebound",
+   "text": "Government capital, central bank liquidity and fiscal stimulus reduced the probability of further bank failures after global equities reached their March low. The strategy gained as financial and industrial companies recovered from valuations that implied prolonged distress."
+  },
+  {
+   "date": "November 2016",
+   "theme": "Fiscal policy",
+   "fig": "+8%",
+   "effect": "up",
+   "title": "Reflation expectations lift neglected sectors",
+   "text": "The US election raised expectations for tax cuts, infrastructure spending and lighter financial regulation, pushing bond yields higher. The strategy gained because banks, materials and industrial companies had low valuations and greater sensitivity to stronger nominal growth."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−31%",
+   "effect": "down",
+   "title": "Lockdowns hit balance sheets and cash flow",
+   "text": "Global lockdowns stopped activity across travel, energy, retail and industrial markets while companies drew credit lines to preserve cash. The strategy lost because its cyclical and financially weaker holdings faced severe earnings declines and refinancing risk."
+  },
+  {
+   "date": "November 2020",
+   "theme": "Vaccine",
+   "fig": "+17%",
+   "effect": "up",
+   "title": "Vaccines unlock a broad value rotation",
+   "text": "Successful vaccine trials brought forward the expected reopening of services and reduced default risk across cyclical industries. The strategy gained as banks, energy producers and travel-related companies recovered, while crowded growth shares lost relative leadership."
+  },
+  {
+   "date": "February 2022",
+   "theme": "Ukraine war",
+   "fig": "+1%",
+   "effect": "mid",
+   "title": "War divides energy and financial holdings",
+   "text": "Russia’s invasion raised commodity prices and led Western governments to impose extensive financial sanctions. Results were mixed because energy and mining holdings gained, while European banks, industrial companies and Russian securities fell sharply."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Listed developed and emerging-market equities; diversified across countries, sectors and currencies",
+ "rules": "Stocks selected from the lowest valuation decile using earnings, book value and cash flow; loss-making, highly leveraged and illiquid companies screened out; portfolio rebalanced quarterly",
+ "costs": "Estimated bid-ask spreads, commissions, withholding taxes and market impact deducted at each rebalance",
+ "constructionTitle": "Strategy construction, from valuation discount to diversified recovery",
+ "legs": [
+  {
+   "position": "Core deep-value holdings",
+   "instrument": "Global large and mid-cap equities",
+   "purpose": "Captures broad valuation normalisation",
+   "allocation": "55%"
+  },
+  {
+   "position": "Cyclical recovery holdings",
+   "instrument": "Banks, industrials, materials and consumer equities",
+   "purpose": "Adds exposure to improving earnings and credit conditions",
+   "allocation": "20%"
+  },
+  {
+   "position": "Asset-backed holdings",
+   "instrument": "Energy, property and other asset-rich equities",
+   "purpose": "Provides support from tangible assets and cash flow",
+   "allocation": "15%"
+  },
+  {
+   "position": "Liquidity reserve",
+   "instrument": "Short-dated government bills",
+   "purpose": "Funds rebalancing and limits forced sales",
+   "allocation": "10%"
+  }
+ ],
+ "entry": "Composite valuation in the lowest market decile, with adequate liquidity and no immediate refinancing need",
+ "size": "Positions weighted by volatility, capped at 2% per company, 20% per country and 25% per sector",
+ "exit": "Position closed when valuation reaches the market median or the earnings recovery is fully reflected",
+ "stop": "Position closed when solvency, accounting quality or state action invalidates the valuation case",
+ "marketWatch": "The valuation spread between cheap and expensive equities, earnings revisions and bank lending conditions indicate whether low prices are likely to normalise or reflect deeper weakness. Trade restrictions, Chinese stimulus, central bank decisions and fiscal policy matter because they change financing costs and the earnings outlook for banks, industrial companies and commodity producers.",
+ "favourable": [
+  {
+   "heading": "Broad earnings recovery",
+   "text": "A broad recovery favours the strategy because operating leverage lifts earnings fastest in companies priced for weak demand. After the March 2009 market low, policy support and improving activity produced large gains across banks, industrials and consumer cyclicals."
+  },
+  {
+   "heading": "Higher nominal growth",
+   "text": "Higher nominal growth favours the strategy because steeper yield curves support bank margins while stronger prices improve revenue for energy and materials companies. The 2016 reflation trade lifted these low-valued sectors after the US election changed expectations for fiscal policy."
+  },
+  {
+   "heading": "Market leadership broadens",
+   "text": "Broader market leadership favours the strategy because capital moves away from a small group of highly valued growth companies towards neglected industries. The November 2020 vaccine announcements triggered this rotation as reopening prospects improved across travel, finance and energy."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Recession tightens credit",
+   "text": "A recession hurts the strategy because lower cash flow and tighter lending conditions can turn a valuation discount into a solvency problem. During March 2020, companies in travel, retail and energy lost access to revenue just as investors demanded stronger balance sheets."
+  },
+  {
+   "heading": "Growth leadership remains concentrated",
+   "text": "Concentrated growth leadership hurts the strategy because investors continue paying for scarce earnings growth while low-valued companies receive little benefit from stable fundamentals. The expansion of large US technology valuations during 2017 to 2020 left global value shares behind for several years."
+  },
+  {
+   "heading": "State action impairs ownership",
+   "text": "State intervention hurts the strategy when sanctions, capital controls or regulation prevent shareholders from receiving the cash flow implied by reported assets. Russia’s 2022 invasion of Ukraine forced international investors to write down securities that had appeared statistically cheap before trading restrictions were imposed."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -42
+  },
+  {
+   "name": "Global financial crisis, Sep 2008",
+   "value": -34
+  },
+  {
+   "name": "Euro crisis, Aug 2011",
+   "value": -18
+  },
+  {
+   "name": "China devaluation, Aug 2015",
+   "value": -12
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -11
+  }
+ ],
+ "ahead": [
+  -14.5,
+  1.8,
+  -0.8,
+  2.5
+ ],
+ "infoHist": "Historical results show the strategy’s estimated peak-to-trough drawdown during each event, using a diversified portfolio formed from the lowest-valued liquid global equities. Returns include dividends and currency moves, while estimated trading costs are deducted at each rebalance.",
+ "infoForward": "Scenario results show the estimated return over the first month of each scenario. Rehyn’s scenario engine projects country, sector, currency and commodity moves, then applies them to the portfolio’s regional and industry exposures, including the effect of changes in credit conditions.",
+ "altTitle": "Where Else Can Investors Find Valuation Reversion?",
+ "related": [
+  {
+   "id": "v2",
+   "why": "Favours profitable companies at moderate valuations and bears earnings disappointment rather than deep balance-sheet risk.",
+   "cue": "A higher-quality form of value"
+  },
+  {
+   "id": "g1",
+   "why": "Earns from sustained profit growth and bears valuation compression when discount rates or expectations rise.",
+   "cue": "The opposite source of equity return"
+  },
+  {
+   "id": "m2",
+   "why": "Follows persistent share-price trends and bears reversal risk when market leadership changes abruptly.",
+   "cue": "Can confirm an emerging value rotation"
+  }
+ ]
+}

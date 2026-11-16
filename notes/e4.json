@@ -1,0 +1,172 @@
+{
+ "id": "e4",
+ "name": "Central bank event trading",
+ "heading": "The Structural Opportunity: Mispriced Central Bank Reactions",
+ "caseLead": "The investment case rests on the tendency of interest rate markets to misprice the likely path of policy around central bank meetings, because market pricing reflects both the guidance given and the uncertainty about how officials will react to new data. The opportunity persists because large investors adjust positions only gradually around meetings, while changes in trade, fiscal and geopolitical conditions regularly change what central banks need to say.",
+ "caseRest": "The main risk is that a central bank changes course unexpectedly, because futures prices can move many basis points within minutes. Losses are concentrated when the market is already positioned for the same outcome, or when trading liquidity falls and bid-ask spreads widen. The estimated 6.7% annual return therefore comes with 5.6% volatility and an 8.0% worst fall, so a single surprise can offset several months of gains.",
+ "figNote": "The large figure on each card shows the policy interest rate set at the decision, which is the upper limit of the target range for the Federal Reserve and the deposit or main rate for other central banks. The starting level matters because the market reaction to a decision depends on how tight or loose policy already was.",
+ "events": [
+  {
+   "date": "December 2008",
+   "theme": "Financial crisis",
+   "fig": "0.25%",
+   "effect": "up",
+   "title": "Fed cuts to zero and signals more easing",
+   "text": "The Federal Reserve cut its target range to 0% to 0.25% in December 2008 and signalled that it would use asset purchases to ease policy further. The strategy gained because Treasury yields fell sharply as markets priced lower rates for longer."
+  },
+  {
+   "date": "July 2012",
+   "theme": "Euro area",
+   "fig": "0.75%",
+   "effect": "up",
+   "title": "Draghi pledge narrows Italian and Spanish yields",
+   "text": "Mario Draghi pledged in July 2012 to do whatever it takes to preserve the euro, weeks after the ECB cut its main rate to 0.75%. The strategy gained because Italian and Spanish bond yields fell by more than a percentage point within two months."
+  },
+  {
+   "date": "June 2013",
+   "theme": "Fed guidance",
+   "fig": "0.25%",
+   "effect": "down",
+   "title": "Taper signal pushes Treasury yields sharply higher",
+   "text": "Ben Bernanke's June 2013 signal that the Federal Reserve could slow its bond purchases lifted the 10-year Treasury yield from about 1.6% in early May to about 2.5% by late June. The strategy lost because the signal was firmer than in comparable past meetings."
+  },
+  {
+   "date": "January 2015",
+   "theme": "Swiss franc",
+   "fig": "−0.75%",
+   "effect": "down",
+   "title": "Swiss central bank removes its currency floor",
+   "text": "The Swiss National Bank removed its 1.20 limit on the franc against the euro in January 2015 and cut its deposit rate to -0.75%. The strategy lost because Swiss yields and the franc moved far beyond the response seen in comparable decisions."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "0.25%",
+   "effect": "mid",
+   "title": "Emergency rate cuts meet a disorderly Treasury market",
+   "text": "The Federal Reserve cut its target range to 0% to 0.25% in March 2020 after an earlier emergency cut, while Treasury market liquidity deteriorated. Results were mixed because gains from lower short-term rates were offset by large losses on longer-dated positions as yields jumped."
+  },
+  {
+   "date": "September 2024",
+   "theme": "Rate cut",
+   "fig": "5.00%",
+   "effect": "mid",
+   "title": "Fed starts cutting with a half point move",
+   "text": "The Federal Reserve cut its target range by 0.5 percentage points to 4.75% to 5.00% in September 2024, its first cut since 2020. Results were mixed because short-term yields fell, but the 10-year yield rose about 0.5 percentage points over six weeks."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Treasury and short-term interest rate futures; held one to five days around scheduled meetings",
+ "rules": "Positions taken three days before a scheduled meeting when reactions to comparable past decisions point the same way; sized by the gap between market pricing and central bank guidance",
+ "costs": "Estimated bid-ask spreads and commissions deducted on entry and exit",
+ "constructionTitle": "Strategy construction, from meeting reaction to surprise protection",
+ "legs": [
+  {
+   "position": "Two-year Treasury futures",
+   "instrument": "CBOT Treasury futures",
+   "purpose": "Captures the reaction to the expected policy path",
+   "allocation": "35% margin"
+  },
+  {
+   "position": "Ten-year Treasury futures",
+   "instrument": "CBOT Treasury futures",
+   "purpose": "Captures the reaction in longer-term yields",
+   "allocation": "15% margin"
+  },
+  {
+   "position": "Options on Treasury futures, 5 delta",
+   "instrument": "CBOT option contracts",
+   "purpose": "Limits losses on a policy surprise",
+   "allocation": "2%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "48%"
+  }
+ ],
+ "entry": "Market pricing differs from central bank guidance by at least 8 basis points",
+ "size": "Set to a 6% annualised volatility target",
+ "exit": "Position closed one day after the decision, or at 60% of the target gain",
+ "stop": "Position closed after a loss of 1% of capital",
+ "marketWatch": "The gap between market pricing and central bank guidance, together with the inflation and employment data released before meetings, are the main indicators because they show how much of a decision is already priced. Policy meetings, changes in trade policy and geopolitical events that move inflation expectations matter most when they alter the likely path of interest rates.",
+ "favourable": [
+  {
+   "heading": "Guidance differs from market pricing",
+   "text": "A gap between central bank guidance and market pricing favours the strategy because the gain is earned when prices adjust to the guidance. In July 2012, the ECB's commitment to defend the euro moved bond prices well beyond what markets had priced beforehand."
+  },
+  {
+   "heading": "Central banks follow clear patterns",
+   "text": "Predictable reactions to inflation and employment data favour the strategy because comparable past decisions then indicate the likely move. In 2016 and 2017, the Federal Reserve raised rates gradually and signalled each step, so yield changes around meetings were small and predictable."
+  },
+  {
+   "heading": "Policy easing lowers crisis yields",
+   "text": "Policy easing in a crisis favours the strategy because government bond yields fall quickly as markets expect lower rates and bond purchases. In December 2008, the Federal Reserve cut its target range to zero and signalled further easing, and Treasury yields fell."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Central banks surprise the market",
+   "text": "An unexpected decision hurts the strategy because positions are sized on past reactions that no longer apply. In January 2015, the Swiss National Bank removed its franc limit without warning, and Swiss yields and the franc moved far beyond comparable decisions."
+  },
+  {
+   "heading": "Treasury market liquidity disappears",
+   "text": "Disorderly selling hurts the strategy because Treasury futures move far more than policy rates suggest when investors sell liquid assets for cash. In March 2020, the 10-year Treasury yield rose from about 0.5% to above 1% within ten days after emergency rate cuts."
+  },
+  {
+   "heading": "Inflation forces a change of course",
+   "text": "A sudden shift in the inflation outlook hurts the strategy because past reactions no longer indicate how bonds will respond. In 2022, the Federal Reserve raised its target range from 0.25% to 4.50%, and inflation data repeatedly moved bonds more than guidance suggested."
+  }
+ ],
+ "past": [
+  {
+   "name": "Taper tantrum, Jun 2013",
+   "value": -6
+  },
+  {
+   "name": "SNB floor removal, Jan 2015",
+   "value": -3
+  },
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -8
+  },
+  {
+   "name": "Rate shock, Sep 2022",
+   "value": -5
+  },
+  {
+   "name": "Bank failures, Mar 2023",
+   "value": -4
+  }
+ ],
+ "ahead": [
+  -1.5,
+  -0.9,
+  0.2,
+  1.6
+ ],
+ "infoHist": "Historical results show the strategy's estimated peak-to-trough change in value during each event, using futures prices before and after each decision. Each event window runs from the last high before the decision to the low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in policy rates, Treasury yields and the shape of the yield curve, which are then applied to the strategy's current futures and option positions.",
+ "altTitle": "Where Else Can Investors Find Returns from Interest Rates?",
+ "related": [
+  {
+   "id": "c2",
+   "why": "Gains when long-term yields rise faster than short-term yields. Bears the risk of a flatter curve.",
+   "cue": "Holds a curve view for months"
+  },
+  {
+   "id": "r5",
+   "why": "Trades the curve's medium-term yields against short and long ones. Bears the risk that unusual yield gaps persist.",
+   "cue": "Curve shape, regardless of policy decisions"
+  },
+  {
+   "id": "m7",
+   "why": "Follows persistent moves in bond prices. Bears the risk that trends reverse after policy turning points.",
+   "cue": "Weeks to months, not meeting days"
+  }
+ ]
+}

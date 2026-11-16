@@ -1,0 +1,178 @@
+{
+ "id": "e3",
+ "name": "Scenario-based hedged allocation",
+ "heading": "The Structural Opportunity: Positioning Before Event Repricing",
+ "caseLead": "The investment case rests on identifying geopolitical and policy events before markets fully price their effect on sectors, currencies and commodities, and then holding the ETFs that carry that exposure alongside hedges against the main risks. The opportunity persists because most investors react to an event after it has happened, while ETFs make a precise exposure easy to trade and few portfolios review scenario probabilities frequently.",
+ "caseRest": "The main risk is that events develop differently from the scenarios, so the exposures and the hedges lose money together. During broad liquidations, assets that normally offset each other, such as equities, gold and long-dated Treasuries, can fall at the same time. The estimated 9.2% annual return therefore comes with 9.0% volatility and a 12.0% worst fall, and the hedges reduce these losses without removing them.",
+ "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "events": [
+  {
+   "date": "August 2011",
+   "theme": "Policy",
+   "fig": "48",
+   "effect": "up",
+   "title": "US downgrade lifts gold and Treasury prices",
+   "text": "Standard & Poor's downgrade of the US credit rating in August 2011 lifted the VIX to a 48 close, yet Treasury prices and gold both rose. The strategy gained because its hedges in Treasury and gold funds offset falls in equity positions."
+  },
+  {
+   "date": "August 2015",
+   "theme": "China",
+   "fig": "41",
+   "effect": "down",
+   "title": "Yuan devaluation triggers a global equity sell-off",
+   "text": "China's devaluation of the yuan in August 2015 raised fears about global growth, and the VIX closed at 41 in the sell-off. The strategy lost because emerging market and commodity positions fell together while the hedges were too small."
+  },
+  {
+   "date": "June 2016",
+   "theme": "Brexit",
+   "fig": "26",
+   "effect": "up",
+   "title": "Brexit vote weakens sterling and lifts safe havens",
+   "text": "The UK vote to leave the European Union in June 2016 lowered sterling by about 8% against the US dollar in a day, and the VIX closed at 26. The strategy gained because gold, yen and Treasury hedges rose while equities recovered within weeks."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "83",
+   "effect": "down",
+   "title": "Covid cash rush breaks down the hedges",
+   "text": "The March 2020 sell-off became a rush for cash that lifted the VIX to an 83 close. The strategy lost because gold and Treasury hedges fell alongside equities as investors sold liquid assets to meet margin calls."
+  },
+  {
+   "date": "February 2022",
+   "theme": "War",
+   "fig": "36",
+   "effect": "mid",
+   "title": "Ukraine invasion lifts oil and lowers bonds",
+   "text": "Russia's February 2022 invasion of Ukraine pushed Brent crude above $120 a barrel in March and lifted the VIX to a 36 close. Results were mixed because energy and commodity funds gained while Treasury hedges lost value as inflation expectations rose."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "52",
+   "effect": "mid",
+   "title": "US tariffs test Treasury and gold hedges",
+   "text": "The April 2025 US tariff announcement lifted the VIX to a 52 close, and the 10-year Treasury yield rose about half a percentage point within a week. Results were mixed because gold funds gained while Treasury hedges lost value."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Sector, country, gold, Treasury and currency ETFs; held for days to months; reviewed weekly",
+ "rules": "Exposure added when the scenario engine assigns an event a probability above 30%; hedges sized to the main risks of that event; positions reduced as the outlook changes",
+ "costs": "Estimated ETF bid-ask spreads, commissions and fund fees deducted",
+ "constructionTitle": "Strategy construction, from event exposure to portfolio hedges",
+ "legs": [
+  {
+   "position": "Event-exposed sector and country ETFs",
+   "instrument": "Listed equity and commodity ETFs",
+   "purpose": "Earns from assets most exposed to the leading scenario",
+   "allocation": "50%"
+  },
+  {
+   "position": "Gold ETF",
+   "instrument": "Physically backed gold fund",
+   "purpose": "Hedges geopolitical stress and inflation",
+   "allocation": "12%"
+  },
+  {
+   "position": "Long-dated Treasury ETF",
+   "instrument": "US Treasury bond fund",
+   "purpose": "Hedges a sharp fall in growth",
+   "allocation": "13%"
+  },
+  {
+   "position": "Put spreads, 3 months",
+   "instrument": "S&P 500 ETF options",
+   "purpose": "Limits losses if scenarios fail together",
+   "allocation": "2%"
+  },
+  {
+   "position": "Treasury bill ETF",
+   "instrument": "Short-term US Treasury fund",
+   "purpose": "Holds cash for rebalancing",
+   "allocation": "23%"
+  }
+ ],
+ "entry": "Scenario probability above 30% and an ETF with a clear link to the event",
+ "size": "Set to a 9% annualised volatility target; single ETF capped at 15%",
+ "exit": "Position reduced when the scenario probability halves, or after 60 days",
+ "stop": "Event positions closed if the portfolio falls 6% from its peak",
+ "marketWatch": "The probabilities that Rehyn's scenario engine assigns to the leading events, and the cost of hedging them, are the main indicators because they show how much of each event is already priced. Elections, summits, sanctions decisions and central bank meetings matter most when they change the likelihood of an event that affects several asset classes at once.",
+ "favourable": [
+  {
+   "heading": "Events follow the leading scenario",
+   "text": "An event that follows the leading scenario favours the strategy because the exposed assets move as expected while hedges cost little. After the UK vote to leave the European Union in 2016, gold, yen and Treasury holdings rose while equity losses reversed within weeks."
+  },
+  {
+   "heading": "Safe haven assets keep their role",
+   "text": "Hedges that rise when equities fall favour the strategy because they offset losses on event exposures. In August 2011, both Treasury prices and gold rose after the US credit rating downgrade."
+  },
+  {
+   "heading": "Hedging costs stay low",
+   "text": "Low option and hedging costs favour the strategy because protection reduces losses without absorbing much of the return. Implied volatility was low for most of 2017, so hedges were inexpensive and the portfolio kept most of its gains."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Hedges fall with equities",
+   "text": "Falling hedges hurt the strategy because gold and Treasury funds are meant to offset equity losses. In March 2020, investors sold both to raise cash while the VIX closed at 83."
+  },
+  {
+   "heading": "Inflation lifts bond yields",
+   "text": "Rising inflation expectations hurt the strategy because Treasury hedges fall in price when yields rise. In 2022, the Ukraine war raised energy prices and Treasury funds lost value alongside equities."
+  },
+  {
+   "heading": "Events surprise the scenarios",
+   "text": "Events that differ from the scenarios hurt the strategy because positions are sized for the wrong risks. In August 2015, the devaluation of the yuan caused emerging market and commodity positions to fall together."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -12
+  },
+  {
+   "name": "China devaluation, Aug 2015",
+   "value": -5
+  },
+  {
+   "name": "Brexit vote, Jun 2016",
+   "value": 1.8
+  },
+  {
+   "name": "Ukraine invasion, Feb 2022",
+   "value": -2.4
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -3.1
+  }
+ ],
+ "ahead": [
+  -3.8,
+  1.9,
+  0.3,
+  2.2
+ ],
+ "infoHist": "Historical results show the strategy's estimated peak-to-trough change in value during each event, using the ETF exposures and hedges that the scenario engine would have selected at the time. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in equities, oil, gold, interest rates and currencies, which are then applied to the strategy's current ETF holdings and hedges.",
+ "altTitle": "Where Else Can Investors Find Returns from Event Risk?",
+ "related": [
+  {
+   "id": "d1",
+   "why": "Buys index put options. Bears the premium cost, paying in calm markets and gaining in a crash.",
+   "cue": "Protects without taking event exposure"
+  },
+  {
+   "id": "c7",
+   "why": "Trades rate, currency and commodity futures on macro trends. Bears the risk that policy changes reverse the trend.",
+   "cue": "Trend signals instead of scenario views"
+  },
+  {
+   "id": "s8",
+   "why": "Trades oil option prices around supply events. Bears time decay when an event passes without a price move.",
+   "cue": "Oil events through options, not ETFs"
+  }
+ ]
+}

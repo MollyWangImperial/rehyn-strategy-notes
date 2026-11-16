@@ -1,0 +1,172 @@
+{
+ "id": "m5",
+ "name": "Commodity trend following",
+ "heading": "The Structural Opportunity: Persistent Supply-Driven Price Trends",
+ "caseLead": "The investment case rests on commodity price trends lasting for weeks or months, because supply cannot respond quickly to higher or lower prices. New oil wells, mines and harvests take months or years to adjust, so geopolitical disruptions, sanctions and output decisions by producer groups such as OPEC move prices in one direction for longer than in most financial markets.",
+ "caseRest": "The main risk is a sharp reversal when supply returns or demand falls, because commodity prices can move 20% or more within weeks. These reversals often follow policy decisions, such as changes in OPEC output targets or in the margin requirements set by exchanges, and they can erase the gains from a long trend. The strategy also lags in range-bound markets, because trend signals reverse repeatedly and each trade incurs costs.",
+ "figNote": "The large figure on each card shows the change in the price of the commodity named in the text, over the period described. Commodity trend following earns from sustained price moves in either direction, so a larger move offers more to follow.",
+ "events": [
+  {
+   "date": "July 2008",
+   "theme": "Financial crisis",
+   "fig": "−77%",
+   "effect": "up",
+   "title": "Oil collapses from record to crisis low",
+   "text": "From July to December 2008, WTI crude fell about 77% as the financial crisis cut demand, after a rise to a record above 145 dollars a barrel. The strategy gained because it held long positions on the way up and then built short positions."
+  },
+  {
+   "date": "May 2011",
+   "theme": "Exchange margins",
+   "fig": "−27%",
+   "effect": "down",
+   "title": "Margin increases end the silver rally",
+   "text": "In the week to 6 May 2011, silver fell about 27% after the exchange raised margin requirements five times in nine days. The strategy lost because long positions built during the rise were closed at sharply lower prices."
+  },
+  {
+   "date": "November 2014",
+   "theme": "OPEC policy",
+   "fig": "−76%",
+   "effect": "up",
+   "title": "OPEC keeps output high as oil prices fall",
+   "text": "Between June 2014 and January 2016, Brent crude fell about 76% after OPEC decided in November 2014 not to cut output despite rising US shale supply. The strategy gained because short positions captured a steady decline over several quarters."
+  },
+  {
+   "date": "September 2019",
+   "theme": "Geopolitics",
+   "fig": "+15%",
+   "effect": "down",
+   "title": "Drone strikes on Saudi oil sites spike prices",
+   "text": "Brent rose about 15% on 16 September 2019 after drone strikes on Saudi Arabian oil facilities halved the country's output, then gave back the gain within two weeks. The strategy lost because the spike reversed before a trend could form."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Price war",
+   "fig": "−24%",
+   "effect": "mid",
+   "title": "Saudi price war meets Covid demand loss",
+   "text": "Brent fell about 24% on 9 March 2020 after Saudi Arabia began a price war with Russia while Covid cut demand. Results were mixed because short oil positions gained, but sharp reversals in metals and grain contracts offset part of the gain."
+  },
+  {
+   "date": "February 2022",
+   "theme": "War",
+   "fig": "+60%",
+   "effect": "up",
+   "title": "Ukraine invasion starts an energy price trend",
+   "text": "Brent rose about 60% from early January to 8 March 2022 as Russia's invasion of Ukraine threatened energy exports. The strategy gained because long positions in oil, gas and wheat rewarded a trend that lasted for several months."
+  }
+ ],
+ "worstWhen": "May 2011",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Futures on energy, metals and agricultural commodities; about 25 contracts; held for weeks; rolled monthly",
+ "rules": "Long when the 1-month and 6-month price trends both rise, short when both fall; positions reduced when volatility rises; contracts rolled before expiry",
+ "costs": "Estimated commissions, bid-ask spreads and futures roll costs deducted at each trade",
+ "constructionTitle": "Strategy construction, from supply-driven trends to diversified risk",
+ "legs": [
+  {
+   "position": "Long or short energy futures",
+   "instrument": "Crude oil, natural gas and heating oil futures",
+   "purpose": "Earns trends from supply decisions",
+   "allocation": "35% of risk"
+  },
+  {
+   "position": "Long or short metals futures",
+   "instrument": "Gold, silver and copper futures",
+   "purpose": "Earns trends from industrial demand",
+   "allocation": "30% of risk"
+  },
+  {
+   "position": "Long or short agricultural futures",
+   "instrument": "Wheat, corn, soybean and sugar futures",
+   "purpose": "Earns trends from weather and harvests",
+   "allocation": "25% of risk"
+  },
+  {
+   "position": "Long or short soft commodity and livestock futures",
+   "instrument": "Coffee, cocoa and cattle futures",
+   "purpose": "Diversifies the trend premium",
+   "allocation": "10% of risk"
+  }
+ ],
+ "entry": "1-month and 6-month trends agree in direction",
+ "size": "Set to a 10% annualised volatility target, with each market at most 8% of risk",
+ "exit": "Position closed when the 1-month trend turns against the 6-month trend",
+ "stop": "Market position closed after a loss of 1.5% of portfolio value",
+ "marketWatch": "Rehyn watches inventory levels, the shape of futures curves and the share of supply held by producers that coordinate output, because these show how long a supply-driven trend can last. Rising volatility in oil and metals contracts signals a higher risk of reversal. Production decisions by OPEC and its partners, sanctions announcements and weather in major growing regions are the events most likely to start or end a trend.",
+ "favourable": [
+  {
+   "heading": "Persistent supply disruptions",
+   "text": "Supply disruptions favour the strategy because producers and importers take months to replace lost output, so prices keep moving after the first reaction. After Russia's 2022 invasion of Ukraine, Brent rose about 60% in two months and stayed above its starting level through the summer."
+  },
+  {
+   "heading": "Oversupply from producer decisions",
+   "text": "A decision by producers to keep output high favours the strategy because inventories build for many months and prices fall steadily. OPEC's November 2014 decision contributed to a Brent decline of about 76% from June 2014 to January 2016."
+  },
+  {
+   "heading": "Strong industrial demand cycles",
+   "text": "Rapid growth in industrial demand favours the strategy because inventories fall and prices rise over several quarters. After the 2008 financial crisis, Chinese stimulus helped copper more than triple from its December 2008 low to February 2011."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Policy changes that cap rallies",
+   "text": "Exchange and government decisions hurt the strategy when they trigger sharp reversals in trending markets. In May 2011, five margin increases in nine days sent silver down about 27% in a week and forced long positions to close."
+  },
+  {
+   "heading": "Short spikes without follow-through",
+   "text": "Brief spikes hurt the strategy because trend signals confirm after the move, so positions are held as prices return to earlier levels. Drone strikes on Saudi oil facilities lifted Brent about 15% on 16 September 2019, and the gain was reversed within two weeks."
+  },
+  {
+   "heading": "Rebounds after long declines",
+   "text": "Sharp rebounds hurt the strategy because short positions built during a long decline lose when supply cuts or a demand recovery lift prices quickly. In 2016, Brent rose from under 30 dollars in January to above 50 dollars by June, erasing earlier gains from short positions."
+  }
+ ],
+ "past": [
+  {
+   "name": "Silver crash, May 2011",
+   "value": -9
+  },
+  {
+   "name": "Oil rebound, Mar 2016",
+   "value": -7
+  },
+  {
+   "name": "Gold sell off, Apr 2013",
+   "value": -6
+  },
+  {
+   "name": "Oil reversal, Mar 2022",
+   "value": -5
+  },
+  {
+   "name": "Saudi oil attack, Sep 2019",
+   "value": -4
+  }
+ ],
+ "ahead": [
+  2.8,
+  6.4,
+  0.9,
+  0.5
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in oil, metals and agricultural prices, which are then applied to the strategy's current positions.",
+ "altTitle": "Where Else Can Investors Find Commodity Premiums?",
+ "related": [
+  {
+   "id": "c3",
+   "why": "Holds contracts on backwardated futures curves. Bears reversal risk, losing when supply returns and the curve flattens.",
+   "cue": "Paid by curve shape, not price direction"
+  },
+  {
+   "id": "r6",
+   "why": "Trades price gaps between related contracts. Bears spread risk, losing when a gap keeps widening.",
+   "cue": "Market neutral, with less direction risk"
+  },
+  {
+   "id": "s8",
+   "why": "Buys oil options before supply events. Bears time decay, losing small amounts when no disruption occurs.",
+   "cue": "Gains from the spikes this strategy misses"
+  }
+ ]
+}

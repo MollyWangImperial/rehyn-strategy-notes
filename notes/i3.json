@@ -1,0 +1,178 @@
+{
+ "id": "i3",
+ "name": "Investment grade bond laddering",
+ "heading": "The Structural Opportunity: Earning the Credit Spread",
+ "caseLead": "The investment case rests on the credit spread, the extra yield that investment grade companies pay over government bonds for the risk of default and for lower liquidity. The spread persists because investors price in rare but severe credit losses, and because geopolitical and policy shocks regularly raise the cost of corporate borrowing even though most investment grade issuers repay in full.",
+ "caseRest": "The main risk is a sharp widening in credit spreads together with higher government bond yields, which lowers bond prices faster than coupon income can replace the loss. A ladder reduces reinvestment risk, but it does not protect the market value of the bonds before they mature. In 2022 and in March 2020 the portfolio lost value even though almost all of the bonds were later repaid at par.",
+ "figNote": "The large figure on each card shows the widest level of the investment grade credit spread during the episode. The spread is the extra yield that US investment grade corporate bonds pay over Treasuries, which has averaged about 1.5% over the long run, and readings above 3% signal severe stress.",
+ "events": [
+  {
+   "date": "December 2008",
+   "theme": "Credit crisis",
+   "fig": "6.1%",
+   "effect": "down",
+   "title": "Bank failures push credit spreads above 6%",
+   "text": "After the Lehman Brothers failure, the investment grade spread reached 6.1% in December 2008 as banks and other financial issuers lost market access. The strategy lost because bond prices fell sharply and refinancing risk rose, although most bonds were repaid at maturity."
+  },
+  {
+   "date": "March 2016",
+   "theme": "Policy support",
+   "fig": "2.2%",
+   "effect": "up",
+   "title": "ECB corporate bond buying narrows spreads",
+   "text": "The investment grade spread peaked near 2.2% in February 2016 during the oil price slump, then narrowed after the European Central Bank announced corporate bond purchases in March. The strategy gained because the staggered maturities kept income steady and bond prices recovered."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "4.0%",
+   "effect": "mid",
+   "title": "Fed backstop ends the Covid credit sell-off",
+   "text": "The investment grade spread rose to 4.0% in March 2020, and it narrowed after the Federal Reserve announced corporate bond purchases on 23 March. Results were mixed because bond prices fell sharply and then recovered, while maturing bonds were repaid at par."
+  },
+  {
+   "date": "October 2022",
+   "theme": "Rate hikes",
+   "fig": "1.7%",
+   "effect": "down",
+   "title": "Fed rate rises cause a record bond loss",
+   "text": "The Federal Reserve raised rates by 75 basis points at four meetings in 2022, and the investment grade spread reached 1.7% in October. The strategy lost because higher Treasury yields lowered bond prices much more than wider spreads did."
+  },
+  {
+   "date": "March 2023",
+   "theme": "Banking stress",
+   "fig": "1.6%",
+   "effect": "up",
+   "title": "Bank failures widen spreads only briefly",
+   "text": "The failure of Silicon Valley Bank in March 2023 pushed the investment grade spread to about 1.6% as investors questioned bank funding. The strategy gained because the widening was brief and maturing bonds were reinvested at higher yields."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "1.2%",
+   "effect": "mid",
+   "title": "US tariffs lift credit spreads for weeks",
+   "text": "The US tariff announcement of April 2025 widened the investment grade spread to about 1.2% as investors expected weaker earnings. Results were mixed because bond prices fell for a few weeks, while the ladder's short maturities limited the loss."
+  }
+ ],
+ "worstWhen": "October 2022",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "US and European investment grade corporate bonds rated BBB- or higher; maturities of 1 to 7 years; one rung matures each year",
+ "rules": "Issuers selected with net debt below 3.5 times earnings; no issuer above 3%; bonds sold on a downgrade to BBB- with a negative outlook; maturing bonds reinvested at the longest rung",
+ "costs": "Estimated bid-ask spreads on purchases and sales; no trading costs on bonds held to maturity",
+ "constructionTitle": "Strategy construction, from spread income to maturity control",
+ "legs": [
+  {
+   "position": "Corporate bonds maturing in 1 to 2 years",
+   "instrument": "Investment grade bonds",
+   "purpose": "Provides liquidity as each rung matures",
+   "allocation": "30%"
+  },
+  {
+   "position": "Corporate bonds maturing in 3 to 4 years",
+   "instrument": "Investment grade bonds",
+   "purpose": "Earns the spread with moderate rate risk",
+   "allocation": "30%"
+  },
+  {
+   "position": "Corporate bonds maturing in 5 to 7 years",
+   "instrument": "Investment grade bonds",
+   "purpose": "Earns the highest spread and yield",
+   "allocation": "30%"
+  },
+  {
+   "position": "Index protection, 5 years",
+   "instrument": "Investment grade credit default swap index",
+   "purpose": "Limits losses when spreads widen sharply",
+   "allocation": "1%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "9%"
+  }
+ ],
+ "entry": "Bond spread at least 0.8% over Treasuries of the same maturity",
+ "size": "No issuer above 3% and no sector above 20%",
+ "exit": "Held to maturity, or sold on a downgrade to BBB- with a negative outlook",
+ "stop": "Longest rung halved if the investment grade spread closes above 2.5%",
+ "marketWatch": "Rehyn monitors the investment grade spread over Treasuries, the share of bonds rated BBB and the level of corporate leverage, because these show how much compensation investors receive for credit risk. Central bank rate decisions, new issuance volumes and tariff announcements that affect earnings are the events that matter most. A widening in spreads would reduce portfolio value, while a fall in Treasury yields would raise it.",
+ "favourable": [
+  {
+   "heading": "Stable credit spreads",
+   "text": "Stable spreads favour the strategy because bonds earn their coupon without price losses and maturing bonds are reinvested at current yields. Between 2012 and 2019 the investment grade spread mostly stayed between 1% and 2%, so income made up most of the return."
+  },
+  {
+   "heading": "Higher yields on reinvestment",
+   "text": "Higher yields favour the strategy over time because each maturing rung is reinvested at the new rate, which raises the income of the whole ladder. After the 2022 rate rises, the yield on investment grade bonds reached about 6% in late 2023, more than double the level of 2021."
+  },
+  {
+   "heading": "Central bank support for credit",
+   "text": "Central bank support favours the strategy because purchases and lending facilities lower credit spreads and keep issuers able to refinance. In March 2020 the Federal Reserve announced corporate bond purchases, and the investment grade spread fell from 4.0% to below 2% by June."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Rising rates and inflation",
+   "text": "Higher yields hurt the strategy because bond prices fall when rates rise and the ladder keeps its bonds until they mature. In 2022 the 10-year Treasury yield rose about 235 basis points, and Rehyn estimates that the ladder lost about 14% from peak to trough."
+  },
+  {
+   "heading": "A sharp widening in spreads",
+   "text": "Wider spreads hurt the strategy because falling prices reduce portfolio value even though most bonds are repaid at par. In March 2020 the spread rose from about 1% to 4% in five weeks, and issuers of weaker investment grade bonds lost access to the market."
+  },
+  {
+   "heading": "Downgrades to high yield",
+   "text": "Downgrades hurt the strategy because bonds that fall below investment grade are sold by funds that must hold higher-rated debt, which pushes prices down. In 2020 about 200 billion dollars of bonds were cut to high yield, including bonds issued by Ford."
+  }
+ ],
+ "past": [
+  {
+   "name": "Rate hikes, 2022",
+   "value": -14
+  },
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -6.5
+  },
+  {
+   "name": "Taper tantrum, May 2013",
+   "value": -3.2
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -1
+  },
+  {
+   "name": "Bank failures, Mar 2023",
+   "value": 0.8
+  }
+ ],
+ "ahead": [
+  -3.4,
+  -0.9,
+  -0.1,
+  1.5
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from the ladder's value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last high in bond prices before the shock to the low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in Treasury yields and investment grade spreads, which are then applied to the ladder's current maturities and issuers.",
+ "altTitle": "Where Else Can Investors Find Credit Income?",
+ "related": [
+  {
+   "id": "i2",
+   "why": "Combines short and long Treasuries. Bears interest rate risk without credit risk, losing when inflation lifts long yields.",
+   "cue": "Rate risk without credit exposure"
+  },
+  {
+   "id": "c6",
+   "why": "Holds short-maturity high yield bonds. Bears default risk for a larger coupon, with prices that fall quickly in a sell-off.",
+   "cue": "Higher coupons for greater credit risk"
+  },
+  {
+   "id": "i1",
+   "why": "Rolls short-dated government bills at the policy rate. Bears reinvestment risk when rates fall, with no credit risk.",
+   "cue": "Cash yield with no credit risk"
+  }
+ ]
+}

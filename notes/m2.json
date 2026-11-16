@@ -1,0 +1,166 @@
+{
+ "id": "m2",
+ "name": "Equity momentum investing",
+ "heading": "The Structural Opportunity: Investor Underreaction and Herding",
+ "caseLead": "The investment case rests on the tendency of shares with the strongest returns over the past six to twelve months to keep outperforming over the following one to six months, a pattern documented across equity markets for decades. It persists because investors adjust slowly to new information about earnings and policy, and because rising prices attract buying from funds that follow performance, while geopolitical and policy shifts that reorder sector leadership, such as the rise of energy shares after 2022, create new leaders gradually.",
+ "caseRest": "The main risk is a momentum crash, when leadership reverses suddenly and the strategy holds the shares that fall furthest. These reversals tend to follow severe sell-offs, when the weakest shares rebound fastest, so the strategy can lose heavily just as markets recover. Because the portfolio holds only equities, it also falls with the market in a broad sell-off, so its drawdowns can be deep.",
+ "figNote": "The large figure on each card shows how far the S&P 500 moved during the episode, over the period described in the text. Momentum returns depend on how leadership changes inside the market, so the index move shows the market backdrop rather than the strategy's return.",
+ "events": [
+  {
+   "date": "March 2009",
+   "theme": "Policy rescue",
+   "fig": "+36%",
+   "effect": "down",
+   "title": "Rescue rally reverses momentum leaders",
+   "text": "From 9 March to the end of May 2009, the S&P 500 rose about 36% as government rescue measures stabilised banks. The strategy lost because it held defensive shares, while the banks and cyclical companies that had fallen furthest rose fastest."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−34%",
+   "effect": "down",
+   "title": "Covid sell-off hits even the market leaders",
+   "text": "The S&P 500 fell about 34% between 19 February and 23 March 2020 as Covid closures spread and investors sold shares to raise cash. The strategy lost because it holds only equities, so its leaders fell with the market."
+  },
+  {
+   "date": "November 2020",
+   "theme": "Vaccine news",
+   "fig": "+11%",
+   "effect": "down",
+   "title": "Vaccine news reverses stay-at-home leaders",
+   "text": "The S&P 500 rose about 11% in November 2020 after Pfizer reported high vaccine efficacy, and investors sold technology winners to buy airlines, banks and energy shares. The strategy lost because its holdings were concentrated in the stay-at-home leaders."
+  },
+  {
+   "date": "February 2022",
+   "theme": "War",
+   "fig": "−13%",
+   "effect": "up",
+   "title": "Ukraine invasion lifts energy leaders",
+   "text": "The S&P 500 fell about 13% from 3 January to 8 March 2022 as Russia's invasion of Ukraine pushed oil and gas prices higher on top of Fed rate rises. The strategy gained because it held energy producers, which rose while technology shares fell."
+  },
+  {
+   "date": "January 2023",
+   "theme": "AI rally",
+   "fig": "+24%",
+   "effect": "up",
+   "title": "Artificial intelligence leaders extend their gains",
+   "text": "The S&P 500 rose about 24% in 2023 as earnings forecasts for semiconductor and software companies rose with demand for artificial intelligence. The strategy gained because these shares kept outperforming for most of the year."
+  },
+  {
+   "date": "July 2024",
+   "theme": "Rotation",
+   "fig": "−8.5%",
+   "effect": "mid",
+   "title": "Rate cut hopes rotate money out of technology",
+   "text": "The S&P 500 fell about 8.5% between 16 July and 5 August 2024 as rate cut expectations moved money from AI leaders into smaller companies. Results were mixed because holdings in utilities and financials held up while semiconductor holdings fell sharply."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "US and developed market large-cap shares; top fifth by 12-month return; rebalanced monthly",
+ "rules": "Shares ranked by return over the past 12 months excluding the latest month; top fifth held with equal weights; each share limited to 3% and each sector to 25%",
+ "costs": "Estimated commissions, bid-ask spreads and market impact deducted at each monthly rebalance",
+ "constructionTitle": "Strategy construction, from return ranking to diversified leaders",
+ "legs": [
+  {
+   "position": "Top-ranked US large-cap shares",
+   "instrument": "Listed US equities",
+   "purpose": "Earns the momentum premium",
+   "allocation": "60%"
+  },
+  {
+   "position": "Top-ranked developed market shares outside the US",
+   "instrument": "Listed equities in Europe, Japan and Canada",
+   "purpose": "Diversifies leadership across regions",
+   "allocation": "30%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Reduces equity exposure when the market falls",
+   "allocation": "10%"
+  }
+ ],
+ "entry": "Share ranks in the top 20% of 12-month returns excluding the latest month",
+ "size": "Equal weight, with each share capped at 3% of the portfolio",
+ "exit": "Share sold when it falls out of the top 40% at the monthly review",
+ "stop": "Equity exposure halved if the index falls 15% below its 12-month high",
+ "marketWatch": "Rehyn watches how concentrated recent winners are in a few sectors, because narrow leadership makes a reversal more damaging. The gap between the returns of the strongest and weakest fifths of shares, and the pace of rotation between growth and cyclical sectors, show whether leadership is about to change. Earnings seasons and central bank decisions are the events most likely to reorder leadership.",
+ "favourable": [
+  {
+   "heading": "Persistent sector leadership",
+   "text": "Steady leadership favours the strategy because rising shares attract further buying, so the winners keep outperforming for months. The artificial intelligence rally of 2023 followed this pattern, as semiconductor and software shares led the market for most of the year."
+  },
+  {
+   "heading": "Gradual shifts in policy and prices",
+   "text": "Policy changes that reward one sector over time favour the strategy because investors adjust their holdings slowly. After Russia's 2022 invasion of Ukraine, higher energy prices lifted oil and gas producers for months, and the strategy held them as they led the market."
+  },
+  {
+   "heading": "Orderly, rising markets",
+   "text": "Markets that rise steadily with low volatility favour the strategy because winners compound without sharp reversals. Between 2013 and 2017, US equity leadership changed slowly and the strategy earned a premium in most months."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Rebounds after severe sell-offs",
+   "text": "Sharp recoveries hurt the strategy because the shares that fell most rebound fastest, while its holdings are the shares that fell least. In 2009, the S&P 500 rose about 36% between March and May, led by banks and cyclical companies that the strategy did not own."
+  },
+  {
+   "heading": "News that reverses market leadership",
+   "text": "Unexpected news about health risks or interest rates hurts the strategy when it changes which shares investors favour within days. In November 2020, vaccine results lifted airline and bank shares while technology leaders fell, and momentum holdings lost ground."
+  },
+  {
+   "heading": "Concentration in a single theme",
+   "text": "A portfolio concentrated in one theme hurts the strategy when that theme loses support, because several holdings fall together. In July 2024, artificial intelligence shares fell as investors rotated into smaller companies, and the losses were concentrated in semiconductors."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -27
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -16
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": -15
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -14
+  },
+  {
+   "name": "Rotation from technology, Jul 2024",
+   "value": -9
+  }
+ ],
+ "ahead": [
+  -14.5,
+  -1.8,
+  -0.9,
+  1.5
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in equity indices and sector returns, which are then applied to the strategy's current holdings.",
+ "altTitle": "Where Else Can Investors Find Momentum Premiums?",
+ "related": [
+  {
+   "id": "v3",
+   "why": "Buys shares that are cheap on valuation. Bears value trap risk, losing when expensive leaders keep rising.",
+   "cue": "Tends to gain when this strategy loses"
+  },
+  {
+   "id": "m1",
+   "why": "Follows price trends in futures across asset classes. Bears reversal risk, losing in range-bound markets.",
+   "cue": "Trend premium, with less equity exposure"
+  },
+  {
+   "id": "e2",
+   "why": "Holds shares after strong earnings surprises. Bears event risk, losing when later guidance disappoints.",
+   "cue": "Similar drift, driven by earnings news"
+  }
+ ]
+}

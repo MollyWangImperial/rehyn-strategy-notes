@@ -1,0 +1,172 @@
+{
+ "id": "i4",
+ "name": "Dividend quality investing",
+ "heading": "The Structural Opportunity: Reliable Dividend Income",
+ "caseLead": "The investment case rests on companies that pay dividends well covered by free cash flow, because those payments are cut less often and tend to grow with earnings. The opportunity persists because many investors chase headline yield without checking cash flow, which leaves companies with covered and growing payouts priced like the average company, while tax changes, bank payout limits and tariffs keep altering which payouts are safe.",
+ "caseRest": "The main risk is a fall in share prices larger than the income collected, because dividend shares still carry the full risk of the equity market. Dividends are cut in recessions when profits fall, as in March 2020 when many companies suspended payments to preserve cash. Higher bond yields also reduce the appeal of dividend income, so rate-sensitive holdings such as utilities can fall even when earnings are stable.",
+ "figNote": "The large figure on each card shows the change in the S&P 500 over the episode, measured from its high before the event to its low, or from its low to its high in a rally. It is a simple measure of how severe the move in the equity market was, so readers can compare how a dividend portfolio behaved against it.",
+ "events": [
+  {
+   "date": "August 2011",
+   "theme": "Credit rating",
+   "fig": "−19%",
+   "effect": "mid",
+   "title": "US downgrade drives a defensive rotation",
+   "text": "The S&P 500 fell about 19% from April to October 2011 after the US credit rating downgrade and the euro area debt crisis. Results were mixed because covered dividends held up and drew defensive buying, but share prices still fell."
+  },
+  {
+   "date": "May 2013",
+   "theme": "Fed guidance",
+   "fig": "−6%",
+   "effect": "down",
+   "title": "Taper signal lifts yields and hits dividend shares",
+   "text": "The Federal Reserve signalled in May 2013 that it would slow bond purchases, and the S&P 500 fell about 6% in the following month. The strategy lost because higher bond yields made dividend income less attractive, especially for utilities."
+  },
+  {
+   "date": "December 2018",
+   "theme": "Tighter policy",
+   "fig": "−20%",
+   "effect": "mid",
+   "title": "Tighter policy and trade tension weigh on equities",
+   "text": "The S&P 500 fell about 20% from September to December 2018 as the Federal Reserve raised rates and US-China tariffs weighed on growth. Results were mixed because dividend payers fell less than the index but still lost value."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−34%",
+   "effect": "down",
+   "title": "Covid lockdowns force dividend cuts",
+   "text": "The S&P 500 fell about 34% in five weeks to 23 March 2020, and many companies cut dividends to preserve cash. The strategy lost because dividend cuts reduced income and share prices fell with the market."
+  },
+  {
+   "date": "November 2020",
+   "theme": "Vaccine rotation",
+   "fig": "+11%",
+   "effect": "up",
+   "title": "Vaccine news revives cyclical dividend shares",
+   "text": "The S&P 500 rose about 11% in November 2020 after the first effective Covid vaccine results, and investors moved into energy, banks and industrial companies. The strategy gained because dividend payers in these sectors recovered as earnings expectations improved."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "−19%",
+   "effect": "mid",
+   "title": "US tariffs trigger a sharp equity sell-off",
+   "text": "The S&P 500 fell about 19% from February to 8 April 2025 as sweeping US tariffs raised the risk of weaker earnings. Results were mixed because dividend payers fell less than the index, but companies with imported inputs faced margin pressure."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Global large-cap shares; reviewed twice a year; dividends reinvested",
+ "rules": "Companies selected on dividend cover, balance sheet strength and five-year dividend growth; yields above the 90th percentile excluded to avoid unsustainable payouts",
+ "costs": "Estimated commissions, bid-ask spreads and withholding tax on dividends",
+ "constructionTitle": "Strategy construction, from covered dividends to drawdown control",
+ "legs": [
+  {
+   "position": "Dividend payers with cash cover above 1.5 times, 40 stocks",
+   "instrument": "Global large-cap shares",
+   "purpose": "Earns dividend income and earnings growth",
+   "allocation": "55%"
+  },
+  {
+   "position": "Dividend growers with 10 years of increases",
+   "instrument": "US and European shares",
+   "purpose": "Adds income that grows with inflation",
+   "allocation": "30%"
+  },
+  {
+   "position": "Put options, 3 months, 10% out of the money",
+   "instrument": "S&P 500 index options",
+   "purpose": "Limits losses in a market sell-off",
+   "allocation": "2%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Holds cash for rebalancing and earns the cash rate",
+   "allocation": "13%"
+  }
+ ],
+ "entry": "Free cash flow covers the dividend at least 1.5 times",
+ "size": "No stock above 4% and no sector above 20%",
+ "exit": "Position closed after a dividend cut, or when cover falls below 1.2 times",
+ "stop": "Equity weight cut by a third if the S&P 500 falls 20% from its high",
+ "marketWatch": "Rehyn monitors dividend cover, net debt against earnings and the gap between dividend yields and government bond yields, because these show whether payouts are safe and attractive. Corporate earnings seasons, central bank rate decisions and changes to dividend tax or bank payout rules are the events that matter most. A rise in bond yields would weigh on rate-sensitive payers, while weak earnings would put the weakest payouts at risk.",
+ "favourable": [
+  {
+   "heading": "Defensive rotations in sell-offs",
+   "text": "Defensive rotations favour the strategy because investors move into companies with steady cash flow and covered dividends when growth expectations fall. In 2022 the S&P 500 fell about 18% while dividend-focused funds lost far less, because earnings visible today were valued above growth expected years ahead."
+  },
+  {
+   "heading": "Rising corporate cash flow",
+   "text": "Rising free cash flow favours the strategy because companies can raise dividends without borrowing, which lifts both income and share prices. From 2010 to 2019 S&P 500 dividends per share more than doubled as earnings grew."
+  },
+  {
+   "heading": "Stable or falling bond yields",
+   "text": "Stable bond yields favour the strategy because dividend income stays attractive against government bonds, so valuations of dividend payers hold. In 2019 the 10-year Treasury yield fell from about 2.7% to 1.9%, and dividend payers gained alongside the market."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Recessions that force dividend cuts",
+   "text": "Recessions hurt the strategy because falling profits make companies cut payouts, which lowers income and weakens share prices together. In March 2020 companies in energy, banking and airlines suspended or cut dividends, which caused large losses for portfolios that held them."
+  },
+  {
+   "heading": "Rising bond yields",
+   "text": "Rising bond yields hurt the strategy because investors can earn similar income from government bonds, which lowers the valuation of dividend shares. In May and June 2013 the 10-year Treasury yield rose by nearly 1 percentage point and US utilities fell about 10%."
+  },
+  {
+   "heading": "Tax and regulatory limits on payouts",
+   "text": "Regulatory limits hurt the strategy when authorities restrict dividends to protect capital in a crisis. In 2020 European and British regulators asked banks to suspend dividends, which removed a large share of income from regional dividend benchmarks."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -25
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -9
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -8.5
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": -6
+  },
+  {
+   "name": "Taper tantrum, May 2013",
+   "value": -4.2
+  }
+ ],
+ "ahead": [
+  -11.5,
+  -1.2,
+  -0.3,
+  2.1
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each figure includes the dividends received during the event window.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in global share prices, bond yields and sector returns, which are then applied to the strategy's current holdings, including the index put options.",
+ "altTitle": "Where Else Can Investors Find Equity Income?",
+ "related": [
+  {
+   "id": "i5",
+   "why": "Sells call options on shares for premium. Bears capped gains, giving up most of a strong rally.",
+   "cue": "Adds option premium to share income"
+  },
+  {
+   "id": "i6",
+   "why": "Collects contracted rent and regulated cash flows. Bears real interest rate risk, with asset values falling when yields rise.",
+   "cue": "Property and utility income, not dividends"
+  },
+  {
+   "id": "d5",
+   "why": "Holds the least volatile shares. Bears the risk of lagging in strong rallies, with smaller drawdowns.",
+   "cue": "Defensive equity without an income focus"
+  }
+ ]
+}

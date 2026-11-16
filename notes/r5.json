@@ -1,0 +1,172 @@
+{
+ "id": "r5",
+ "name": "Yield curve butterfly trading",
+ "heading": "The Structural Opportunity: Temporary Yield Curve Kinks",
+ "caseLead": "The investment case rests on the tendency of one maturity on the Treasury yield curve to trade cheap or expensive against its neighbours, so buying the cheap maturity and selling the two on either side earns the gap closing without a view on the level of interest rates. The gaps persist because pension funds, insurers and banks buy specific maturities for liability and regulatory reasons, and changes in Treasury issuance or central bank purchases can distort individual maturities for months.",
+ "caseRest": "The main risk is that the curve changes shape against the position, for example when the five-year maturity cheapens as the market reprices the path of Federal Reserve rates. Losses can also build quickly when leveraged funds close similar positions at the same time and liquidity falls, as in March 2020. Because each trade uses leverage to earn a small gap, a few such episodes can outweigh months of gains.",
+ "figNote": "The large figure on each card shows the change in the 10-year US Treasury yield over the month of the episode, in basis points. A basis point is one hundredth of a percentage point, so +50bp means the yield rose by half a percentage point.",
+ "events": [
+  {
+   "date": "June 2013",
+   "theme": "Fed taper",
+   "fig": "+39bp",
+   "effect": "mid",
+   "title": "Fed taper signal lifts Treasury yields",
+   "text": "The June 2013 rise in yields followed the Federal Reserve's signal that it would slow asset purchases, and the 10-year yield rose 39 basis points. Results were mixed because five-year yields rose faster than two-year yields, which widened curve gaps before they narrowed."
+  },
+  {
+   "date": "November 2016",
+   "theme": "US election",
+   "fig": "+54bp",
+   "effect": "up",
+   "title": "US election drives a steady rise in yields",
+   "text": "The November 2016 US election raised expectations of tax cuts and higher spending, and the 10-year yield rose 54 basis points. The strategy gained because yields moved similarly across maturities, so gaps between neighbouring maturities stayed normal."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−48bp",
+   "effect": "down",
+   "title": "Treasury market liquidity fails during the Covid sell-off",
+   "text": "The March 2020 rush for cash lowered the 10-year yield by 48 basis points over the month, while liquidity in Treasuries fell sharply. The strategy lost because leveraged funds closed positions together and gaps between maturities moved far beyond normal ranges."
+  },
+  {
+   "date": "September 2022",
+   "theme": "Gilt crisis",
+   "fig": "+64bp",
+   "effect": "mid",
+   "title": "UK pension selling pushes yields higher worldwide",
+   "text": "The September 2022 rise in yields followed the UK government's tax-cutting budget and forced gilt sales by pension funds, and the 10-year yield rose 64 basis points. Results were mixed because curve gaps widened in the sell-off and narrowed after the Bank of England intervened."
+  },
+  {
+   "date": "March 2023",
+   "theme": "Bank failures",
+   "fig": "−45bp",
+   "effect": "down",
+   "title": "Silicon Valley Bank failure reshapes the yield curve",
+   "text": "The March 2023 failure of Silicon Valley Bank lowered the 10-year yield by 45 basis points as investors expected rate cuts, with two-year yields falling by more. The strategy lost because the shape of the curve changed faster than gaps between maturities could close."
+  },
+  {
+   "date": "October 2023",
+   "theme": "Term premium",
+   "fig": "+29bp",
+   "effect": "up",
+   "title": "Heavy Treasury supply lifts long-term yields",
+   "text": "The October 2023 rise in yields followed larger Treasury auction sizes and strong economic data, and the 10-year yield rose 29 basis points to near 5%. The strategy gained because the move was orderly and gaps between maturities narrowed within weeks."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "US Treasury futures and bonds; 2, 5 and 10-year maturities; positions held for several weeks",
+ "rules": "Butterfly opened when the 2, 5 and 10-year spread is at least two standard deviations from its one-year average; weights set so the position has no net exposure to the level or slope of the curve",
+ "costs": "Estimated bid-ask spreads, commissions and futures roll costs deducted on each trade",
+ "constructionTitle": "Strategy construction, from curve kinks to duration-neutral risk",
+ "legs": [
+  {
+   "position": "Long 5-year maturity when cheap, short when expensive",
+   "instrument": "5-year Treasury futures",
+   "purpose": "Earns the gap against its neighbours closing",
+   "allocation": "50% of risk"
+  },
+  {
+   "position": "Opposite position in 2-year maturity",
+   "instrument": "2-year Treasury futures",
+   "purpose": "Offsets exposure to short-term yields",
+   "allocation": "25% of risk"
+  },
+  {
+   "position": "Opposite position in 10-year maturity",
+   "instrument": "10-year Treasury futures",
+   "purpose": "Offsets exposure to long-term yields",
+   "allocation": "25% of risk"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "15% of capital"
+  }
+ ],
+ "entry": "Butterfly spread at least 2 standard deviations from its one-year average",
+ "size": "Set to a 3.5% annualised volatility target, with duration and slope exposure near zero",
+ "exit": "Position closed when the spread returns to its average, or after 30 days",
+ "stop": "Position closed if the spread moves a further 1.5 standard deviations",
+ "marketWatch": "The indicators that matter are trading volume and bid-ask spreads in Treasury futures, the supply of new five-year notes and the size of repurchase market borrowing by leveraged funds. Upcoming Treasury refunding announcements, Federal Reserve decisions and changes to bank capital rules on holding Treasuries can move one maturity independently of its neighbours.",
+ "favourable": [
+  {
+   "heading": "Deep Treasury market liquidity",
+   "text": "Deep liquidity in Treasuries favours the strategy because gaps between maturities close quickly without large trading costs. In 2017, interest rate volatility was low and Federal Reserve guidance was steady, so curve kinks reverted within weeks."
+  },
+  {
+   "heading": "Temporary supply in one maturity",
+   "text": "A temporary rise in the supply of one maturity favours the strategy because new notes cheapen against their neighbours until investors absorb them. After the Treasury increased coupon auction sizes in 2023, individual maturities cheapened for weeks before demand caught up."
+  },
+  {
+   "heading": "Anchored policy rate expectations",
+   "text": "Clear central bank guidance favours the strategy because short-term yields stay stable, so kinks reflect temporary trading demand rather than a change in the policy path. From 2010 to 2014, the Federal Reserve's commitment to keep rates near zero anchored two-year yields."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Forced unwinds by leveraged funds",
+   "text": "Simultaneous unwinding of leveraged positions hurts the strategy because selling pushes gaps further against the position as liquidity falls. In March 2020, Treasury market liquidity fell and spreads between maturities moved far beyond normal ranges for several days."
+  },
+  {
+   "heading": "Policy surprises that reshape the curve",
+   "text": "A change in the expected path of policy hurts the strategy because it moves two-year yields more than five-year yields, so the middle maturity no longer sits between its neighbours. In March 2023, after the failure of Silicon Valley Bank, the two-year yield fell by roughly one percentage point in a week."
+  },
+  {
+   "heading": "Forced selling by one investor group",
+   "text": "Abrupt selling by one group of investors hurts the strategy because it pushes a single maturity away from its neighbours without any change in the economic outlook. In September 2022, forced selling by UK pension funds raised long-dated gilt yields by more than a percentage point in three days."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -7
+  },
+  {
+   "name": "Bank failures, Mar 2023",
+   "value": -4
+  },
+  {
+   "name": "Gilt crisis, Sep 2022",
+   "value": -3
+  },
+  {
+   "name": "Taper tantrum, Jun 2013",
+   "value": -2
+  },
+  {
+   "name": "Supply scare, Oct 2023",
+   "value": 1
+  }
+ ],
+ "ahead": [
+  -1.9,
+  -0.2,
+  0.1,
+  -0.4
+ ],
+ "infoHist": "Historical results show the strategy's return during each event, measured from its value at the last market high before the shock to its value at the market low, using the default backtest parameters above. Losses reflect curve gaps that widened further after the position was opened.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in 2, 5 and 10-year Treasury yields and in market liquidity, which are then applied to the strategy's current butterfly positions.",
+ "altTitle": "Where Else Can Investors Find Interest Rate Returns?",
+ "related": [
+  {
+   "id": "c2",
+   "why": "Positions for short-term yields to fall faster than long-term yields. Bears policy risk, losing when the curve flattens.",
+   "cue": "Takes a view on slope, not curvature"
+  },
+  {
+   "id": "m7",
+   "why": "Follows trends in government bond futures. Bears reversal risk, losing when rate trends stall.",
+   "cue": "Earns from rate direction this strategy neutralises"
+  },
+  {
+   "id": "e4",
+   "why": "Positions around central bank meetings. Bears surprise risk, losing when decisions differ from market pricing.",
+   "cue": "Earns from policy surprises this strategy avoids"
+  }
+ ]
+}

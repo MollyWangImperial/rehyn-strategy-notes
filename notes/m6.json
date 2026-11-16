@@ -1,0 +1,166 @@
+{
+ "id": "m6",
+ "name": "Crypto trend following",
+ "heading": "The Structural Opportunity: Persistent Crypto Price Trends",
+ "caseLead": "The investment case rests on digital asset prices trending for weeks or months, because demand is driven by retail flows, borrowed money and news that spread gradually across markets that trade at all hours. The trends persist because rising prices draw in new buyers and falling prices force leveraged holders to sell, while regulatory and policy decisions, such as fund approvals and trading bans, set the direction for long periods.",
+ "caseRest": "The main risk is a sharp reversal after the strategy has entered a trend, because digital assets can fall 30% or more within days. The strategy exits only after the trend turns, so it gives back part of each decline and then misses part of the rebound that follows. Exchange failures, hacks and regulatory action can also cause price gaps that no exit rule can avoid.",
+ "figNote": "The large figure on each card shows the change in the Bitcoin price over the period described in the text. Bitcoin is the largest digital asset and sets the direction for most others, so its move shows how large the trend was.",
+ "events": [
+  {
+   "date": "December 2017",
+   "theme": "Bear market",
+   "fig": "−84%",
+   "effect": "up",
+   "title": "Bitcoin falls from its 2017 peak",
+   "text": "Bitcoin fell about 84% from its December 2017 peak to December 2018 as South Korea and China tightened rules and speculative demand faded. The strategy preserved most of its 2017 gains because it moved to cash after the trend turned."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−37%",
+   "effect": "mid",
+   "title": "Covid forces a one-day crypto sell-off",
+   "text": "Bitcoin fell about 37% on 12 March 2020 as investors sold assets of all kinds to raise cash. Results were mixed because the strategy had already moved to cash but missed part of the recovery that followed."
+  },
+  {
+   "date": "May 2021",
+   "theme": "China ban",
+   "fig": "−53%",
+   "effect": "down",
+   "title": "China crackdown ends the 2021 rally",
+   "text": "Bitcoin fell about 53% between 14 April and 20 July 2021 after China banned mining and trading and Tesla stopped accepting it for payments. The strategy lost because it held a full position as the fall began and exited after the trend turned."
+  },
+  {
+   "date": "November 2022",
+   "theme": "Exchange failure",
+   "fig": "−25%",
+   "effect": "up",
+   "title": "FTX collapse deepens the crypto bear market",
+   "text": "Bitcoin fell about 25% in the two weeks after 7 November 2022 when the FTX exchange collapsed. The strategy avoided most of the decline because it had moved to cash in May after the earlier failure of Terra."
+  },
+  {
+   "date": "January 2024",
+   "theme": "Fund approval",
+   "fig": "+58%",
+   "effect": "up",
+   "title": "Spot Bitcoin fund approval starts a rally",
+   "text": "Bitcoin rose about 58% from 10 January to mid-March 2024 after US regulators approved spot Bitcoin funds, which opened the market to new investors. The strategy gained because it held a full position through a steady uptrend."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "−32%",
+   "effect": "down",
+   "title": "US tariffs end the post-election rally",
+   "text": "Bitcoin fell about 32% from 20 January to 8 April 2025 as US tariffs reduced demand for risk assets. The strategy lost because it was fully invested and exited after much of the decline had occurred."
+  }
+ ],
+ "worstWhen": "May 2021",
+ "startYear": 2015,
+ "period": "August 2015 to December 2025; 125 monthly observations",
+ "instrument": "Bitcoin and Ether spot and perpetual futures; held for weeks; rebalanced daily",
+ "rules": "Held when the price is above both its 50-day and 150-day averages; moved to cash when below both; position size reduced when volatility doubles",
+ "costs": "Estimated exchange fees, bid-ask spreads and funding costs deducted at each trade",
+ "constructionTitle": "Strategy construction, from trend filters to cash protection",
+ "legs": [
+  {
+   "position": "Bitcoin position in an uptrend",
+   "instrument": "Bitcoin spot or futures",
+   "purpose": "Earns the main digital asset trend",
+   "allocation": "55%"
+  },
+  {
+   "position": "Ether position in an uptrend",
+   "instrument": "Ether spot or futures",
+   "purpose": "Adds a second large digital asset",
+   "allocation": "25%"
+  },
+  {
+   "position": "Cash in stablecoins or Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Holds cash when the trend turns down",
+   "allocation": "20%"
+  }
+ ],
+ "entry": "Price closes above both its 50-day and 150-day averages",
+ "size": "Set to a 20% annualised volatility target, capped at 100% invested",
+ "exit": "Position closed when the price closes below its 50-day average",
+ "stop": "Position closed after a fall of 15% from its highest close",
+ "marketWatch": "Rehyn watches the price of Bitcoin relative to its medium-term averages, the amount of borrowing in futures markets and flows into exchange-traded Bitcoin funds, because these show whether a trend has support. Regulatory decisions, court rulings and central bank liquidity announcements are the events most likely to start or end a trend. Rising volatility signals a higher risk of reversal.",
+ "favourable": [
+  {
+   "heading": "Regulatory decisions that open demand",
+   "text": "Clear regulatory approval favours the strategy because it brings in institutional buyers who build positions over months. The approval of spot Bitcoin funds in January 2024 began an uptrend of about 58% in two months."
+  },
+  {
+   "heading": "Rising liquidity and risk appetite",
+   "text": "Easier monetary conditions favour the strategy because investors move into higher-risk assets and borrow more to hold them. After the Fed cut rates to near zero in March 2020, Bitcoin rose from about 5,000 dollars to about 64,000 dollars by April 2021."
+  },
+  {
+   "heading": "Orderly, gradual bear markets",
+   "text": "A long, gradual decline favours the strategy because the trend filter moves to cash after the first fall and avoids much of the remaining loss. In 2018, Bitcoin fell about 84% from its peak, and the strategy held cash for most of the decline."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Sudden exchange failures and hacks",
+   "text": "Failures of exchanges and lenders hurt the strategy when it holds a position, because prices gap lower before any exit rule can act. In November 2022, the collapse of FTX cut Bitcoin by about 25% in two weeks."
+  },
+  {
+   "heading": "Regulatory bans and reversals",
+   "text": "Sudden regulatory action hurts the strategy when it ends a rally that the trend filter was following. In 2021, China's ban on mining and trading, together with Tesla's decision to stop accepting Bitcoin, cut the price by about 53% over three months."
+  },
+  {
+   "heading": "Sharp rebounds after sell-offs",
+   "text": "Fast rebounds hurt the strategy because it is in cash when a recovery starts and re-enters only after the price has risen. After the March 2020 fall, Bitcoin rose by about 70% within seven weeks, and the strategy re-entered after much of that gain."
+  }
+ ],
+ "past": [
+  {
+   "name": "China ban, May 2021",
+   "value": -28
+  },
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -19
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -14
+  },
+  {
+   "name": "Rate shock, Jan 2022",
+   "value": -11
+  },
+  {
+   "name": "Terra collapse, May 2022",
+   "value": -6
+  }
+ ],
+ "ahead": [
+  -17.4,
+  -2.1,
+  -0.8,
+  4.6
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in Bitcoin, Ether and global liquidity, which are then applied to the strategy's current positions.",
+ "altTitle": "Where Else Can Investors Find Crypto Premiums?",
+ "related": [
+  {
+   "id": "g4",
+   "why": "Holds a rebalanced core of the largest digital assets. Bears drawdown risk, losing in long bear markets.",
+   "cue": "Always invested, with no trend filter"
+  },
+  {
+   "id": "r2",
+   "why": "Earns the gap between spot and futures prices. Bears exchange and counterparty risk, losing if a platform fails.",
+   "cue": "Market neutral, with little price direction risk"
+  },
+  {
+   "id": "s7",
+   "why": "Trades implied against realised volatility in crypto options. Bears liquidity risk, losing when option markets become illiquid.",
+   "cue": "Paid for volatility, not for direction"
+  }
+ ]
+}

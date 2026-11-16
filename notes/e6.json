@@ -1,0 +1,178 @@
+{
+ "id": "e6",
+ "name": "Supply shock event trading",
+ "heading": "The Structural Opportunity: Pricing Supply Disruptions",
+ "caseLead": "The investment case rests on the tendency of energy and agricultural prices to respond sharply and predictably to supply disruptions, because inventories and spare capacity are limited and demand changes little in the short term. The opportunity persists because the size and duration of a disruption depend on political and military decisions that most investors cannot assess quickly, so prices often overshoot and then reverse, which comparable past episodes help to measure.",
+ "caseRest": "The main risk is that a disruption proves smaller or shorter than comparable episodes suggest, so prices reverse before the position gains. Prices can also gap against the position because OPEC+ decisions, ceasefires and sanctions waivers are announced with little notice. The estimated 11.2% annual return therefore comes with 14.1% volatility and a 20.0% worst fall, although positive return skew means that large gains can come in a sharp disruption.",
+ "figNote": "The large figure on each card shows the percentage change in the Brent crude futures price on the day of the main price move. Brent is the international benchmark for oil, so a rise or fall of 5% in one day is large and a move above 10% is rare.",
+ "events": [
+  {
+   "date": "September 2019",
+   "theme": "Geopolitics",
+   "fig": "+15%",
+   "effect": "mid",
+   "title": "Drone attack on Saudi oil plant lifts Brent",
+   "text": "Drone attacks in September 2019 halted about 5% of world oil supply at Saudi Arabia's Abqaiq plant, and Brent rose 15% in a day. Results were mixed because the price rise reversed within two weeks as Saudi output was restored."
+  },
+  {
+   "date": "January 2020",
+   "theme": "Geopolitics",
+   "fig": "+4%",
+   "effect": "down",
+   "title": "US strike on Iranian general lifts Brent briefly",
+   "text": "The US strike that killed Iranian general Qassem Soleimani in January 2020 raised fears of disruption in the Gulf, and Brent rose 4% in a day. The strategy lost because no supply was lost and the price rise reversed within a week."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Price war",
+   "fig": "−24%",
+   "effect": "up",
+   "title": "OPEC+ talks collapse and Brent falls 24%",
+   "text": "OPEC+ talks collapsed in March 2020 when Russia refused deeper cuts, and Saudi Arabia cut its prices, sending Brent down 24% in a day. The strategy gained because comparable episodes pointed to a large and lasting fall in prices, as demand also dropped."
+  },
+  {
+   "date": "March 2022",
+   "theme": "War",
+   "fig": "−13%",
+   "effect": "mid",
+   "title": "Oil reverses 13% after Russia sanctions spike",
+   "text": "Brent closed at $128 a barrel in March 2022 after the US banned Russian oil imports, then fell 13% in a day on signs of higher OPEC output. Results were mixed because gains on the spike were partly given back on the reversal."
+  },
+  {
+   "date": "April 2023",
+   "theme": "OPEC+ policy",
+   "fig": "+6%",
+   "effect": "down",
+   "title": "Surprise OPEC+ cut lifts oil before it fades",
+   "text": "OPEC+ announced a surprise cut of about 1.2 million barrels a day in April 2023, and Brent rose 6% the next trading day. The strategy lost because concern about bank failures and demand pulled prices back below their pre-announcement level within five weeks."
+  },
+  {
+   "date": "June 2025",
+   "theme": "Geopolitics",
+   "fig": "+7%",
+   "effect": "up",
+   "title": "Israel strikes Iran and oil spikes then falls",
+   "text": "Israel's strikes on Iran in June 2025 raised fears for Gulf oil exports, and Brent rose 7% in a day. The strategy gained because exports continued, and the price fell below its pre-strike level within two weeks after a ceasefire."
+  }
+ ],
+ "worstWhen": "April 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Brent and WTI crude futures, wheat and corn futures, and options on crude futures; held for days to weeks",
+ "rules": "Positions taken within two days of a confirmed supply disruption and sized by the price response in comparable episodes; reversed when supply returns",
+ "costs": "Estimated bid-ask spreads, commissions and futures roll costs deducted",
+ "constructionTitle": "Strategy construction, from supply shock to reversal control",
+ "legs": [
+  {
+   "position": "Long Brent futures, 3 months",
+   "instrument": "Brent crude futures",
+   "purpose": "Earns from a supply disruption in energy",
+   "allocation": "25% margin"
+  },
+  {
+   "position": "Long wheat and corn futures",
+   "instrument": "Grain futures",
+   "purpose": "Earns from an agricultural supply disruption",
+   "allocation": "10% margin"
+  },
+  {
+   "position": "Short Brent futures after a spike",
+   "instrument": "Brent crude futures",
+   "purpose": "Earns when prices reverse as supply returns",
+   "allocation": "12% margin"
+  },
+  {
+   "position": "Call spreads on crude, 2 months",
+   "instrument": "Options on crude futures",
+   "purpose": "Defines the loss on a sudden price jump",
+   "allocation": "3%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "50%"
+  }
+ ],
+ "entry": "Disruption equal to at least 1% of global supply of the commodity",
+ "size": "Set to a 14% annualised volatility target; single commodity capped at 30%",
+ "exit": "Closed after 10 trading days, or when the price reaches the comparable-episode target",
+ "stop": "Position closed if it loses 4% of capital",
+ "marketWatch": "Inventories of crude oil and grain, spare production capacity and shipping disruptions are the main indicators because they show how large a price response a supply loss would cause. Sanctions decisions, OPEC+ meetings and conflicts near the Strait of Hormuz and the Black Sea matter most when they put a meaningful share of supply at risk.",
+ "favourable": [
+  {
+   "heading": "Supply losses prove lasting",
+   "text": "A lasting supply loss favours the strategy because inventories fall and prices keep rising after the first move. Sanctions on Russian energy exports kept Brent near or above $100 a barrel for most of the first half of 2022."
+  },
+  {
+   "heading": "Inventories are low",
+   "text": "Low inventories favour the strategy because there is little spare supply to absorb a disruption, so prices respond more strongly. Oil stocks were low in early 2022, which amplified the price response to the Russian invasion."
+  },
+  {
+   "heading": "Disruptions fade quickly",
+   "text": "A disruption that fades favours the strategy because short positions opened after a spike gain as prices return. In June 2025, Brent fell below its pre-strike level within two weeks, after rising 7% on the first day."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Spare capacity absorbs the loss",
+   "text": "Large spare capacity hurts the strategy because producers can replace lost supply and the price rise fades. After the Abqaiq attack in 2019, Saudi Arabia restored output within weeks and Brent returned to its previous level."
+  },
+  {
+   "heading": "Policy announcements reverse prices",
+   "text": "A sudden policy change hurts the strategy because OPEC+ decisions, sanctions waivers and releases from strategic reserves can reverse a price move in a single session. In March 2022, Brent fell 13% in a day on signs of higher OPEC output."
+  },
+  {
+   "heading": "Demand weakens at the same time",
+   "text": "Weak demand hurts the strategy because falling consumption can outweigh the effect of lost supply. In April 2020, lockdowns cut oil demand so sharply that the US crude futures price turned negative."
+  }
+ ],
+ "past": [
+  {
+   "name": "Negative oil price, Apr 2020",
+   "value": -20
+  },
+  {
+   "name": "OPEC supply glut, Nov 2014",
+   "value": -8
+  },
+  {
+   "name": "Soleimani spike fades, Jan 2020",
+   "value": -5
+  },
+  {
+   "name": "Russia spike reversal, Mar 2022",
+   "value": -7
+  },
+  {
+   "name": "OPEC+ cut fades, Apr 2023",
+   "value": -6
+  }
+ ],
+ "ahead": [
+  14,
+  8.5,
+  2.4,
+  0.9
+ ],
+ "infoHist": "Historical results show the strategy's estimated peak-to-trough change in value during each event, using futures prices, roll costs and the position sizes set by comparable episodes. Each event window runs from the last high before the shock to the low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in oil, natural gas and grain prices from the size and duration of each supply loss, which are then applied to the strategy's current futures and option positions.",
+ "altTitle": "Where Else Can Investors Find Commodity Returns?",
+ "related": [
+  {
+   "id": "s8",
+   "why": "Trades oil option prices around events. Bears time decay when an event passes without a price move.",
+   "cue": "Volatility instead of price direction"
+  },
+  {
+   "id": "c3",
+   "why": "Earns the futures curve's roll return. Bears the risk that the curve flips and prices fall.",
+   "cue": "Steady carry instead of event spikes"
+  },
+  {
+   "id": "m5",
+   "why": "Follows persistent commodity price moves. Bears reversals when supply returns and trends end.",
+   "cue": "Months of trend instead of days"
+  }
+ ]
+}

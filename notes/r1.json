@@ -1,0 +1,172 @@
+{
+ "id": "r1",
+ "name": "Equity pairs trading",
+ "heading": "The Structural Opportunity: Relative Mispricing Between Peers",
+ "caseLead": "The investment case rests on the tendency of closely related stocks to return to their usual price relationship after a temporary gap, so a long position in the cheaper stock and a short position in its peer earns the convergence whatever the market does. The gaps persist because large funds trade in size for reasons unrelated to company value, and arbitrage capital is limited by borrowing costs, short-selling rules and loss limits, while policy changes such as tariffs or short-selling restrictions can push stocks in the same sector apart for a time.",
+ "caseRest": "The main risk is that a gap widens instead of closing because the two companies are no longer driven by the same factors. This happens when one company faces a takeover bid, a profit warning or a regulatory ruling, or when forced buying of heavily shorted stocks lifts the short leg, as in January 2021. Losses therefore tend to come from a few positions that move against the strategy together, and a market-neutral structure does not protect against that.",
+ "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "events": [
+  {
+   "date": "October 2008",
+   "theme": "Short selling",
+   "fig": "80",
+   "effect": "down",
+   "title": "Short-sale ban squeezes pairs in financial shares",
+   "text": "The October 2008 sell-off followed the Lehman Brothers failure and a September ban on short sales of financial shares, and the VIX closed at 80. The strategy lost because shorts in banned stocks were squeezed higher and bank pairs moved further apart."
+  },
+  {
+   "date": "August 2011",
+   "theme": "Sovereign downgrade",
+   "fig": "48",
+   "effect": "mid",
+   "title": "US credit downgrade lifts correlations across stocks",
+   "text": "The August 2011 sell-off followed the downgrade of the US credit rating by Standard and Poor's, and the VIX closed at 48. Results were mixed because stocks fell together for several days, which weakened pair relationships, before spreads between peers narrowed again."
+  },
+  {
+   "date": "December 2018",
+   "theme": "Monetary policy",
+   "fig": "36",
+   "effect": "up",
+   "title": "Fed tightening sell-off opens wide stock spreads",
+   "text": "The December 2018 sell-off followed a Federal Reserve rate rise and fears of slower growth, and the VIX closed at 36 on Christmas Eve. The strategy gained because heavy index selling pushed similar stocks apart, and the gaps closed during the January rebound."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "83",
+   "effect": "down",
+   "title": "Covid forces funds to cut positions together",
+   "text": "The March 2020 sell-off turned a health emergency into a rush for cash, and the VIX closed at 83. The strategy lost because funds reduced long and short positions at the same time, which widened spreads between related stocks before they recovered."
+  },
+  {
+   "date": "January 2021",
+   "theme": "Short squeeze",
+   "fig": "37",
+   "effect": "down",
+   "title": "GameStop squeeze hurts funds with short positions",
+   "text": "The January 2021 rally in GameStop and other heavily shorted shares came from retail buying that forced short sellers to cover, and the VIX closed at 37. The strategy lost because the short leg of many pairs rose sharply while the long leg did not."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "52",
+   "effect": "mid",
+   "title": "US tariffs widen gaps between related stocks",
+   "text": "The April 2025 announcement of broad US tariffs lifted the VIX to a 52 close and moved stocks by import exposure rather than sector. Results were mixed because wide gaps opened between peers, and the tariff pause on 9 April reversed many within days."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Pairs of large US and European listed stocks; matched by sector; positions held for days to weeks",
+ "rules": "Pairs formed from stocks with a stable price relationship over two years; position opened when the spread is two standard deviations from its average; both legs sized to equal market exposure",
+ "costs": "Estimated commissions, bid-ask spreads and share borrowing fees deducted on each trade",
+ "constructionTitle": "Strategy construction, from relative price gaps to market-neutral risk",
+ "legs": [
+  {
+   "position": "Long the cheaper stock in each pair",
+   "instrument": "Listed shares",
+   "purpose": "Earns the gap narrowing",
+   "allocation": "45% of gross exposure"
+  },
+  {
+   "position": "Short the dearer peer in each pair",
+   "instrument": "Listed shares",
+   "purpose": "Offsets market and sector moves",
+   "allocation": "45% of gross exposure"
+  },
+  {
+   "position": "Short sector index futures",
+   "instrument": "Equity index futures",
+   "purpose": "Removes market exposure left by unequal pairs",
+   "allocation": "5% margin"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "5% buffer"
+  }
+ ],
+ "entry": "Spread at least 2 standard deviations from its two-year average",
+ "size": "Set to a 6% annualised volatility target, with at most 3% of capital per pair",
+ "exit": "Position closed when the spread returns to its average, or after 20 trading days",
+ "stop": "Pair closed if the spread reaches 4 standard deviations",
+ "marketWatch": "The indicators that matter are the average correlation between stocks in the same sector, the cost of borrowing heavily shorted shares and the level of short interest in crowded names. Upcoming earnings seasons, takeover announcements and changes to short-selling rules or tariffs can move one stock in a pair independently of its peer, which tends to widen spreads before they close.",
+ "favourable": [
+  {
+   "heading": "Stable sector correlations",
+   "text": "Stable correlations between stocks in the same sector favour the strategy because gaps between peers close at a steady pace. In 2017 the VIX averaged about 11 and spreads closed steadily, so the gains arrived with few interruptions."
+  },
+  {
+   "heading": "Sharp moves that reverse quickly",
+   "text": "Sharp moves in a single stock favour the strategy when they reflect temporary selling rather than new information about the company. After the December 2018 sell-off, similar stocks recovered together in January and the gaps that opened during the fall closed within weeks."
+  },
+  {
+   "heading": "Central bank liquidity after shocks",
+   "text": "Central bank liquidity support favours the strategy because it reduces forced selling and lets spreads close after a shock. After the Federal Reserve announced its credit facilities and asset purchases in March 2020, spreads between related stocks narrowed within weeks."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Short squeezes in crowded stocks",
+   "text": "Crowded short positions hurt the strategy when buying to cover pushes the short leg higher regardless of company value. GameStop rose more than tenfold during January 2021, so pairs holding heavily shorted shares lost heavily."
+  },
+  {
+   "heading": "Forced selling across many funds",
+   "text": "Simultaneous deleveraging by funds with similar positions hurts the strategy because it pushes the long and short legs apart together. In March 2020 funds cut leverage at the same time, and spreads between related stocks widened before they recovered in the spring."
+  },
+  {
+   "heading": "Permanent break within a pair",
+   "text": "A takeover bid, a profit warning or a regulatory ruling affecting one company hurts the strategy because the pair no longer shares the same drivers and the gap may never close. In September 2008 the failure of Lehman Brothers and the sale of Merrill Lynch permanently separated many bank pairs."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -9
+  },
+  {
+   "name": "Meme squeeze, Jan 2021",
+   "value": -6
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": -4
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -2
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": 1
+  }
+ ],
+ "ahead": [
+  -5.8,
+  -0.4,
+  0.3,
+  0.5
+ ],
+ "infoHist": "Historical results show the strategy's return during each event, measured from its value at the last market high before the shock to its value at the market low, using the default backtest parameters above. Losses reflect spreads that widened further after the position was opened.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in equity indices, sector returns and stock correlations, which are then applied to the strategy's current pairs and index futures hedge.",
+ "altTitle": "Where Else Can Investors Find Relative Value Returns?",
+ "related": [
+  {
+   "id": "e1",
+   "why": "Buys takeover targets below the offer price. Bears deal risk, losing when a transaction is blocked.",
+   "cue": "Similar convergence, driven by deal terms"
+  },
+  {
+   "id": "m2",
+   "why": "Buys recent winners instead of waiting for gaps to close. Bears reversal risk, losing when leadership changes abruptly.",
+   "cue": "Trend counterpart to this strategy's reversion"
+  },
+  {
+   "id": "s5",
+   "why": "Sells index volatility and buys single-stock volatility. Bears correlation risk, losing when stocks fall together.",
+   "cue": "Also earns when stocks move independently"
+  }
+ ]
+}

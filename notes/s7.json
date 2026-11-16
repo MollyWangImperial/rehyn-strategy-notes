@@ -1,0 +1,172 @@
+{
+ "id": "s7",
+ "name": "Crypto volatility arbitrage",
+ "heading": "The Structural Opportunity: Mispriced Digital Asset Volatility",
+ "caseLead": "The investment case rests on Bitcoin and Ether options often trading at implied volatilities that differ from the volatility the market goes on to deliver, because trading is spread across exchanges and dominated by participants with different motives. The mispricing persists because retail demand for upside exposure, forced selling by leveraged traders and the pace of regulatory and geopolitical news keep option demand uneven, and few institutions can hold the inventory needed to close the gaps.",
+ "caseRest": "The main risk is a sudden price move or exchange failure that exceeds the strategy's hedges and limits. Digital asset prices can fall by more than a third in a day, and exchange margin rules or withdrawal restrictions can prevent positions from being adjusted when it matters most. Rehyn estimates that these gaps explain why the largest losses are far bigger than the strategy's typical monthly variation suggests.",
+ "figNote": "The large figure on each card shows the one-day change in the Bitcoin price on the main day of the episode. Bitcoin typically moves by about 2% to 3% in a day, so figures far above that indicate market stress.",
+ "events": [
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−37%",
+   "effect": "down",
+   "title": "Covid sell-off forces a rush for cash",
+   "text": "A global rush for cash during the Covid sell-off cut Bitcoin by about 37% on 12 March 2020 as leveraged positions were closed. The strategy lost because realised volatility far exceeded implied volatility and exchange margin requirements limited hedging."
+  },
+  {
+   "date": "May 2021",
+   "theme": "China policy",
+   "fig": "−14%",
+   "effect": "mid",
+   "title": "China regulatory warnings hit Bitcoin",
+   "text": "Chinese regulatory warnings on crypto services and the closing of leveraged positions cut Bitcoin by about 14% on 19 May 2021. Results were mixed because the fall caused losses that day, while high implied volatility afterwards allowed options to be sold at rich prices."
+  },
+  {
+   "date": "February 2022",
+   "theme": "War",
+   "fig": "+14%",
+   "effect": "mid",
+   "title": "Russia sanctions drive a Bitcoin rebound",
+   "text": "Bitcoin rose about 14% on 28 February 2022 as Russia's invasion of Ukraine and financial sanctions raised interest in assets outside the banking system. Results were mixed because sharp price moves strained hedges, while implied volatility stayed above realised volatility for several weeks."
+  },
+  {
+   "date": "November 2022",
+   "theme": "Exchange failure",
+   "fig": "−14%",
+   "effect": "down",
+   "title": "FTX collapse spreads through digital asset markets",
+   "text": "The collapse of the FTX exchange in November 2022 cut Bitcoin by about 14% on 9 November and froze funds held on the exchange. The strategy lost because exchange risk, wider spreads and trapped collateral prevented hedges from being adjusted."
+  },
+  {
+   "date": "November 2024",
+   "theme": "US election",
+   "fig": "+9%",
+   "effect": "up",
+   "title": "US election result lifts Bitcoin to a record",
+   "text": "The result of the US presidential election on 5 November 2024 lifted Bitcoin about 9% the next day to a record high, on expectations of lighter regulation. The strategy gained because implied volatility had risen into the vote and fell back sharply afterwards."
+  },
+  {
+   "date": "October 2025",
+   "theme": "Trade policy",
+   "fig": "−7%",
+   "effect": "down",
+   "title": "US tariff threat on China triggers forced selling",
+   "text": "A threat of extra US tariffs on China on 10 October 2025 cut Bitcoin by about 7% and forced the closing of leveraged positions worth about 19 billion US dollars. The strategy lost because prices on several exchanges moved apart and hedging costs rose."
+  }
+ ],
+ "worstWhen": "November 2022",
+ "startYear": 2019,
+ "period": "January 2019 to December 2025; 84 monthly observations",
+ "instrument": "Bitcoin and Ether options on major regulated and offshore exchanges; one to four weeks to expiry; hedged with perpetual futures",
+ "rules": "Options sold when implied volatility exceeds forecast realised volatility and bought when it is below; delta hedged with perpetual futures; exposure capped per exchange; reduced when funding rates or margin requirements rise sharply",
+ "costs": "Estimated option spreads, exchange fees, funding charges and slippage deducted at each hedge",
+ "constructionTitle": "Strategy construction, from volatility mispricing to exchange risk limits",
+ "legs": [
+  {
+   "position": "Short strangle, 14 days, 15 delta",
+   "instrument": "Bitcoin and Ether options",
+   "purpose": "Earns premium when implied volatility is high",
+   "allocation": "15% margin"
+  },
+  {
+   "position": "Long straddle, 14 days",
+   "instrument": "Bitcoin and Ether options",
+   "purpose": "Owns volatility when it is cheap",
+   "allocation": "3% premium"
+  },
+  {
+   "position": "Delta hedge",
+   "instrument": "Bitcoin and Ether perpetual futures",
+   "purpose": "Removes directional price exposure",
+   "allocation": "8% margin"
+  },
+  {
+   "position": "Cash collateral",
+   "instrument": "Treasury bills held at regulated custodians",
+   "purpose": "Provides margin and earns the cash rate",
+   "allocation": "74%"
+  }
+ ],
+ "entry": "Difference between implied and forecast realised volatility of at least 6 points",
+ "size": "Set to a 15% annualised volatility target; no more than 25% of margin on one exchange",
+ "exit": "Closed when the volatility gap falls below 2 points, or 3 days before expiry",
+ "stop": "All positions closed if Bitcoin moves by more than 12% in one day",
+ "marketWatch": "The gap between implied and forecast realised volatility in Bitcoin and Ether options is the main indicator for this strategy now, together with funding rates on perpetual futures. Regulatory decisions, scheduled policy announcements and changes in exchange margin rules matter because they can move prices and option demand within hours. Rehyn also watches differences in option prices between exchanges, since wider gaps signal both opportunity and liquidity stress.",
+ "favourable": [
+  {
+   "heading": "Implied volatility rises into events",
+   "text": "Implied volatility that rises ahead of an event favours the strategy because options can be sold at rich prices and hedged efficiently. In January 2024 implied volatility on Bitcoin options rose before the approval of US spot Bitcoin funds and fell after the decision."
+  },
+  {
+   "heading": "Deeper liquidity on regulated venues",
+   "text": "Deeper liquidity on regulated venues favours the strategy because tighter spreads cut hedging costs and make mispricing easier to trade. Rehyn estimates that spreads narrowed as institutional participation grew after the launch of US spot Bitcoin funds in January 2024."
+  },
+  {
+   "heading": "Policy events with known dates",
+   "text": "Scheduled policy events favour the strategy because implied volatility tends to rise before the event and fall once the outcome is known. Selling options into the November 2024 US election, when implied volatility rose before the vote and fell back afterwards, earned premium."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Sudden closing of leveraged positions",
+   "text": "Sudden closing of leveraged positions hurts the strategy because prices move quickly and margin requirements rise at the same time. On 12 March 2020 Bitcoin fell about 37% in one day, which exceeded the range priced by options."
+  },
+  {
+   "heading": "Exchange failure or frozen withdrawals",
+   "text": "The failure of an exchange hurts the strategy because collateral held there can become inaccessible while positions are still open. FTX halted withdrawals in November 2022, and Bitcoin fell about 14% on 9 November."
+  },
+  {
+   "heading": "Thin liquidity during forced selling",
+   "text": "Large moves in thin liquidity hurt the strategy because spreads widen and hedges are executed at worse prices. During the sell-off on 10 October 2025, prices on several exchanges moved apart and hedging costs rose sharply."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -17
+  },
+  {
+   "name": "Terra collapse, May 2022",
+   "value": -11
+  },
+  {
+   "name": "Lender failures, Jun 2022",
+   "value": -9
+  },
+  {
+   "name": "FTX collapse, Nov 2022",
+   "value": -24
+  },
+  {
+   "name": "Tariff shock, Oct 2025",
+   "value": -8
+  }
+ ],
+ "ahead": [
+  -14.0,
+  -2.1,
+  -0.8,
+  1.2
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, using Bitcoin and Ether option prices and the hedging rules above. Each event window runs from the last strategy high before the shock to the subsequent low, including estimated exchange fees and funding charges.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in Bitcoin and Ether and in implied volatility, which are then applied to the strategy's current option and futures positions.",
+ "altTitle": "Where Else Can Investors Find Digital Asset Pricing Gaps?",
+ "related": [
+  {
+   "id": "r2",
+   "why": "Earns the gap between futures and spot prices. Bears exchange and funding risk, losing when the gap closes against it.",
+   "cue": "Same market, price gaps not volatility"
+  },
+  {
+   "id": "m6",
+   "why": "Follows persistent Bitcoin and Ether trends. Bears reversals, losing when prices change direction quickly.",
+   "cue": "Gains from large moves, not mispricing"
+  },
+  {
+   "id": "s1",
+   "why": "Sells equity index options. Bears crash risk, losing when volatility rises sharply across stock markets.",
+   "cue": "Same volatility premium, regulated market"
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "id": "v2",
+ "name": "Quality at a reasonable price",
+ "heading": "The Structural Opportunity: Mispricing Durable Corporate Quality",
+ "caseLead": "The investment case rests on buying companies with high returns on capital and strong balance sheets when short-term concerns push their shares below estimated intrinsic value. The opportunity persists because investors often overreact to earnings setbacks and policy or geopolitical risks, while mandates tied to benchmarks and quarterly performance discourage the patience needed to wait for valuation gaps to close.",
+ "caseRest": "The main risk is that an apparently cheap company suffers a lasting decline in earnings power, turning a valuation discount into a value trap. Losses can also be substantial during recessions because even financially strong companies face weaker demand, lower margins and falling market valuations. The estimated -0.3 return skew and -31.0% worst fall show that valuation discipline reduces risk but does not prevent large equity drawdowns.",
+ "figNote": "The large figure on each card shows the S&P 500 price return during the calendar month. The index provides a consistent measure of the broad equity environment, with negative figures indicating a falling US market and positive figures indicating a rising market.",
+ "events": [
+  {
+   "date": "October 2008",
+   "theme": "Banking crisis",
+   "fig": "−16.9%",
+   "effect": "down",
+   "title": "Lehman failure drives broad equity losses",
+   "text": "Lehman’s failure froze funding markets and drove the S&P 500 down 16.9% in October. The strategy lost because earnings estimates fell across sectors, although strong balance sheets reduced the risk of permanent capital loss."
+  },
+  {
+   "date": "March 2009",
+   "theme": "Monetary policy",
+   "fig": "+8.5%",
+   "effect": "up",
+   "title": "Federal Reserve support resets equity valuations",
+   "text": "Federal Reserve asset purchases helped restore confidence as the S&P 500 rose 8.5% in March. The strategy gained because profitable companies bought at distressed valuations recovered as funding conditions improved."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−12.5%",
+   "effect": "down",
+   "title": "Covid closes economies and cuts earnings",
+   "text": "Covid restrictions halted activity and drove the S&P 500 down 12.5% in March. The strategy suffered its worst fall because expected earnings declined quickly and investors sold equities regardless of balance-sheet strength."
+  },
+  {
+   "date": "November 2020",
+   "theme": "Reopening",
+   "fig": "+10.8%",
+   "effect": "up",
+   "title": "Vaccines broaden the equity recovery",
+   "text": "Successful vaccine trials lifted the S&P 500 by 10.8% in November as investors priced a reopening. The strategy gained because discounted industrial, financial and consumer companies joined the recovery while retaining sound balance sheets."
+  },
+  {
+   "date": "February 2022",
+   "theme": "War",
+   "fig": "−3.1%",
+   "effect": "down",
+   "title": "Ukraine invasion raises inflation risks",
+   "text": "Russia’s invasion of Ukraine raised energy and input costs as the S&P 500 fell 3.1% in February. The strategy lost because weaker growth and lower margins outweighed the relative support from reasonable starting valuations."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "−0.8%",
+   "effect": "down",
+   "title": "US tariffs weaken earnings expectations",
+   "text": "Sweeping US tariff announcements disrupted supply chains as the S&P 500 fell 0.8% in April after a sharp intra-month decline. The strategy lost because import exposure reduced earnings estimates, although balance-sheet quality limited forced financing risk."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Developed-market equities; concentrated portfolio; reviewed quarterly",
+ "rules": "Companies require high returns on capital, moderate leverage and a valuation at least 20% below estimated intrinsic value",
+ "costs": "Estimated bid-ask spreads, commissions and withholding taxes deducted at each trade",
+ "constructionTitle": "Strategy construction, from discounted quality to balance-sheet protection",
+ "legs": [
+  {
+   "position": "Established quality companies",
+   "instrument": "Developed-market equities",
+   "purpose": "Provides durable returns on capital and earnings resilience",
+   "allocation": "55%"
+  },
+  {
+   "position": "Cyclical quality companies",
+   "instrument": "Developed-market equities",
+   "purpose": "Captures valuation recovery as industry conditions normalise",
+   "allocation": "25%"
+  },
+  {
+   "position": "Quality special situations",
+   "instrument": "Developed-market equities",
+   "purpose": "Adds returns from restructuring and capital allocation changes",
+   "allocation": "15%"
+  },
+  {
+   "position": "Cash reserve",
+   "instrument": "Treasury bills",
+   "purpose": "Funds new positions during market declines",
+   "allocation": "5%"
+  }
+ ],
+ "entry": "Position opened at a discount of at least 20% to estimated intrinsic value",
+ "size": "Initial position capped at 4%, with sector exposure capped at 25%",
+ "exit": "Position reduced near intrinsic value and closed if expected returns fall below the portfolio threshold",
+ "stop": "Position closed if leverage, returns on capital or the investment case deteriorates materially",
+ "marketWatch": "Earnings revisions, profit margins, corporate leverage and valuation spreads provide the clearest signals for the strategy. Central bank decisions matter because discount rates affect equity valuations, while tariff changes and elections can alter costs, taxes and capital spending. Upcoming earnings guidance will show whether current valuation discounts reflect temporary weakness or lasting pressure on returns.",
+ "favourable": [
+  {
+   "heading": "Temporary earnings weakness reverses",
+   "text": "A short-lived earnings setback favours the strategy when the share price falls more than intrinsic value because investors focus on near-term guidance. High-quality industrial companies followed this pattern after the 2015 China slowdown, recovering as orders and margins stabilised."
+  },
+  {
+   "heading": "Market recoveries broaden",
+   "text": "A broader recovery favours the strategy because discounted companies begin to participate after investors initially concentrate on defensive or high-growth shares. The November 2020 vaccine rally produced this pattern as financial, industrial and consumer companies joined the equity advance."
+  },
+  {
+   "heading": "Capital discipline improves returns",
+   "text": "Better capital allocation favours the strategy because lower debt, fewer acquisitions and disciplined investment can raise free cash flow without rapid revenue growth. Large US companies demonstrated this after the global financial crisis as balance sheets strengthened and share repurchases increased."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Recession cuts intrinsic value",
+   "text": "A deep recession hurts the strategy because lower demand and weaker margins reduce intrinsic value rather than merely depressing the share price. In March 2020, abrupt economic closures caused earnings estimates to fall across otherwise strong companies."
+  },
+  {
+   "heading": "Inflation compresses profit margins",
+   "text": "Persistent inflation hurts the strategy when companies cannot pass higher wages, energy and input costs to customers. The 2022 inflation shock reduced margins and raised discount rates, so reasonable valuations provided only partial protection."
+  },
+  {
+   "heading": "Quality becomes a value trap",
+   "text": "Structural decline hurts the strategy when historical returns on capital overstate a company’s future earnings power. Traditional media and retail companies provided repeated examples after 2010 as digital competition weakened pricing power and reduced asset values."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Feb to Mar 2020",
+   "value": -31
+  },
+  {
+   "name": "Rate shock, Jan to Oct 2022",
+   "value": -18.3
+  },
+  {
+   "name": "Year end selloff, Oct to Dec 2018",
+   "value": -14.8
+  },
+  {
+   "name": "Euro debt crisis, Jul to Oct 2011",
+   "value": -14.2
+  },
+  {
+   "name": "China devaluation, Aug 2015",
+   "value": -7.1
+  }
+ ],
+ "ahead": [
+  -18.5,
+  -5.8,
+  -1.2,
+  3.4
+ ],
+ "infoHist": "Historical results show the strategy’s estimated total return during each event using the default portfolio rules above, including dividends and trading costs. Each window runs from the last market close before the shock to the point at which the immediate repricing ended.",
+ "infoForward": "Scenario results show the estimated portfolio return over the first month of each scenario. Rehyn’s scenario engine projects changes in regional equity markets, sectors, earnings expectations and valuation multiples, then applies them to the strategy’s estimated holdings and cash reserve.",
+ "altTitle": "Where Else Can Investors Find Equity Quality Returns?",
+ "related": [
+  {
+   "id": "g1",
+   "why": "Owns durable growers without a strict valuation discount, so it bears more valuation and interest-rate risk.",
+   "cue": "Similar quality, less valuation discipline"
+  },
+  {
+   "id": "m2",
+   "why": "Follows relative price strength rather than intrinsic value, bearing reversal risk when market leadership changes.",
+   "cue": "Adds a price trend signal"
+  },
+  {
+   "id": "i4",
+   "why": "Emphasises dependable dividends, bearing payout and sector concentration risk rather than relying mainly on valuation gains.",
+   "cue": "Quality exposure with more income"
+  }
+ ]
+}

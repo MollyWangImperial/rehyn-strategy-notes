@@ -1,0 +1,178 @@
+{
+ "id": "i8",
+ "name": "Multi-asset income ETF allocation",
+ "heading": "The Structural Opportunity: Diversified Income Sources",
+ "caseLead": "The investment case rests on combining income from government and corporate bonds, dividend-paying shares and listed property, because these sources are paid for different risks and do not always fall together. The income persists because bond issuers must pay coupons, companies distribute profits and property owners pass through rents, and investors keep asking for yield when central banks cut rates or policy shifts raise uncertainty.",
+ "caseRest": "The main risk is that bonds, shares and property fall at the same time, which removes the diversification that the strategy relies on. In 2022 higher inflation and rising policy rates lowered the value of every income source together. Funds also charge management fees and can trade below net asset value in a sell-off, so returns can fall short of the income collected.",
+ "figNote": "The large figure on each card shows the change in the S&P 500 over the episode, measured from its high before the event to its low, or from its low to its high in a rally. It is a simple measure of how severe the move in the equity market was, so readers can compare how a mix of income funds behaved against it.",
+ "events": [
+  {
+   "date": "August 2011",
+   "theme": "Credit rating",
+   "fig": "−19%",
+   "effect": "mid",
+   "title": "US downgrade lifts bonds and weakens equities",
+   "text": "The S&P 500 fell about 19% from April to October 2011 after the US credit rating downgrade, while Treasury yields fell and bond prices rose. Results were mixed because gains on bond funds offset part of the fall in dividend shares and listed property."
+  },
+  {
+   "date": "May 2013",
+   "theme": "Fed guidance",
+   "fig": "−6%",
+   "effect": "down",
+   "title": "Taper signal weakens bonds and property",
+   "text": "The Federal Reserve signalled in May 2013 that it would slow bond purchases, and the S&P 500 fell about 6% in the following month as bond yields rose. The strategy lost because bonds, utilities and listed property fell together, so diversification gave little protection."
+  },
+  {
+   "date": "December 2018",
+   "theme": "Tighter policy",
+   "fig": "−20%",
+   "effect": "mid",
+   "title": "Tighter policy and tariffs weigh on equities",
+   "text": "The S&P 500 fell about 20% from September to December 2018 as the Federal Reserve raised rates and US-China tariffs weighed on growth. Results were mixed because bonds gained as equities fell, which cushioned the loss from dividend and property funds."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−34%",
+   "effect": "down",
+   "title": "Covid sell-off hits all income sources",
+   "text": "The S&P 500 fell about 34% in five weeks to 23 March 2020, and credit and property funds fell alongside equities as investors sold to raise cash. The strategy lost because most of its income sources fell together while dividends were cut."
+  },
+  {
+   "date": "January 2022",
+   "theme": "Rate hikes",
+   "fig": "−25%",
+   "effect": "down",
+   "title": "Inflation pushes bonds and equities lower together",
+   "text": "The S&P 500 fell about 25% from January to October 2022 as the Federal Reserve raised rates to control inflation, while bond prices fell as well. The strategy lost because the bond holdings that normally offset equity losses fell at the same time."
+  },
+  {
+   "date": "November 2023",
+   "theme": "Policy pivot",
+   "fig": "+16%",
+   "effect": "up",
+   "title": "Fed signals cuts and bonds rally",
+   "text": "The S&P 500 rose about 16% from late October to the end of 2023 after the Federal Reserve signalled rate cuts, and bond yields fell sharply. The strategy gained because bond, dividend and property funds all rose together."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "ETFs holding bonds, dividend shares and listed property; rebalanced quarterly",
+ "rules": "Income funds selected on yield, credit quality and fees; no fund above 25%; weights shifted towards bonds when equity volatility rises",
+ "costs": "Fund expense ratios, estimated bid-ask spreads and commissions deducted at each rebalance",
+ "constructionTitle": "Strategy construction, from diversified income to volatility control",
+ "legs": [
+  {
+   "position": "Global aggregate bond ETF",
+   "instrument": "Government and corporate bond funds",
+   "purpose": "Earns coupon income and cushions equity falls",
+   "allocation": "40%"
+  },
+  {
+   "position": "Dividend quality equity ETF",
+   "instrument": "Global dividend shares",
+   "purpose": "Earns dividends and earnings growth",
+   "allocation": "30%"
+  },
+  {
+   "position": "Investment grade and high yield credit ETFs",
+   "instrument": "Corporate bond funds",
+   "purpose": "Adds credit spread income",
+   "allocation": "15%"
+  },
+  {
+   "position": "Listed property ETF",
+   "instrument": "Global REITs",
+   "purpose": "Earns rental income",
+   "allocation": "10%"
+  },
+  {
+   "position": "Treasury bill ETF",
+   "instrument": "US Treasury bills",
+   "purpose": "Holds cash for rebalancing",
+   "allocation": "5%"
+  }
+ ],
+ "entry": "Funds with yield above the five-year average and an expense ratio below 0.4%",
+ "size": "Set to an 8% annualised volatility target; no fund above 25%",
+ "exit": "Rebalanced quarterly, or when an asset class drifts 5 points from its weight",
+ "stop": "Equity and property weights halved if the portfolio falls 12% from its high",
+ "marketWatch": "Rehyn monitors the yield on each income source against government bonds, the correlation between share and bond returns, and credit spreads, because these show how well the mix is diversified. Central bank meetings, inflation releases and trade policy announcements are the events that most often move all three sources together. If bond and equity returns become more correlated, the protection from diversification would weaken.",
+ "favourable": [
+  {
+   "heading": "Falling yields and rate cuts",
+   "text": "Falling yields favour the strategy because bond prices rise while dividend shares and property benefit from lower financing costs. From October to December 2023 a fall in Treasury yields lifted bonds, dividend funds and listed property together."
+  },
+  {
+   "heading": "Safe haven demand in sell-offs",
+   "text": "Safe haven demand favours the strategy because bond prices rise when equities fall, which offsets part of the loss from dividend shares and property. During the December 2018 sell-off, Treasury prices rose while the S&P 500 fell about 20%."
+  },
+  {
+   "heading": "Stable inflation and growth",
+   "text": "Stable inflation and growth favour the strategy because coupons and dividends continue while the prices of each income source change little. Between 2012 and 2019 US inflation stayed close to 2% and income funds delivered steady yields."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Rising inflation and policy rates",
+   "text": "Rising inflation hurts the strategy because higher yields reduce bond prices and the value of dividend shares and property at the same time. In 2022 the S&P 500 fell about 25% while the 10-year Treasury yield rose about 235 basis points, which removed the usual offset."
+  },
+  {
+   "heading": "Forced selling in a liquidity crisis",
+   "text": "A scramble for cash hurts the strategy because investors sell liquid funds first, which pushes down bond, credit and property funds together. In March 2020 credit and property funds fell alongside equities, and many bond funds traded below the value of their holdings."
+  },
+  {
+   "heading": "Dividend cuts and credit defaults",
+   "text": "Rising defaults hurt the strategy because companies cut dividends, bond issuers miss payments and property owners lose rent at the same time. In 2020 many companies in energy, travel and retail suspended dividends, which reduced income from the equity and property funds."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -19
+  },
+  {
+   "name": "Rate hikes, 2022",
+   "value": -17
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -6.5
+  },
+  {
+   "name": "Taper tantrum, May 2013",
+   "value": -5.5
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": -5
+  }
+ ],
+ "ahead": [
+  -8.4,
+  -1.8,
+  -0.2,
+  2.6
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in global share prices, bond yields and credit spreads, which are then applied to the strategy's current fund weights.",
+ "altTitle": "Where Else Can Investors Find Diversified Income?",
+ "related": [
+  {
+   "id": "i2",
+   "why": "Combines short and long Treasuries. Bears interest rate risk, with losses when inflation lifts long yields.",
+   "cue": "Rate-driven income without equity exposure"
+  },
+  {
+   "id": "i4",
+   "why": "Owns companies with covered dividends. Bears equity risk and dividend cuts, with no bond cushion.",
+   "cue": "Equity income without the bond cushion"
+  },
+  {
+   "id": "i6",
+   "why": "Collects contracted rent and regulated cash flows. Bears real interest rate risk, with asset values falling when yields rise.",
+   "cue": "Real asset income outside bonds and shares"
+  }
+ ]
+}

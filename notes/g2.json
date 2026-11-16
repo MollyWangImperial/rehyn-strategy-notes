@@ -1,0 +1,178 @@
+{
+ "id": "g2",
+ "name": "AI supply chain thematic equity",
+ "heading": "The Structural Opportunity: AI Infrastructure Investment Cycle",
+ "caseLead": "The investment case rests on sustained growth in computing demand, which requires repeated investment in semiconductors, memory, networks, power, cooling and data centres. The opportunity persists because the largest cloud platforms compete on computing capacity, while US, European and Asian industrial policies support domestic supply chains and strategic control over advanced technology.",
+ "caseRest": "The main risk is that supplier earnings depend on concentrated capital spending by a small number of hyperscalers, so weaker guidance can reduce orders across the supply chain. Valuation risk compounds this exposure because expected growth is often priced several years ahead, making the basket sensitive to interest rates and evidence that customers are using capacity more efficiently. The indicative profile of 19.0% annual return, 31.0% volatility, a 55.0% worst fall and 0.1 return skew shows that strong long-term growth comes with large cyclical drawdowns.",
+ "figNote": "The large figure on each card shows the percentage change in the PHLX Semiconductor Sector Index, or SOX, over the episode described. The SOX tracks major listed semiconductor companies and provides a consistent market measure of changing demand, earnings expectations and valuation across the AI supply chain.",
+ "events": [
+  {
+   "date": "November 2008",
+   "theme": "Financial crisis",
+   "fig": "−69%",
+   "effect": "down",
+   "title": "Credit stress cuts technology investment",
+   "text": "The financial crisis reduced technology orders as customers cut inventories and financing conditions tightened, taking the SOX 69% below its 2007 peak. The strategy lost because semiconductor earnings and valuation multiples fell together."
+  },
+  {
+   "date": "May 2019",
+   "theme": "Trade policy",
+   "fig": "−16%",
+   "effect": "down",
+   "title": "Huawei restrictions disrupt chip demand",
+   "text": "US restrictions on Huawei increased the risk of lost sales and excess inventory across global semiconductor suppliers, pushing the SOX down about 16% during May. The strategy lost because China represented a major end market and manufacturing base."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−35%",
+   "effect": "down",
+   "title": "Covid halts orders before cloud demand rises",
+   "text": "The Covid sell-off initially reduced hardware orders and disrupted Asian manufacturing, taking the SOX about 35% below its February peak. The strategy lost because near-term demand and production fell before cloud investment and remote working supported recovery."
+  },
+  {
+   "date": "July 2022",
+   "theme": "Industrial policy",
+   "fig": "+16%",
+   "effect": "up",
+   "title": "Chips Act supports domestic capacity",
+   "text": "US approval of semiconductor subsidies improved the outlook for domestic fabrication, equipment and infrastructure investment as the SOX rose about 16% during July. The strategy gained because public support reduced the cost of expanding advanced manufacturing capacity."
+  },
+  {
+   "date": "May 2023",
+   "theme": "AI demand",
+   "fig": "+15%",
+   "effect": "up",
+   "title": "Nvidia guidance confirms rapid AI spending",
+   "text": "Nvidia’s revenue guidance showed that hyperscalers were accelerating purchases of AI processors and supporting systems, lifting the SOX about 15% during May. The strategy gained because stronger orders raised earnings expectations across chips, memory, networking and cooling."
+  },
+  {
+   "date": "January 2025",
+   "theme": "China rivalry",
+   "fig": "−9.2%",
+   "effect": "down",
+   "title": "DeepSeek challenges expected computing demand",
+   "text": "DeepSeek’s efficient AI model raised concern that advanced systems might require less computing capacity, pushing the SOX down 9.2% on 27 January. The strategy lost because lower expected capital intensity reduced long-term revenue assumptions for infrastructure suppliers."
+  }
+ ],
+ "worstWhen": "October 2022",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Global listed semiconductor, memory, networking, power, cooling and data-centre equities; rebalanced quarterly",
+ "rules": "Companies require material AI infrastructure revenue, positive expected growth and adequate trading liquidity; exposure capped by company, industry and region",
+ "costs": "Estimated bid-ask spreads, commissions, withholding taxes and quarterly rebalancing costs deducted",
+ "constructionTitle": "Strategy construction, from AI capital spending to diversified risk control",
+ "legs": [
+  {
+   "position": "Advanced processors and equipment",
+   "instrument": "Global semiconductor equities",
+   "purpose": "Captures growth in AI computing capacity",
+   "allocation": "35%"
+  },
+  {
+   "position": "Memory and high-speed networking",
+   "instrument": "Memory and networking equities",
+   "purpose": "Captures data transfer and storage demand",
+   "allocation": "20%"
+  },
+  {
+   "position": "Power and cooling systems",
+   "instrument": "Electrical and cooling equities",
+   "purpose": "Captures rising data-centre power density",
+   "allocation": "15%"
+  },
+  {
+   "position": "Data centres and infrastructure",
+   "instrument": "Data-centre operators and suppliers",
+   "purpose": "Captures construction and capacity expansion",
+   "allocation": "20%"
+  },
+  {
+   "position": "Liquidity reserve",
+   "instrument": "Treasury bills",
+   "purpose": "Funds rebalancing and limits drawdowns",
+   "allocation": "10%"
+  }
+ ],
+ "entry": "Added at quarterly reviews when AI infrastructure revenue and order growth meet the portfolio thresholds",
+ "size": "Company weights capped at 8%, industry weights at 40% and single-country exposure at 55%",
+ "exit": "Removed when AI exposure falls below the threshold or forward orders decline for two consecutive quarters",
+ "stop": "Basket exposure reduced when aggregate hyperscaler capital-spending guidance contracts year on year",
+ "marketWatch": "Hyperscaler capital-spending guidance is the main indicator because it leads orders for processors, memory, networking equipment and power systems. Semiconductor inventories, data-centre power connections and supplier order backlogs show whether spending is reaching the wider supply chain. Earnings reports, export-control decisions and major AI model releases are the key upcoming events.",
+ "favourable": [
+  {
+   "heading": "Hyperscalers raise capital spending",
+   "text": "Higher hyperscaler investment favours the strategy because processor purchases require additional memory, networking, power and cooling capacity. Nvidia’s May 2023 guidance confirmed this mechanism and lifted earnings expectations across the supply chain."
+  },
+  {
+   "heading": "Supply constraints support margins",
+   "text": "Tight supply favours the strategy when strong demand allows component producers and equipment suppliers to raise prices and operate factories at high utilisation. The 2020 to 2021 chip shortage supported revenue growth and margins across several semiconductor segments."
+  },
+  {
+   "heading": "Industrial policy funds capacity",
+   "text": "Public support favours the strategy because subsidies and tax credits lower the cost of new fabrication plants, power connections and domestic supply chains. US approval of the Chips Act in July 2022 improved the investment outlook for semiconductor equipment and construction suppliers."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Capital spending guidance weakens",
+   "text": "Lower hyperscaler guidance hurts the strategy because suppliers plan capacity against a small number of large customer budgets. The 2018 semiconductor downturn showed how weaker orders and inventory reductions can spread quickly from end customers to equipment and component producers."
+  },
+  {
+   "heading": "Export controls restrict sales",
+   "text": "Tighter export controls hurt the strategy by reducing access to major customers and forcing suppliers to redesign products for regulated markets. US restrictions on Huawei in May 2019 lowered expected sales across semiconductor companies with substantial China exposure."
+  },
+  {
+   "heading": "Efficiency reduces computing needs",
+   "text": "More efficient AI models hurt the strategy when investors reduce assumptions for processors, power use and data-centre construction. The January 2025 DeepSeek release produced this response because its reported training efficiency challenged expected capital intensity."
+  }
+ ],
+ "past": [
+  {
+   "name": "Global financial crisis, Nov 2008",
+   "value": -55
+  },
+  {
+   "name": "China devaluation, Aug 2015",
+   "value": -13
+  },
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -29
+  },
+  {
+   "name": "Growth sell off, Oct 2022",
+   "value": -55
+  },
+  {
+   "name": "DeepSeek shock, Jan 2025",
+   "value": -8
+  }
+ ],
+ "ahead": [
+  -42,
+  -8.5,
+  -1.5,
+  5.5
+ ],
+ "infoHist": "Historical results show the strategy’s estimated peak-to-trough return during each event using the sector weights, company caps and quarterly rebalancing rules above. Each event window runs from the last portfolio high before the shock to the subsequent low.",
+ "infoForward": "Scenario results show the estimated return over the first month of each scenario. Rehyn’s scenario engine projects moves in semiconductor equities, data-centre suppliers, interest rates, energy prices and regional risk premiums, then applies them to the strategy’s sector and country exposures.",
+ "altTitle": "Where Else Can Investors Find AI Growth?",
+ "related": [
+  {
+   "id": "g1",
+   "why": "Owns durable growth across industries and bears valuation risk rather than concentrated AI capital-spending risk.",
+   "cue": "Broader exposure to long-term growth"
+  },
+  {
+   "id": "m2",
+   "why": "Follows equity price trends and bears reversal risk instead of relying on infrastructure demand.",
+   "cue": "Captures momentum within AI leaders"
+  },
+  {
+   "id": "c9",
+   "why": "Owns regulated infrastructure and bears construction, inflation and policy risk while earning from capacity investment.",
+   "cue": "Extends exposure into power infrastructure"
+  }
+ ]
+}

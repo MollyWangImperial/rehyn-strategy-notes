@@ -1,0 +1,172 @@
+{
+ "id": "e2",
+ "name": "Post-earnings announcement drift",
+ "heading": "The Structural Opportunity: Slow Reaction to Earnings News",
+ "caseLead": "The investment case rests on the tendency of share prices to adjust gradually to earnings news, because analysts and investors revise their forecasts slowly after a large positive surprise. The effect persists because institutional investors trade in stages to limit market impact and give limited attention to each company in busy reporting periods, while policy changes such as tax and tariff announcements keep forcing companies to revise guidance.",
+ "caseRest": "The main risk is that the drift disappears when markets move on macro news rather than company results, so a broad sell-off or a sudden rotation away from recent winners can cause losses within days. The strategy holds shares long, which means that it falls with the market in a sell-off, as in March 2020. The estimated 11.4% annual return therefore comes with 11.2% volatility and a 19.0% worst fall, so the premium should not be treated as stable.",
+ "figNote": "The large figure on each card shows the percentage change in the S&P 500 over the calendar month of the episode. Post-earnings drift is earned over several weeks, so a broad market move in the same month shows whether general conditions supported the effect or overwhelmed it.",
+ "events": [
+  {
+   "date": "October 2008",
+   "theme": "Financial crisis",
+   "fig": "−17%",
+   "effect": "down",
+   "title": "Forced selling overwhelms earnings news",
+   "text": "Hedge funds and mutual funds sold shares to meet redemptions in October 2008, and the S&P 500 fell 17% in the month. The strategy lost because shares with positive earnings surprises were sold alongside weaker shares, so the expected drift did not appear."
+  },
+  {
+   "date": "August 2011",
+   "theme": "Policy",
+   "fig": "−6%",
+   "effect": "down",
+   "title": "US credit rating downgrade triggers a sell-off",
+   "text": "Standard & Poor's downgrade of the US credit rating in August 2011, together with euro area debt worries, lowered the S&P 500 by 6% in the month. The strategy lost because market-wide selling outweighed the gradual price adjustment to earnings news."
+  },
+  {
+   "date": "January 2018",
+   "theme": "Tax policy",
+   "fig": "+6%",
+   "effect": "up",
+   "title": "US tax cut lifts earnings forecasts",
+   "text": "The US corporate tax cut that took effect in January 2018 led companies to raise earnings forecasts, and the S&P 500 rose 6% in the month. The strategy gained because analysts kept raising estimates for several weeks after upbeat results, supporting further price gains."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−13%",
+   "effect": "down",
+   "title": "Covid lockdowns remove earnings visibility",
+   "text": "Covid lockdowns in March 2020 led companies to withdraw guidance and the S&P 500 fell 13% in the month. The strategy lost because forecasts could not be revised reliably, so strong results did not carry through to the share price."
+  },
+  {
+   "date": "February 2022",
+   "theme": "War",
+   "fig": "−3%",
+   "effect": "mid",
+   "title": "Ukraine invasion splits energy and growth shares",
+   "text": "Russia's February 2022 invasion of Ukraine lowered the S&P 500 by 3% in the month and lifted energy prices. Results were mixed because upward earnings revisions in energy shares continued, while growth shares with strong results fell on higher rate expectations."
+  },
+  {
+   "date": "February 2024",
+   "theme": "Technology",
+   "fig": "+5%",
+   "effect": "up",
+   "title": "Nvidia and Meta results extend price gains",
+   "text": "Strong February 2024 results from Nvidia and Meta led analysts to raise forecasts, and the S&P 500 rose 5% in the month. The strategy gained because both shares kept rising for several weeks after the announcements."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "US and European large-cap shares; held about 60 trading days; reviewed weekly",
+ "rules": "Shares bought after earnings exceed analyst estimates by a wide margin and estimates are revised upwards; market hedge increased when the index falls sharply",
+ "costs": "Estimated bid-ask spreads, commissions and market impact deducted at each trade",
+ "constructionTitle": "Strategy construction, from earnings surprise to market hedge",
+ "legs": [
+  {
+   "position": "Long shares with large earnings surprises",
+   "instrument": "US and European listed shares",
+   "purpose": "Earns the price drift after the announcement",
+   "allocation": "70%"
+  },
+  {
+   "position": "Short index futures",
+   "instrument": "S&P 500 futures",
+   "purpose": "Reduces exposure to the broad market",
+   "allocation": "10% margin"
+  },
+  {
+   "position": "Put options, 3 months",
+   "instrument": "S&P 500 index options",
+   "purpose": "Limits losses in a sharp sell-off",
+   "allocation": "2%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "18%"
+  }
+ ],
+ "entry": "Earnings surprise in the top decile of the past eight quarters, with upward estimate revisions",
+ "size": "Single share capped at 3%; set to an 11% annualised volatility target",
+ "exit": "Position closed after 60 trading days, or earlier if estimates are cut",
+ "stop": "Position closed if the share falls 12% below its post-earnings close",
+ "marketWatch": "The share of companies beating earnings estimates and the pace of upward estimate revisions are the main indicators, because they show whether positive surprises are likely to lead to further price gains. Tax and trade policy announcements and central bank decisions matter most when they change the profit outlook for many companies at the same time.",
+ "favourable": [
+  {
+   "heading": "Analysts revise forecasts gradually",
+   "text": "Gradual forecast revisions favour the strategy because estimates keep rising for weeks after a strong report, which supports further price gains. In early 2024, analysts raised forecasts for Nvidia and Meta in stages after their results."
+  },
+  {
+   "heading": "Market volatility stays low",
+   "text": "Low market volatility favours the strategy because company results, not market moves, drive share prices during the holding period. Most of 2017 followed this pattern, as the S&P 500 rose in every month and strong reports led to lasting price gains."
+  },
+  {
+   "heading": "Policy changes lift profit forecasts",
+   "text": "Policy changes that raise profit forecasts favour the strategy because companies revise guidance over several quarters. The January 2018 US tax cut lifted forecasts in most sectors, and shares with strong results continued to rise."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Forced selling overwhelms earnings news",
+   "text": "Forced selling hurts the strategy because investors sell their most liquid shares, including those with strong results, to raise cash. In March 2020, the S&P 500 fell 13% in the month and positive earnings surprises did not lead to price gains."
+  },
+  {
+   "heading": "Leadership rotates away from winners",
+   "text": "A sudden rotation away from recent winners hurts the strategy because shares that beat estimates are held mainly by momentum investors. In March 2009 and November 2020, lower-quality and cyclical shares led the rebound and the strategy lagged."
+  },
+  {
+   "heading": "Companies withdraw guidance",
+   "text": "Withdrawn guidance hurts the strategy because analysts cannot revise forecasts reliably, so strong results lose their power to move prices. In the first half of 2020, many large companies withdrew guidance during lockdowns, which weakened the link between results and prices."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -19
+  },
+  {
+   "name": "Euro area crisis, Aug 2011",
+   "value": -9
+  },
+  {
+   "name": "Growth sell-off, Dec 2018",
+   "value": -12
+  },
+  {
+   "name": "Rate rise sell-off, Sep 2022",
+   "value": -8
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -7
+  }
+ ],
+ "ahead": [
+  -12,
+  -1.8,
+  -0.4,
+  2.6
+ ],
+ "infoHist": "Historical results show the strategy's estimated peak-to-trough change in value during each event, measured from the last market high to the market low and using the shares held under the default backtest parameters above.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in the S&P 500, sector earnings estimates and interest rates, which are then applied to the shares and hedges in the strategy's current portfolio.",
+ "altTitle": "Where Else Can Investors Find Earnings Premiums?",
+ "related": [
+  {
+   "id": "m2",
+   "why": "Buys shares with strong past returns. Bears momentum crash risk when market leadership reverses.",
+   "cue": "Price momentum, not earnings news"
+  },
+  {
+   "id": "v2",
+   "why": "Buys profitable companies at a discount to intrinsic value. Bears the risk that quality fades or the discount persists.",
+   "cue": "Valuation instead of earnings surprise"
+  },
+  {
+   "id": "s2",
+   "why": "Buys options before earnings. Bears time decay, losing when the share moves less than options imply.",
+   "cue": "Same earnings events, different payoff"
+  }
+ ]
+}

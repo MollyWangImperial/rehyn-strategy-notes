@@ -1,0 +1,172 @@
+{
+ "id": "e5",
+ "name": "Special situations credit investing",
+ "heading": "The Structural Opportunity: Forced Selling in Corporate Bonds",
+ "caseLead": "The investment case rests on corporate bonds whose prices fall below their estimated recovery value when refinancings, spin-offs and rating changes force holders to sell. The opportunity persists because many bond funds and insurers must follow rating and index rules regardless of price, while sanctions, trade restrictions and changes in monetary policy keep creating new stressed issuers.",
+ "caseRest": "The main risk is that a stressed issuer fails to recover, so the bond falls towards a low recovery value instead of rising towards the estimated one. Losses can also arrive together because forced selling spreads across many bonds in a market sell-off, as in December 2008 and March 2020. The estimated 9.4% annual return therefore comes with 8.8% volatility, an 18.0% worst fall and negative return skew, so a run of recoveries can hide the size of the loss in a stressed year.",
+ "figNote": "The large figure on each card shows the highest level of the US high yield credit spread during the episode, which is the extra yield investors demand over Treasuries to hold lower-rated corporate bonds. The spread has averaged about 5% over the long run, while readings above 8% signal severe stress in the corporate bond market.",
+ "events": [
+  {
+   "date": "December 2008",
+   "theme": "Financial crisis",
+   "fig": "22%",
+   "effect": "down",
+   "title": "Forced selling drives credit spreads to a record",
+   "text": "After Lehman Brothers failed, investors sold corporate bonds to meet redemptions, and the high yield spread reached a record 22% in December 2008. The strategy lost because bond prices fell far below recoverable value before markets stabilised."
+  },
+  {
+   "date": "February 2016",
+   "theme": "Oil",
+   "fig": "9%",
+   "effect": "up",
+   "title": "Oil price slump creates energy bond opportunities",
+   "text": "OPEC's decision to keep producing took oil below $30 a barrel and pushed the high yield spread to 9% in February 2016. The strategy gained because bonds of producers with strong balance sheets were priced for default, and spreads narrowed in the following months."
+  },
+  {
+   "date": "December 2018",
+   "theme": "Trade policy",
+   "fig": "5%",
+   "effect": "down",
+   "title": "Trade tensions and rate rises widen spreads",
+   "text": "US-China trade tensions and Federal Reserve rate rises led investors to sell high yield bonds in December 2018, lifting the spread to 5%. The strategy lost because forced sales by funds facing outflows pushed bond prices below estimated recovery values."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "11%",
+   "effect": "mid",
+   "title": "Fed support narrows spreads after a sharp widening",
+   "text": "The Covid sell-off lifted the high yield spread to 11% in March 2020, before the Federal Reserve announced support for corporate bond markets. Results were mixed because the strategy lost in the first weeks and then gained as forced sellers stopped and spreads narrowed."
+  },
+  {
+   "date": "March 2023",
+   "theme": "Banking",
+   "fig": "5%",
+   "effect": "mid",
+   "title": "Credit Suisse rescue writes off bank capital bonds",
+   "text": "Swiss authorities arranged UBS's takeover of Credit Suisse in March 2023 and wrote off about $17bn of its bank capital bonds, widening spreads on similar issues. Results were mixed because the write-off hurt holders of those bonds, while senior and secured credits recovered quickly."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "5%",
+   "effect": "up",
+   "title": "Tariff announcement briefly widens credit spreads",
+   "text": "The April 2025 US tariff announcement lifted the high yield spread to about 5% as investors reduced risk. The strategy gained because spreads narrowed within weeks, so bonds bought at the widest levels recovered."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "US and European corporate bonds, including stressed and recently downgraded issues; held three to twelve months; priced daily",
+ "rules": "Bonds bought when forced selling or index rules push the price well below estimated recovery value; positions held through the refinancing, spin-off or rating change; exposure limited by issuer and sector",
+ "costs": "Estimated bid-ask spreads, which are wide for stressed bonds, and commissions deducted at each trade",
+ "constructionTitle": "Strategy construction, from forced sellers to credit protection",
+ "legs": [
+  {
+   "position": "Long stressed bonds near recovery value",
+   "instrument": "US and European corporate bonds",
+   "purpose": "Earns recovery as forced selling ends",
+   "allocation": "45%"
+  },
+  {
+   "position": "Long recently downgraded bonds",
+   "instrument": "High yield corporate bonds",
+   "purpose": "Buys from holders forced to sell by rating rules",
+   "allocation": "20%"
+  },
+  {
+   "position": "Protection on the high yield index",
+   "instrument": "Credit default swap index",
+   "purpose": "Hedges a broad rise in credit spreads",
+   "allocation": "5%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and funds new purchases",
+   "allocation": "30%"
+  }
+ ],
+ "entry": "Price at least 8 points below estimated recovery value",
+ "size": "Single issuer capped at 3%; each sector capped at 15%",
+ "exit": "Position closed at 90% of estimated recovery value, or after 12 months",
+ "stop": "Position closed if the issuer's recovery estimate is cut by 20%",
+ "marketWatch": "High yield spreads, the volume of bonds recently downgraded and the schedule of debt that matures in the next year are the main indicators because they show where forced selling is most likely. Rating agency decisions, sanctions and central bank policy matter most when they change borrowers' access to refinancing.",
+ "favourable": [
+  {
+   "heading": "Forced sellers leave the market",
+   "text": "The end of forced selling favours the strategy because bonds then return towards their recovery value. After the Federal Reserve announced support for corporate bond markets in March 2020, spreads narrowed sharply within weeks."
+  },
+  {
+   "heading": "Refinancing markets stay open",
+   "text": "Open refinancing markets favour the strategy because stressed issuers can repay maturing debt instead of defaulting. After the oil price recovery in 2016, energy producers with sound balance sheets raised new funds and their bonds rose."
+  },
+  {
+   "heading": "Rating rules create temporary mispricing",
+   "text": "Rules that force funds to sell downgraded bonds favour the strategy because the sales push prices below the value that issuers are likely to repay. In 2020, bonds of companies downgraded from investment grade to high yield recovered much of their loss within months."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Defaults exceed estimates",
+   "text": "A rise in defaults hurts the strategy because recovery values fall below estimates and bonds trade down towards them. In 2015 and 2016, many energy producers defaulted as oil prices fell below $30 a barrel."
+  },
+  {
+   "heading": "Forced selling lasts longer than expected",
+   "text": "Prolonged forced selling hurts the strategy because bonds bought at a discount fall further before buyers return. After Lehman Brothers failed in 2008, the high yield spread rose to 22% in December and bonds fell below recovery estimates."
+  },
+  {
+   "heading": "Liquidity disappears in a sell-off",
+   "text": "A loss of trading liquidity hurts the strategy because bid-ask spreads widen and positions cannot be reduced at fair prices. In March 2020, many corporate bonds could be sold only at large discounts until the Federal Reserve intervened."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -18
+  },
+  {
+   "name": "Euro area crisis, Aug 2011",
+   "value": -8
+  },
+  {
+   "name": "Oil price slump, Feb 2016",
+   "value": -7
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -6
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -4
+  }
+ ],
+ "ahead": [
+  -9.5,
+  -0.8,
+  -0.7,
+  3.1
+ ],
+ "infoHist": "Historical results show the strategy's estimated peak-to-trough change in value during each event, using bond prices adjusted for estimated recovery values and the cost of trading stressed bonds. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in credit spreads, interest rates and default rates by sector, which are then applied to the strategy's current bond holdings and credit protection.",
+ "altTitle": "Where Else Can Investors Find Credit Premiums?",
+ "related": [
+  {
+   "id": "i7",
+   "why": "Lends directly to private companies at floating rates. Bears default and illiquidity risk, losing in recessions.",
+   "cue": "Steady income, with less price recovery"
+  },
+  {
+   "id": "c6",
+   "why": "Holds short-dated high yield bonds for coupon income. Bears the risk that credit spreads widen in a sell-off.",
+   "cue": "Coupon income with short maturities"
+  },
+  {
+   "id": "r3",
+   "why": "Buys convertible bonds and hedges the share price. Bears the risk that credit spreads widen or liquidity falls.",
+   "cue": "Hedged credit exposure through equity"
+  }
+ ]
+}

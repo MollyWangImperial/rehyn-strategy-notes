@@ -1,0 +1,172 @@
+{
+ "id": "g1",
+ "name": "Long-term quality growth equity",
+ "heading": "The Structural Opportunity: Long-Horizon Earnings Compounding",
+ "caseLead": "The opportunity exists because markets often underestimate how long companies with strong competitive positions can reinvest earnings at high returns on capital, so long-term earnings growth exceeds initial expectations. The mispricing persists because investors focus on near-term results, while changes in regulation, trade policy and geopolitical risk repeatedly shorten investment horizons and raise the value of patient ownership.",
+ "caseRest": "The main risk is valuation compression because much of a quality growth company’s value depends on earnings expected several years ahead, making the shares sensitive to higher interest rates. The historical profile reflects that exposure, with an estimated annual return of 14.8%, volatility of 20.5% and a worst fall of 44.0%. The return skew of -0.2 shows that losses have been slightly more concentrated than gains, particularly when inflation or policy tightening lifts discount rates rapidly.",
+ "figNote": "The large figure on each card shows the S&P 500 price return during that calendar month. The index provides a consistent measure of the broad equity environment, although quality growth shares can move further because their valuations are more sensitive to interest rates and earnings expectations.",
+ "events": [
+  {
+   "date": "October 2008",
+   "theme": "Financial crisis",
+   "fig": "−16.9%",
+   "effect": "down",
+   "title": "Credit stress cuts growth expectations",
+   "text": "The global financial crisis reduced earnings expectations and restricted access to credit as the S&P 500 fell 16.9%. The strategy lost because investors reduced equity exposure and assigned lower valuations to earnings expected far into the future."
+  },
+  {
+   "date": "December 2018",
+   "theme": "Monetary policy",
+   "fig": "−9.2%",
+   "effect": "down",
+   "title": "Fed tightening compresses growth valuations",
+   "text": "Federal Reserve tightening and US-China trade tensions pushed the S&P 500 down 9.2%. The strategy lost because higher discount rates reduced valuations while weaker global trade threatened revenue growth."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−12.5%",
+   "effect": "down",
+   "title": "Lockdowns trigger a global equity sell-off",
+   "text": "Covid lockdowns stopped economic activity and drove the S&P 500 down 12.5%. The strategy lost because investors cut earnings forecasts and raised the return required to own equities, outweighing the resilience of stronger businesses."
+  },
+  {
+   "date": "April 2020",
+   "theme": "Policy support",
+   "fig": "+12.7%",
+   "effect": "up",
+   "title": "Policy support restores long-term valuations",
+   "text": "Large fiscal programmes and central bank asset purchases helped the S&P 500 rebound 12.7%. The strategy gained because lower interest rates supported valuations and accelerated demand for digital services offered by many quality growth companies."
+  },
+  {
+   "date": "February 2022",
+   "theme": "War",
+   "fig": "−3.1%",
+   "effect": "down",
+   "title": "Ukraine invasion deepens rate pressure",
+   "text": "Russia’s invasion of Ukraine raised energy prices as the S&P 500 fell 3.1%. The strategy lost because higher inflation increased expected interest rates, while geopolitical risk reduced confidence in long-term earnings forecasts."
+  },
+  {
+   "date": "November 2023",
+   "theme": "Disinflation",
+   "fig": "+8.9%",
+   "effect": "up",
+   "title": "Lower inflation supports growth shares",
+   "text": "Softer inflation and stable policy guidance helped the S&P 500 gain 8.9%. The strategy gained more broadly because falling bond yields increased the present value of long-term earnings and reduced pressure on elevated valuations."
+  }
+ ],
+ "worstWhen": "October 2022",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Global developed-market equities; concentrated portfolio of profitable growth companies; reviewed quarterly",
+ "rules": "Companies require high returns on capital, durable revenue growth, strong balance sheets and a long reinvestment runway; valuation limits apply at purchase",
+ "costs": "Estimated bid-ask spreads, commissions and withholding taxes deducted when holdings change",
+ "constructionTitle": "Strategy construction, from earnings reinvestment to valuation control",
+ "legs": [
+  {
+   "position": "Established compounders",
+   "instrument": "Large-cap global equities",
+   "purpose": "Provides durable earnings growth and strong cash generation",
+   "allocation": "55%"
+  },
+  {
+   "position": "Scalable growth businesses",
+   "instrument": "Mid- and large-cap global equities",
+   "purpose": "Captures companies expanding into large addressable markets",
+   "allocation": "25%"
+  },
+  {
+   "position": "Emerging compounders",
+   "instrument": "Mid-cap global equities",
+   "purpose": "Adds companies with improving returns on capital",
+   "allocation": "15%"
+  },
+  {
+   "position": "Liquidity reserve",
+   "instrument": "Short-term government bills",
+   "purpose": "Funds portfolio changes without forced sales",
+   "allocation": "5%"
+  }
+ ],
+ "entry": "Initiate when returns on capital, earnings growth and competitive position support at least five years of reinvestment",
+ "size": "Limit each company to 8% and each sector to 35% of portfolio value",
+ "exit": "Exit when reinvestment returns weaken, competitive advantages narrow or valuation exceeds the long-term earnings case",
+ "stop": "Review immediately after a 20% earnings downgrade or a material balance-sheet deterioration",
+ "marketWatch": "Long-term government bond yields, inflation expectations and earnings revisions remain the main indicators because they determine both valuation and the durability of expected growth. Central bank meetings, major technology earnings, tariff decisions and semiconductor restrictions will matter most when they alter discount rates or access to global markets.",
+ "favourable": [
+  {
+   "heading": "Falling long-term interest rates",
+   "text": "Lower long-term rates favour the strategy because they raise the present value of earnings expected several years ahead. Quality growth shares outperformed during the 2020 recovery as monetary easing supported valuations and digital adoption lifted earnings forecasts."
+  },
+  {
+   "heading": "Resilient corporate demand",
+   "text": "Stable demand favours the strategy because recurring revenue and pricing power allow leading companies to sustain margins while continuing to invest. Enterprise software and payment companies showed this pattern during the moderate-growth expansion of the late 2010s."
+  },
+  {
+   "heading": "Long investment runways",
+   "text": "New markets favour the strategy when companies can reinvest cash at high returns without relying on debt or acquisitions. Cloud computing and advanced semiconductor demand supported prolonged earnings growth for leading suppliers through the 2010s and early 2020s."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Rapid interest-rate increases",
+   "text": "Rising rates hurt the strategy because higher discount rates reduce the value assigned to distant earnings, even when current profits remain strong. This effect drove the 2022 decline as inflation led central banks to tighten policy rapidly."
+  },
+  {
+   "heading": "Regulatory and trade restrictions",
+   "text": "Policy restrictions hurt the strategy when they reduce market access, raise compliance costs or interrupt supply chains for companies valued on global growth. China’s technology regulation in 2021 and later semiconductor export controls reduced earnings expectations across exposed businesses."
+  },
+  {
+   "heading": "Competitive advantages weaken",
+   "text": "Competitive disruption hurts the strategy because high valuations assume that strong margins and returns on capital will persist. Former market leaders in mobile devices and digital services suffered large valuation declines when competitors weakened their pricing power or displaced their products."
+  }
+ ],
+ "past": [
+  {
+   "name": "Rate repricing, Oct 2022",
+   "value": -44
+  },
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -30
+  },
+  {
+   "name": "Global financial crisis, Oct 2008",
+   "value": -24
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -18
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": -16
+  }
+ ],
+ "ahead": [
+  -18.5,
+  -7,
+  -1,
+  5.5
+ ],
+ "infoHist": "Historical results show the strategy’s estimated peak-to-trough return during each event using a global basket of companies that met the quality, growth and reinvestment rules at the time. Each event window begins at the last portfolio high before the shock and ends at the subsequent low.",
+ "infoForward": "Scenario results show the estimated portfolio return over the first month of each scenario. Rehyn’s scenario engine projects changes in equity markets, sector earnings, government bond yields and valuation multiples, then applies them to the strategy’s regional and industry exposures.",
+ "altTitle": "Where Else Can Investors Find Durable Growth?",
+ "related": [
+  {
+   "id": "v2",
+   "why": "Adds valuation discipline to quality selection and bears the risk that cheaper companies deliver slower earnings growth.",
+   "cue": "Similar quality with lower valuation exposure"
+  },
+  {
+   "id": "m2",
+   "why": "Owns shares with strong price trends and bears reversal risk when market leadership changes abruptly.",
+   "cue": "Captures shorter-term equity leadership"
+  },
+  {
+   "id": "i4",
+   "why": "Emphasises dividends and balance-sheet strength, bearing the risk that distributions limit reinvestment and capital growth.",
+   "cue": "Quality exposure with more income"
+  }
+ ]
+}

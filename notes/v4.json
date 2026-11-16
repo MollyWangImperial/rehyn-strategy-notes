@@ -1,0 +1,172 @@
+{
+ "id": "v4",
+ "name": "Sovereign bond relative value",
+ "heading": "The Structural Opportunity: Mispriced Sovereign Yield Spreads",
+ "caseLead": "The investment case rests on persistent differences between sovereign bond yields and the growth, inflation and fiscal outlook that ultimately determines sustainable interest rates. The opportunity persists because central bank purchases, regulatory demand, benchmark constraints and geopolitical risk can move government bond prices away from fundamentals for long periods.",
+ "caseRest": "The main risk is that an apparently cheap bond becomes cheaper as inflation, fiscal policy or political risk shifts faster than the valuation model captures. Losses can also rise when investors seek liquidity in the safest bonds, because spreads often widen before policy support restores convergence. Leverage makes this timing risk important even when the long-term valuation view is correct, so several years of expected return can be lost during a sharp divergence.",
+ "figNote": "The large figure on each card shows the change in the relevant 10-year sovereign yield spread from its pre-event level to the widest point during the episode. A positive figure means the higher-yielding bond became cheaper relative to the lower-yielding bond, while a negative figure means the spread narrowed.",
+ "events": [
+  {
+   "date": "July 2012",
+   "theme": "Monetary policy",
+   "fig": "−250bp",
+   "effect": "up",
+   "title": "ECB pledge reverses euro fragmentation",
+   "text": "The ECB’s commitment to preserve the euro reversed demand for German Bunds and reduced Italian redenomination risk, narrowing the 10-year spread by about 250 basis points. The strategy gained as undervalued Italian bonds recovered against expensive Bunds."
+  },
+  {
+   "date": "May 2013",
+   "theme": "Monetary policy",
+   "fig": "+60bp",
+   "effect": "down",
+   "title": "Taper guidance drives spreads wider",
+   "text": "Federal Reserve guidance on reducing asset purchases lifted US Treasury yields faster than German Bund yields, widening the 10-year spread by about 60 basis points. The strategy lost because an already cheap US market became cheaper before growth expectations adjusted."
+  },
+  {
+   "date": "April 2015",
+   "theme": "Positioning",
+   "fig": "−80bp",
+   "effect": "up",
+   "title": "Bund valuation corrects rapidly",
+   "text": "German Bund yields rose sharply from exceptionally low levels as deflation fears eased, narrowing their spread against US Treasuries by about 80 basis points. The strategy gained because expensive Bunds underperformed the cheaper US market."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "+140bp",
+   "effect": "down",
+   "title": "Funding stress overwhelms relative value",
+   "text": "The pandemic drove investors into German Bunds while concerns about Italian debt sustainability widened the 10-year spread by about 140 basis points. The strategy suffered its worst loss because liquidity demand overwhelmed valuation before ECB purchases stabilised the market."
+  },
+  {
+   "date": "September 2022",
+   "theme": "Fiscal policy",
+   "fig": "+90bp",
+   "effect": "down",
+   "title": "UK budget reprices fiscal risk",
+   "text": "The UK mini-budget raised expected borrowing and weakened confidence in fiscal policy, widening the 10-year gilt spread over German Bunds by about 90 basis points. The strategy lost as cheap gilts sold off further before the policy reversal restored confidence."
+  },
+  {
+   "date": "June 2024",
+   "theme": "Politics",
+   "fig": "+30bp",
+   "effect": "mid",
+   "title": "French election widens sovereign spreads",
+   "text": "A snap French election increased concern about fiscal policy, widening the 10-year French spread over Germany by about 30 basis points. Results were mixed because initial losses on French bonds were partly recovered as the most adverse policy outcomes became less likely."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Developed-market government bonds and interest-rate futures; mainly five- to 10-year maturities",
+ "rules": "Bonds ranked by yields relative to growth, inflation and fiscal estimates; long and short positions matched for duration and currency risk; reviewed monthly",
+ "costs": "Estimated bid-ask spreads, futures commissions, financing and bond borrow costs deducted at each rebalance",
+ "constructionTitle": "Strategy construction, from yield convergence to duration control",
+ "legs": [
+  {
+   "position": "Long undervalued sovereign bonds",
+   "instrument": "Government bonds and bond futures",
+   "purpose": "Gains when unusually high yields converge towards fundamentals",
+   "allocation": "35% risk"
+  },
+  {
+   "position": "Short overvalued sovereign bonds",
+   "instrument": "Government bonds and bond futures",
+   "purpose": "Offsets market duration and captures underperformance of expensive bonds",
+   "allocation": "35% risk"
+  },
+  {
+   "position": "Cross-market curve positions",
+   "instrument": "Interest-rate futures and swaps",
+   "purpose": "Separates relative value from broad changes in policy rates",
+   "allocation": "20% risk"
+  },
+  {
+   "position": "Liquidity reserve",
+   "instrument": "Treasury bills and cash",
+   "purpose": "Provides collateral and supports rebalancing during spread moves",
+   "allocation": "10% risk"
+  }
+ ],
+ "entry": "Yield gap at least 1.5 standard deviations from the level implied by growth, inflation and fiscal estimates",
+ "size": "Set to a 6% annualised volatility target with duration and currency exposures near neutral",
+ "exit": "Position reduced when half the valuation gap closes and closed when the gap reaches fair value",
+ "stop": "Position closed if the spread moves one further standard deviation against the trade after fundamentals are updated",
+ "marketWatch": "Inflation revisions, central bank guidance, government borrowing plans and auction demand determine whether sovereign yield gaps reflect lasting fundamentals or temporary pressure. Elections, budgets, trade restrictions and military escalation matter when they change fiscal credibility, energy prices or demand for safe government bonds.",
+ "favourable": [
+  {
+   "heading": "Policy support restores convergence",
+   "text": "Credible central bank support favours the strategy when it reduces liquidity and redenomination risks without removing the underlying yield advantage of cheaper bonds. The ECB’s 2012 policy commitment drove a large convergence between Italian and German yields."
+  },
+  {
+   "heading": "Inflation differences narrow",
+   "text": "Converging inflation favours the strategy because policy-rate expectations move closer while valuation gaps in sovereign yields close. The 2015 Bund sell-off rewarded positions against exceptionally expensive German bonds as euro-area deflation fears eased."
+  },
+  {
+   "heading": "Temporary fiscal fears reverse",
+   "text": "A policy reversal favours the strategy when markets have priced a lasting increase in borrowing or inflation that governments subsequently withdraw. UK gilts recovered after the September 2022 mini-budget was reversed and fiscal policy returned to a more credible path."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Fiscal credibility deteriorates",
+   "text": "Weakening fiscal credibility hurts the strategy because higher debt issuance and inflation risk can justify yields that previously appeared excessive. UK gilts became materially cheaper during the 2022 mini-budget episode before the policy reversal allowed spreads to converge."
+  },
+  {
+   "heading": "Safe-haven demand overwhelms value",
+   "text": "A global liquidity shock hurts the strategy when investors concentrate in the safest sovereign bonds regardless of relative growth or inflation. In March 2020, German Bunds outperformed Italian bonds sharply until ECB purchases reduced fragmentation risk."
+  },
+  {
+   "heading": "Inflation regimes change rapidly",
+   "text": "An inflation shift hurts the strategy because historical yield relationships stop providing a reliable estimate of fair value. The 2013 taper episode widened the US-German spread as US policy expectations adjusted faster than European growth and inflation forecasts."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid funding shock, Mar 2020",
+   "value": -11
+  },
+  {
+   "name": "UK mini-budget, Sep 2022",
+   "value": -6.8
+  },
+  {
+   "name": "Taper tantrum, May 2013",
+   "value": -5.4
+  },
+  {
+   "name": "Euro debt crisis, Nov 2011",
+   "value": -4.9
+  },
+  {
+   "name": "French election, Jun 2024",
+   "value": -2.7
+  }
+ ],
+ "ahead": [
+  -4.8,
+  -2.2,
+  0.2,
+  1.1
+ ],
+ "infoHist": "Historical results show the strategy’s peak-to-trough return during each event using monthly valuation rankings and duration-neutral positions across developed sovereign markets. Each event window runs from the last strategy high before the shock to the subsequent low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn’s scenario engine projects changes in inflation expectations, policy rates, fiscal risk and safe-haven demand, then applies the resulting sovereign spread moves to the strategy’s current risk profile.",
+ "altTitle": "Where Else Can Investors Find Rates Relative Value?",
+ "related": [
+  {
+   "id": "r5",
+   "why": "Trades yield-curve shape within one market and bears the risk that curve dislocations persist.",
+   "cue": "Same market, different source of convergence"
+  },
+  {
+   "id": "m7",
+   "why": "Follows established bond trends rather than valuation and bears reversal risk when rate momentum changes.",
+   "cue": "Can benefit while spreads keep diverging"
+  },
+  {
+   "id": "c2",
+   "why": "Expresses a directional curve view and bears policy and inflation risk rather than cross-market valuation risk.",
+   "cue": "Adds exposure to curve repricing"
+  }
+ ]
+}

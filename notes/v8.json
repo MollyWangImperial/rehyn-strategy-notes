@@ -1,0 +1,178 @@
+{
+ "id": "v8",
+ "name": "Private equity secondaries",
+ "heading": "The Structural Opportunity: Forced Seller Liquidity Discounts",
+ "caseLead": "The investment case rests on buying seasoned private equity fund interests below reported net asset value, so the discount and earlier cash distributions support returns over a shorter period than new commitments. The opportunity persists because pension funds, banks and insurers periodically need liquidity or lower private-market exposure, while regulatory changes, higher rates and geopolitical shocks can force sales regardless of underlying asset quality.",
+ "caseRest": "The main risk is that reported net asset values adjust slowly, so an apparent discount can disappear when portfolio companies are marked to current earnings and valuation multiples. Leverage can deepen losses because weaker cash flow raises refinancing costs, delays exits and reduces distributions from the underlying funds. The indicative record combines a 12.1% annual return with 11.5% volatility, but the 22.0% worst fall and -0.4 return skew show that losses remain concentrated in broad private-market downturns.",
+ "figNote": "The large figure on each card shows the average secondary-market price as a percentage of reported net asset value during the relevant year. A figure of 80% NAV means buyers paid 80 cents for each dollar of reported fund value, although later valuation changes can increase or reduce the effective discount.",
+ "events": [
+  {
+   "date": "December 2008",
+   "theme": "Credit crisis",
+   "fig": "60% NAV",
+   "effect": "down",
+   "title": "Lehman failure cuts private equity valuations",
+   "text": "Lehman’s failure closed leveraged finance and exit markets, pushing secondary prices towards 60% of reported NAV. Existing portfolios lost because company earnings, valuation multiples and expected distributions fell faster than purchase discounts could absorb."
+  },
+  {
+   "date": "July 2012",
+   "theme": "Policy",
+   "fig": "80% NAV",
+   "effect": "up",
+   "title": "ECB backstop restores exit confidence",
+   "text": "The ECB’s commitment to preserve the euro reduced sovereign funding risk while secondary interests still traded near 80% of NAV. The strategy gained because recovering valuations and distributions increased returns on assets bought at crisis discounts."
+  },
+  {
+   "date": "June 2016",
+   "theme": "Brexit",
+   "fig": "89% NAV",
+   "effect": "mid",
+   "title": "Brexit creates selective fund discounts",
+   "text": "The Brexit vote weakened sterling and increased uncertainty around UK assets, while average secondary pricing remained near 89% of NAV. Results were mixed because currency and financial exposures fell, but diversified funds retained access to exits and financing."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "87% NAV",
+   "effect": "down",
+   "title": "Covid closes exits and delays distributions",
+   "text": "The Covid shock halted deals and reduced confidence in reported valuations, although annual pricing averaged about 87% of NAV. The strategy suffered its worst fall because earnings declined, exits stopped and buyers demanded wider discounts for uncertain portfolio values."
+  },
+  {
+   "date": "December 2021",
+   "theme": "Liquidity",
+   "fig": "97% NAV",
+   "effect": "up",
+   "title": "Abundant liquidity lifts private valuations",
+   "text": "Low rates and strong deal activity lifted secondary pricing to about 97% of NAV as buyers competed for mature portfolios. The strategy gained because rapid exits and rising company valuations generated distributions, although narrow discounts reduced returns on new purchases."
+  },
+  {
+   "date": "December 2022",
+   "theme": "War",
+   "fig": "81% NAV",
+   "effect": "down",
+   "title": "War and rate rises widen discounts",
+   "text": "Russia’s invasion of Ukraine and rapid policy tightening weakened financing and reduced secondary pricing to about 81% of NAV. Existing holdings lost as valuation multiples fell and exits slowed, even though wider discounts improved prospective returns on new transactions."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Private equity limited-partner interests and continuation vehicles; diversified by manager, vintage and sector",
+ "rules": "Interests bought below adjusted NAV after company-level review; exposure capped by manager and vintage; unfunded commitments fully reserved",
+ "costs": "Estimated transaction fees, legal costs, management fees, carried interest and credit facility charges deducted",
+ "constructionTitle": "Strategy construction, from discount capture to portfolio diversification",
+ "legs": [
+  {
+   "position": "Seasoned buyout fund interests",
+   "instrument": "Private equity limited-partner interests",
+   "purpose": "Captures discounts and near-term distributions",
+   "allocation": "45%"
+  },
+  {
+   "position": "Growth and venture fund interests",
+   "instrument": "Private equity limited-partner interests",
+   "purpose": "Adds exposure to discounted growth assets",
+   "allocation": "20%"
+  },
+  {
+   "position": "Continuation vehicle interests",
+   "instrument": "Single-asset and multi-asset vehicles",
+   "purpose": "Targets mature companies with defined exit plans",
+   "allocation": "20%"
+  },
+  {
+   "position": "Small fund portfolios",
+   "instrument": "Diversified secondary transactions",
+   "purpose": "Reduces manager and company concentration",
+   "allocation": "10%"
+  },
+  {
+   "position": "Liquidity reserve",
+   "instrument": "Treasury bills and cash",
+   "purpose": "Funds capital calls and transaction costs",
+   "allocation": "5%"
+  }
+ ],
+ "entry": "Purchase price below adjusted NAV with expected distributions supporting a four-to-six-year return above 12%",
+ "size": "Single managers capped at 10% and individual companies capped at 3% of portfolio NAV",
+ "exit": "Hold until fund liquidation, a negotiated sale or distributions return most invested capital",
+ "stop": "Suspend new deployment when adjusted NAV falls below cost and refinancing risk is rising",
+ "marketWatch": "Secondary pricing, private-market distributions, leveraged loan spreads and exit volumes indicate whether discounts compensate for underlying valuation risk. Central bank decisions, bank capital rules, pension allocation reviews and trade restrictions matter because they can change financing costs or force large investors to seek liquidity.",
+ "favourable": [
+  {
+   "heading": "Forced selling widens discounts",
+   "text": "Forced sales favour the strategy when institutions accept lower prices to meet liquidity needs or reduce private-market allocations, because buyers receive the same underlying cash flows at a lower cost. Bank and pension rebalancing after the 2008 crisis created discounts that supported strong returns during the recovery."
+  },
+  {
+   "heading": "Exit markets reopen",
+   "text": "Improving exit markets favour the strategy because mature funds can sell companies and distribute cash sooner, raising the annualised return on discounted purchases. The reopening of public and private deal markets after the euro-area crisis accelerated distributions from interests bought in 2011 and 2012."
+  },
+  {
+   "heading": "Valuations recover after repricing",
+   "text": "A recovery in valuation multiples favours the strategy because purchased NAV rises while the original discount remains locked into cost. After the Covid sell-off, technology and healthcare valuations recovered quickly, supporting gains in diversified secondary portfolios acquired during the disruption."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Reported NAV proves too high",
+   "text": "Stale valuations hurt the strategy when reported NAV does not reflect weaker earnings or lower listed-market multiples, because the apparent purchase discount offers less protection than expected. In 2022, delayed private-company markdowns reduced or removed discounts on growth and venture fund interests."
+  },
+  {
+   "heading": "Financing costs restrict exits",
+   "text": "Higher financing costs hurt the strategy because leveraged portfolio companies face lower cash flow, weaker buyer demand and more expensive refinancing, delaying distributions. Rapid rate increases in 2022 widened secondary discounts while reducing deal activity across buyout portfolios."
+  },
+  {
+   "heading": "Systemic shocks halt distributions",
+   "text": "Systemic shocks hurt the strategy when exits close and managers call additional capital, creating losses and liquidity demands at the same time. In March 2020, transaction activity stopped while portfolio companies drew credit lines and required support from their fund owners."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -22
+  },
+  {
+   "name": "Rate shock, Sep 2022",
+   "value": -14.8
+  },
+  {
+   "name": "Euro crisis, Aug 2011",
+   "value": -8.6
+  },
+  {
+   "name": "China devaluation, Aug 2015",
+   "value": -5.1
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -6.4
+  }
+ ],
+ "ahead": [
+  -9.8,
+  -2.8,
+  -0.4,
+  1.2
+ ],
+ "infoHist": "Historical results show the strategy’s estimated peak-to-trough return during each event, using reported fund NAVs adjusted between quarters for listed equity multiples, credit spreads, currencies and realised exits. The calculation includes purchase discounts, distributions, fees and unfunded commitments under the default construction above.",
+ "infoForward": "Scenario results show the estimated return over the first month of each scenario. Rehyn’s scenario engine projects changes in portfolio-company earnings, valuation multiples, credit spreads, currencies and secondary discounts, then applies them to the strategy’s estimated underlying exposures.",
+ "altTitle": "Where Else Can Investors Find Returns from Illiquidity?",
+ "related": [
+  {
+   "id": "g5",
+   "why": "Targets growth before listing rather than seasoned fund interests. Bears company selection and late-stage valuation risk.",
+   "cue": "Similar illiquidity, earlier company exposure"
+  },
+  {
+   "id": "i7",
+   "why": "Lends directly to private companies. Bears default risk in exchange for contractual interest and senior security.",
+   "cue": "Private exposure with contractual income"
+  },
+  {
+   "id": "e5",
+   "why": "Invests in credit affected by corporate events. Bears restructuring risk rather than private equity valuation risk.",
+   "cue": "Discount capture through corporate events"
+  }
+ ]
+}

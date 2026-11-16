@@ -1,0 +1,178 @@
+{
+ "id": "c5",
+ "name": "Risk parity allocation",
+ "heading": "The Structural Opportunity: Harvesting Diversified Risk Premiums",
+ "caseLead": "The investment case rests on the observation that equities carry most of the risk in a conventional portfolio, so allocating risk rather than capital across equities, bonds, inflation-linked bonds and commodities earns the premium of each while limiting dependence on any one. The approach persists because many investors cannot use leverage, which leaves low-volatility assets such as government bonds with higher returns per unit of risk, and because inflation, growth and geopolitical shocks affect each asset class differently.",
+ "caseRest": "The main risk is that stocks and bonds fall together, which removes the diversification that supports the strategy. Because the portfolio holds bonds with leverage, rising inflation and higher interest rates cause losses on its largest positions, as in 2022 when both asset classes recorded double-digit falls. A diversified allocation therefore does not protect against inflation shocks, and losses can be larger than those of a conventional portfolio over the same period.",
+ "figNote": "The large figure on each card shows the change in the S&P 500 over the episode, measured at the daily close from the last high to the low in a fall. A fall of 20% or more is usually called a bear market, and the figure shows how much equity risk the portfolio carried when bonds either offset it or failed to.",
+ "events": [
+  {
+   "date": "August 2011",
+   "theme": "US downgrade",
+   "fig": "−17%",
+   "effect": "up",
+   "title": "US downgrade lifts Treasuries as shares fall",
+   "text": "The US credit rating downgrade and the euro area debt crisis cut the S&P 500 by 17% between 22 July and 8 August 2011, while the 10-year Treasury yield fell to 2.3%. The strategy gained because the rise in bond prices outweighed the equity loss."
+  },
+  {
+   "date": "June 2013",
+   "theme": "Taper tantrum",
+   "fig": "−6%",
+   "effect": "down",
+   "title": "Fed taper signal pushes bond yields higher",
+   "text": "The Federal Reserve's signal in May and June 2013 that it would slow bond purchases lifted the 10-year yield from 1.9% to 2.6% and cut the S&P 500 by 6%. The strategy lost because bonds, its largest holding after leverage, fell together with equities."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−34%",
+   "effect": "down",
+   "title": "Covid sell-off hits bonds and equities together",
+   "text": "The S&P 500 fell 34% from 19 February to 23 March 2020, and the 10-year yield rose from 0.5% to 1.3% in nine days as investors sold bonds for cash. The strategy lost because leveraged bond holdings no longer offset the fall in equities."
+  },
+  {
+   "date": "June 2022",
+   "theme": "Inflation",
+   "fig": "−24%",
+   "effect": "down",
+   "title": "Inflation drives bonds and shares lower together",
+   "text": "The S&P 500 fell 24% from January to 16 June 2022 as the Federal Reserve raised rates and the war in Ukraine lifted energy prices, while the 10-year yield rose from 1.5% to about 3.5%. The strategy lost because leveraged bonds fell with equities."
+  },
+  {
+   "date": "August 2024",
+   "theme": "Carry unwind",
+   "fig": "−8%",
+   "effect": "up",
+   "title": "Equity sell-off is offset by a bond rally",
+   "text": "The S&P 500 fell 8% between 16 July and 5 August 2024 as yen carry trades were closed, while the 10-year Treasury yield fell from 4.2% to 3.8%. The strategy gained because the bond rally offset the loss on equities."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "−19%",
+   "effect": "mid",
+   "title": "Tariffs lift Treasury yields as shares fall",
+   "text": "US tariff announcements cut the S&P 500 by 19% between 19 February and 8 April 2025, and lifted the 10-year yield by about 50 basis points in one week. Results were mixed because gold offset part of the loss on bonds and equities."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "ETFs and futures covering equities, Treasuries, inflation-linked bonds, gold and commodities; rebalanced monthly",
+ "rules": "Weights set so that each asset class contributes equal risk, using 60-day volatility; bond exposure raised with Treasury futures; leverage reduced when the correlation between stocks and bonds is above 0.4",
+ "costs": "Estimated ETF bid-ask spreads, fund fees and financing costs deducted at each monthly rebalance",
+ "constructionTitle": "Strategy construction, from equal risk weights to leverage limits",
+ "legs": [
+  {
+   "position": "Global equity ETFs",
+   "instrument": "Equity ETFs",
+   "purpose": "Earns the equity risk premium",
+   "allocation": "22%"
+  },
+  {
+   "position": "Treasury and inflation-linked bond ETFs",
+   "instrument": "Bond ETFs",
+   "purpose": "Diversifies equity risk when growth slows",
+   "allocation": "40%"
+  },
+  {
+   "position": "Gold and commodity ETFs",
+   "instrument": "Commodity ETFs",
+   "purpose": "Gains when inflation rises",
+   "allocation": "12%"
+  },
+  {
+   "position": "Treasury futures overlay",
+   "instrument": "US Treasury futures",
+   "purpose": "Adds bond exposure to balance risk across assets",
+   "allocation": "10% margin"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and liquidity",
+   "allocation": "16%"
+  }
+ ],
+ "entry": "Rebalance when any asset class's risk share differs from its 25% target by more than 5 points",
+ "size": "Set to a 9% annualised volatility target",
+ "exit": "Positions reduced when an asset's 60-day volatility doubles",
+ "stop": "Leverage removed if the portfolio falls 15% from its high",
+ "marketWatch": "The correlation between equity and bond returns, inflation expectations and the path of central bank policy rates are the main indicators for this strategy. Rehyn watches inflation data and Treasury auctions because a positive correlation between stocks and bonds reduces the benefit of diversification. Upcoming trade policy decisions and energy price moves matter because they can raise inflation and push stocks and bonds down together.",
+ "favourable": [
+  {
+   "heading": "Stable low inflation",
+   "text": "Low inflation favours the strategy because bonds then rise when growth slows, so they offset equity losses. From 2010 to 2019, US inflation averaged about 1.8% and the correlation between stocks and bonds was mostly negative, which supported the strategy."
+  },
+  {
+   "heading": "Falling yields during equity sell-offs",
+   "text": "Falling yields during an equity sell-off favour the strategy because leveraged bonds gain by more than equities lose. In August 2011 and August 2024, the 10-year yield fell by about 60 and 40 basis points while equities fell."
+  },
+  {
+   "heading": "Commodity gains when inflation rises",
+   "text": "Rising inflation expectations favour the strategy because the commodity and inflation-linked bond holdings gain when inflation exceeds forecasts. In 2021, the Bloomberg Commodity Index rose about 27% and US inflation-linked bonds gained about 6%."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Stocks and bonds falling together",
+   "text": "A positive correlation between stocks and bonds hurts the strategy because bonds stop offsetting equity losses, and leverage magnifies the fall. In 2022 the S&P 500 fell about 18% and long-dated Treasuries fell about 30%, so the portfolio lost on both of its largest positions."
+  },
+  {
+   "heading": "Sudden rise in interest rates",
+   "text": "Rapid rate rises hurt the strategy because bond prices fall by more than their risk estimates suggest, and leverage magnifies the loss. In May and June 2013, the 10-year yield rose by about 70 basis points in six weeks, and long-dated Treasury ETFs fell by more than 10%."
+  },
+  {
+   "heading": "Forced deleveraging in a crisis",
+   "text": "A rush for cash hurts the strategy because investors sell bonds and equities together, and funds reduce leverage at the same time. In March 2020, the 10-year yield rose by about 70 basis points in nine days during the equity sell-off."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -13
+  },
+  {
+   "name": "Inflation shock, Jun 2022",
+   "value": -9
+  },
+  {
+   "name": "Taper tantrum, Jun 2013",
+   "value": -8
+  },
+  {
+   "name": "Bond sell-off, Oct 2023",
+   "value": -6
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -5
+  }
+ ],
+ "ahead": [
+  -4.6,
+  -1.8,
+  -0.3,
+  2.7
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in equity prices, Treasury yields, gold and commodity prices, which are then applied to the strategy's current holdings, including the leveraged bond position.",
+ "altTitle": "Where Else Can Investors Find Diversified Returns?",
+ "related": [
+  {
+   "id": "m1",
+   "why": "Follows trends in futures, long or short. Bears reversals, losing when trends break down, but it gained in 2022.",
+   "cue": "Complements risk parity in inflation shocks"
+  },
+  {
+   "id": "d1",
+   "why": "Holds index options that pay out in a crash. Bears the premium cost, paying in calm years.",
+   "cue": "Protects against sharp equity drawdowns"
+  },
+  {
+   "id": "i8",
+   "why": "Combines income funds across bonds, equities and property. Bears interest rate and equity risk, without leverage.",
+   "cue": "Same funds, without leverage or risk targeting"
+  }
+ ]
+}

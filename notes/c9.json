@@ -1,0 +1,172 @@
+{
+ "id": "c9",
+ "name": "Inflation-linked infrastructure investing",
+ "heading": "The Structural Opportunity: Earning Inflation-Linked Cash Flows",
+ "caseLead": "The investment case rests on infrastructure assets such as regulated utilities, toll roads and airports whose contracts or regulators allow prices to rise with inflation, so the owner earns cash flows that keep pace with the cost of living. The return persists because these assets are costly to build and hard to replace, governments rely on private capital for energy, transport and digital networks, and regulators generally approve inflation-linked price increases.",
+ "caseRest": "The main risk is that rising interest rates reduce the value of long-term cash flows by more than inflation increases them, so valuations can fall even when revenues are rising. Regulatory decisions, political intervention and falls in traffic volumes can also reduce income, as in the pandemic of 2020. A stable income stream therefore does not protect the capital value, and the strategy can lose 20% or more when real yields rise sharply, as in 2022 and 2023.",
+ "figNote": "The large figure on each card shows the yield on the US 10-year Treasury at its high or low during the episode. Infrastructure assets are valued by discounting long-term cash flows, so lower yields usually raise their value and higher yields lower it.",
+ "events": [
+  {
+   "date": "September 2013",
+   "theme": "Taper tantrum",
+   "fig": "3.0%",
+   "effect": "down",
+   "title": "Taper signal lifts yields and cuts utility valuations",
+   "text": "The Federal Reserve's signal in May 2013 that it would slow bond purchases lifted the US 10-year yield from 1.6% to about 3.0% by September. The strategy lost because higher discount rates reduced the value of long-term infrastructure cash flows."
+  },
+  {
+   "date": "July 2016",
+   "theme": "Brexit",
+   "fig": "1.4%",
+   "effect": "up",
+   "title": "Brexit vote sends bond yields sharply lower",
+   "text": "The June 2016 vote to leave the European Union pulled the US 10-year yield down to about 1.4% in early July as investors sought safe assets. The strategy gained because lower discount rates raised infrastructure valuations."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "0.5%",
+   "effect": "mid",
+   "title": "Covid cuts traffic revenue and bond yields",
+   "text": "Covid-19 lockdowns in March 2020 cut airport and toll road traffic sharply while the US 10-year yield fell to about 0.5%. Results were mixed because regulated utilities held up, but transport assets lost revenue and their valuations fell."
+  },
+  {
+   "date": "June 2022",
+   "theme": "Inflation",
+   "fig": "3.5%",
+   "effect": "mid",
+   "title": "Inflation reaches 9% as yields rise",
+   "text": "US consumer price inflation reached 9.1% in June 2022 and the 10-year yield rose to about 3.5% as the Federal Reserve raised rates. Results were mixed because contracted revenues rose with inflation, but higher discount rates reduced asset valuations."
+  },
+  {
+   "date": "October 2023",
+   "theme": "Higher for longer",
+   "fig": "5.0%",
+   "effect": "down",
+   "title": "Yields reach 5% as rate expectations rise",
+   "text": "The US 10-year yield reached about 5.0% in October 2023 as investors expected rates to stay high and the Treasury issued more debt. The strategy lost because infrastructure valuations fell even though regulated revenues kept rising with inflation."
+  },
+  {
+   "date": "December 2023",
+   "theme": "Rate cut hopes",
+   "fig": "3.9%",
+   "effect": "up",
+   "title": "Rate cut signals lift infrastructure valuations",
+   "text": "The Federal Reserve signalled in December 2023 that it expected to cut rates in 2024, and the US 10-year yield fell from 5.0% in October to about 3.9% at year-end. The strategy gained because lower discount rates raised valuations while inflation-linked revenues remained high."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Listed infrastructure equities and inflation-linked bonds; held for years; rebalanced quarterly",
+ "rules": "Assets selected where at least 70% of revenue is regulated or contractually linked to inflation; net debt capped at 6 times operating earnings; transport assets capped at 25% of the portfolio",
+ "costs": "Estimated bid-ask spreads, commissions and fund fees deducted at each quarterly rebalance",
+ "constructionTitle": "Strategy construction, from inflation-linked revenue to leverage limits",
+ "legs": [
+  {
+   "position": "Regulated utilities",
+   "instrument": "Listed utility equities",
+   "purpose": "Earns regulated returns that rise with inflation",
+   "allocation": "35%"
+  },
+  {
+   "position": "Toll roads and airports",
+   "instrument": "Listed transport infrastructure equities",
+   "purpose": "Earns traffic revenue with inflation-linked tariffs",
+   "allocation": "20%"
+  },
+  {
+   "position": "Energy and digital networks",
+   "instrument": "Listed pipeline, tower and data centre equities",
+   "purpose": "Earns long-term contracted revenue",
+   "allocation": "20%"
+  },
+  {
+   "position": "Inflation-linked bonds",
+   "instrument": "US Treasury inflation-protected securities",
+   "purpose": "Adds inflation protection and liquidity",
+   "allocation": "25%"
+  }
+ ],
+ "entry": "At least 70% of revenue linked to inflation and a price below estimated asset value",
+ "size": "Set to an 11% annualised volatility target",
+ "exit": "Assets sold when inflation-linked revenue falls below 60% or the price exceeds estimated value by 20%",
+ "stop": "Exposure halved if the 10-year real yield rises 100 basis points in a quarter",
+ "marketWatch": "The 10-year real yield, regulatory rate reviews and traffic volumes at toll roads and airports are the main indicators for this strategy. Rehyn tracks inflation data and central bank decisions because they change the discount rate applied to long-term cash flows. Upcoming regulatory price decisions and energy transition policies matter because they set the revenue that utilities and network owners may earn.",
+ "favourable": [
+  {
+   "heading": "Falling real yields",
+   "text": "Falling real yields favour the strategy because the present value of long-dated contracted cash flows rises when discount rates fall. In 2019, the 10-year real yield fell by about 1 percentage point and listed infrastructure rose by more than 20%."
+  },
+  {
+   "heading": "Inflation passed through to revenue",
+   "text": "Contracts that adjust prices for inflation favour the strategy because revenue rises with costs, so operating margins are protected. In 2022, the S&P 500 utilities sector stayed close to its starting level while the broader index fell about 18%."
+  },
+  {
+   "heading": "Public spending on energy networks",
+   "text": "Government support for energy and digital networks favours the strategy because it expands the asset base on which regulated returns are earned. Since 2022, the US Inflation Reduction Act and European grid plans have lifted spending on grids and renewable connections."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Rapid rises in real yields",
+   "text": "Rapid rises in real yields hurt the strategy because the value of long-dated cash flows falls even when revenue grows. Between January 2022 and October 2023, the 10-year real yield rose from about minus 1% to above 2.5%, and valuations of long-dated assets fell sharply."
+  },
+  {
+   "heading": "Collapse in traffic volumes",
+   "text": "A sudden fall in traffic hurts the strategy because airports and toll roads earn revenue by volume, and tariff increases cannot offset a collapse in demand. In April 2020, global air passenger numbers fell by about 94% compared with the previous year."
+  },
+  {
+   "heading": "Regulatory and political intervention",
+   "text": "Regulators and governments can limit price rises, which reduces the inflation protection that supports the strategy. In 2022, the UK government capped household energy prices and introduced a windfall tax on electricity generators, reducing returns for some energy assets."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -17
+  },
+  {
+   "name": "Rate rises, Sep 2022",
+   "value": -9
+  },
+  {
+   "name": "Taper tantrum, Jun 2013",
+   "value": -8
+  },
+  {
+   "name": "Bond sell-off, Oct 2023",
+   "value": -6
+  },
+  {
+   "name": "Inflation shock, Jun 2022",
+   "value": -5
+  }
+ ],
+ "ahead": [
+  -3.8,
+  -0.6,
+  -0.1,
+  3.1
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in real yields, inflation and equity prices, which are then applied to the strategy's current holdings.",
+ "altTitle": "Where Else Can Investors Find Inflation Protection?",
+ "related": [
+  {
+   "id": "i6",
+   "why": "Collects rent as well as utility income. Bears property valuation risk, losing when real interest rates rise.",
+   "cue": "Broader income, less inflation linkage"
+  },
+  {
+   "id": "v7",
+   "why": "Buys property companies below net asset value. Bears interest rate risk, losing when discounts widen.",
+   "cue": "Pays for narrowing discounts, not inflation"
+  },
+  {
+   "id": "c4",
+   "why": "Sizes gold from real yields, the dollar and central bank buying. Bears real yield rises, losing when yields increase.",
+   "cue": "Another inflation hedge, with no cash flow"
+  }
+ ]
+}

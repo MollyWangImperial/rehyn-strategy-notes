@@ -1,0 +1,178 @@
+{
+ "id": "e1",
+ "name": "Merger arbitrage",
+ "heading": "The Structural Opportunity: Earning the Deal Completion Spread",
+ "caseLead": "The investment case rests on the persistent gap between the price of a takeover target and the agreed offer price, which compensates investors for the risk that the deal does not complete. The gap persists because many long-only funds sell target shares soon after an announcement and few investors can wait months for a deal to close, while competition rules, national security reviews and trade tensions between governments lengthen the process.",
+ "caseRest": "The main risk is that a deal fails and the target's share price falls to its undisturbed level, which is often 15% to 30% below the offer, while a successful deal earns only the spread. Losses cluster when many deals come under stress together, as in a market sell-off that widens spreads on every pending deal. The estimated 7.4% annual return therefore comes with 4.2% volatility, a 10.0% worst fall and strongly negative return skew, so a long run of completed deals understates the loss from a single failure.",
+ "figNote": "The large figure on each card shows the announced value of the deal in billions of US dollars. Larger deals attract more regulatory and political scrutiny, which is the main reason a deal that investors expect to complete can be delayed or blocked.",
+ "events": [
+  {
+   "date": "September 2008",
+   "theme": "Financial crisis",
+   "fig": "$52bn",
+   "effect": "mid",
+   "title": "Lehman failure widens spreads on pending deals",
+   "text": "Lehman Brothers' failure in September 2008 froze acquisition financing and widened spreads on pending deals, including InBev's $52bn offer for Anheuser-Busch. Results were mixed because that deal closed in November, while several leveraged buyouts were abandoned."
+  },
+  {
+   "date": "April 2016",
+   "theme": "Tax policy",
+   "fig": "$160bn",
+   "effect": "down",
+   "title": "US tax rules end Pfizer and Allergan deal",
+   "text": "New US Treasury rules against tax inversions in April 2016 led Pfizer to terminate its $160bn merger with Allergan. The strategy lost because Allergan's share price fell sharply once the premium to the offer price disappeared."
+  },
+  {
+   "date": "July 2018",
+   "theme": "Trade policy",
+   "fig": "$44bn",
+   "effect": "down",
+   "title": "Missing Chinese approval ends Qualcomm and NXP deal",
+   "text": "Qualcomm abandoned its $44bn purchase of NXP Semiconductors in July 2018 because Chinese regulators had not approved it during the US-China trade dispute. The strategy lost because NXP's share price fell back towards its undisturbed level."
+  },
+  {
+   "date": "March 2019",
+   "theme": "Media",
+   "fig": "$71bn",
+   "effect": "up",
+   "title": "Disney completes Fox purchase after approvals",
+   "text": "Disney completed its $71bn purchase of 21st Century Fox in March 2019 after US and international regulators approved the deal. The strategy gained because the target's shares converged to the offer value, so the full spread was earned."
+  },
+  {
+   "date": "October 2023",
+   "theme": "Antitrust",
+   "fig": "$69bn",
+   "effect": "up",
+   "title": "Microsoft completes Activision purchase after long review",
+   "text": "Microsoft completed its $69bn purchase of Activision Blizzard in October 2023 after a US court rejected a challenge and UK regulators accepted revised terms. The strategy gained because the wide spread was earned in full, although capital was tied up for almost two years."
+  },
+  {
+   "date": "June 2025",
+   "theme": "National security",
+   "fig": "$15bn",
+   "effect": "mid",
+   "title": "Nippon Steel completes US Steel purchase after reversal",
+   "text": "Nippon Steel completed its $15bn purchase of US Steel in June 2025 after President Trump approved it with national security conditions, five months after President Biden blocked it. Results were mixed because the spread widened after the block and then closed on approval."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Listed shares of announced takeover targets; held until completion, typically three to six months",
+ "rules": "Targets bought after a definitive offer when the spread exceeds the cash rate plus estimated failure risk; acquirer shares sold short in stock deals; deals needing several regulatory approvals sized smaller",
+ "costs": "Estimated bid-ask spreads, commissions and share borrowing costs deducted",
+ "constructionTitle": "Strategy construction, from deal spread to failure protection",
+ "legs": [
+  {
+   "position": "Long targets of cash offers",
+   "instrument": "Listed target shares",
+   "purpose": "Earns the spread to the offer price",
+   "allocation": "40%"
+  },
+  {
+   "position": "Long targets of stock offers",
+   "instrument": "Listed target shares",
+   "purpose": "Earns the spread after hedging acquirer risk",
+   "allocation": "20%"
+  },
+  {
+   "position": "Short acquirers in stock offers",
+   "instrument": "Listed acquirer shares",
+   "purpose": "Removes acquirer share price risk",
+   "allocation": "20% short"
+  },
+  {
+   "position": "Put options, 3 months",
+   "instrument": "S&P 500 index options",
+   "purpose": "Limits losses when many deals are stressed at once",
+   "allocation": "1%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "39%"
+  }
+ ],
+ "entry": "Annualised spread at least 4 points above the cash rate",
+ "size": "Single deal capped at 5%; set to a 4% annualised volatility target",
+ "exit": "Position closed when the deal completes, or when the spread falls below 0.5%",
+ "stop": "Position closed if the target falls 8% below the offer price",
+ "marketWatch": "Spreads on pending deals relative to the cash rate and the pace of regulatory reviews are the main indicators because they show how much compensation investors receive for completion risk. Antitrust enforcement, national security reviews and approval timetables in China matter most when they extend the time to completion or raise the chance of a block.",
+ "favourable": [
+  {
+   "heading": "Regulators approve deals promptly",
+   "text": "Prompt regulatory approval favours the strategy because the spread is earned over a shorter period, which raises the annualised return. In 2019, Disney's Fox purchase and other large deals closed after clear regulatory timetables."
+  },
+  {
+   "heading": "Credit markets stay open",
+   "text": "Open financing markets favour the strategy because buyers can fund cash offers and lenders remain willing to support leveraged deals. Strong bond issuance in 2013 and 2014 helped most announced deals to close on schedule."
+  },
+  {
+   "heading": "Rival bidders emerge",
+   "text": "A rival bid favours the strategy because the target's share price rises above the original offer, so holders earn more than the spread. In 2018, Comcast's challenge to Disney's offer for Fox led Disney to raise its price."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Governments block deals",
+   "text": "Blocked deals hurt the strategy because the target price falls to its pre-deal level, erasing months of spread income in one day. In 2016, new US tax rules ended Pfizer's $160bn offer for Allergan, and in 2018 Chinese approval did not arrive for Qualcomm's purchase of NXP."
+  },
+  {
+   "heading": "Market sell-offs widen spreads",
+   "text": "A broad sell-off hurts the strategy because investors demand more compensation for deal risk, so spreads widen on every pending deal at once. In March 2020, spreads on announced deals widened sharply as funds sold positions to raise cash."
+  },
+  {
+   "heading": "Buyers lose their financing",
+   "text": "Withdrawn financing hurts the strategy because buyers can renegotiate or abandon deals when lenders stop supporting them. In 2008 and 2009, several leveraged buyouts were abandoned, including the Hexion offer for Huntsman."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -9
+  },
+  {
+   "name": "Euro area crisis, Aug 2011",
+   "value": -3
+  },
+  {
+   "name": "Tax inversion rules, Apr 2016",
+   "value": -5
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -2
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -3
+  }
+ ],
+ "ahead": [
+  -6.5,
+  -0.6,
+  -0.3,
+  0.5
+ ],
+ "infoHist": "Historical results show the strategy's estimated peak-to-trough change in value during each event, using the spreads on the deals then pending and the outcome of each deal. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in equity prices, credit spreads and regulatory approval odds, which are then applied to the strategy's pending deals, including those that need Chinese approval.",
+ "altTitle": "Where Else Can Investors Find Event-Driven Returns?",
+ "related": [
+  {
+   "id": "e5",
+   "why": "Trades corporate bonds around refinancings and rating changes. Bears credit risk, losing when forced selling continues.",
+   "cue": "Event premium in bonds, not equities"
+  },
+  {
+   "id": "r1",
+   "why": "Trades price gaps between related shares. Bears the risk that a historical relationship breaks permanently.",
+   "cue": "Relative value, with no deal outcome"
+  },
+  {
+   "id": "e2",
+   "why": "Holds shares after strong earnings. Bears the risk that price adjustment stops or reverses.",
+   "cue": "Earnings news instead of deal outcomes"
+  }
+ ]
+}

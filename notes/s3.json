@@ -1,0 +1,172 @@
+{
+ "id": "s3",
+ "name": "VIX roll yield capture",
+ "heading": "The Structural Opportunity: Earning the VIX Futures Premium",
+ "caseLead": "The investment case rests on VIX futures usually trading above the VIX itself, so a seller of futures earns the decline in price as each contract moves towards the spot level. The premium persists because investors pay for protection against equity sell-offs and often hold it regardless of price, while few participants can absorb losses when volatility rises, and geopolitical and policy uncertainty keeps demand for protection high even when markets stay calm.",
+ "caseRest": "The main risk is a return profile with steady small gains and rare, very large losses when the VIX rises sharply. When a sell-off begins, the futures curve can move from contango, where futures are priced above spot, to backwardation within days, so short positions lose on both the roll and the rise in spot volatility. Rehyn estimates that a single episode can remove several years of accumulated roll yield, which is why the largest drawdown is far bigger than the volatility of normal months suggests.",
+ "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "events": [
+  {
+   "date": "August 2011",
+   "theme": "Policy",
+   "fig": "48",
+   "effect": "down",
+   "title": "US credit rating downgrade and euro debt fears",
+   "text": "Standard and Poor's downgraded the US credit rating on 5 August 2011 while euro area debt concerns spread, and the VIX closed at 48 on 8 August. The strategy lost because the futures curve moved into backwardation, so short positions lost as spot volatility rose."
+  },
+  {
+   "date": "August 2017",
+   "theme": "Geopolitics",
+   "fig": "16",
+   "effect": "up",
+   "title": "North Korea tensions lift the VIX briefly",
+   "text": "Threats between the US and North Korea lifted the VIX by about 44% to a 16 close on 10 August 2017. The strategy gained because the VIX fell back close to its earlier level within weeks and the curve returned to contango."
+  },
+  {
+   "date": "February 2018",
+   "theme": "Market structure",
+   "fig": "37",
+   "effect": "down",
+   "title": "Short volatility products collapse in one day",
+   "text": "On 5 February 2018 the VIX more than doubled to a 37 close, its largest one-day rise on record, as funds that sold volatility had to buy futures back. The strategy lost because the rise wiped out many months of roll yield."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "83",
+   "effect": "down",
+   "title": "Covid turns into a global funding crisis",
+   "text": "The March 2020 sell-off turned a health emergency into a global rush for cash, lifting the VIX to an 83 close on 16 March. The strategy suffered its worst loss because the curve inverted and the VIX stayed above 50 for weeks."
+  },
+  {
+   "date": "August 2024",
+   "theme": "Carry trade",
+   "fig": "39",
+   "effect": "mid",
+   "title": "Bank of Japan rate rise unwinds yen trades",
+   "text": "A Bank of Japan rate rise and weak US jobs data forced yen-funded trades to close, lifting the VIX to a 39 close on 5 August 2024. Results were mixed because short positions lost that day but recovered as the VIX fell below 20."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "52",
+   "effect": "down",
+   "title": "US tariffs drive the largest spike since 2020",
+   "text": "US tariff announcements in April 2025 lifted the VIX to a 52 close on 8 April, its highest level since March 2020. The strategy lost because the VIX rose from about 21 to 52 within a week, before the stop level closed positions."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "VIX futures; first and second month contracts; rolled gradually each day",
+ "rules": "Short futures held only while the curve is in contango; exposure reduced as the VIX rises; no position when the curve is inverted; smaller size around central bank meetings",
+ "costs": "Estimated futures commissions and bid-ask spreads deducted at each roll",
+ "constructionTitle": "Strategy construction, from curve roll-down to spike control",
+ "legs": [
+  {
+   "position": "Short second-month futures",
+   "instrument": "VIX futures",
+   "purpose": "Earns the roll-down of futures towards spot",
+   "allocation": "20% margin"
+  },
+  {
+   "position": "Short first-month futures",
+   "instrument": "VIX futures",
+   "purpose": "Earns the steepest part of the curve",
+   "allocation": "10% margin"
+  },
+  {
+   "position": "Out-of-the-money call options",
+   "instrument": "VIX options",
+   "purpose": "Limits losses in a volatility spike",
+   "allocation": "1%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "69%"
+  }
+ ],
+ "entry": "First-month futures at least 3% above the VIX, with the curve in contango",
+ "size": "Set to a 10% annualised volatility target and halved when the VIX closes above 25",
+ "exit": "Position reduced as futures converge towards spot and closed 5 days before expiry",
+ "stop": "All short positions closed if the VIX closes above 30",
+ "marketWatch": "The slope of the VIX futures curve and the gap between implied and realised volatility are the main indicators for this strategy now. Scheduled central bank decisions, major trade announcements and geopolitical deadlines matter because they can lift near-term volatility before the curve has time to adjust. Rehyn also watches the size of positions in volatility products, since crowded short positions have tended to amplify spikes.",
+ "favourable": [
+  {
+   "heading": "Calm markets with a steep curve",
+   "text": "A steep contango curve favours the strategy because each futures contract falls towards a lower spot level as expiry approaches. In 2017 the VIX averaged about 11, so short positions earned the roll almost every month."
+  },
+  {
+   "heading": "Geopolitical fear that fades quickly",
+   "text": "Tensions that fade within days favour the strategy because volatility returns to its earlier level and the curve resumes its roll-down. After the North Korea threats in August 2017, the VIX fell back close to its earlier level within weeks."
+  },
+  {
+   "heading": "Policy support after market stress",
+   "text": "Central bank or government support after stress favours the strategy because it lowers volatility and restores the premium in the curve. After the Bank of Japan rate rise in August 2024, the VIX fell from a 39 close to below 20 within a week."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Sudden global sell-offs",
+   "text": "A rapid fall in equities hurts the strategy because spot volatility jumps above the futures price and short positions lose on the move. In March 2020 the VIX rose from about 14 in mid-February to an 83 close on 16 March."
+  },
+  {
+   "heading": "Forced buying by volatility funds",
+   "text": "Crowded short positions hurt the strategy when funds must buy futures back at the same time, which pushes prices higher regardless of the economic news. On 5 February 2018 the VIX more than doubled in one day, so losses came from forced buying rather than from the economy."
+  },
+  {
+   "heading": "Inverted curve during prolonged stress",
+   "text": "A prolonged inversion of the curve hurts the strategy because it removes the roll yield and turns the daily roll into a cost. Throughout 2022 the curve repeatedly flattened as the war in Ukraine and rate rises kept volatility high."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -35
+  },
+  {
+   "name": "Volatility spike, Feb 2018",
+   "value": -29
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": -18
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -11
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -13
+  }
+ ],
+ "ahead": [
+  -31.0,
+  -4.5,
+  -0.8,
+  0.9
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, using VIX futures prices and the volatility-based exposure rules above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects the VIX and the slope of the futures curve, which are then applied to the strategy's short futures positions.",
+ "altTitle": "Where Else Can Investors Find Volatility Term Premiums?",
+ "related": [
+  {
+   "id": "s1",
+   "why": "Sells S&P 500 options rather than futures. Bears crash risk, losing when realised moves exceed the premium collected.",
+   "cue": "Same premium, earned through options"
+  },
+  {
+   "id": "d4",
+   "why": "Buys volatility futures for protection. Bears roll cost, paying in calm markets and gaining in sell-offs.",
+   "cue": "Pays what this strategy earns"
+  },
+  {
+   "id": "c3",
+   "why": "Earns the roll on commodity futures curves. Bears reversals when supply tightness eases.",
+   "cue": "Roll yield in a different market"
+  }
+ ]
+}

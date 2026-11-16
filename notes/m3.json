@@ -1,0 +1,166 @@
+{
+ "id": "m3",
+ "name": "Sector rotation strategy",
+ "heading": "The Structural Opportunity: Slow Shifts in Sector Leadership",
+ "caseLead": "The investment case rests on sector leadership persisting for one to three months, because earnings revisions, fund flows and economic data move through the market gradually rather than being priced at once. The pattern is strongest around turns in the economic cycle and in energy, defence and technology policy, where changes in interest rates, tariffs and government spending shift expected profits sector by sector.",
+ "caseRest": "The main risk is a sudden change in leadership, which leaves the portfolio in last quarter's winners as the market favours other sectors. Rotations that last only a few weeks produce frequent small losses and trading costs, because the signal reverses before positions can earn a premium. In a broad sell-off the strategy also falls with the market, because moving between sectors does not remove equity risk.",
+ "figNote": "The large figure on each card shows how far the S&P 500 moved during the episode, over the period described in the text. Sector rotation depends on which sectors lead or lag the index, so the index move shows the market backdrop rather than the strategy's return.",
+ "events": [
+  {
+   "date": "March 2009",
+   "theme": "Policy rescue",
+   "fig": "+36%",
+   "effect": "down",
+   "title": "Rebound favours the sectors rotation had left",
+   "text": "From 9 March to the end of May 2009, the S&P 500 rose about 36% as government rescue measures stabilised banks and credit markets. The strategy lost because it held defensive sectors such as consumer staples, while financials and technology rose fastest."
+  },
+  {
+   "date": "August 2011",
+   "theme": "US downgrade",
+   "fig": "−17%",
+   "effect": "mid",
+   "title": "US debt downgrade lifts defensive sectors",
+   "text": "The S&P 500 fell about 17% between 22 July and 8 August 2011 after Standard and Poor's downgraded US government debt. Results were mixed because utilities and consumer staples fell less than the index, but frequent reversals hurt the timing of the rotation."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−34%",
+   "effect": "down",
+   "title": "Covid sell-off leaves no sector untouched",
+   "text": "The S&P 500 fell about 34% between 19 February and 23 March 2020 as Covid closures spread, and every sector declined. The strategy lost because rotating between sectors cannot avoid a market-wide fall, and even defensive sectors dropped sharply."
+  },
+  {
+   "date": "November 2020",
+   "theme": "Vaccine news",
+   "fig": "+11%",
+   "effect": "down",
+   "title": "Vaccine results reverse sector leadership",
+   "text": "The S&P 500 rose about 11% in November 2020 after positive vaccine results, as investors moved from technology and health care into energy, banks and industrials. The strategy lost because it held the previous leaders when the rotation began."
+  },
+  {
+   "date": "February 2022",
+   "theme": "War",
+   "fig": "−13%",
+   "effect": "up",
+   "title": "Ukraine invasion lifts the energy sector",
+   "text": "The S&P 500 fell about 13% from 3 January to 8 March 2022 as Russia's invasion of Ukraine lifted oil prices on top of Fed rate rises. The strategy gained because it held the energy sector, which rose while technology and consumer discretionary shares fell."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "−19%",
+   "effect": "mid",
+   "title": "US tariffs split the sectors",
+   "text": "The S&P 500 fell about 19% from 19 February to 8 April 2025 as US tariffs cut growth forecasts, before a pause in tariffs prompted a rebound. Results were mixed because defensive sectors held up in the fall, while technology led the recovery."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "US sector ETFs covering the 11 S&P 500 sectors; held one to three months; rebalanced monthly",
+ "rules": "Three sectors with the highest 3-month and 6-month relative strength held; moved to Treasury bills when the S&P 500 closes below its 200-day average",
+ "costs": "Estimated ETF bid-ask spreads and commissions deducted at each monthly rebalance",
+ "constructionTitle": "Strategy construction, from relative strength to cycle-aware allocation",
+ "legs": [
+  {
+   "position": "Three strongest sector ETFs, equally weighted",
+   "instrument": "S&P 500 sector ETFs",
+   "purpose": "Earns the sector leadership premium",
+   "allocation": "75%"
+  },
+  {
+   "position": "Treasury bills or short-term bond ETF",
+   "instrument": "US Treasury bills",
+   "purpose": "Holds cash when the market trend is down",
+   "allocation": "24%"
+  },
+  {
+   "position": "Put options on the S&P 500",
+   "instrument": "S&P 500 ETF options",
+   "purpose": "Limits losses in a broad sell-off",
+   "allocation": "1%"
+  }
+ ],
+ "entry": "Sector ranks in the top three on 3-month and 6-month relative strength",
+ "size": "Equal weight across three sectors, each capped at 30%",
+ "exit": "Sector sold when it falls out of the top five at the monthly review",
+ "stop": "Moves to Treasury bills when the S&P 500 closes below its 200-day average",
+ "marketWatch": "Rehyn watches the gap between the strongest and weakest sectors and whether earnings revisions support the leaders. Changes in the yield curve, oil prices and manufacturing surveys show which sectors the economic cycle is likely to favour next. Tariff announcements, central bank meetings and earnings seasons are the events most likely to shift sector leadership.",
+ "favourable": [
+  {
+   "heading": "Clear economic cycle transitions",
+   "text": "Clear transitions in the economic cycle favour the strategy because sector leadership changes in a familiar order, so relative strength holds for months. In 2021 and early 2022, strong growth and rising oil prices kept energy and financial shares ahead of the index."
+  },
+  {
+   "heading": "Policy-driven sector themes",
+   "text": "Government policy that supports one industry for years favours the strategy because earnings expectations rise steadily and attract new investment. Higher defence budgets after Russia's invasion of Ukraine supported sustained outperformance in that sector."
+  },
+  {
+   "heading": "Defensive leadership in slowdowns",
+   "text": "Slowing growth favours the strategy when investors move into utilities, health care and consumer staples, because these sectors keep earnings stable. In the second half of 2011, defensive sectors outperformed the S&P 500 as US and European growth forecasts fell."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Sudden rotations after sell-offs",
+   "text": "Sharp rebounds hurt the strategy because the strongest sectors in a decline are rarely the ones that lead the recovery. In March 2009, the S&P 500 began a rally of about 36% in three months, led by financials and technology while defensive sectors lagged."
+  },
+  {
+   "heading": "Rapid reversals around news",
+   "text": "News that changes growth or interest rate expectations hurts the strategy when it reverses leadership within days, before the next monthly rebalance. In November 2020, vaccine results moved leadership from technology to energy and banks in a few weeks."
+  },
+  {
+   "heading": "Broad market declines",
+   "text": "Market-wide sell-offs hurt the strategy because all sectors fall together when investors sell to raise cash, so moving between sectors gives little protection. In March 2020, the S&P 500 fell about 34% in five weeks and every sector declined."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -24
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -13
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -11
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": -9
+  },
+  {
+   "name": "Rate shock, Sep 2022",
+   "value": -8
+  }
+ ],
+ "ahead": [
+  -9.8,
+  2.1,
+  -0.5,
+  0.8
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in the S&P 500 and in each sector, which are then applied to the strategy's current sector holdings.",
+ "altTitle": "Where Else Can Investors Find Momentum Premiums?",
+ "related": [
+  {
+   "id": "m2",
+   "why": "Ranks individual shares instead of sectors. Bears momentum crash risk, losing when leadership flips after a sell-off.",
+   "cue": "Same signal, applied to individual shares"
+  },
+  {
+   "id": "c7",
+   "why": "Takes directional views on growth, inflation and policy through futures. Bears forecast risk, losing when the outlook is misjudged.",
+   "cue": "Macro views instead of relative strength"
+  },
+  {
+   "id": "d5",
+   "why": "Holds the least volatile shares. Bears lag risk, trailing strong rallies but falling less in sell-offs.",
+   "cue": "Lower risk, with less cyclical exposure"
+  }
+ ]
+}

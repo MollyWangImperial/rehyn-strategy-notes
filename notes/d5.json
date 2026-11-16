@@ -1,0 +1,172 @@
+{
+ "id": "d5",
+ "name": "Minimum volatility equity",
+ "heading": "The Structural Opportunity: Avoiding Overpriced Volatile Shares",
+ "caseLead": "The investment case rests on the low volatility anomaly, the tendency of stable shares to deliver higher risk adjusted returns than more volatile shares. The anomaly persists because many investors cannot use leverage, so they buy volatile shares to reach their return targets and push prices above fair value, while geopolitical and policy shocks tend to hurt volatile cyclical companies more than stable ones.",
+ "caseRest": "The main risk is that the portfolio lags the market for long periods when investors favour cyclical and technology shares. Valuations on stable shares can also become expensive because many investors buy them for protection, which makes the portfolio vulnerable when bond yields rise. The portfolio also loses money in a broad sell-off, because lower volatility reduces market risk but does not remove it.",
+ "figNote": "The large figure on each card shows the percentage change in the S&P 500 over the episode, from its last high to its low in a sell-off or over the month in a rally. A minimum volatility portfolio is built to lose less than this figure in a fall and to gain less in a rally.",
+ "events": [
+  {
+   "date": "August 2011",
+   "theme": "Credit rating",
+   "fig": "−19%",
+   "effect": "up",
+   "title": "US downgrade hits stocks but defensives hold up",
+   "text": "The US credit rating downgrade and euro area debt worries cut the S&P 500 about 19 per cent from its April high to its October low. The strategy gained relative to the market because utilities, food producers and healthcare shares fell by less."
+  },
+  {
+   "date": "June 2013",
+   "theme": "Fed policy",
+   "fig": "−6%",
+   "effect": "down",
+   "title": "Fed tapering talk hurts defensive shares",
+   "text": "Signals in 2013 that the Fed would slow bond purchases lifted yields and cut the S&P 500 about 6 per cent between 21 May and 24 June. The strategy lagged because utilities and consumer staples, held for income, fell on higher yields."
+  },
+  {
+   "date": "August 2015",
+   "theme": "China policy",
+   "fig": "−11%",
+   "effect": "up",
+   "title": "China devaluation shakes global equities",
+   "text": "The August 2015 yuan devaluation and fears of a Chinese slowdown cut the S&P 500 about 11 per cent in six sessions. The strategy gained relative to the market because low volatility shares have less exposure to global growth and cyclical earnings."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−34%",
+   "effect": "mid",
+   "title": "Covid crash tests even defensive portfolios",
+   "text": "Covid lockdowns in March 2020 cut the S&P 500 by about 34 per cent in 23 trading days. Results were mixed because the strategy fell by less than the market but still lost heavily as investors sold liquid assets for cash."
+  },
+  {
+   "date": "November 2020",
+   "theme": "Vaccine rotation",
+   "fig": "+11%",
+   "effect": "down",
+   "title": "Vaccine news rotates investors out of defensives",
+   "text": "Covid vaccine trial results in November 2020 sparked a rotation into banks and energy shares as the S&P 500 rose about 11 per cent. The strategy lagged because utilities and consumer staples, which have a large weight in the portfolio, rose by much less."
+  },
+  {
+   "date": "February 2022",
+   "theme": "War",
+   "fig": "−25%",
+   "effect": "up",
+   "title": "Russia's invasion and rate rises hurt equities",
+   "text": "Russia's invasion of Ukraine and faster Fed rate rises cut the S&P 500 about 25 per cent between January and October 2022. The strategy gained relative to the market because low volatility shares have stable earnings and a smaller weight in technology."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Minimum volatility equity funds; US and developed markets; rebalanced twice a year",
+ "rules": "Shares ranked by the lowest forecast volatility; sector weights kept within 5 points of the market; rebalanced every six months",
+ "costs": "Estimated fund fees of 0.15% a year and trading costs deducted at each rebalance",
+ "constructionTitle": "Strategy construction, from stable shares to controlled sector weights",
+ "legs": [
+  {
+   "position": "US minimum volatility equity fund",
+   "instrument": "Equity ETFs",
+   "purpose": "Provides core low volatility exposure",
+   "allocation": "50%"
+  },
+  {
+   "position": "Developed markets minimum volatility fund",
+   "instrument": "Equity ETFs",
+   "purpose": "Diversifies across countries",
+   "allocation": "30%"
+  },
+  {
+   "position": "Healthcare, staples and utilities funds",
+   "instrument": "Sector ETFs",
+   "purpose": "Adds stable earnings and dividends",
+   "allocation": "15%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Holds the cash reserve",
+   "allocation": "5%"
+  }
+ ],
+ "entry": "Shares with the lowest five year volatility chosen at each rebalance",
+ "size": "Sector weights within 5 points of the market weight",
+ "exit": "Shares sold at rebalance when volatility ranking falls below the median",
+ "stop": "Equity weight cut by 25% if the portfolio falls 20% from its peak",
+ "marketWatch": "The level of long-term bond yields, the valuation of defensive sectors relative to the market and the gap between market volatility and the volatility of stable shares are the main indicators. Central bank decisions and inflation releases matter because higher yields have hurt defensive shares in the past. Rehyn also watches how crowded investor positioning in these shares has become.",
+ "favourable": [
+  {
+   "heading": "Falling bond yields",
+   "text": "Falling bond yields favour the strategy because stable, income-paying shares become more attractive relative to bonds. In 2019 the US ten year yield fell from about 2.7 per cent to about 1.9 per cent and utilities gained about 26 per cent."
+  },
+  {
+   "heading": "Broad equity sell-offs",
+   "text": "Sell-offs favour the strategy because stable companies lose less when earnings forecasts are cut. In the fourth quarter of 2018 the S&P 500 fell about 20 per cent and minimum volatility funds fell by less."
+  },
+  {
+   "heading": "Geopolitical stress on growth shares",
+   "text": "Geopolitical and policy uncertainty favour the strategy because they hurt cyclical earnings more than stable ones. During Russia's invasion of Ukraine and the rate rises of 2022, minimum volatility funds fell by less than the S&P 500."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Fast economic recoveries",
+   "text": "Strong rebounds hurt the strategy because cyclical and high volatility shares recover fastest, while stable shares rise less. In November 2020 vaccine news lifted the S&P 500 about 11 per cent in a month and the portfolio lagged."
+  },
+  {
+   "heading": "Rising bond yields",
+   "text": "Higher bond yields hurt the strategy because utilities and consumer staples, held for income, lose value when bonds offer a higher return. In May and June 2013 the Fed signalled slower bond purchases and these sectors fell by more than the market."
+  },
+  {
+   "heading": "Crowded defensive positions",
+   "text": "Crowding hurts the strategy because investors who buy stable shares for protection pay higher prices and sell together when sentiment turns. Low volatility shares were expensive by 2016, and the portfolio lagged when yields rose after the US election in November 2016."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -29
+  },
+  {
+   "name": "Volatility spike, Feb 2018",
+   "value": -7
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": -8
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -12
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -8
+  }
+ ],
+ "ahead": [
+  -9.5,
+  -1.2,
+  -0.1,
+  1.9
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in the S&P 500, sector returns and interest rates, which are then applied to the strategy's current fund holdings.",
+ "altTitle": "Where Else Can Investors Find Stable Equity Returns?",
+ "related": [
+  {
+   "id": "v2",
+   "why": "Owns profitable companies at moderate valuations. Bears earnings risk, losing when profit forecasts are cut.",
+   "cue": "Also favours stable earners"
+  },
+  {
+   "id": "m2",
+   "why": "Buys shares with the strongest recent returns. Bears reversal risk, losing when market leadership changes.",
+   "cue": "Often holds the opposite kind of share"
+  },
+  {
+   "id": "d6",
+   "why": "Holds long-dated Treasuries. Bears inflation risk, losing when stocks and bonds fall together.",
+   "cue": "Defensive exposure through bonds, not shares"
+  }
+ ]
+}

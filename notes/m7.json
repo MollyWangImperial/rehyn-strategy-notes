@@ -1,0 +1,172 @@
+{
+ "id": "m7",
+ "name": "Fixed income trend following",
+ "heading": "The Structural Opportunity: Persistent Interest Rate Cycles",
+ "caseLead": "The investment case rests on government bond yields trending in one direction for months, because central banks change policy rates in a sequence of small steps and signal their path in advance. The pattern persists because growth, inflation and borrowing news arrive gradually, so investors adjust their holdings over time, and shifts in trade policy and government borrowing can push yields in one direction for long periods.",
+ "caseRest": "The main risk is a sudden change in interest rate expectations that reverses a trend within days, usually after a surprise in inflation, growth or central bank guidance. The strategy then holds positions in the wrong direction and loses the gains of several weeks. It also earns little when yields move sideways, because trend signals reverse repeatedly and each trade incurs costs.",
+ "figNote": "The large figure on each card shows the change in the US 10-year Treasury yield over the period described in the text, in basis points, where 100 basis points equal one percentage point. Bond trend following earns from sustained moves in yields in either direction, so a larger move offers more to follow.",
+ "events": [
+  {
+   "date": "May 2013",
+   "theme": "Taper tantrum",
+   "fig": "+135bp",
+   "effect": "mid",
+   "title": "Fed taper signal lifts Treasury yields",
+   "text": "Between 2 May and 5 September 2013, the 10-year Treasury yield rose about 135bp after the Fed signalled that it would slow bond purchases. Results were mixed because the first rise reversed long positions at a loss, while the later trend rewarded short positions."
+  },
+  {
+   "date": "August 2019",
+   "theme": "Trade war",
+   "fig": "−55bp",
+   "effect": "up",
+   "title": "Tariff escalation drives a bond rally",
+   "text": "The 10-year Treasury yield fell about 55bp between July and late August 2019 as higher US tariffs on Chinese goods raised growth concerns. The strategy gained because it held long bond positions while yields fell steadily."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−130bp",
+   "effect": "mid",
+   "title": "Covid sends yields to record lows then reverses",
+   "text": "The 10-year Treasury yield fell about 130bp from mid-January to 9 March 2020 as Covid spread, then rose about 65bp in nine days as investors sold Treasuries for cash. Results were mixed because long bond positions gained in the fall but lost in the reversal."
+  },
+  {
+   "date": "January 2022",
+   "theme": "Rate rises",
+   "fig": "+260bp",
+   "effect": "up",
+   "title": "Fed tightening starts the steepest bond sell-off",
+   "text": "Between January and October 2022, the 10-year Treasury yield rose about 260bp as the Fed raised rates to control inflation. The strategy gained because short bond positions rewarded the steady rise in yields."
+  },
+  {
+   "date": "March 2023",
+   "theme": "Bank failure",
+   "fig": "−50bp",
+   "effect": "down",
+   "title": "Silicon Valley Bank failure reverses bond trends",
+   "text": "The 10-year Treasury yield fell about 50bp between 8 and 15 March 2023 after the failure of Silicon Valley Bank, as investors expected the Fed to pause. The strategy lost because short positions built during the earlier rise in yields reversed within days."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "+48bp",
+   "effect": "down",
+   "title": "US tariffs lift Treasury yields sharply",
+   "text": "The 10-year Treasury yield rose about 48bp in the week to 11 April 2025, the largest weekly rise since 2001, as US tariffs unsettled bond investors. The strategy lost because long positions built during the earlier decline in yields reversed within days."
+  }
+ ],
+ "worstWhen": "March 2023",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Government bond futures in the US, Germany, UK, Japan, Canada and Australia; held for weeks; rolled quarterly",
+ "rules": "Long when the 1-month and 6-month yield trends both fall, short when both rise; positions reduced when rate volatility rises; contracts rolled before first notice",
+ "costs": "Estimated commissions, bid-ask spreads and futures roll costs deducted at each trade",
+ "constructionTitle": "Strategy construction, from yield trends to duration-balanced risk",
+ "legs": [
+  {
+   "position": "Long or short US Treasury futures",
+   "instrument": "10-year and 30-year Treasury futures",
+   "purpose": "Earns US interest rate cycles",
+   "allocation": "35% of risk"
+  },
+  {
+   "position": "Long or short German and UK bond futures",
+   "instrument": "Bund and Gilt futures",
+   "purpose": "Earns European interest rate cycles",
+   "allocation": "30% of risk"
+  },
+  {
+   "position": "Long or short Japanese and Canadian bond futures",
+   "instrument": "10-year government bond futures",
+   "purpose": "Earns trends in other major markets",
+   "allocation": "20% of risk"
+  },
+  {
+   "position": "Long or short Australian bond futures",
+   "instrument": "3-year and 10-year bond futures",
+   "purpose": "Diversifies the rate cycle exposure",
+   "allocation": "15% of risk"
+  }
+ ],
+ "entry": "1-month and 6-month yield trends agree in direction",
+ "size": "Set to a 7% annualised volatility target, with each market at most 25% of risk",
+ "exit": "Position closed when the 1-month trend turns against the 6-month trend",
+ "stop": "Market position closed after a loss of 1.5% of portfolio value",
+ "marketWatch": "Rehyn watches the direction of policy rate expectations in the major economies and the pace of change in inflation, because these set the length of yield trends. Rising interest rate volatility suggests a higher risk of reversal. Central bank meetings, inflation releases and government borrowing announcements are the events most likely to start or end a trend.",
+ "favourable": [
+  {
+   "heading": "Clear central bank rate cycles",
+   "text": "Rate cycles that central banks signal in advance favour the strategy because yields keep moving in one direction for many months. In 2022, successive Fed rate rises lifted the 10-year Treasury yield by about 260bp, and the strategy gained from short positions."
+  },
+  {
+   "heading": "Flight to safety in slowdowns",
+   "text": "Slowing growth favours the strategy because investors buy government bonds and yields fall in a steady trend. During the 2019 trade war, the 10-year Treasury yield fell about 55bp, and long positions gained."
+  },
+  {
+   "heading": "Persistent inflation or heavy borrowing",
+   "text": "Persistent inflation or heavier government borrowing favours the strategy because yields rise over several quarters as investors ask for higher compensation. The UK 10-year gilt yield rose from about 1% at the end of 2021 to above 4.5% in 2023."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Policy pivots after long trends",
+   "text": "A sudden shift in central bank guidance hurts the strategy when it reverses a trend that has lasted for months. In March 2023, the failure of Silicon Valley Bank cut the 10-year Treasury yield by about 50bp in a week and reversed short positions."
+  },
+  {
+   "heading": "Forced selling that reverses trends",
+   "text": "Forced selling of government bonds hurts the strategy when it reverses long positions within days. In mid-March 2020, the 10-year yield rose about 65bp in nine days as investors sold Treasuries to raise cash, after a fall of about 130bp."
+  },
+  {
+   "heading": "Range-bound yields without direction",
+   "text": "Periods when yields move sideways hurt the strategy because trend signals reverse repeatedly and trading costs accumulate. In 2017, the 10-year Treasury yield stayed between about 2.0% and 2.6% for the full year."
+  }
+ ],
+ "past": [
+  {
+   "name": "Bank failure, Mar 2023",
+   "value": -8
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -6
+  },
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -5
+  },
+  {
+   "name": "Election surprise, Nov 2016",
+   "value": -5
+  },
+  {
+   "name": "Taper tantrum, May 2013",
+   "value": -4
+  }
+ ],
+ "ahead": [
+  3.6,
+  -0.9,
+  0.2,
+  1.9
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in government bond yields in each market, which are then applied to the strategy's current positions.",
+ "altTitle": "Where Else Can Investors Find Interest Rate Premiums?",
+ "related": [
+  {
+   "id": "d6",
+   "why": "Holds long-dated Treasuries permanently. Bears inflation risk, losing when yields rise and bonds fall with equities.",
+   "cue": "Static duration, without a trend filter"
+  },
+  {
+   "id": "r5",
+   "why": "Trades kinks in the yield curve. Bears curve risk, losing when a kink keeps widening.",
+   "cue": "Neutral to the level of rates"
+  },
+  {
+   "id": "e4",
+   "why": "Positions in rates around central bank meetings. Bears event risk, losing when decisions surprise.",
+   "cue": "Short-term events, not sustained trends"
+  }
+ ]
+}

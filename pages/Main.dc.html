@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rehyn Intelligence strategy map</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;display=swap">
+<style>
+body{margin:0}
+.rm{--paper:#F5F1E6;--paper-2:#ECE6D6;--card:#FBF8F0;--paper-3:#E3DCCA;--ink:#24221E;--ink-2:#635E51;--rule:#DDD5C2;--up:#16803C;--up-soft:#DDF0E3;--down:#C2362B;--down-soft:#F8DFDA;--gold:#9A7417;--gold-soft:#F1E5C4;--mid:#A8690E;--mid-soft:#F4E6CC;--ribbon:#232324;--ribbon-ink:#F5F1E6;--r-up:#5AD08A;--r-down:#FF8A7C;--display:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;--note:'Newsreader',Georgia,'Times New Roman',serif;--mono:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace;color-scheme:light}
+.rm[data-mode="dark"]{--paper:#1C1C1D;--paper-2:#232324;--card:#29292A;--paper-3:#333334;--ink:#F2EFE6;--ink-2:#A9A79F;--rule:#38383A;--up:#5AD08A;--up-soft:#1E3326;--down:#FF7D6E;--down-soft:#3D2422;--mid:#E3B04B;--mid-soft:#3A3223;--gold:#E2B94C;--gold-soft:#36301F;--ribbon:#F2EDDF;--ribbon-ink:#1C1C1D;--r-up:#16803C;--r-down:#C2362B;color-scheme:dark}
+.rm *{box-sizing:border-box}
+.rm a{color:inherit;text-decoration:none}
+.rm button,.rm textarea,.rm select{font:inherit;color:inherit}
+.rm button{cursor:pointer}
+.rm :focus-visible{outline:2px solid var(--ink);outline-offset:2px;border-radius:6px}
+.rm-nav:hover{background:var(--card)}
+.rm-seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.rm-sw button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.rm-chip:hover{background:var(--paper-2)}
+.rm-opt{display:block;width:100%;padding:8px 10px;border:0;border-radius:8px;background:transparent;color:var(--ink);font-size:13.5px;font-weight:500;text-align:left;white-space:nowrap}
+.rm-opt:hover,.rm-opt[aria-pressed="true"]{background:var(--paper-2)}
+.rm-opt[aria-pressed="true"]{font-weight:600}
+.rm-info:hover,.rm-info[aria-expanded="true"]{background:var(--paper-2);color:var(--ink)}
+.rm-infobox p{margin:0}
+.rm-infobox b{color:var(--ink);font-weight:600}
+.rm-chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.rm-act:hover{border-color:var(--ink)}
+.rm-row:hover{background:var(--paper-2)}
+.rm-tape{display:inline-flex;gap:30px;padding-left:16px;animation:rmtape 60s linear infinite}
+.rm-prof{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;padding:10px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.rm-pchip{display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border-radius:9px;border:1px solid var(--rule);background:transparent;color:var(--ink);font-size:13px;font-weight:500;cursor:pointer}
+.rm-pchip:hover{border-color:var(--ink-2)}
+.rm-pchip[aria-pressed="true"]{border-color:var(--gold);color:var(--ink);font-weight:600}
+.rm-pchip[aria-pressed="true"]::before{content:'';width:8px;height:8px;border-radius:2px;transform:rotate(45deg);background:var(--gold)}
+@keyframes rmtape{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.rm-tape{animation:none}}
+.rm-tile{display:flex;flex-direction:column;gap:3px;min-height:78px;padding:13px 15px;border:1px solid var(--rule);border-radius:14px;background:var(--card);text-align:left;transition:border-color .16s,transform .16s,box-shadow .16s;animation:rmtile .45s cubic-bezier(.2,.8,.25,1) backwards}
+.rm-tile:hover{border-color:var(--ink);transform:translateY(-2px);box-shadow:0 10px 22px -16px rgba(0,0,0,.45)}
+.rm-tile b{font-size:15px;font-weight:600}
+.rm-tile span{font-size:12.5px;line-height:1.35;color:var(--ink-2)}
+.rm-tools{animation:rmfade .5s ease-out .2s backwards}
+.rm-slide{animation:rmslide .45s cubic-bezier(.2,.8,.25,1) backwards}
+.rm-ln .rm-hit{pointer-events:stroke;cursor:help}
+.rm-ln:hover path:first-of-type{stroke:var(--gold);opacity:1}
+.rm-sweep{position:absolute;top:0;bottom:0;left:0;width:84px;transform:translateX(-100%);opacity:0;pointer-events:none;border-right:2px solid var(--gold);background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--gold) 16%,transparent))}
+.rm-ping{position:absolute;width:36px;height:36px;margin:-18px 0 0 -18px;border-radius:50%;border:2px solid var(--ink);opacity:0;pointer-events:none}
+.rm-go0 .rm-lines{animation:rmwipe0 1.4s linear .25s backwards}
+.rm-go1 .rm-lines{animation:rmwipe1 1.4s linear .25s backwards}
+.rm-go0 .rm-sweep{animation:rmsweep0 1.4s linear .25s}
+.rm-go1 .rm-sweep{animation:rmsweep1 1.4s linear .25s}
+.rm-go0 .rm-dot{animation:rmrise0 .75s cubic-bezier(.2,1.25,.35,1) backwards}
+.rm-go1 .rm-dot{animation:rmrise1 .75s cubic-bezier(.2,1.25,.35,1) backwards}
+.rm-go0 .rm-late{animation:rmlate0 .6s ease-out 1.2s backwards}
+.rm-go1 .rm-late{animation:rmlate1 .6s ease-out 1.2s backwards}
+.rm-go0 .rm-lead{animation:rmlate0 .5s ease-out 2.1s backwards}
+.rm-go1 .rm-lead{animation:rmlate1 .5s ease-out 2.1s backwards}
+.rm-go0 .rm-ping{animation:rmping0 1.1s ease-out 2.1s 2}
+.rm-go1 .rm-ping{animation:rmping1 1.1s ease-out 2.1s 2}
+@keyframes rmtile{from{opacity:0;transform:translateY(12px)}}
+@keyframes rmfade{from{opacity:0}}
+@keyframes rmslide{from{opacity:0;transform:translateX(18px)}}
+@keyframes rmwipe0{from{clip-path:inset(-2% 102% -2% -2%)}to{clip-path:inset(-2% -2% -2% -2%)}}
+@keyframes rmwipe1{from{clip-path:inset(-2% 102% -2% -2%)}to{clip-path:inset(-2% -2% -2% -2%)}}
+@keyframes rmsweep0{0%{left:0;opacity:0}8%{opacity:.9}92%{opacity:.9}100%{left:100%;opacity:0}}
+@keyframes rmsweep1{0%{left:0;opacity:0}8%{opacity:.9}92%{opacity:.9}100%{left:100%;opacity:0}}
+@keyframes rmrise0{from{opacity:0;transform:translateY(var(--rise)) scale(.35)}}
+@keyframes rmrise1{from{opacity:0;transform:translateY(var(--rise)) scale(.35)}}
+@keyframes rmlate0{from{opacity:0}}
+@keyframes rmlate1{from{opacity:0}}
+@keyframes rmping0{from{opacity:.8;transform:scale(.4)}to{opacity:0;transform:scale(1.5)}}
+@keyframes rmping1{from{opacity:.8;transform:scale(.4)}to{opacity:0;transform:scale(1.5)}}
+@media (prefers-reduced-motion: reduce){.rm-tile,.rm-tools,.rm-slide,.rm-go0 *,.rm-go1 *{animation:none!important}}
+.rm-bnav{display:none}
+@media (max-width:820px){
+.rm-side{display:none!important}
+.rm-wrap{padding-left:16px!important;padding-right:16px!important;padding-bottom:96px!important}
+.rm-head{padding:10px 16px 0!important}
+.rm-crumb{display:none}
+.rm-mbrand{display:flex!important}
+.rm-bnav{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;left:10px;right:10px;bottom:10px;background:var(--ink);color:var(--paper);border-radius:16px;z-index:45;padding:6px;box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+}
+</style>
+</helmet>
+
+<div class="rm" data-mode="{{mode}}" style="background: var(--paper); color: var(--ink); font-family: var(--display); font-size: 15px; line-height: 1.5; min-height: 100vh; display: flex; flex-wrap: wrap; align-items: stretch; -webkit-font-smoothing: antialiased">
+
+  <aside class="rm-side" aria-label="Rehyn Intelligence navigation" style="flex: 0 0 266px; margin: 10px 0 10px 10px; background: var(--paper-2); border: 1px solid var(--rule); border-radius: 18px; display: flex; flex-direction: column; min-width: 0">
+    <div style="display: flex; align-items: center; gap: 11px; padding: 20px 20px 14px">
+      <div aria-hidden="true" style="width: 34px; height: 34px; border-radius: 11px; background: var(--ink); display: grid; place-items: center; flex: none">
+        <svg width="16" height="16" viewBox="0 0 18 18"><path d="M1.6 16.2H16.4" stroke="var(--paper)" stroke-width="1" stroke-linecap="round" opacity=".45"></path><path d="M1.6 13.4 L4.4 10.9 L6.7 12.5 L9.5 7.6 L11.7 9.5 L15.2 4.4" fill="none" stroke="var(--paper)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="15.4" cy="4.2" r="1.6" fill="var(--paper)"></circle></svg>
+      </div>
+      <div style="font-weight: 700; font-size: 18px; letter-spacing: -0.01em; line-height: 1">Rehyn Markets<span style="display: block; font-family: var(--mono); font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); margin-top: 5px">Rehyn Intelligence</span></div>
+    </div>
+    <a href="Main.dc.html" style="margin: 6px 14px 14px; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-radius: 12px; background: var(--ink); color: var(--paper); font-weight: 600">New strategy brief <kbd style="font-family: var(--mono); font-size: 11px; opacity: .6; border: 1px solid currentColor; border-radius: 6px; padding: 0 5px">N</kbd></a>
+    <nav aria-label="Rehyn Intelligence pages" style="padding: 0 10px; display: flex; flex-direction: column">
+      <div style="font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); padding: 14px 12px 6px">Strategies</div>
+      <a class="rm-nav" href="Main.dc.html" aria-current="page" style="padding: 9px 12px; border-radius: 10px; font-size: 14px; background: var(--card); font-weight: 600">Strategy map</a>
+      <a class="rm-nav" href="Investors.dc.html" style="padding: 9px 12px; border-radius: 10px; font-size: 14px">For you</a>
+      <a class="rm-nav" href="Library.dc.html" style="padding: 9px 12px; border-radius: 10px; font-size: 14px">Library</a>
+      <div style="font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); padding: 14px 12px 6px">Saved</div>
+      <a class="rm-nav" href="Strategy.dc.html" style="padding: 9px 12px; border-radius: 10px; font-size: 14px; display: flex; gap: 10px; align-items: center"><span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Variance premium harvest</span><span style="font-family: var(--mono); font-size: 10.5px; color: var(--ink-2)">#0142</span></a>
+      <a class="rm-nav" href="Strategy.dc.html" style="padding: 9px 12px; border-radius: 10px; font-size: 14px; display: flex; gap: 10px; align-items: center"><span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Quality at a fair price</span><span style="font-family: var(--mono); font-size: 10.5px; color: var(--ink-2)">#0139</span></a>
+      <a class="rm-nav" href="Strategy.dc.html" style="padding: 9px 12px; border-radius: 10px; font-size: 14px; display: flex; gap: 10px; align-items: center"><span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Cross asset trend</span><span style="font-family: var(--mono); font-size: 10.5px; color: var(--ink-2)">#0137</span></a>
+      <div style="font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); padding: 14px 12px 6px">Rehyn Markets</div>
+      <a class="rm-nav" href="#" style="padding: 9px 12px; border-radius: 10px; font-size: 14px">Scenario engine</a>
+    </nav>
+    <div style="margin: 14px 10px 10px; padding: 14px; border-radius: 14px; background: var(--card); border: 1px solid var(--rule); display: flex; flex-direction: column; gap: 11px">
+      <div style="display: flex; align-items: center; gap: 10px">
+        <div aria-hidden="true" style="width: 36px; height: 36px; border-radius: 50%; background: var(--paper-3); display: grid; place-items: center; font-family: var(--mono); font-size: 12px; font-weight: 600; flex: none">ZP</div>
+        <div><b style="display: block; font-size: 14px; font-weight: 600">Zak Pardoe</b><small style="display: block; font-family: var(--mono); font-size: 11px; color: var(--ink-2)">Free plan · 2 of 3 left</small></div>
+      </div>
+      <div aria-hidden="true" style="height: 6px; background: var(--paper-3); border-radius: 3px; overflow: hidden"><div style="height: 100%; width: 66%; background: var(--ink); border-radius: 3px"></div></div>
+      <button type="button" style="padding: 10px 12px; border-radius: 10px; border: 0; background: var(--ink); color: var(--paper); font-weight: 600; font-size: 14px">Upgrade to Pro</button>
+    </div>
+  </aside>
+
+  <main style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column">
+    <div aria-label="Market snapshot, demo data" style="margin: 10px 10px 0; border-radius: 12px; background: var(--ribbon); color: var(--ribbon-ink); font-family: var(--mono); font-size: 12px; display: flex; align-items: center; overflow: hidden; white-space: nowrap; flex: none; height: 36px">
+      <div style="padding: 0 14px 0 16px; height: 100%; display: flex; align-items: center; gap: 8px; flex: none; font-weight: 600; letter-spacing: .08em"><span style="width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: .7"></span>SNAPSHOT 19:00 UK</div>
+      <div style="overflow: hidden; flex: 1"><div class="rm-tape">
+        <sc-for list="{{tape}}" as="t" hint-placeholder-count="11"><span><b style="font-weight: 600; margin-right: 6px">{{t.n}}</b>{{t.v}} <span style="color: {{t.c}}">{{t.m}}</span></span></sc-for>
+      </div></div>
+    </div>
+
+    <div class="rm-head" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 28px 0">
+      <span class="rm-crumb" style="font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2)">Rehyn Intelligence · Strategy map</span>
+      <div class="rm-mbrand" style="display: none; align-items: center; gap: 9px; font-weight: 700; font-size: 17px">Rehyn Intelligence</div>
+      <div class="rm-sw" role="group" aria-label="Colour mode" style="display: inline-flex; align-items: center; gap: 2px; padding: 3px; border-radius: 999px; background: var(--paper-2); border: 1px solid var(--rule)">
+        <button type="button" aria-pressed="{{ivoryOn}}" onClick="{{setIvory}}" style="border: 0; background: transparent; border-radius: 999px; padding: 6px 12px; font-size: 12.5px; font-weight: 600">Ivory</button>
+        <button type="button" aria-pressed="{{inkOn}}" onClick="{{setInk}}" style="border: 0; background: transparent; border-radius: 999px; padding: 6px 12px; font-size: 12.5px; font-weight: 600">Ink</button>
+      </div>
+    </div>
+
+    <div class="rm-wrap" style="width: 100%; max-width: 1164px; margin: 0 auto; padding: 0 28px 40px">
+
+      <section style="padding: 44px 0 30px; max-width: 860px">
+        <h1 style="font-size: clamp(42px, 6.4vw, 74px); font-weight: 700; letter-spacing: -0.04em; line-height: .96; margin: 0; text-wrap: balance">The Rehyn strategy library</h1>
+        <p style="margin: 16px 0 0; max-width: 640px; font-family: var(--note); font-size: 19px; line-height: 1.45; color: var(--ink-2)">Rehyn’s private strategy research in one place. Choose a style or instrument and see which strategies have earned the most for the risk they take.</p>
+      </section>
+
+      <section id="rm-map" data-tour="stmap" aria-label="Strategy map" style="display: flex; flex-direction: column; gap: 14px; scroll-margin: 90px">
+
+        <sc-if value="{{mapOpen}}" hint-placeholder-val="{{ false }}">
+        <sc-if value="{{isStyleStep}}" hint-placeholder-val="{{ true }}">
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; padding: 6px 2px 2px">
+            <div>
+              <h2 style="margin: 2px 0 0; font-size: 20px; font-weight: 700; letter-spacing: -0.01em">Choose a style</h2>
+            </div>
+            <button type="button" class="ghost" onClick="{{seeAll}}">See all strategies</button>
+          </div>
+          <div role="group" aria-label="Choose a style" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px">
+            <sc-for list="{{styleTiles}}" as="o" hint-placeholder-count="10"><button type="button" class="rm-tile" onClick="{{o.pick}}" style="animation-delay: {{o.delay}}ms"><b>{{o.label}}</b><span>{{o.note}}</span></button></sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{isInsStep}}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; padding: 6px 2px 2px">
+            <div>
+              <span style="font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">{{styleLabel}}</span>
+              <h2 style="margin: 2px 0 0; font-size: 20px; font-weight: 700; letter-spacing: -0.01em">Choose an instrument</h2>
+            </div>
+            <button type="button" class="ghost" onClick="{{backStep}}">Back</button>
+          </div>
+          <div role="group" aria-label="Choose an instrument" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px">
+            <sc-for list="{{insTiles}}" as="o" hint-placeholder-count="6"><button type="button" class="rm-tile" onClick="{{o.pick}}" style="min-height: 58px; justify-content: center; animation-delay: {{o.delay}}ms"><b>{{o.label}}</b></button></sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{isDone}}" hint-placeholder-val="{{ false }}">
+        <div class="rm-tools" style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center; justify-content: space-between">
+          <div style="display: flex; gap: 8px; align-items: center">
+            <span style="font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Style</span>
+            <div onBlur="{{stylesBlur}}" onKeyDown="{{stylesKey}}" style="position: relative">
+              <button type="button" class="rm-chip" aria-expanded="{{stylesOn}}" onClick="{{toggleStyles}}" style="display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--rule); background: var(--card); border-radius: 10px; padding: 8px 12px; font-size: 13.5px; font-weight: 500; min-height: 38px">{{styleLabel}}<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" style="transform: rotate({{styleRot}}); transition: transform .18s"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+              <sc-if value="{{stylesOpen}}" hint-placeholder-val="{{ false }}">
+                <div role="group" aria-label="Choose a style" onMouseDown="{{keepFocus}}" style="position: absolute; top: calc(100% + 6px); left: 0; z-index: 40; width: 220px; max-height: 206px; overflow-y: auto; padding: 5px; border-radius: 12px; border: 1px solid var(--rule); background: var(--paper); box-shadow: 0 12px 32px -14px rgba(0,0,0,.5); scrollbar-width: thin; scrollbar-color: var(--ink-2) transparent">
+                  <sc-for list="{{styles}}" as="o" hint-placeholder-count="10"><button type="button" class="rm-opt" aria-pressed="{{o.on}}" onClick="{{o.pick}}">{{o.label}}</button></sc-for>
+                </div>
+              </sc-if>
+            </div>
+          </div>
+          <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap">
+            <span style="font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Instrument</span>
+            <div onBlur="{{insBlur}}" onKeyDown="{{insKey}}" style="position: relative">
+              <button type="button" class="rm-chip" aria-expanded="{{insOn}}" onClick="{{toggleIns}}" style="display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--rule); background: var(--card); border-radius: 10px; padding: 8px 12px; font-size: 13.5px; font-weight: 500; min-height: 38px">{{insLabel}}<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" style="transform: rotate({{insRot}}); transition: transform .18s"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+              <sc-if value="{{insOpen}}" hint-placeholder-val="{{ false }}">
+                <div role="group" aria-label="Choose an instrument" onMouseDown="{{keepFocus}}" style="position: absolute; top: calc(100% + 6px); left: 0; z-index: 40; width: 240px; max-height: 206px; overflow-y: auto; padding: 5px; border-radius: 12px; border: 1px solid var(--rule); background: var(--paper); box-shadow: 0 12px 32px -14px rgba(0,0,0,.5); scrollbar-width: thin; scrollbar-color: var(--ink-2) transparent">
+                  <sc-for list="{{insList}}" as="o" hint-placeholder-count="6"><button type="button" class="rm-opt" aria-pressed="{{o.on}}" onClick="{{o.pick}}">{{o.label}}</button></sc-for>
+                </div>
+              </sc-if>
+            </div>
+            <div class="rm-seg" role="group" aria-label="View" style="display: inline-flex; padding: 4px; border-radius: 12px; background: var(--paper-2); border: 1px solid var(--rule)">
+              <sc-for list="{{views}}" as="o" hint-placeholder-count="2"><button type="button" aria-pressed="{{o.on}}" onClick="{{o.pick}}" style="border: 0; background: transparent; padding: 6px 14px; font-size: 13.5px; font-weight: 600; border-radius: 9px; color: var(--ink-2)">{{o.label}}</button></sc-for>
+            </div>
+          </div>
+        </div>
+
+        <div id="rm-chart" class="{{go}}" style="display: flex; gap: 14px; flex-wrap: wrap; align-items: stretch; scroll-margin: 90px">
+          <div style="flex: 2 1 540px; min-width: 0; border-radius: 16px; padding: 18px 20px 14px; background: var(--card); border: 1px solid var(--rule); display: flex; flex-direction: column">
+
+            <sc-if value="{{isMap}}" hint-placeholder-val="{{ true }}">
+              <div style="position: relative; height: 480px">
+                <button type="button" class="rm-info" aria-label="How to read this chart" aria-expanded="{{infoOn}}" onClick="{{toggleInfo}}" onBlur="{{closeInfo}}" onKeyDown="{{infoKey}}" style="position: absolute; top: -6px; right: 0; z-index: 21; width: 24px; height: 24px; padding: 0; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--ink-2); background: transparent; color: var(--ink-2); font-family: var(--note); font-size: 15px; font-style: italic; font-weight: 600; line-height: 1">i</button>
+                <sc-if value="{{infoOpen}}" hint-placeholder-val="{{ false }}">
+                  <div class="rm-infobox" role="note" style="position: absolute; top: 24px; right: 0; z-index: 20; width: min(360px, calc(100vw - 72px)); display: flex; flex-direction: column; gap: 9px; padding: 14px 16px; border-radius: 12px; border: 1px solid var(--rule); background: var(--paper); box-shadow: 0 12px 32px -14px rgba(0,0,0,.5); font-size: 13.5px; line-height: 1.45; color: var(--ink-2)">
+                    <p><b>Each dot:</b> One strategy.</p>
+                    <p><b>Axes:</b> The horizontal axis is annualised volatility, a measure of risk. The vertical axis is annualised return. Further up and to the left is better, meaning lower risk and higher return.</p>
+                    <p><b>Dashed lines:</b> Strategies on the same line have the same Sharpe ratio. A steeper line means more return for each unit of risk.</p>
+                    <p><b>Cash 3.5%:</b> This line shows the return from holding cash, so you can judge whether a strategy is worth its risk.</p>
+                    <p><b>Hollow dots:</b> Strategies with tail risk. They usually look stable but occasionally suffer large losses, so their Sharpe ratio looks better than their real risk.</p>
+                  </div>
+                </sc-if>
+                <div role="group" aria-label="Strategies plotted by volatility and return. The table view lists the same data." style="position: absolute; left: 42px; right: 10px; top: 24px; bottom: 34px">
+                  <svg class="rm-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none">
+                    <g class="rm-ln" data-name="Return gridline 30%"><title>Return gridline 30%</title><path d="M0 0H100" fill="none" stroke="var(--rule)" stroke-width="1" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M0 0H100" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Return gridline 20%"><title>Return gridline 20%</title><path d="M0 33.33H100" fill="none" stroke="var(--rule)" stroke-width="1" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M0 33.33H100" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Return gridline 10%"><title>Return gridline 10%</title><path d="M0 66.67H100" fill="none" stroke="var(--rule)" stroke-width="1" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M0 66.67H100" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Return gridline 0%"><title>Return gridline 0%</title><path d="M0 100H100" fill="none" stroke="var(--rule)" stroke-width="1" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M0 100H100" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Volatility gridline 0%"><title>Volatility gridline 0%</title><path d="M0 0V100" fill="none" stroke="var(--rule)" stroke-width="1" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M0 0V100" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Volatility gridline 10%"><title>Volatility gridline 10%</title><path d="M20 0V100" fill="none" stroke="var(--rule)" stroke-width="1" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M20 0V100" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Volatility gridline 20%"><title>Volatility gridline 20%</title><path d="M40 0V100" fill="none" stroke="var(--rule)" stroke-width="1" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M40 0V100" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Volatility gridline 30%"><title>Volatility gridline 30%</title><path d="M60 0V100" fill="none" stroke="var(--rule)" stroke-width="1" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M60 0V100" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Volatility gridline 40%"><title>Volatility gridline 40%</title><path d="M80 0V100" fill="none" stroke="var(--rule)" stroke-width="1" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M80 0V100" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Volatility gridline 50%"><title>Volatility gridline 50%</title><path d="M100 0V100" fill="none" stroke="var(--rule)" stroke-width="1" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M100 0V100" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Cash rate line, 3.5%"><title>Cash rate line, 3.5%</title><path d="M0 88.33H100" fill="none" stroke="var(--ink-2)" stroke-width="1" stroke-dasharray="1 4" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M0 88.33H100" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Sharpe 0.5 line"><title>Sharpe 0.5 line</title><path d="M0 88.33L100 5" fill="none" stroke="var(--ink-2)" stroke-width="1" stroke-dasharray="4 5" opacity=".6" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M0 88.33L100 5" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Sharpe 1.0 line"><title>Sharpe 1.0 line</title><path d="M0 88.33L53 0" fill="none" stroke="var(--ink-2)" stroke-width="1" stroke-dasharray="4 5" opacity=".6" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M0 88.33L53 0" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                    <g class="rm-ln" data-name="Sharpe 1.5 line"><title>Sharpe 1.5 line</title><path d="M0 88.33L35.33 0" fill="none" stroke="var(--ink-2)" stroke-width="1" stroke-dasharray="4 5" opacity=".6" vector-effect="non-scaling-stroke"></path><path class="rm-hit" d="M0 88.33L35.33 0" fill="none" stroke="transparent" stroke-width="12" vector-effect="non-scaling-stroke"></path></g>
+                  </svg>
+
+                  <span class="rm-sweep" aria-hidden="true"></span>
+
+                  <span class="rm-late" style="position: absolute; left: 35.33%; top: -19px; transform: translateX(-50%); font-family: var(--mono); font-size: 10px; color: var(--ink-2); white-space: nowrap">Sharpe 1.5</span>
+                  <span class="rm-late" style="position: absolute; left: 53%; top: -19px; transform: translateX(-50%); font-family: var(--mono); font-size: 10px; color: var(--ink-2); white-space: nowrap">Sharpe 1.0</span>
+                  <span class="rm-late" style="position: absolute; right: 0; top: 5%; transform: translateY(-140%); font-family: var(--mono); font-size: 10px; color: var(--ink-2); white-space: nowrap">Sharpe 0.5</span>
+                  <span class="rm-late" style="position: absolute; right: 0; top: 88.33%; transform: translateY(-120%); font-family: var(--mono); font-size: 10px; color: var(--ink-2); white-space: nowrap">Cash 3.5%</span>
+
+                  <span style="position: absolute; left: -42px; width: 34px; text-align: right; top: 0; transform: translateY(-50%); font-family: var(--mono); font-size: 10px; color: var(--ink-2)">30%</span>
+                  <span style="position: absolute; left: -42px; width: 34px; text-align: right; top: 33.33%; transform: translateY(-50%); font-family: var(--mono); font-size: 10px; color: var(--ink-2)">20%</span>
+                  <span style="position: absolute; left: -42px; width: 34px; text-align: right; top: 66.67%; transform: translateY(-50%); font-family: var(--mono); font-size: 10px; color: var(--ink-2)">10%</span>
+                  <span style="position: absolute; left: -42px; width: 34px; text-align: right; top: 100%; transform: translateY(-50%); font-family: var(--mono); font-size: 10px; color: var(--ink-2)">0%</span>
+                  <span style="position: absolute; left: 0; bottom: -20px; transform: translateX(-50%); font-family: var(--mono); font-size: 10px; color: var(--ink-2)">0%</span>
+                  <span style="position: absolute; left: 20%; bottom: -20px; transform: translateX(-50%); font-family: var(--mono); font-size: 10px; color: var(--ink-2)">10%</span>
+                  <span style="position: absolute; left: 40%; bottom: -20px; transform: translateX(-50%); font-family: var(--mono); font-size: 10px; color: var(--ink-2)">20%</span>
+                  <span style="position: absolute; left: 60%; bottom: -20px; transform: translateX(-50%); font-family: var(--mono); font-size: 10px; color: var(--ink-2)">30%</span>
+                  <span style="position: absolute; left: 80%; bottom: -20px; transform: translateX(-50%); font-family: var(--mono); font-size: 10px; color: var(--ink-2)">40%</span>
+                  <span style="position: absolute; left: 100%; bottom: -20px; transform: translateX(-100%); font-family: var(--mono); font-size: 10px; color: var(--ink-2)">50%</span>
+
+                  <sc-for list="{{dots}}" as="s" hint-placeholder-count="20">
+                    <button type="button" class="rm-dot" aria-label="{{s.label}}" aria-pressed="{{s.on}}" onClick="{{s.pick}}" onMouseEnter="{{s.enter}}" onMouseLeave="{{s.leave}}" onFocus="{{s.enter}}" onBlur="{{s.leave}}" style="position: absolute; left: {{s.x}}%; top: {{s.y}}%; z-index: {{s.z}}; width: 22px; height: 22px; margin: -11px 0 0 -11px; padding: 0; border: 0; background: transparent; display: grid; place-items: center; opacity: {{s.op}}; pointer-events: {{s.pe}}; transition: opacity .45s ease; --rise: {{s.rise}}px; animation-delay: {{s.delay}}ms">
+                      <span style="display: block; width: {{s.d}}px; height: {{s.d}}px; border-radius: 50%; background: {{s.fill}}; border: 2px solid {{s.stroke}}; box-shadow: {{s.halo}}; transition: width .4s ease, height .4s ease, background-color .4s ease, border-color .4s ease, box-shadow .4s ease"></span>
+                    </button>
+                  </sc-for>
+
+                  <sc-for list="{{mineDots}}" as="m" hint-placeholder-count="1">
+                    <button type="button" aria-label="{{m.label}}" aria-pressed="{{m.on}}" onClick="{{m.pick}}" onMouseEnter="{{m.enter}}" onMouseLeave="{{m.leave}}" onFocus="{{m.enter}}" onBlur="{{m.leave}}" style="position: absolute; left: {{m.x}}%; top: {{m.y}}%; z-index: 4; width: 24px; height: 24px; margin: -12px 0 0 -12px; padding: 0; border: 0; background: transparent; display: grid; place-items: center">
+                      <span style="display: block; width: 13px; height: 13px; border-radius: 3px; transform: rotate(45deg); background: var(--gold); box-shadow: {{m.halo}}"></span>
+                      <span style="position: absolute; left: 24px; top: 50%; transform: translateY(-50%); font-family: var(--mono); font-size: 10.5px; font-weight: 600; color: var(--gold); white-space: nowrap">{{m.name}}</span>
+                    </button>
+                  </sc-for>
+
+                  <sc-if value="{{leadOn}}" hint-placeholder-val="{{ false }}">
+                    <span class="rm-ping" aria-hidden="true" style="left: {{lead.x}}%; top: {{lead.y}}%"></span>
+                    <div class="rm-lead" style="position: absolute; left: {{lead.x}}%; top: {{lead.y}}%; transform: {{lead.tf}}; transition: left .6s ease, top .6s ease, transform .6s ease; pointer-events: none; background: var(--ink); color: var(--paper); border-radius: 10px; padding: 8px 12px; white-space: nowrap; z-index: 5">
+                      <div style="font-size: 13.5px; font-weight: 600">{{lead.name}}</div>
+                      <div style="font-family: var(--mono); font-size: 11px; opacity: .8">{{lead.line}}</div>
+                    </div>
+                  </sc-if>
+
+                  <sc-if value="{{tip.on}}" hint-placeholder-val="{{ false }}">
+                    <div style="position: absolute; left: {{tip.x}}%; top: {{tip.y}}%; transform: {{tip.tf}}; pointer-events: none; background: var(--ink); color: var(--paper); border-radius: 10px; padding: 8px 12px; white-space: nowrap; z-index: 5">
+                      <div style="font-size: 13.5px; font-weight: 600">{{tip.name}}</div>
+                      <div style="font-family: var(--mono); font-size: 11px; opacity: .8">{{tip.line}}</div>
+                    </div>
+                  </sc-if>
+                </div>
+                <span style="position: absolute; left: 0; top: 0; font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Return a year</span>
+                <span style="position: absolute; right: 10px; bottom: 0; font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Volatility a year</span>
+              </div>
+              <div style="display: flex; gap: 18px; flex-wrap: wrap; align-items: center; padding-top: 12px; margin-top: 10px; border-top: 1px dashed var(--rule); font-size: 12.5px; color: var(--ink-2)">
+                <span style="display: flex; align-items: center; gap: 7px"><span style="width: 11px; height: 11px; border-radius: 50%; background: var(--ink-2)"></span>One strategy</span>
+                <span style="display: flex; align-items: center; gap: 7px"><span style="width: 11px; height: 11px; border-radius: 50%; border: 2px solid var(--ink-2)"></span>Tail risk: Sharpe understates downside</span>
+                <sc-if value="{{hasMine}}" hint-placeholder-val="{{ false }}"><span style="display: flex; align-items: center; gap: 7px"><span style="width: 10px; height: 10px; border-radius: 2px; transform: rotate(45deg); background: var(--gold)"></span>Your portfolio</span></sc-if>
+                <sc-if value="{{leadOn}}" hint-placeholder-val="{{ false }}"><span style="margin-left: auto; color: var(--ink); font-weight: 600">Select a strategy to view its profile</span></sc-if>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{isTable}}" hint-placeholder-val="{{ false }}">
+              <div style="display: flex; justify-content: flex-end; margin-bottom: 10px">
+                <button type="button" class="ghost" onClick="{{downloadTable}}"><span class="lock">PRO</span>Download</button>
+              </div>
+              <div style="height: 478px; overflow: auto">
+                <div style="min-width: 660px">
+                  <div role="row" style="display: grid; grid-template-columns: 2.4fr 1.5fr repeat(4, 70px); gap: 10px; padding: 4px 10px; position: sticky; top: 0; z-index: 1; background: var(--paper-2); border-radius: 8px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">
+                    <sc-for list="{{sortCols}}" as="c" hint-placeholder-count="6"><button type="button" role="columnheader" aria-sort="{{c.aria}}" onClick="{{c.pick}}" title="Sort by {{c.label}}" style="{{c.style}}">{{c.label}}<svg width="9" height="9" viewBox="0 0 10 10" aria-hidden="true" style="{{c.chev}}"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></sc-for>
+                  </div>
+                  <sc-for list="{{rows}}" as="r" hint-placeholder-count="10">
+                    <button type="button" class="rm-row" onClick="{{r.pick}}" style="width: 100%; display: grid; grid-template-columns: 2.4fr 1.5fr repeat(4, 70px); gap: 10px; padding: 10px; border: 0; border-bottom: 1px solid var(--rule); background: transparent; text-align: left; font-size: 13.5px">
+                      <span style="font-weight: 500">{{r.name}}</span>
+                      <span style="color: var(--ink-2)">{{r.insName}}</span>
+                      <span style="font-family: var(--mono); text-align: right; color: var(--up); font-weight: 600">{{r.retTxt}}</span>
+                      <span style="font-family: var(--mono); text-align: right">{{r.volTxt}}</span>
+                      <span style="font-family: var(--mono); text-align: right; font-weight: 600">{{r.shTxt}}</span>
+                      <span style="font-family: var(--mono); text-align: right; color: var(--down)">{{r.mddTxt}}</span>
+                    </button>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+          </div>
+
+          <sc-if value="{{listOpen}}" hint-placeholder-val="{{ false }}">
+          <div class="rm-slide" style="flex: 1 1 320px; min-width: 0; padding: 16px 18px; border-radius: 16px; background: var(--card); border: 1px solid var(--rule); display: flex; flex-direction: column; gap: 10px">
+            <div style="display: flex; flex-direction: column; gap: 3px">
+              <span style="font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">{{matchSub}}</span>
+              <span style="font-weight: 600; font-size: 18px; line-height: 1.2">{{matchTitle}}</span>
+              <span style="font-size: 12.5px; color: var(--ink-2)">Ranked by Sharpe ratio. Select one to see its full profile.</span>
+            </div>
+            <div style="display: grid; grid-template-columns: minmax(0, 1fr) 58px 52px 52px; gap: 8px; padding: 6px 8px; border-radius: 8px; background: var(--paper-2); font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">
+              <span>Strategy</span><span style="text-align: right">Return</span><span style="text-align: right">Vol</span><span style="text-align: right">Sharpe</span>
+            </div>
+            <div style="flex: 1 1 auto; max-height: 440px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--ink-2) transparent">
+              <sc-for list="{{matchRows}}" as="r" hint-placeholder-count="6">
+                <button type="button" class="rm-row" aria-pressed="{{r.on}}" onClick="{{r.pick}}" onMouseEnter="{{r.enter}}" onMouseLeave="{{r.leave}}" onFocus="{{r.enter}}" onBlur="{{r.leave}}" style="width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) 58px 52px 52px; gap: 8px; align-items: center; padding: 9px 8px; border: 0; border-bottom: 1px solid var(--rule); background: transparent; text-align: left; font-size: 13.5px; color: var(--ink)">
+                  <span style="min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 500; line-height: 1.25">{{r.name}}</span><span style="font-size: 11.5px; color: var(--ink-2)">{{r.ins}}</span></span>
+                  <span style="font-family: var(--mono); font-size: 12.5px; text-align: right; color: var(--up); font-weight: 600">{{r.ret}}</span>
+                  <span style="font-family: var(--mono); font-size: 12.5px; text-align: right">{{r.vol}}</span>
+                  <span style="font-family: var(--mono); font-size: 12.5px; text-align: right; font-weight: 600">{{r.sh}}</span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+          </sc-if>
+
+          <sc-if value="{{detailOpen}}" hint-placeholder-val="{{ false }}">
+          <div class="rm-slide" style="flex: 1 1 320px; min-width: 0; padding: 16px 18px; border-radius: 16px; background: var(--card); border: 1px solid var(--rule); display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; justify-content: space-between; gap: 12px; align-items: flex-start">
+              <div style="min-width: 0">
+                <div style="font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2)">{{sel.styleName}}</div>
+                <div style="margin-top: 6px; font-weight: 650; font-size: 20px; line-height: 1.22; letter-spacing: -.01em">{{sel.name}}</div>
+              </div>
+              <button type="button" class="rm-info" aria-label="Close strategy profile" onClick="{{closeDetail}}" style="flex: none; width: 28px; height: 28px; padding: 0; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--rule); background: transparent; color: var(--ink-2)"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 1.5l7 7M8.5 1.5l-7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></button>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 3px">
+              <span style="font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">{{sel.approach}}</span>
+              <p style="margin: 0; font-family: var(--note); font-size: 17px; line-height: 1.4; color: var(--ink-2)">{{sel.plain}}</p>
+            </div>
+
+            <sc-if value="{{sel.isStrategy}}" hint-placeholder-val="{{ true }}">
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Trading profile</span>
+                <div class="rm-prof">
+                  <sc-for list="{{sel.profile}}" as="f" hint-placeholder-count="6"><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">{{f.k}}</span><span style="font-size: 13.5px; font-weight: 600; line-height: 1.3">{{f.v}}</span></div></sc-for>
+                </div>
+              </div>
+            </sc-if>
+            <sc-if value="{{sel.isMine}}" hint-placeholder-val="{{ false }}">
+            <div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 9px 0; row-gap: 10px">
+                <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Return</span><span style="font-family: var(--mono); font-size: 14px; font-weight: 600; color: var(--up)">{{sel.retTxt}}</span></div>
+                <div style="display: flex; flex-direction: column; gap: 2px; padding-left: 10px; border-left: 1px solid var(--rule)"><span style="font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Volatility</span><span style="font-family: var(--mono); font-size: 14px; font-weight: 600">{{sel.volTxt}}</span></div>
+                <div style="display: flex; flex-direction: column; gap: 2px; padding-left: 10px; border-left: 1px solid var(--rule)"><span style="font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Sharpe</span><span style="font-family: var(--mono); font-size: 14px; font-weight: 600">{{sel.shTxt}}</span></div>
+                <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Worst fall</span><span style="font-family: var(--mono); font-size: 14px; font-weight: 600; color: var(--down)">{{sel.mddTxt}}</span></div>
+                <div style="grid-column: span 2; display: flex; flex-direction: column; gap: 2px; padding-left: 10px; border-left: 1px solid var(--rule)"><span style="font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Holding time</span><span style="font-family: var(--mono); font-size: 13px; font-weight: 600">{{sel.hold}}</span></div>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-bottom: 1px solid var(--rule); padding: 9px 0">
+                <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Sortino</span><span style="font-family: var(--mono); font-size: 14px; font-weight: 600">{{sel.sortino}}</span></div>
+                <div style="display: flex; flex-direction: column; gap: 2px; padding-left: 10px; border-left: 1px solid var(--rule)"><span style="font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Calmar</span><span style="font-family: var(--mono); font-size: 14px; font-weight: 600">{{sel.calmar}}</span></div>
+                <div style="display: flex; flex-direction: column; gap: 2px; padding-left: 10px; border-left: 1px solid var(--rule)"><span style="font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2)">Skew</span><span style="font-family: var(--mono); font-size: 14px; font-weight: 600">{{sel.skewTxt}}</span></div>
+              </div>
+              <p style="margin: 8px 0 0; font-size: 11.5px; line-height: 1.45; color: var(--ink-2)">{{sel.basis}}</p>
+            </div>
+            </sc-if>
+
+            <sc-if value="{{sel.isStrategy}}" hint-placeholder-val="{{ true }}">
+              <div style="margin-top: auto; display: flex; flex-direction: column; gap: 8px">
+                <a href="Strategy.dc.html?id={{sel.id}}" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 18px; border-radius: 12px; background: var(--ink); color: var(--paper); font-weight: 600; font-size: 15px">What’s the Catch Behind This Strategy?
+                  <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7h9M7.5 3.5 11 7l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </a>
+              </div>
+            </sc-if>
+            <sc-if value="{{sel.isMine}}" hint-placeholder-val="{{ false }}">
+              <a href="{{sel.href}}" style="margin-top: auto; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 18px; border-radius: 12px; background: var(--ink); color: var(--paper); font-weight: 600; font-size: 15px">Open this portfolio</a>
+            </sc-if>
+          </div>
+          </sc-if>
+        </div>
+        </sc-if>
+        </sc-if>
+      </section>
+
+    </div>
+  </main>
+
+  <nav class="rm-bnav" aria-label="Mobile navigation">
+    <a href="Main.dc.html" style="text-align: center; font-size: 12px; font-weight: 600; padding: 12px 0; border-radius: 12px; background: color-mix(in srgb, var(--paper) 16%, transparent)">Map</a>
+    <a href="Investors.dc.html" style="text-align: center; font-size: 12px; font-weight: 600; padding: 12px 0; opacity: .75">For you</a>
+    <a href="Library.dc.html" style="text-align: center; font-size: 12px; font-weight: 600; padding: 12px 0; opacity: .75">Library</a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"mode":{"editor":"enum","options":["Ivory","Ink"],"default":"Ivory"},"$preview":{"width":1440,"height":1800}}'>
+class Component extends DCLogic {
+  state = { mode: null, view: 'map', style: 'all', ins: 'all', sel: 's1', hover: null, goal: '', info: false, stylesOpen: false, mine: {}, mineOpen: false, mapOpen: true, stage: 'done', detail: false, insOpen: false, tick: 0 };
+
+  rows() {
+    return [
+      ['v1','Global deep value equity','value','eq',11.2,17.5,-42,-0.4,'3 to 5 years',8,'Holds the lowest-valued listed companies worldwide on earnings, book value and cash flow, and earns the return as valuations normalise. Returns come in bursts, and the strategy can lag growth markets for several years.'],
+      ['v2','Quality at a reasonable price','value','eq',12.4,14.6,-31,-0.3,'3 to 5 years',9,'Owns companies with high returns on capital and strong balance sheets, bought only at a discount to estimated intrinsic value. The valuation discipline limits drawdowns compared with paying any price for quality.'],
+      ['v3','Value factor investing','value','etf',9.8,14.5,-34,-0.4,'3 years or more',8,'Tilts a low-cost index portfolio towards shares that are cheap on standard valuation measures. The value premium is long-term and cyclical, so it depends on holding through extended periods of underperformance.'],
+      ['v4','Sovereign bond relative value','value','rates',5.9,5.6,-11,0.1,'1 to 2 years',6,'Buys government bonds whose yields look high against the growth and inflation outlook and sells those that look expensive. Returns come from spreads converging rather than from the direction of rates.'],
+      ['v5','Distressed debt investing','value','credit',11.8,12.2,-30,-0.7,'2 to 3 years',6,'Buys the bonds of financially stressed companies below the value expected from a restructuring or recovery. Returns depend on legal outcomes and recovery rates, and positions can be illiquid for long periods.'],
+      ['v6','FX value investing','value','fx',6.1,7.4,-14,-0.1,'2 to 4 years',6,'Holds currencies trading below fair value on purchasing power parity and sells those above it. Deviations close slowly, so this is a multi-year position that can move against the holder in the short term.'],
+      ['v7','REIT discount to NAV investing','value','real',10.3,16.2,-38,-0.5,'3 to 5 years',6,'Buys listed property companies trading below the appraised value of their assets. The discount tends to narrow through buybacks, asset sales or takeovers, although property values remain sensitive to interest rates.'],
+      ['v8','Private equity secondaries','value','pvt',12.1,11.5,-22,-0.4,'4 to 6 years',5,'Buys existing stakes in private equity funds from investors who need liquidity, usually at a discount to reported net asset value. The discount and shorter remaining fund life support returns compared with new commitments.'],
+      ['g1','Long-term quality growth equity','growth','eq',14.8,20.5,-44,-0.2,'5 years or more',8,'Holds companies that can reinvest earnings at high returns on capital for many years, so returns compound with earnings growth. Valuations are high, which makes the strategy sensitive to rising interest rates.'],
+      ['g2','AI supply chain thematic equity','growth','eq',19.0,31.0,-55,0.1,'3 to 5 years',5,'Owns the suppliers of AI infrastructure, from semiconductors and memory to power, cooling and data centres. Returns follow hyperscaler capital spending, so the strategy is volatile when spending guidance changes.'],
+      ['g3','Thematic growth ETF allocation','growth','etf',12.6,21.0,-46,-0.2,'3 years or more',6,'Spreads exposure across structural growth themes such as automation, clean energy and digital payments through low-cost funds. Diversifying across themes reduces the impact of any single theme falling out of favour.'],
+      ['g4','Core digital asset allocation','growth','cry',24.0,48.0,-72,0.3,'4 years or more',4,'Holds a small, regularly rebalanced core of the largest digital assets, mainly Bitcoin and Ether. Rebalancing captures part of the volatility, but past cycles have included drawdowns of more than 70%.'],
+      ['g5','Pre-IPO growth equity','growth','pvt',15.2,24.0,-48,-0.3,'5 to 7 years',4,'Invests in late-stage private companies ahead of a listing. Returns depend on the IPO window staying open, and valuations can be reset sharply when public market multiples fall.'],
+      ['i1','Treasury bill laddering','income','rates',4.1,0.6,-0.3,0.0,'Months',9,'Rolls a ladder of short-dated government bills so that a tranche matures every few weeks. It earns close to the policy rate with almost no price volatility or credit risk.'],
+      ['i2','Barbell bond allocation','income','rates',5.0,4.8,-11,-0.1,'1 to 3 years',8,'Combines short-dated bonds for liquidity with long-dated bonds for yield and duration. The mix earns more than short bonds alone while limiting losses compared with holding only long bonds.'],
+      ['i3','Investment grade bond laddering','income','credit',5.6,5.1,-14,-0.6,'1 to 3 years',8,'Holds high-quality corporate bonds with staggered maturities, so part of the portfolio matures each year and is reinvested at current yields. It provides predictable income with moderate interest rate risk.'],
+      ['i4','Dividend quality investing','income','eq',9.6,12.5,-28,-0.5,'3 years or more',9,'Owns companies whose dividends are well covered by free cash flow and backed by strong balance sheets. Covered dividends are cut less often, which supports both income and capital in downturns.'],
+      ['i5','Covered call writing','income','opt',8.4,10.5,-24,-1.1,'1 year or more',7,'Holds a portfolio of shares and sells call options against it to collect premium. The premium adds income and cushions small falls, but it caps gains in strong rallies.'],
+      ['i6','Real asset income investing','income','real',8.2,15.0,-36,-0.6,'3 years or more',7,'Collects contracted rent and regulated cash flows from property, utilities and infrastructure. Income is relatively stable, although asset values fall when real interest rates rise.'],
+      ['i7','Direct lending','income','pvt',9.8,5.2,-13,-1.3,'3 to 5 years',5,'Lends directly to mid-sized companies through floating-rate senior loans, earning a premium over syndicated loans. Reported volatility is low partly because the loans are valued infrequently, so it understates the true risk.'],
+      ['i8','Multi-asset income ETF allocation','income','etf',7.1,8.2,-19,-0.5,'1 to 3 years',8,'Combines income funds across bonds, dividend equities and listed property. Drawing income from several asset classes keeps the yield steadier than any single source.'],
+      ['i9','Stablecoin yield lending','income','cry',6.4,3.2,-7,-2.4,'Months',4,'Earns interest by lending stablecoins on lending platforms, at yields above money market rates. The holder bears platform default risk and the risk of a stablecoin losing its peg.'],
+      ['m1','Cross-asset trend following','momentum','fut',9.8,10.2,-16,0.7,'Weeks to months',8,'Follows sustained price trends across equity, bond, currency and commodity futures, long or short. It has historically gained during extended sell-offs, which makes it a strong diversifier for equity portfolios.'],
+      ['m2','Equity momentum investing','momentum','eq',13.6,18.0,-38,-0.6,'1 to 6 months',8,'Rotates into the shares with the strongest returns over the past six to twelve months. The premium is well documented, but the strategy can suffer sharp losses when market leadership reverses.'],
+      ['m3','Sector rotation strategy','momentum','etf',10.6,13.1,-26,-0.3,'1 to 3 months',7,'Moves between sector funds as relative strength and the economic cycle shift market leadership. Returns depend on leadership persisting long enough to cover trading costs.'],
+      ['m4','FX trend following','momentum','fx',6.4,8.6,-15,0.4,'Weeks',6,'Follows sustained moves in major currency pairs, which are often driven by diverging interest rate policy. It performs best when central banks move in different directions.'],
+      ['m5','Commodity trend following','momentum','cmd',10.4,13.8,-23,0.6,'Weeks',7,'Follows supply-driven price trends in energy, metals and agricultural futures. Commodity trends tend to persist because supply takes time to respond to prices.'],
+      ['m6','Crypto trend following','momentum','cry',26.0,42.0,-58,0.5,'Weeks',5,'Holds digital assets during uptrends and moves to cash when the trend turns. Exiting in downtrends has historically avoided much of the drawdown, at the cost of missing sharp rebounds.'],
+      ['m7','Fixed income trend following','momentum','rates',6.0,7.2,-13,0.5,'Weeks',7,'Follows trends in government bond futures across major markets. It benefits from sustained rate cycles in either direction, both hiking and cutting.'],
+      ['s1','Variance risk premium harvesting','vol','opt',11.5,8.9,-26,-2.1,'Days to weeks',7,'Sells short-dated index options when implied volatility is above the volatility the market is likely to realise. It earns steady premium most of the time, with occasional large losses in sharp sell-offs.'],
+      ['s2','Earnings long straddle','vol','opt',13.2,16.8,-21,0.9,'Days',6,'Buys options before results when the implied move is small against the stock\'s history of earnings reactions. Returns come from a minority of large moves, so results are uneven.'],
+      ['s3','VIX roll yield capture','vol','fut',16.4,19.5,-47,-2.6,'Days to weeks',6,'Earns the decline of VIX futures towards spot when the futures curve is in contango. Returns are steady in calm markets, but losses are severe when volatility spikes.'],
+      ['s4','Long gamma scalping','vol','opt',9.4,7.6,-9,0.8,'Intraday',6,'Owns options and repeatedly hedges their market exposure, profiting when realised moves exceed what the options cost. It gains most in turbulent markets.'],
+      ['s5','Index dispersion trading','vol','opt',10.2,7.8,-13,-0.9,'Weeks',7,'Sells volatility on an index and buys volatility on its constituents, profiting when stocks move independently rather than together. Losses occur when correlation rises sharply, as it does in sell-offs.'],
+      ['s6','FX volatility carry trade','vol','fx',7.2,6.1,-12,-1.4,'Weeks',6,'Sells currency options when implied volatility exceeds realised volatility. It earns premium in stable markets and loses in sudden currency moves.'],
+      ['s7','Crypto volatility arbitrage','vol','cry',18.6,21.0,-29,-1.2,'Days',4,'Trades the difference between implied and realised volatility in digital asset options. Mispricing is frequent, but liquidity and exchange risk are material.'],
+      ['s8','Oil event volatility trading','vol','cmd',9.9,12.6,-18,0.6,'Days to weeks',5,'Buys oil options ahead of supply events when implied volatility is low against past reactions to similar events. Most positions expire with small losses, offset by large gains in genuine disruptions.'],
+      ['r1','Equity pairs trading','revert','eq',8.6,5.4,-9,-0.2,'Days to weeks',8,'Buys one stock and sells a close peer when their price relationship moves well outside its historical range. Returns are largely independent of the direction of the market.'],
+      ['r2','Crypto basis trading','revert','cry',10.8,6.2,-11,-1.8,'Weeks',5,'Buys digital assets in the spot market and sells futures at a premium, earning the basis as the two prices converge. The position is market neutral but carries exchange and counterparty risk.'],
+      ['r3','Convertible bond arbitrage','revert','credit',7.6,5.8,-17,-1.4,'Months',7,'Buys convertible bonds that are cheap relative to their embedded option and hedges the equity exposure by selling the shares. Returns come from the valuation gap and from trading volatility.'],
+      ['r4','ETF arbitrage','revert','etf',6.2,2.9,-4,-0.4,'Days',6,'Trades small gaps between ETF prices and the value of their underlying holdings. Returns are small and steady, and they depend on fast, low-cost execution.'],
+      ['r5','Yield curve butterfly trading','revert','rates',6.0,3.4,-7,-0.6,'Weeks',7,'Trades kinks in the yield curve, buying cheap maturities and selling expensive ones, while staying neutral to the overall level of rates.'],
+      ['r6','Commodity spread trading','revert','cmd',8.2,7.1,-12,0.1,'Weeks',6,'Trades related contracts, such as different delivery months or refined products against crude, when their price spread moves beyond its normal range.'],
+      ['r7','Index futures mean reversion','revert','fut',7.9,7.6,-12,-0.2,'Days',6,'Takes positions against short, sharp index moves that news or data do not explain, expecting a partial reversal within days.'],
+      ['e1','Merger arbitrage','event','eq',7.4,4.2,-10,-1.9,'Months',8,'Buys the shares of takeover targets below the agreed offer price and holds them until the deal closes. The spread is earned in most cases, with sharp losses if a deal is blocked.'],
+      ['e2','Post-earnings announcement drift','event','eq',11.4,11.2,-19,0.2,'Weeks',8,'Holds shares that beat earnings expectations by a wide margin, as prices tend to keep adjusting for several weeks after the announcement.'],
+      ['e3','Scenario-based hedged allocation','event','etf',9.2,9.0,-12,0.3,'Days to months',6,'Builds positions in the assets most exposed to the events identified by Rehyn\'s scenario engine, with hedges against the main risks. Positions change as the event outlook changes.'],
+      ['e4','Central bank event trading','event','rates',6.7,5.6,-8,0.3,'Days',6,'Positions in rates around central bank meetings, based on how markets reacted to comparable decisions and guidance.'],
+      ['e5','Special situations credit investing','event','credit',9.4,8.8,-18,-0.8,'Months',6,'Trades corporate bonds around refinancings, spin-offs and rating changes, where forced selling or index rules create temporary mispricing.'],
+      ['e6','Supply shock event trading','event','cmd',11.2,14.1,-20,0.7,'Days to weeks',6,'Trades disruptions in energy and agriculture, using comparable historical episodes to estimate the size and duration of the price response.'],
+      ['e7','Catastrophe bond investing','event','pvt',8.8,6.0,-15,-2.0,'1 to 3 years',5,'Earns insurance premiums by holding bonds that lose principal only if a specified natural disaster occurs. Returns are largely unrelated to financial markets, with sudden losses in a major catastrophe.'],
+      ['c1','G10 FX carry trade','macro','fx',6.8,8.1,-19,-1.1,'Months',7,'Holds high-yielding G10 currencies against low-yielding ones and earns the interest rate differential. Returns are steady in calm markets but reverse quickly when risk appetite falls.'],
+      ['c2','Yield curve steepener trade','macro','rates',6.2,6.4,-12,0.2,'Months',6,'Positions for short-term yields to fall faster than long-term yields, which typically happens when central banks begin cutting rates.'],
+      ['c3','Commodity roll yield carry','macro','cmd',8.9,9.4,-17,-0.3,'Months',7,'Holds commodity futures where the curve is in backwardation, earning the roll return as contracts converge towards higher spot prices.'],
+      ['c4','Gold real yield allocation','macro','cmd',9.1,13.5,-24,0.2,'Months',7,'Sizes gold holdings from real yields, the US dollar and central bank purchases, the main drivers of the gold price over the past two decades.'],
+      ['c5','Risk parity allocation','macro','etf',8.1,9.2,-22,-0.4,'1 year or more',8,'Allocates across equities, bonds and commodities so that each contributes a similar share of portfolio risk, using leverage on the lower-risk assets. It is vulnerable when stocks and bonds fall together, as in 2022.'],
+      ['c6','Short-duration high yield investing','macro','credit',6.6,5.6,-15,-0.9,'1 to 2 years',7,'Holds high-yield bonds with short maturities, earning high coupons with limited exposure to interest rates. Defaults are the main source of loss.'],
+      ['c7','Global macro futures overlay','macro','fut',8.3,8.4,-13,0.3,'Weeks to months',7,'Takes directional views on growth, inflation and policy through equity index, bond and currency futures.'],
+      ['c8','Autocallable note laddering','macro','pvt',7.2,9.0,-21,-1.6,'1 to 3 years',5,'Holds structured notes with staggered maturities that pay a fixed coupon and redeem early if markets hold up. The investor bears the equity loss if the index falls below the barrier.'],
+      ['c9','Inflation-linked infrastructure investing','macro','real',7.4,10.8,-21,0.1,'3 years or more',6,'Owns infrastructure assets whose revenue is contractually linked to inflation, such as regulated utilities and toll roads.'],
+      ['d1','Tail risk hedging','hedge','opt',1.8,11.0,-18,2.4,'Always on',7,'Holds out-of-the-money index options that cost a small premium in most years and pay out sharply in a crash.'],
+      ['d2','Strategic gold allocation','hedge','cmd',7.8,14.5,-28,0.2,'3 years or more',8,'Holds a fixed allocation to gold as a store of value and a diversifier against currency debasement and geopolitical risk.'],
+      ['d3','Safe haven currency allocation','hedge','fx',3.4,7.0,-13,0.6,'As needed',6,'Holds currencies that tend to strengthen in risk-off periods, such as the Swiss franc and the Japanese yen.'],
+      ['d4','Long volatility hedging','hedge','fut',2.6,14.0,-24,2.0,'Always on',6,'Holds a rolling position in volatility futures that rises sharply when market stress increases. The roll cost is a drag in calm markets.'],
+      ['d5','Minimum volatility equity','hedge','etf',8.4,10.4,-24,-0.3,'3 years or more',8,'Owns the least volatile stocks in the market, giving equity exposure with smaller drawdowns at the cost of lagging in strong rallies.'],
+      ['d6','Long-duration Treasury hedge','hedge','rates',4.6,11.5,-38,0.4,'1 year or more',7,'Holds long-dated Treasuries, which tend to rise when growth fears push yields down. The hedge fails when inflation drives stocks and bonds down together.']
+    ];
+  }
+
+  all() {
+    if (this._all) return this._all;
+    const SN = { value:'Value', growth:'Growth', income:'Income', momentum:'Momentum', vol:'Short term volatility', revert:'Mean reversion', event:'Event driven', macro:'Macro and carry', hedge:'Defensive' };
+    const IN = { eq:'Equities', etf:'ETFs and funds', rates:'Government bonds and rates', credit:'Corporate credit', fx:'FX', cmd:'Commodities', opt:'Options', fut:'Futures', cry:'Crypto', real:'Real assets', pvt:'Private and structured' };
+    const money = v => '$' + Math.round(v).toLocaleString('en-GB');
+    // How each strategy is run, kept apart from any performance figure.
+    const VIA = { eq:'Listed shares', etf:'ETFs and index funds', rates:'Government bonds and rate futures', credit:'Corporate bonds', fx:'Spot and forward currencies', cmd:'Commodity futures', opt:'Listed options', fut:'Exchange-traded futures', cry:'Spot crypto and futures', real:'Listed real assets and funds', pvt:'Structured notes and private placements' };
+    const BOOK = { eq:'20 to 60', etf:'5 to 12', rates:'3 to 8', credit:'30 to 80', fx:'6 to 10', cmd:'8 to 20', opt:'2 to 6 legs', fut:'10 to 40', cry:'3 to 10', real:'10 to 25', pvt:'4 to 12' };
+    const SIDE = { value:'Long only', growth:'Long only', income:'Long only', momentum:'Long or short with the trend', revert:'Market neutral', event:'Mainly long, deal by deal', macro:'Long and short', hedge:'Defensive, gains in sell-offs' };
+    const PACE = [[/Intraday/, 'Several times a day', 'Over 1,000'], [/^Days$/, 'Daily', 'About 250'], [/Days to/, 'Weekly', 'About 50'], [/^Weeks$/, 'Weekly', 'About 50'], [/Weeks to/, 'Every two weeks', 'About 25'], [/Always on/, 'Monthly roll', 'About 12'], [/As needed/, 'When risk rises', '2 to 6'], [/year|3 years/, 'Quarterly', 'About 4'], [/month|Months/, 'Monthly', 'About 12']];
+    const profileOf = (style, ins, hold, skew) => {
+      const pace = PACE.find(x => x[0].test(hold)) || [null, 'Monthly', 'About 12'];
+      const side = style === 'vol' ? (skew < 0 ? 'Sells volatility' : 'Buys volatility') : SIDE[style];
+      return [{ k: 'Traded through', v: VIA[ins] }, { k: 'Market stance', v: side }, { k: 'Positions held', v: BOOK[ins] },
+        { k: 'Rebalanced', v: pace[1] }, { k: 'Trades a year', v: pace[2] }, { k: 'Holding period', v: hold }];
+    };
+    this._all = this.rows().map(r => {
+      const [id, name, style, ins, ret, vol, mdd, skew, hold, ev, plain] = r;
+      const sh = (ret - 3.5) / vol;
+      const sortino = sh * Math.max(1.05, 1.4 + 0.15 * skew);
+      return { id, name, style, ins, ret, vol, mdd, skew, hold, ev, plain, sh, tail: skew <= -0.9,
+        kind: 'Strategy:', approach: 'Investment approach', isStrategy: true,
+        styleName: SN[style], insName: IN[ins],
+        retTxt: ret.toFixed(1) + '%', volTxt: vol.toFixed(1) + '%',
+        shTxt: (sh < 0 ? '−' : '') + Math.abs(sh).toFixed(2),
+        mddTxt: '−' + Math.abs(mdd).toFixed(0) + '%',
+        gain: money(ret * 100), loss: '−' + money(Math.abs(mdd) * 100),
+        sortino: (sortino < 0 ? '−' : '') + Math.abs(sortino).toFixed(2),
+        calmar: (ret / Math.abs(mdd)).toFixed(2),
+        skewTxt: (skew < 0 ? '−' : '') + Math.abs(skew).toFixed(1),
+        profile: profileOf(style, ins, hold, skew),
+        basis: 'Indicative long-run figures for this strategy type, annualised. They are representative estimates, not a backtest of this exact strategy. Sharpe and Sortino use a 3.5% cash rate; worst fall is the largest peak-to-trough decline; Calmar is return divided by worst fall.' };
+    });
+    return this._all;
+  }
+
+  renderVals() {
+    const st = this.state;
+    const all = this.all();
+    const mode = st.mode || (this.props.mode === 'Ink' ? 'dark' : 'light');
+    const filtered = st.style !== 'all' || st.ins !== 'all';
+    const match = s => (st.style === 'all' || s.style === st.style) && (st.ins === 'all' || s.ins === st.ins);
+    const shown = all.filter(match);
+    const signed = (v, d) => (v < 0 ? '−' : '') + Math.abs(v).toFixed(d);
+    const cash = v => '$' + Math.round(v).toLocaleString('en-GB');
+    const figures = this.portfolioFigures();
+    const mine = figures.filter(p => st.mine[p.id]).map(p => {
+      const sh = (p.ret - 3.5) / p.vol;
+      return Object.assign({}, p, { sh, kind: 'Portfolio:', styleName: 'Your portfolio', insName: 'Your portfolio', approach: 'Portfolio overview', isMine: true,
+        plain: p.count + (p.count === 1 ? ' holding' : ' holdings') + ', with figures based on performance since 2 January 2026.',
+        hold: 'Since 2 Jan 2026', href: '/portfolio/' + p.bookId,
+        retTxt: signed(p.ret, 1) + '%', volTxt: p.vol.toFixed(1) + '%', shTxt: signed(sh, 2), mddTxt: '−' + Math.abs(p.mdd).toFixed(0) + '%',
+        sortino: signed((p.ret - 3.5) / (p.dn || 1), 2), calmar: (p.ret / Math.abs(p.mdd || 1)).toFixed(2), skewTxt: signed(p.skew, 1),
+        gain: cash(p.ret * 100), loss: '−' + cash(Math.abs(p.mdd) * 100),
+        basis: 'Calculated from the portfolio’s daily performance since 2 January 2026, annualised. Sharpe and Sortino use a 3.5% cash rate; worst fall is the largest peak-to-trough decline.' });
+    });
+    const sel = mine.find(s => s.id === st.sel) || all.find(s => s.id === st.sel) || all[0];
+    const pick = id => () => this.setState({ sel: id, detail: true });
+    const place = s => ({ x: Math.max(0, Math.min(100, s.vol / 50 * 100)), y: Math.max(2, Math.min(100, 100 - s.ret / 30 * 100)) });
+    const mineDots = mine.map(s => ({ name: s.name, on: s.id === sel.id ? 'true' : 'false', x: place(s).x.toFixed(2), y: place(s).y.toFixed(2),
+      label: s.name + ', return ' + s.retTxt + ', volatility ' + s.volTxt + ', Sharpe ' + s.shTxt,
+      halo: s.id === sel.id ? '0 0 0 3px var(--card), 0 0 0 5px var(--gold)' : '0 0 0 2px var(--card)',
+      pick: pick(s.id), enter: () => this.setState({ hover: s.id }), leave: () => this.setState({ hover: null }) }));
+    const mineOpts = figures.map(p => ({ label: p.name, on: st.mine[p.id] ? 'true' : 'false',
+      pick: () => this.setState({ mine: Object.assign({}, st.mine, { [p.id]: !st.mine[p.id] }), sel: st.mine[p.id] ? st.sel : p.id }) }));
+    const mineLabel = mine.length ? mine.length + (mine.length === 1 ? ' portfolio added' : ' portfolios added') : 'Add my portfolio';
+
+    const dots = all.map(s => {
+      const on = match(s), isSel = s.id === sel.id, hot = st.rowHover === s.id;
+      // With a filter on, every match is drawn at full strength and the profile's strategy is no longer singled out.
+      const mark = filtered ? hot : isSel;
+      const strong = mark || (filtered && on);
+      const col = strong ? 'var(--ink)' : 'var(--ink-2)';
+      return {
+        id: s.id, on: mark ? 'true' : 'false',
+        label: s.name + ', return ' + s.retTxt + ', volatility ' + s.volTxt + ', Sharpe ' + s.shTxt,
+        x: (s.vol / 50 * 100).toFixed(2), y: (100 - s.ret / 30 * 100).toFixed(2),
+        d: mark ? 16 : filtered && on ? 13 : on ? 11 : 8, fill: s.tail ? 'var(--card)' : col, stroke: col,
+        halo: mark ? '0 0 0 3px var(--card), 0 0 0 5px var(--ink)' : '0 0 0 2px var(--card)',
+        op: on || isSel ? 1 : filtered ? 0.14 : 0.2, pe: on || isSel ? 'auto' : 'none',
+        rise: (s.ret / 30 * 422).toFixed(0), delay: Math.round(250 + s.vol / 50 * 1400),
+        z: mark ? 3 : on ? 2 : 1,
+        pick: pick(s.id), enter: () => this.setState({ hover: s.id }), leave: () => this.setState({ hover: null })
+      };
+    });
+
+    const tipFor = s => {
+      const { x, y } = place(s);
+      const tx = x > 68 ? '-100%' : x < 18 ? '0' : '-50%';
+      const ty = y < 22 ? '16px' : 'calc(-100% - 16px)';
+      return { on: true, x: x.toFixed(2), y: y.toFixed(2), tf: 'translate(' + tx + ', ' + ty + ')', name: s.name,
+        line: s.retTxt + ' return · ' + s.volTxt + ' vol · ' + s.shTxt + ' Sharpe' };
+    };
+    const h = all.concat(mine).find(s => s.id === st.hover);
+    const leadOn = !st.detail && !filtered;
+    // The table sorts by any column; text columns run A to Z first, figures largest first.
+    const SORTS = [['name', 'Strategy', false], ['insName', 'Instrument', false], ['ret', 'Return', true], ['vol', 'Vol', true], ['sh', 'Sharpe', true], ['mdd', 'Worst', true]];
+    const sk = st.sortKey || 'sh', dir = st.sortDir || -1;
+    const sorter = (p, q) => { const a = p[sk], b = q[sk]; return (typeof a === 'string' ? a.localeCompare(b) : a - b) * dir; };
+    const tip = h && !(leadOn && h.id === sel.id) ? tipFor(h) : { on: false, x: 0, y: 0, tf: 'none', name: '', line: '' };
+
+    const styleOpts = [['all','All styles','Every style we cover'],['value','Value','Assets priced below fair value'],['growth','Growth','Compounding earnings and themes'],['income','Income','Regular yield and cash flow'],['momentum','Momentum','Following established trends'],['vol','Short term volatility','Pricing gaps in options and volatility'],['revert','Mean reversion','Stretched prices returning to normal'],['event','Event driven','Mergers, earnings and policy events'],['macro','Macro and carry','Rates, currencies and the cycle'],['hedge','Defensive','Protection in market stress']];
+    const insOpts = [['all','All instruments'],['eq','Equities'],['etf','ETFs and funds'],['rates','Government bonds and rates'],['credit','Corporate credit'],['fx','FX'],['cmd','Commodities'],['opt','Options'],['fut','Futures'],['cry','Crypto'],['real','Real assets'],['pvt','Private and structured']];
+    const fits = (style, ins) => all.filter(s => (style === 'all' || s.style === style) && (ins === 'all' || s.ins === ins));
+    const insFor = style => insOpts.filter(o => o[0] === 'all' || fits(style, o[0]).length);
+    // The guided first pick plays the chart's entrance; changing Style or Instrument afterwards keeps the chart and
+    // only brings the matching strategies forward, so the map does not redraw.
+    const present = (style, ins, extra, replay = true) => {
+      const first = fits(style, ins).sort((p, q) => q.sh - p.sh)[0];
+      this.setState(Object.assign({ style, ins, stage: 'done', detail: false, hover: null, stylesOpen: false, insOpen: false, tick: replay ? st.tick + 1 : st.tick }, first ? { sel: first.id } : {}, extra));
+    };
+    const tries = [
+      ['Beat cash with little risk', { style: 'income', ins: 'all', sel: 'i1' }],
+      ['Buy good assets cheaply', { style: 'value', ins: 'all', sel: 'v2' }],
+      ['Trade short term volatility', { style: 'vol', ins: 'all', sel: 's1' }],
+      ['Protect my portfolio in a crash', { style: 'hedge', ins: 'all', sel: 'd1' }]
+    ];
+    const tape = [['S&P 500','6,812','▲ 0.4%'],['FTSE 100','9,742','▼ 0.2%'],['Nikkei 225','48,310','▲ 0.9%'],['Brent','$68.40','▲ 1.1%'],['Gold','$4,020','▲ 0.3%'],['EUR/USD','1.162','▼ 0.1%'],['GBP/USD','1.311','▲ 0.2%'],['USD/JPY','152.40','▲ 0.4%'],['Bitcoin','$104,000','▼ 1.6%'],['US 10Y','4.08%','▼ 3bp'],['VIX','17.9','▲ 4.2%']];
+    const tapeItems = tape.map(t => ({ n: t[0], v: t[1], m: t[2], c: t[2].indexOf('▲') === 0 ? 'var(--r-up)' : 'var(--r-down)' }));
+
+    return {
+      mode, ivoryOn: mode === 'light' ? 'true' : 'false', inkOn: mode === 'dark' ? 'true' : 'false',
+      setIvory: () => this.setState({ mode: 'light' }), setInk: () => this.setState({ mode: 'dark' }),
+      tape: tapeItems.concat(tapeItems),
+      goal: st.goal, setGoal: e => this.setState({ goal: e.target.value }),
+      runGoal: () => {
+        const q = st.goal.toLowerCase();
+        const map = [[/income|yield|dividend/, 'income'], [/vol|option|straddle/, 'vol'], [/value|cheap/, 'value'], [/protect|hedge|crash/, 'hedge'], [/grow|long term/, 'growth'], [/trend|momentum/, 'momentum'], [/arbitrage|neutral/, 'revert'], [/macro|carry/, 'macro'], [/event|earnings|merger/, 'event']];
+        const hit = map.find(m => m[0].test(q));
+        present(hit ? hit[1] : 'all', 'all', { mapOpen: true }); this.reveal('rm-chart');
+      },
+      mapOpen: st.mapOpen, mapOn: st.mapOpen ? 'true' : 'false', mapRot: st.mapOpen ? '180deg' : '0deg',
+      toggleMap: () => { this.setState({ mapOpen: !st.mapOpen }); if (!st.mapOpen) this.reveal('rm-map'); },
+      count: all.length,
+      tries: tries.map(t => ({ label: t[0], pick: () => { present(t[1].style, 'all', { sel: t[1].sel, mapOpen: true }); this.reveal('rm-chart'); } })),
+      isStyleStep: st.stage === 'style', isInsStep: st.stage === 'ins', isDone: st.stage === 'done',
+      styleTiles: styleOpts.slice(1).concat(styleOpts.slice(0, 1)).map((o, i) => ({ label: o[1], note: o[2], delay: i * 35, pick: () => { this.setState({ style: o[0], ins: 'all', stage: 'ins' }); this.reveal('rm-map'); } })),
+      insTiles: insFor(st.style).slice(1).concat(insOpts.slice(0, 1)).map((o, i) => ({ label: o[1], delay: i * 35, pick: () => { present(st.style, o[0]); this.reveal('rm-chart'); } })),
+      backStep: () => this.setState({ stage: 'style' }),
+      seeAll: () => { present('all', 'all'); this.reveal('rm-chart'); },
+      go: 'rm-go' + st.tick % 2, leadOn, lead: tipFor(sel), detailOpen: st.detail,
+      closeDetail: () => this.setState({ detail: false }),
+      listOpen: filtered && !st.detail,
+      matchTitle: shown.length + (shown.length === 1 ? ' strategy matches' : ' strategies match'),
+      matchSub: [st.style === 'all' ? 'All styles' : (styleOpts.find(o => o[0] === st.style) || [])[1], st.ins === 'all' ? 'All instruments' : (insOpts.find(o => o[0] === st.ins) || [])[1]].join(' · '),
+      matchRows: shown.slice().sort((p, q) => q.sh - p.sh).map(s => ({ name: s.name, ins: s.insName, ret: s.retTxt, vol: s.volTxt, sh: s.shTxt, on: st.rowHover === s.id ? 'true' : 'false',
+        pick: () => this.setState({ sel: s.id, detail: true, rowHover: null }), enter: () => this.setState({ rowHover: s.id }), leave: () => this.setState({ rowHover: null }) })),
+      styles: styleOpts.map(o => ({ label: o[1], on: st.style === o[0] ? 'true' : 'false', pick: () => present(o[0], fits(o[0], st.ins).length ? st.ins : 'all', null, st.stage !== 'done') })),
+      styleLabel: (styleOpts.find(o => o[0] === st.style) || styleOpts[0])[1],
+      stylesOpen: st.stylesOpen, stylesOn: st.stylesOpen ? 'true' : 'false', styleRot: st.stylesOpen ? '180deg' : '0deg',
+      toggleStyles: () => this.setState({ stylesOpen: !st.stylesOpen }),
+      stylesBlur: e => { if (!e.currentTarget.contains(e.relatedTarget)) this.setState({ stylesOpen: false }); },
+      stylesKey: e => { if (e.key === 'Escape') this.setState({ stylesOpen: false }); },
+      keepFocus: e => e.preventDefault(),
+      insList: insFor(st.style).map(o => ({ label: o[1], on: st.ins === o[0] ? 'true' : 'false', pick: () => present(st.style, o[0], null, st.stage !== 'done') })),
+      insLabel: (insOpts.find(o => o[0] === st.ins) || insOpts[0])[1],
+      insOpen: st.insOpen, insOn: st.insOpen ? 'true' : 'false', insRot: st.insOpen ? '180deg' : '0deg',
+      toggleIns: () => this.setState({ insOpen: !st.insOpen }),
+      insBlur: e => { if (!e.currentTarget.contains(e.relatedTarget)) this.setState({ insOpen: false }); },
+      insKey: e => { if (e.key === 'Escape') this.setState({ insOpen: false }); },
+      views: [['map','Map'],['table','Table']].map(o => ({ label: o[1], on: st.view === o[0] ? 'true' : 'false', pick: () => this.setState({ view: o[0] }) })),
+      isMap: st.view === 'map', isTable: st.view === 'table',
+      downloadTable: () => this.openPro('Download'),
+      infoOpen: st.info, infoOn: st.info ? 'true' : 'false',
+      toggleInfo: () => this.setState({ info: !st.info }),
+      closeInfo: () => this.setState({ info: false }),
+      infoKey: e => { if (e.key === 'Escape') this.setState({ info: false }); },
+      dots, tip,
+      rows: shown.concat(mine).sort(sorter).map(s => Object.assign({}, s, { pick: pick(s.id) })),
+      sortCols: SORTS.map(([key, label, right]) => {
+        const on = sk === key;
+        return { label, aria: on ? (dir > 0 ? 'ascending' : 'descending') : 'none',
+          pick: () => this.setState({ sortKey: key, sortDir: on ? -dir : (key === 'name' || key === 'insName' ? 1 : -1) }),
+          style: `display: inline-flex; align-items: center; gap: 5px; justify-content: ${right ? 'flex-end' : 'flex-start'}; border: 0; background: transparent; padding: 6px 0; font: inherit; letter-spacing: inherit; text-transform: inherit; cursor: pointer; color: ${on ? 'var(--ink)' : 'var(--ink-2)'}; font-weight: ${on ? 700 : 400}`,
+          chev: `transition: transform .18s; transform: rotate(${on && dir > 0 ? 180 : 0}deg); opacity: ${on ? 1 : 0.35}` };
+      }),
+      cardMine: figures.map(p => ({ label: p.name, on: st.mine[p.id] ? 'true' : 'false', pick: () => this.setState({ mine: Object.assign({}, st.mine, { [p.id]: !st.mine[p.id] }) }) })),
+      sel, mineDots, hasMine: mineDots.length > 0, mineLabel, mineOpts, noMine: !figures.length,
+      mineOpen: st.mineOpen, mineOn: st.mineOpen ? 'true' : 'false', mineRot: st.mineOpen ? '180deg' : '0deg',
+      toggleMine: () => this.setState({ mineOpen: !st.mineOpen }),
+      mineBlur: e => { if (!e.currentTarget.contains(e.relatedTarget)) this.setState({ mineOpen: false }); },
+      mineKey: e => { if (e.key === 'Escape') this.setState({ mineOpen: false }); },
+      createPortfolio: () => { window.location.assign('/portfolio/new'); }
+    };
+  }
+}
+</script>
+</body>
+</html>

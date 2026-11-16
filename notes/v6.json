@@ -1,0 +1,172 @@
+{
+ "id": "v6",
+ "name": "FX value investing",
+ "heading": "The Structural Opportunity: Slow Currency Mispricing",
+ "caseLead": "The investment case rests on the tendency of currencies to move back towards purchasing power parity because sustained price differences eventually alter trade flows, investment and corporate sourcing. The opportunity persists because monetary policy, capital controls, reserve management and geopolitical risk can keep exchange rates away from fair value for years, while many investors cannot tolerate the interim losses.",
+ "caseRest": "The main risk is that an undervalued currency becomes cheaper when growth weakens, capital leaves or policy credibility deteriorates. Short-term losses can be large because safe-haven demand and interest-rate differences dominate relative prices during crises, even when the long-term valuation signal remains intact. The tested strategy returned 6.1% a year with 7.4% volatility, but its 14.0% worst fall and -0.1 return skew show that convergence is neither steady nor timely.",
+ "figNote": "The large figure on each card shows the estimated return of a diversified purchasing power parity currency basket during the episode. Positive figures indicate that undervalued currencies rose against expensive currencies, while negative figures indicate that valuation gaps widened.",
+ "events": [
+  {
+   "date": "October 2008",
+   "theme": "Funding crisis",
+   "fig": "−10.5%",
+   "effect": "down",
+   "title": "Dollar demand overwhelms currency valuations",
+   "text": "The strategy lost as banks and companies bought dollars to meet funding needs, driving several undervalued currencies lower. Purchasing power parity offered little protection because liquidity demand dominated trade and inflation fundamentals."
+  },
+  {
+   "date": "January 2015",
+   "theme": "Monetary policy",
+   "fig": "−4.5%",
+   "effect": "down",
+   "title": "Swiss franc cap removal breaks valuation signals",
+   "text": "The strategy lost when the Swiss National Bank ended its euro exchange-rate ceiling and the franc rose sharply. Short franc exposure based on its high valuation was overwhelmed by forced position closures and safe-haven demand."
+  },
+  {
+   "date": "January 2017",
+   "theme": "Fiscal policy",
+   "fig": "+2.7%",
+   "effect": "up",
+   "title": "Dollar rally reverses after policy repricing",
+   "text": "The strategy gained as the post-election dollar rally reversed and cheaper developed-market currencies recovered. Expectations for rapid US fiscal stimulus had pushed the dollar further above purchasing power parity than subsequent policy progress justified."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−14.0%",
+   "effect": "down",
+   "title": "Global funding stress drives dollar surge",
+   "text": "The strategy suffered its worst loss as the pandemic triggered demand for dollars and liquidation across emerging markets. Undervalued currencies fell further because investors prioritised liquidity and balance-sheet protection over long-term purchasing power."
+  },
+  {
+   "date": "February 2022",
+   "theme": "War",
+   "fig": "−3.6%",
+   "effect": "down",
+   "title": "Ukraine invasion widens European valuation gaps",
+   "text": "The strategy lost as Russia’s invasion raised European energy costs and strengthened the dollar through safe-haven demand. Cheap European currencies weakened further because the region faced a larger deterioration in trade and growth prospects."
+  },
+  {
+   "date": "August 2024",
+   "theme": "Monetary policy",
+   "fig": "+5.2%",
+   "effect": "up",
+   "title": "Yen rebound closes a deep valuation gap",
+   "text": "The strategy gained as tighter Bank of Japan policy and softer US rate expectations supported the deeply undervalued yen. The move reduced a prolonged purchasing power gap that had widened under large interest-rate differences."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "G10 and liquid emerging-market currency forwards; one to three months to maturity; rolled monthly",
+ "rules": "Currencies ranked by purchasing power parity deviation; cheapest currencies bought and most expensive sold; inflation and policy credibility filters applied",
+ "costs": "Estimated forward spreads, bid-ask costs and emerging-market transaction charges deducted at each roll",
+ "constructionTitle": "Strategy construction, from valuation gaps to diversified currency exposure",
+ "legs": [
+  {
+   "position": "Long cheapest currency group",
+   "instrument": "Deliverable FX forwards",
+   "purpose": "Captures appreciation towards fair value",
+   "allocation": "40% gross"
+  },
+  {
+   "position": "Short most expensive currency group",
+   "instrument": "Deliverable FX forwards",
+   "purpose": "Captures depreciation towards fair value",
+   "allocation": "40% gross"
+  },
+  {
+   "position": "Emerging-market value sleeve",
+   "instrument": "Non-deliverable FX forwards",
+   "purpose": "Broadens the valuation opportunity set",
+   "allocation": "10% gross"
+  },
+  {
+   "position": "Cash collateral",
+   "instrument": "Short-term government bills",
+   "purpose": "Supports margin and limits funding risk",
+   "allocation": "10%"
+  }
+ ],
+ "entry": "Open exposure when the valuation gap exceeds 10% and ranks in the cheapest or most expensive quintile",
+ "size": "Set each currency by volatility, with country exposure capped at 15% of portfolio risk",
+ "exit": "Close when the valuation gap enters the middle two quintiles",
+ "stop": "Reduce a currency by half after a 12% adverse move or material policy deterioration",
+ "marketWatch": "Relative inflation, trade balances and real interest-rate differences matter because they determine whether purchasing power gaps are beginning to close. Central bank decisions, currency intervention, tariffs and capital controls matter because they can either start convergence or extend a misvaluation for several years.",
+ "favourable": [
+  {
+   "heading": "Inflation gaps narrow",
+   "text": "Converging inflation favours the strategy because it stabilises relative purchasing power and allows an undervalued currency to recover without losing its cost advantage. The yen’s rebound in August 2024 followed this pattern as Japanese inflation and wages supported tighter monetary policy."
+  },
+  {
+   "heading": "Expensive dollar loses support",
+   "text": "Lower US rate support favours the strategy because capital shifts away from the dollar towards cheaper currencies with improving external balances. The reversal of the post-election dollar rally in early 2017 generated gains as stretched valuation gaps began to close."
+  },
+  {
+   "heading": "Trade balances drive convergence",
+   "text": "Improving trade balances favour undervalued currencies because export competitiveness raises foreign demand and supports domestic income. Several European currencies recovered after the euro-area debt crisis as external deficits narrowed and financial conditions stabilised."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Dollar funding demand surges",
+   "text": "Global funding stress hurts the strategy because investors buy liquid dollars regardless of purchasing power, pushing cheap currencies further below fair value. This mechanism produced the strategy’s largest loss during the March 2020 pandemic shock."
+  },
+  {
+   "heading": "Policy credibility deteriorates",
+   "text": "Weak policy credibility hurts the strategy because high inflation and capital flight can offset an apparently attractive valuation for years. The Turkish lira repeatedly demonstrated this risk as monetary easing continued despite severe domestic inflation."
+  },
+  {
+   "heading": "Interest-rate gaps keep widening",
+   "text": "Wider interest-rate gaps hurt the strategy because investors continue funding positions in low-yielding currencies even when those currencies are deeply undervalued. The yen weakened through much of 2022 as US rates rose rapidly while Japanese policy remained highly accommodative."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -14
+  },
+  {
+   "name": "Global funding crisis, Oct 2008",
+   "value": -10.5
+  },
+  {
+   "name": "Dollar surge, Sep 2022",
+   "value": -6.8
+  },
+  {
+   "name": "Swiss franc break, Jan 2015",
+   "value": -4.5
+  },
+  {
+   "name": "Yen rebound, Aug 2024",
+   "value": 5.2
+  }
+ ],
+ "ahead": [
+  -6.4,
+  1.3,
+  -1.8,
+  2.7
+ ],
+ "infoHist": "Historical results show the strategy’s estimated return during each event using monthly purchasing power parity ranks and the default portfolio rules above. Each event window begins before the main currency move and ends when exchange rates or policy expectations stabilise.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn’s scenario engine projects moves in exchange rates, inflation expectations and interest-rate differences, then applies them to a diversified long-short currency basket.",
+ "altTitle": "Where Else Can Investors Find FX Returns?",
+ "related": [
+  {
+   "id": "m4",
+   "why": "Follows established exchange-rate trends rather than fair value. Bears reversal risk when currency momentum changes abruptly.",
+   "cue": "Adds a price-based FX signal"
+  },
+  {
+   "id": "c1",
+   "why": "Earns interest-rate differences between currencies. Bears crash risk when funding currencies rise during market stress.",
+   "cue": "Uses yields rather than valuation"
+  },
+  {
+   "id": "s6",
+   "why": "Earns the gap between implied and realised currency volatility. Bears losses when exchange rates move beyond option pricing.",
+   "cue": "Harvests volatility within the same market"
+  }
+ ]
+}

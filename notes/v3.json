@@ -1,0 +1,166 @@
+{
+ "id": "v3",
+ "name": "Value factor investing",
+ "heading": "The Structural Opportunity: Compensation for Investor Extrapolation",
+ "caseLead": "The investment case rests on the tendency of investors to extrapolate strong growth too far into the future and neglect companies with weak recent results, leaving cheaper shares priced for outcomes that are easier to exceed. The premium persists because career risk discourages managers from holding unpopular companies, while regulation, industrial policy and geopolitical change repeatedly shift earnings towards previously discounted sectors.",
+ "caseRest": "The main risk is that cheap companies remain cheap because their business models, balance sheets or industries are deteriorating rather than temporarily out of favour. Value can also underperform for many years when falling interest rates and rapid technological change support long-duration growth shares, so investors may leave before the premium recovers. Negative return skew compounds this timing risk because recessions often expose financial leverage and weak margins across value-heavy sectors at the same time.",
+ "figNote": "The large figure on each card shows the calendar-year return of the MSCI World Value Index relative to the MSCI World Growth Index, rounded to the nearest percentage point. A positive figure means value outperformed growth, while a negative figure means the value tilt detracted from relative returns.",
+ "events": [
+  {
+   "date": "December 2008",
+   "theme": "Financial crisis",
+   "fig": "−7pp",
+   "effect": "down",
+   "title": "Bank losses overwhelm cheap shares",
+   "text": "Value shares underperformed as bank losses, funding stress and collapsing commodity demand concentrated damage in already cheap sectors. The strategy lost because low valuations did not compensate for falling earnings and forced capital raising."
+  },
+  {
+   "date": "December 2016",
+   "theme": "Fiscal policy",
+   "fig": "+4pp",
+   "effect": "up",
+   "title": "Fiscal reflation revives value shares",
+   "text": "Value outperformed after the US election raised expectations for tax cuts, infrastructure spending and lighter financial regulation. The strategy gained because bond yields rose and investors upgraded earnings expectations for banks, energy producers and industrial companies."
+  },
+  {
+   "date": "December 2018",
+   "theme": "Trade policy",
+   "fig": "−6pp",
+   "effect": "down",
+   "title": "Trade conflict favours defensive growth",
+   "text": "Value underperformed as US-China tariffs weakened manufacturing activity and raised concern about global demand. The strategy lost because industrial, financial and commodity shares faced falling earnings estimates, while large technology companies retained stronger growth."
+  },
+  {
+   "date": "December 2020",
+   "theme": "Pandemic",
+   "fig": "−34pp",
+   "effect": "down",
+   "title": "Pandemic policy widens the growth premium",
+   "text": "Value recorded exceptional relative losses as lockdowns damaged banks, energy producers and consumer-facing companies. The strategy underperformed because monetary stimulus lowered discount rates while remote working accelerated earnings growth for technology and internet businesses."
+  },
+  {
+   "date": "December 2022",
+   "theme": "War",
+   "fig": "+21pp",
+   "effect": "up",
+   "title": "Inflation and war reverse growth leadership",
+   "text": "Value strongly outperformed as Russia’s invasion of Ukraine lifted energy prices and central banks raised rates to contain inflation. The strategy gained because energy and financial earnings improved while higher discount rates reduced the value of distant growth profits."
+  },
+  {
+   "date": "December 2023",
+   "theme": "Technology",
+   "fig": "−18pp",
+   "effect": "down",
+   "title": "Artificial intelligence restores growth leadership",
+   "text": "Value underperformed as enthusiasm for artificial intelligence concentrated market gains in a small group of expensive technology companies. The strategy lost relative ground because earnings upgrades and rising index weights outweighed concerns about high valuations."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Low-cost global value equity ETFs and index funds; developed and emerging markets",
+ "rules": "Hold a diversified market portfolio with a persistent value tilt; screen on earnings, book value and cash flow; rebalance annually",
+ "costs": "Fund fees, bid-ask spreads and estimated taxes on index rebalancing deducted",
+ "constructionTitle": "Strategy construction, from valuation discounts to broad diversification",
+ "legs": [
+  {
+   "position": "Core global equity allocation",
+   "instrument": "Global market-cap equity ETF",
+   "purpose": "Maintains broad market and sector exposure",
+   "allocation": "65%"
+  },
+  {
+   "position": "Developed-market value tilt",
+   "instrument": "Developed-market value ETF",
+   "purpose": "Captures discounts across established equity markets",
+   "allocation": "25%"
+  },
+  {
+   "position": "Emerging-market value tilt",
+   "instrument": "Emerging-market value ETF",
+   "purpose": "Broadens exposure to cheaper companies and currencies",
+   "allocation": "10%"
+  }
+ ],
+ "entry": "Allocate at the annual rebalance and maintain the tilt through the cycle",
+ "size": "Value funds limited to 35% of the portfolio, diversified across regions and sectors",
+ "exit": "Rebalance annually and replace funds that lose liquidity or depart from their stated index",
+ "stop": "No price stop; reduce exposure if leverage, liquidity or sector concentration breaches portfolio limits",
+ "marketWatch": "Value spreads, earnings revisions and market concentration indicate whether cheap shares offer compensation for weaker fundamentals. Central bank decisions, fiscal policy, trade restrictions and energy supply changes matter because they can shift rates, margins and sector leadership. Major technology earnings also matter because further index concentration would favour growth over value.",
+ "favourable": [
+  {
+   "heading": "Rates rise with nominal growth",
+   "text": "Higher rates favour value when they reflect stronger nominal activity because bank margins, commodity revenues and industrial earnings tend to improve. This combination supported value after the 2016 US election and during much of 2022."
+  },
+  {
+   "heading": "Market leadership broadens",
+   "text": "Broader earnings growth favours value because returns become less dependent on a small group of highly valued companies. The vaccine announcements in November 2020 began such a rotation as banks, travel companies and manufacturers recovered."
+  },
+  {
+   "heading": "Industrial policy lifts investment",
+   "text": "Public investment favours value when subsidies and infrastructure spending raise order backlogs for manufacturers, materials companies and utilities. US and European energy-security programmes after Russia’s 2022 invasion supported capital spending across several value-heavy sectors."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Falling rates favour growth",
+   "text": "Lower discount rates hurt value when investors pay more for distant earnings and favour companies with limited near-term cash flow. This mechanism contributed to value’s prolonged underperformance during the low-rate period before 2021."
+  },
+  {
+   "heading": "Cheap sectors face disruption",
+   "text": "Technological disruption hurts value when low multiples reflect a lasting decline in demand, margins or market share. Traditional retailers and media companies provided repeated examples during the 2010s as online platforms captured revenue."
+  },
+  {
+   "heading": "Recessions expose weak balance sheets",
+   "text": "Recessions hurt value when leveraged companies face falling revenue, tighter credit and pressure to issue equity. Financial and energy shares suffered this combination during March 2020, producing the strategy’s deepest drawdown in the test period."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -34
+  },
+  {
+   "name": "Euro crisis, Aug 2011",
+   "value": -18
+  },
+  {
+   "name": "China devaluation, Aug 2015",
+   "value": -13
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -16
+  },
+  {
+   "name": "Rate shock, Jan-Oct 2022",
+   "value": -15
+  }
+ ],
+ "ahead": [
+  -12.5,
+  -3,
+  -1.2,
+  2.8
+ ],
+ "infoHist": "Historical results show the strategy’s peak-to-trough return during each event using monthly total returns for representative global market and value indices at the allocations above. Returns include dividends and estimated fund costs but exclude investor-specific taxes.",
+ "infoForward": "Scenario results show the estimated portfolio return over the first month of each scenario. Rehyn’s scenario engine projects regional equity markets, sector earnings, interest rates, currencies and commodity prices, then applies those moves to the strategy’s value and core exposures.",
+ "altTitle": "Where Else Can Investors Find Equity Factor Returns?",
+ "related": [
+  {
+   "id": "m2",
+   "why": "Follows relative price strength rather than cheapness. It bears reversal risk after crowded trends.",
+   "cue": "Complements value across leadership cycles"
+  },
+  {
+   "id": "i4",
+   "why": "Emphasises durable dividends rather than low multiples. It bears equity and payout-cut risk.",
+   "cue": "Adds income and balance-sheet discipline"
+  },
+  {
+   "id": "d5",
+   "why": "Selects lower-risk shares rather than cheaper shares. It bears valuation risk when defensive stocks become expensive.",
+   "cue": "Reduces exposure to value drawdowns"
+  }
+ ]
+}

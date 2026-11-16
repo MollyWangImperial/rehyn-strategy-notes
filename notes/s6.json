@@ -1,0 +1,172 @@
+{
+ "id": "s6",
+ "name": "FX volatility carry trade",
+ "heading": "The Structural Opportunity: Selling Currency Volatility Premium",
+ "caseLead": "The investment case rests on currency options usually pricing larger exchange rate moves than the major currencies deliver, so a seller of options earns the premium when markets stay within a range. The premium persists because exporters, global investors and banks buy currency options to hedge exposures at almost any price, while central banks often act to slow disorderly moves and political and policy tensions keep demand for protection high even though most do not change the exchange rate.",
+ "caseRest": "The main risk is a sudden exchange rate move that exceeds what the options imply, because losses then build faster than premium is earned. Such moves often follow central bank decisions, such as the Swiss National Bank's removal of its exchange rate floor in January 2015, and can leave no time to adjust hedges. Rehyn estimates that a single episode can erase many months of premium, so the strategy's smooth monthly returns understate the risk of rare losses.",
+ "figNote": "The large figure on each card shows the move in the main exchange rate from its level before the event to its low or high during the episode. Currency option sellers earn premium when moves are small and lose when the exchange rate moves by more than the options imply.",
+ "events": [
+  {
+   "date": "July 2012",
+   "theme": "Central bank",
+   "fig": "+2%",
+   "effect": "up",
+   "title": "ECB pledge to defend the euro calms markets",
+   "text": "ECB President Mario Draghi pledged on 26 July 2012 to do whatever it takes to preserve the euro, and the euro rose about 2% against the US dollar. The strategy gained because implied volatility fell as the threat of a breakup receded."
+  },
+  {
+   "date": "January 2015",
+   "theme": "Central bank",
+   "fig": "−29%",
+   "effect": "down",
+   "title": "Swiss National Bank removes the franc floor",
+   "text": "The Swiss National Bank removed its floor of 1.20 francs per euro on 15 January 2015, and the euro fell as much as 29% against the franc. The strategy lost because the exchange rate moved far beyond the range priced into options."
+  },
+  {
+   "date": "June 2016",
+   "theme": "Referendum",
+   "fig": "−11%",
+   "effect": "down",
+   "title": "UK vote to leave the European Union",
+   "text": "The UK vote of 23 June 2016 to leave the European Union cut the pound's value against the US dollar by about 11% within hours. The strategy lost because the move was far larger than the daily range priced into options."
+  },
+  {
+   "date": "October 2017",
+   "theme": "Political risk",
+   "fig": "−1%",
+   "effect": "up",
+   "title": "Catalan vote leaves the euro little changed",
+   "text": "The Catalan independence vote and the Spanish government's response in October 2017 raised political risk in Europe, yet the euro fell only about 1% against the US dollar. The strategy gained because the premium on euro options was larger than the movement that followed."
+  },
+  {
+   "date": "August 2024",
+   "theme": "Carry trade",
+   "fig": "−12%",
+   "effect": "mid",
+   "title": "Bank of Japan rate rise unwinds yen trades",
+   "text": "A Bank of Japan rate rise forced yen-funded trades to close, and the US dollar fell about 12% against the yen from its July high to 5 August 2024. Results were mixed because a rebound over the following weeks recovered part of the loss."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "+6%",
+   "effect": "down",
+   "title": "US tariffs trigger a slide in the dollar",
+   "text": "The April 2025 announcement of sweeping US tariffs led investors to sell dollar assets, and the euro rose about 6% against the US dollar within three weeks. The strategy lost because realised volatility in the main pairs rose above the level priced into options."
+  }
+ ],
+ "worstWhen": "January 2015",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Options on G10 currency pairs, mainly EUR/USD, USD/JPY and GBP/USD; one to three months to expiry; hedged daily in spot",
+ "rules": "Strangles sold when one-month implied volatility exceeds realised volatility by at least 1.5 points; wings bought against tail moves; positions delta hedged each day",
+ "costs": "Estimated bid-ask spreads on options and spot hedges deducted at each trade",
+ "constructionTitle": "Strategy construction, from volatility premium to tail protection",
+ "legs": [
+  {
+   "position": "Short strangle, 1 month, 15 delta",
+   "instrument": "G10 currency options",
+   "purpose": "Earns the premium priced into currency volatility",
+   "allocation": "30% margin"
+  },
+  {
+   "position": "Long out-of-the-money options, 5 delta",
+   "instrument": "G10 currency options",
+   "purpose": "Limits losses when an exchange rate gaps",
+   "allocation": "3%"
+  },
+  {
+   "position": "Delta hedge",
+   "instrument": "Spot currency and forwards",
+   "purpose": "Removes directional exposure to the exchange rate",
+   "allocation": "5% margin"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "62%"
+  }
+ ],
+ "entry": "One-month implied volatility at least 1.5 points above realised volatility",
+ "size": "Set to a 6% annualised volatility target; no single pair above 40% of risk",
+ "exit": "Closed at 60% of premium collected, or 10 days before expiry",
+ "stop": "A pair is closed if it moves by more than three daily standard deviations in one day",
+ "marketWatch": "The gap between implied and realised volatility in the main currency pairs is the main indicator for this strategy now. Central bank decisions, trade announcements and political votes matter because exchange rates can move by more than the options imply in a single session. Rehyn also watches positioning in funding currencies, since a rapid unwinding of carry trades has produced the largest moves.",
+ "favourable": [
+  {
+   "heading": "Central bank backstops reduce volatility",
+   "text": "Credible central bank support favours the strategy because it lowers the chance of large moves and lets implied volatility fall. After President Draghi's pledge in July 2012, the euro rose only about 2% against the US dollar and option prices declined."
+  },
+  {
+   "heading": "Political risk with contained moves",
+   "text": "Political tension that stays within a narrow range favours the strategy because option buyers pay for protection that is not used. Around the Catalan independence vote in October 2017, the euro fell only about 1% against the US dollar."
+  },
+  {
+   "heading": "Range-bound markets with stable policy",
+   "text": "Stable monetary policy favours the strategy because exchange rates then stay inside the range implied by options. Much of 2017 and 2019 followed this pattern, with EUR/USD implied volatility near multi-year lows."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Central bank policy reversals",
+   "text": "A sudden change in central bank policy hurts the strategy because the exchange rate can gap before option sellers adjust hedges. In January 2015 the euro fell as much as 29% against the Swiss franc after the Swiss National Bank removed its floor."
+  },
+  {
+   "heading": "Binary political outcomes",
+   "text": "Political votes with a clear either-or result hurt the strategy because the exchange rate moves in one step rather than gradually. After the UK referendum in June 2016 the pound fell about 11% against the US dollar within hours."
+  },
+  {
+   "heading": "Forced unwinding of carry positions",
+   "text": "Rapid unwinding of currency carry positions hurts the strategy because borrowed currencies rise quickly when investors close trades together. In August 2024 the US dollar fell about 12% against the yen from its July high to 5 August as yen-funded positions were closed."
+  }
+ ],
+ "past": [
+  {
+   "name": "Swiss franc shock, Jan 2015",
+   "value": -9
+  },
+  {
+   "name": "Brexit vote, Jun 2016",
+   "value": -4
+  },
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -6
+  },
+  {
+   "name": "Yen unwind, Aug 2024",
+   "value": -3
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -4
+  }
+ ],
+ "ahead": [
+  -7.8,
+  -1.1,
+  -0.4,
+  -0.9
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, using monthly G10 currency option returns including delta hedging. Each event window runs from the last strategy high before the shock to the subsequent low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in G10 exchange rates and implied currency volatility, which are then applied to the strategy's current option positions.",
+ "altTitle": "Where Else Can Investors Find Currency Volatility Returns?",
+ "related": [
+  {
+   "id": "c1",
+   "why": "Earns the interest rate gap between currencies rather than option premium. Bears sudden reversals when funding currencies rise.",
+   "cue": "Same currencies, different source of return"
+  },
+  {
+   "id": "m4",
+   "why": "Follows persistent exchange rate trends using spot and futures. Bears reversals, losing when trends stall.",
+   "cue": "Tends to gain in large currency moves"
+  },
+  {
+   "id": "d3",
+   "why": "Holds the yen and Swiss franc, which tend to rise in stress. Bears low yields in calm markets.",
+   "cue": "Offsets this strategy's stress losses"
+  }
+ ]
+}

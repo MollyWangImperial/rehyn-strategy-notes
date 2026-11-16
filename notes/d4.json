@@ -1,0 +1,166 @@
+{
+ "id": "d4",
+ "name": "Long volatility hedging",
+ "heading": "The Structural Opportunity: Profiting from Volatility Spikes",
+ "caseLead": "The investment case rests on the tendency of VIX futures to rise sharply and quickly when equity markets fall, which gives the portfolio a payoff that grows faster than the loss in the index. The opportunity persists because volatility is more likely to jump than to fall steadily, and because geopolitical and policy events, such as tariff announcements and central bank surprises, can lift expected volatility within hours.",
+ "caseRest": "The main risk is the cost of holding the position, because VIX futures usually trade above the spot index and lose value as they approach expiry. This roll cost accumulates in calm markets, so the strategy can lose money for years before a spike offsets the losses. As a result, the hedge is effective only if the portfolio can tolerate steady losses and the size is kept small.",
+ "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "events": [
+  {
+   "date": "August 2011",
+   "theme": "Credit rating",
+   "fig": "48",
+   "effect": "up",
+   "title": "US downgrade lifts volatility futures sharply",
+   "text": "The US credit rating downgrade and euro area debt worries lifted the VIX to a 48 close in August 2011. The strategy gained because VIX futures rose sharply as investors bought protection against further falls in the S&P 500."
+  },
+  {
+   "date": "June 2013",
+   "theme": "Fed policy",
+   "fig": "20",
+   "effect": "down",
+   "title": "Fed tapering talk fails to sustain volatility",
+   "text": "Signals in June 2013 that the Fed would slow bond purchases lifted bond yields and raised the VIX to a 20 close. The strategy lost because the rise was brief and the monthly roll cost outweighed the gain."
+  },
+  {
+   "date": "August 2015",
+   "theme": "China policy",
+   "fig": "41",
+   "effect": "up",
+   "title": "China devaluation triggers a global sell-off",
+   "text": "The August 2015 yuan devaluation and fears of a Chinese slowdown caused a global sell-off, and the VIX closed at 41 on 24 August. The strategy gained because VIX futures rose sharply as the S&P 500 fell about 11 per cent in six sessions."
+  },
+  {
+   "date": "February 2018",
+   "theme": "Market structure",
+   "fig": "37",
+   "effect": "up",
+   "title": "Short volatility funds close and the VIX doubles",
+   "text": "A rise in US bond yields forced short volatility funds to buy back futures, and the VIX rose from 17 to 37 in a single session in February 2018. The strategy gained because the futures it held rose sharply as the funds bought them."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "83",
+   "effect": "up",
+   "title": "Covid sell-off sends the VIX to a record",
+   "text": "Covid lockdowns in March 2020 cut the S&P 500 by about 34 per cent in 23 trading days, lifting the VIX to an 83 close. The strategy gained strongly because VIX futures rose several times in value within four weeks."
+  },
+  {
+   "date": "August 2024",
+   "theme": "Carry trade",
+   "fig": "39",
+   "effect": "mid",
+   "title": "Yen carry unwind lifts the VIX briefly",
+   "text": "A Bank of Japan rate rise and weak US jobs data unwound yen-funded trades, and the VIX closed at 39 on 5 August 2024. Results were mixed because the VIX fell back within days and futures rose far less than the spot index."
+  }
+ ],
+ "worstWhen": "January 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "VIX futures; first and second month contracts; rolled monthly",
+ "rules": "Futures bought when the curve premium over spot is below 5%; size cut when the premium exceeds 10%; positions rolled five days before expiry",
+ "costs": "Estimated bid-ask spreads and commissions deducted at each roll, with roll cost included",
+ "constructionTitle": "Strategy construction, from volatility spikes to roll cost control",
+ "legs": [
+  {
+   "position": "Long first and second month futures",
+   "instrument": "VIX futures",
+   "purpose": "Gains when volatility rises",
+   "allocation": "7%"
+  },
+  {
+   "position": "Call spread, 30 days, 25 and 40 strikes",
+   "instrument": "VIX options",
+   "purpose": "Adds payoff in a large spike at limited cost",
+   "allocation": "1%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides margin and earns the cash rate",
+   "allocation": "92%"
+  }
+ ],
+ "entry": "Futures bought when the curve premium over spot is below 5%",
+ "size": "Set to a 14% annualised volatility target",
+ "exit": "Futures rolled five days before expiry or sold when the VIX closes above 40",
+ "stop": "Position halved if the curve premium exceeds 10%",
+ "marketWatch": "The slope of the VIX futures curve, the gap between implied and realised volatility and the amount of short volatility positioning are the main indicators. A steep curve raises the roll cost of holding futures, while a flat curve lowers it. Scheduled central bank meetings and trade policy announcements can change the curve within a day.",
+ "favourable": [
+  {
+   "heading": "Sudden equity sell-offs",
+   "text": "Sharp falls in the S&P 500 favour the strategy because implied volatility rises faster than the index falls. In March 2020 the VIX rose from about 15 to above 80 in four weeks, and VIX futures rose several times in value."
+  },
+  {
+   "heading": "Crowded short volatility positions",
+   "text": "Large short volatility positions favour the strategy because forced buying adds to the move when the VIX rises. In February 2018 the VIX rose from 17 to 37 in a single session as short volatility funds bought back futures."
+  },
+  {
+   "heading": "Unexpected policy announcements",
+   "text": "Unexpected policy announcements favour the strategy because they raise implied volatility before investors can reduce risk. The April 2025 tariff announcement lifted the VIX to a 52 close within a week."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Calm markets with a steep curve",
+   "text": "A steep futures curve hurts the strategy because each contract loses value as it approaches expiry if the spot index stays low. In 2017 the VIX closed below 10 on many days, and long VIX futures positions lost value every month."
+  },
+  {
+   "heading": "Brief spikes that reverse",
+   "text": "Short spikes hurt the strategy because futures rise by less than the spot index and give up the gain once the spike reverses. In August 2024 the VIX closed at 39 on 5 August and fell below 20 within two weeks."
+  },
+  {
+   "heading": "Central bank support lowers volatility",
+   "text": "Credible central bank support hurts the strategy because it reduces expected volatility for long periods. After the ECB pledged in July 2012 to do whatever it takes to preserve the euro, the VIX stayed mostly between 12 and 20 over the next two years."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": 22
+  },
+  {
+   "name": "Volatility spike, Feb 2018",
+   "value": 14
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": 10
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": 6
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": 8
+  }
+ ],
+ "ahead": [
+  19,
+  1.5,
+  -0.4,
+  -0.8
+ ],
+ "infoHist": "Historical results show the strategy's return over each event window, measured from the last market high before the shock to the market low using the default backtest parameters above. Positive figures mean the futures gained as volatility rose.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in the S&P 500 and the VIX futures curve, which are then applied to the strategy's current futures and option positions.",
+ "altTitle": "Where Else Can Investors Find Volatility Protection?",
+ "related": [
+  {
+   "id": "d1",
+   "why": "Holds index puts rather than futures. Bears premium cost, paying in calm markets and gaining in a crash.",
+   "cue": "Similar protection through options"
+  },
+  {
+   "id": "s3",
+   "why": "Sells VIX futures to earn roll yield. Bears spike risk, losing sharply in sell-offs.",
+   "cue": "Takes the opposite side of this strategy"
+  },
+  {
+   "id": "d6",
+   "why": "Holds long-dated Treasuries, which tend to rise as stocks fall. Bears inflation risk, losing when stocks and bonds fall together.",
+   "cue": "Hedges through bonds, not volatility"
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "id": "i5",
+ "name": "Covered call writing",
+ "heading": "The Structural Opportunity: Earning Equity Option Premium",
+ "caseLead": "The investment case rests on the tendency of call options on shares and stock indices to be priced above the volatility that the market ultimately delivers, so call sellers collect a premium on top of the dividend yield. The premium persists because investors pay for upside and protection, and geopolitical and policy uncertainty keep demand for options strong even in years when the market moves little.",
+ "caseRest": "The main risk is that the strategy keeps most of the fall in share prices but gives up most of the gain in strong rallies. The premium collected covers only a small part of a large sell-off, as in March 2020 when shares fell about 34% in five weeks. Rebounds after sell-offs also cap returns, because calls sold at lower prices are exercised when the market recovers.",
+ "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "events": [
+  {
+   "date": "October 2008",
+   "theme": "Financial crisis",
+   "fig": "80",
+   "effect": "down",
+   "title": "Bank failures send equities sharply lower",
+   "text": "The Lehman Brothers collapse lifted the VIX to an 80 close in October 2008, and the S&P 500 fell about 17% over the month. The strategy lost because the call premium covered only a small part of the fall in the shares."
+  },
+  {
+   "date": "August 2011",
+   "theme": "Credit rating",
+   "fig": "48",
+   "effect": "mid",
+   "title": "US downgrade lifts implied volatility sharply",
+   "text": "The US credit rating downgrade and the euro area debt crisis lifted the VIX to a 48 close in August 2011. Results were mixed because high implied volatility raised call premiums, but the shares fell and the strategy gave up part of that income."
+  },
+  {
+   "date": "June 2016",
+   "theme": "Brexit",
+   "fig": "26",
+   "effect": "up",
+   "title": "Brexit vote causes a brief equity sell-off",
+   "text": "The United Kingdom vote to leave the European Union lifted the VIX to a 26 close in June 2016, and the S&P 500 recovered its losses within two weeks. The strategy gained because the elevated premium was collected while the shares regained their value."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "83",
+   "effect": "down",
+   "title": "Covid sell-off overwhelms call premium",
+   "text": "The VIX reached an 83 close in March 2020 as the S&P 500 fell about 34% in five weeks. The strategy lost heavily because the call premium covered only a small part of the fall."
+  },
+  {
+   "date": "August 2024",
+   "theme": "Carry trade",
+   "fig": "39",
+   "effect": "up",
+   "title": "Yen carry unwind creates rich option premium",
+   "text": "A Bank of Japan rate rise and weak US jobs data unwound yen-funded positions, lifting the VIX to a 39 close in August 2024 before it fell back. The strategy gained because the higher call premium was collected while the S&P 500 recovered within weeks."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "52",
+   "effect": "mid",
+   "title": "US tariffs lift option premium and cut shares",
+   "text": "Sweeping US tariffs lifted the VIX to a 52 close in April 2025 and cut the S&P 500 about 19% from its February high. Results were mixed because the premium cushioned the fall, but the calls capped the sharp rebound that followed."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "S&P 500 shares held through an ETF, with one-month call options; rolled monthly",
+ "rules": "Calls sold 3% to 5% above the share price when implied volatility exceeds realised volatility; call size reduced when the VIX is below 14; calls bought back if the index rises through the strike before expiry",
+ "costs": "Estimated bid-ask spreads and commissions deducted at each roll",
+ "constructionTitle": "Strategy construction, from option premium to downside protection",
+ "legs": [
+  {
+   "position": "Long S&P 500 shares",
+   "instrument": "S&P 500 ETF",
+   "purpose": "Earns equity returns and dividends",
+   "allocation": "90%"
+  },
+  {
+   "position": "Short call options, 30 days, 25 delta",
+   "instrument": "S&P 500 index options",
+   "purpose": "Earns option premium",
+   "allocation": "Overlay on 90%"
+  },
+  {
+   "position": "Put options, 3 months, 10% out of the money",
+   "instrument": "S&P 500 index options",
+   "purpose": "Limits losses in a large sell-off",
+   "allocation": "2%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Holds cash for rebalancing and earns the cash rate",
+   "allocation": "8%"
+  }
+ ],
+ "entry": "Calls sold when implied volatility is at least 2 points above realised volatility",
+ "size": "Calls written on 80% to 100% of shares held",
+ "exit": "Calls bought back at 70% of premium collected, or 5 days before expiry",
+ "stop": "Call writing paused and share weight cut by a third if the index falls 15% from its high",
+ "marketWatch": "Rehyn monitors the gap between one-month implied and realised volatility on the S&P 500, the slope of the volatility surface and the dividend yield, because they set the premium available. Scheduled central bank meetings, tariff announcements and earnings seasons are the events that most often change option prices. A sharp rally would cap returns, while a sustained fall would test how much the premium can cushion.",
+ "favourable": [
+  {
+   "heading": "Range-bound equity markets",
+   "text": "Sideways markets favour the strategy because the calls expire worthless and the premium adds to dividends without capping any gain. In 2015 the S&P 500 was almost flat, and covered call indices outperformed it."
+  },
+  {
+   "heading": "Elevated implied volatility",
+   "text": "High implied volatility favours the strategy because call premiums rise while the shares often stabilise, so the income collected is larger. After the August 2024 volatility spike, the VIX returned below 20 within two weeks and the larger premium was kept."
+  },
+  {
+   "heading": "Short-lived equity sell-offs",
+   "text": "Short-lived falls favour the strategy because the call premium offsets part of the fall and the shares recover before the calls are exercised. After the June 2016 Brexit vote the S&P 500 regained its losses within two weeks, so the strategy kept the premium."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Deep equity sell-offs",
+   "text": "Large falls hurt the strategy because the premium collected is small compared with the loss on the shares, and the calls give no protection below the premium received. In March 2020 the S&P 500 fell about 34% in five weeks, far more than the call premium could offset."
+  },
+  {
+   "heading": "Sharp rallies after a sell-off",
+   "text": "Strong rebounds hurt the strategy because the calls cap the gain at the strike price while the shares continue to rise. After the March 2020 low the S&P 500 rose about 40% in three months, and a covered call portfolio captured only part of the rise."
+  },
+  {
+   "heading": "Rising rates and inflation",
+   "text": "Rising rates hurt the strategy because they lower share valuations, and the premium does not offset a persistent fall, so losses build slowly. In 2022 the S&P 500 fell about 18% and a covered call index fell about 11%, which shows that the cushion was only partial."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -24
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -12
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -9
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": -7.5
+  },
+  {
+   "name": "Volatility spike, Feb 2018",
+   "value": -6
+  }
+ ],
+ "ahead": [
+  -10.5,
+  -1.4,
+  0.3,
+  0.9
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in the S&P 500 and implied volatility, which are then applied to the share holdings and the call options currently written, including the cap on gains.",
+ "altTitle": "Where Else Can Investors Find Option Income?",
+ "related": [
+  {
+   "id": "s1",
+   "why": "Sells index options without owning the shares. Bears crash risk, with large losses when volatility spikes.",
+   "cue": "Same premium, without equity ownership"
+  },
+  {
+   "id": "i4",
+   "why": "Earns dividends from companies with covered payouts. Bears equity price risk and dividend cuts, with no cap on gains.",
+   "cue": "Equity income without a cap on gains"
+  },
+  {
+   "id": "d1",
+   "why": "Buys index options that pay out in a crash. Bears the premium cost, paying in calm years.",
+   "cue": "Provides the protection this strategy lacks"
+  }
+ ]
+}

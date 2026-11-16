@@ -1,0 +1,166 @@
+{
+ "id": "d3",
+ "name": "Safe haven currency allocation",
+ "heading": "The Structural Opportunity: Safe Haven Currency Demand",
+ "caseLead": "The investment case rests on the tendency of the Swiss franc and the Japanese yen to strengthen when investors reduce risk, because both countries run current account surpluses and hold large net foreign assets. The pattern persists because residents bring foreign holdings home in a sell-off and because carry trades funded in yen and francs are closed, which creates demand for both currencies when geopolitical or policy tension increases.",
+ "caseRest": "The main risk is that these currencies can weaken for long periods when interest rates abroad are higher and appetite for risk is strong. Central banks can also lean against strength, as the Swiss National Bank did when it set a floor under EUR/CHF in 2011 and the G7 did when it sold yen in March 2011. The strategy therefore tends to lose steadily in calm markets, because holding low yielding currencies costs the interest rate gap, and the protection it provides is uneven.",
+ "figNote": "The large figure on each card shows the percentage change in USD/JPY, the number of Japanese yen needed to buy one US dollar, over the episode. A negative figure means the yen strengthened against the dollar, which benefits holders of yen.",
+ "events": [
+  {
+   "date": "September 2008",
+   "theme": "Financial crisis",
+   "fig": "−17%",
+   "effect": "up",
+   "title": "Financial crisis forces investors to buy yen",
+   "text": "The unwinding of yen-funded positions after the Lehman Brothers failure in September 2008 pushed USD/JPY down about 17 per cent by December. The strategy gained because the yen strengthened as banks and investors repaid yen loans."
+  },
+  {
+   "date": "March 2011",
+   "theme": "Natural disaster",
+   "fig": "−6%",
+   "effect": "mid",
+   "title": "Japan earthquake lifts the yen to a record",
+   "text": "The March 2011 earthquake in Japan pushed USD/JPY down about 6 per cent to a record low near 76 as insurers were expected to repatriate funds. Results were mixed because the G7 sold yen on 18 March and reversed most of the gain."
+  },
+  {
+   "date": "December 2012",
+   "theme": "Bank of Japan",
+   "fig": "+30%",
+   "effect": "down",
+   "title": "Bank of Japan easing weakens the yen sharply",
+   "text": "Aggressive monetary easing from the new government and the Bank of Japan lifted USD/JPY about 30 per cent between November 2012 and May 2013. The strategy lost because the yen weakened sharply, and haven currencies gave no protection in a rising equity market."
+  },
+  {
+   "date": "June 2016",
+   "theme": "Brexit",
+   "fig": "−7%",
+   "effect": "up",
+   "title": "Brexit vote sends investors into the yen",
+   "text": "The June 2016 vote to leave the European Union drove investors into the yen, and USD/JPY fell about 7 per cent in a day. The strategy gained because both the yen and the Swiss franc strengthened as investors sought safety."
+  },
+  {
+   "date": "March 2022",
+   "theme": "Rate gap",
+   "fig": "+32%",
+   "effect": "down",
+   "title": "Rate gap weakens the yen despite war",
+   "text": "From January to October 2022, USD/JPY rose about 32 per cent as the Fed raised rates while the Bank of Japan capped bond yields. The strategy lost because the yen weakened despite the war in Ukraine, as the rate gap outweighed demand for safety."
+  },
+  {
+   "date": "August 2024",
+   "theme": "Carry trade",
+   "fig": "−12%",
+   "effect": "up",
+   "title": "Yen carry trades unwind after a rate rise",
+   "text": "A Bank of Japan rate rise and weak US jobs data in July 2024 drove USD/JPY down about 12 per cent in five weeks. The strategy gained because the yen strengthened as investors repaid yen loans used for carry trades."
+  }
+ ],
+ "worstWhen": "October 2022",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Swiss franc and Japanese yen forwards against the US dollar; held continuously; rolled monthly",
+ "rules": "Equal weight in the Swiss franc and the yen against the US dollar; exposure raised when the VIX closes above 20 and reduced when it falls below 15",
+ "costs": "Forward points reflecting the interest rate gap, plus estimated spreads, deducted at each roll",
+ "constructionTitle": "Strategy construction, from haven currency demand to cost control",
+ "legs": [
+  {
+   "position": "Long Swiss franc against US dollar",
+   "instrument": "Currency forwards",
+   "purpose": "Gains when investors seek safety",
+   "allocation": "40%"
+  },
+  {
+   "position": "Long Japanese yen against US dollar",
+   "instrument": "Currency forwards",
+   "purpose": "Gains when carry trades are closed",
+   "allocation": "40%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides margin and earns the cash rate",
+   "allocation": "20%"
+  }
+ ],
+ "entry": "Currency exposure added when the VIX closes above 20",
+ "size": "Set to a 7% annualised volatility target",
+ "exit": "Exposure reduced when the VIX stays below 15 for 10 days",
+ "stop": "Either currency position closed after a 5% fall against the dollar in a month",
+ "marketWatch": "The gap between US interest rates and Japanese or Swiss rates, implied volatility on yen and franc options and the VIX are the main indicators. Central bank meetings in the US, Japan and Switzerland matter because a change in guidance can alter both the cost of holding these currencies and the risk of intervention. Rehyn also tracks the size of carry trades funded in yen.",
+ "favourable": [
+  {
+   "heading": "Equity sell-offs and carry unwinds",
+   "text": "Falling equity markets favour the strategy because investors close yen and franc funded positions and buy the currencies back. In August 2024, a Bank of Japan rate rise and weak US jobs data pushed USD/JPY down about 12 per cent in five weeks."
+  },
+  {
+   "heading": "Falling US interest rates",
+   "text": "A narrower interest rate gap favours the strategy because it lowers the cost of holding yen and francs and reduces the incentive to borrow them. In 2008 the Fed cut its policy rate to near zero, and USD/JPY fell about 17 per cent between September and December."
+  },
+  {
+   "heading": "Political shocks in Europe",
+   "text": "Political and financial stress in Europe favours the Swiss franc because investors move funds out of the euro area into Swiss assets. During the euro area debt crisis in 2011, EUR/CHF fell from above 1.25 to near 1.01 before the Swiss National Bank set a floor."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "A wide interest rate gap",
+   "text": "A wide gap between US and Japanese rates hurts the strategy because holders of yen pay the difference through forward points while borrowers sell it. In 2022, USD/JPY rose about 32 per cent as the Fed raised rates and the Bank of Japan kept yields low."
+  },
+  {
+   "heading": "Central bank intervention",
+   "text": "Official action against a strong currency hurts the strategy because it can reverse gains within days. In March 2011 the G7 sold yen after the earthquake, and in September 2011 the Swiss National Bank set a floor under EUR/CHF at 1.20."
+  },
+  {
+   "heading": "Strong risk appetite",
+   "text": "Rising equity markets hurt the strategy because carry trades are rebuilt using the lowest yielding currencies. Between November 2012 and May 2013, USD/JPY rose about 30 per cent while the S&P 500 gained more than 15 per cent."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -1
+  },
+  {
+   "name": "Volatility spike, Feb 2018",
+   "value": 3
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": 6
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": 3
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": 5
+  }
+ ],
+ "ahead": [
+  2.1,
+  -0.9,
+  0.2,
+  1.4
+ ],
+ "infoHist": "Historical results show the strategy's return over each event window, measured from the last market high before the shock to the market low using the default backtest parameters above. Positive figures mean the haven currencies gained against the US dollar.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in the US dollar, the VIX and interest rate gaps, which are then applied to the strategy's current yen and Swiss franc positions.",
+ "altTitle": "Where Else Can Investors Find Safe Haven Returns?",
+ "related": [
+  {
+   "id": "c1",
+   "why": "Borrows low yielding currencies to buy high yielding ones. Bears crash risk, losing when carry trades unwind.",
+   "cue": "Earns carry from the same currencies"
+  },
+  {
+   "id": "d2",
+   "why": "Holds gold as a store of value. Bears real yield risk, losing when yields rise.",
+   "cue": "Safe haven through metal instead of currencies"
+  },
+  {
+   "id": "m4",
+   "why": "Follows exchange rate trends in both directions. Bears reversal risk, losing when trends turn abruptly.",
+   "cue": "Can hold these currencies when they trend"
+  }
+ ]
+}

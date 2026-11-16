@@ -1,0 +1,166 @@
+{
+ "id": "d2",
+ "name": "Strategic gold allocation",
+ "heading": "The Structural Opportunity: Protection Against Currency Debasement",
+ "caseLead": "The investment case rests on the tendency of gold to hold its purchasing power when real interest rates fall, when confidence in government debt weakens or when geopolitical tension rises. The opportunity persists because gold is a store of value that does not depend on any government's debt or currency, and because central banks have increased their gold reserves since sanctions froze Russian foreign currency reserves in 2022.",
+ "caseRest": "The main risk is that gold pays no income, so it loses value when real yields rise or the US dollar strengthens. Gold fell more than 40 per cent between 2011 and 2015, and the strategy can lag equities for years in periods of strong growth. As a result, gold is a diversifier whose protection is uneven and should not be mistaken for a hedge against every kind of market stress.",
+ "figNote": "The large figure on each card shows the gold price in US dollars an ounce at the peak or trough of the episode. Gold rose from about $700 an ounce in late 2008 to above $4,000 in 2025, so each figure should be read against its year.",
+ "events": [
+  {
+   "date": "September 2011",
+   "theme": "Sovereign debt",
+   "fig": "$1,900",
+   "effect": "up",
+   "title": "US downgrade and euro debt fears lift gold",
+   "text": "The US credit rating downgrade in August 2011 and euro area debt worries drove investors into gold, which peaked near 1,900 dollars an ounce in early September. The strategy gained because falling real yields and weaker confidence in government debt raised demand for gold."
+  },
+  {
+   "date": "April 2013",
+   "theme": "Price crash",
+   "fig": "$1,350",
+   "effect": "down",
+   "title": "Gold drops sharply on fund selling",
+   "text": "Gold fell about 13 per cent over two sessions in April 2013 to near 1,350 dollars an ounce as investors sold gold funds. The strategy lost because inflation fears faded and equity markets rose, which reduced demand for gold as a store of value."
+  },
+  {
+   "date": "December 2015",
+   "theme": "Fed policy",
+   "fig": "$1,050",
+   "effect": "down",
+   "title": "Fed rate rise expectations weigh on gold",
+   "text": "Expectations of the Fed's first rate rise since 2006 strengthened the dollar and took gold to a low near 1,050 dollars an ounce in December 2015. The strategy lost because gold pays no income, so higher real yields raise the cost of holding it."
+  },
+  {
+   "date": "August 2020",
+   "theme": "Pandemic",
+   "fig": "$2,075",
+   "effect": "up",
+   "title": "Covid stimulus lifts gold to a record",
+   "text": "Central bank stimulus and falling real yields during the Covid recession lifted gold to a record near 2,075 dollars an ounce in August 2020. The strategy gained because investors sought an asset that does not depend on any government's debt or currency."
+  },
+  {
+   "date": "March 2022",
+   "theme": "War",
+   "fig": "$2,070",
+   "effect": "mid",
+   "title": "Ukraine invasion lifts gold only briefly",
+   "text": "Russia's invasion of Ukraine took gold to about 2,070 dollars an ounce in early March 2022 as investors sought safety. Results were mixed because gold fell back as the Fed began raising rates and real yields rose through the year."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "$3,500",
+   "effect": "up",
+   "title": "US tariffs push gold towards 3,500 dollars",
+   "text": "Broad US tariffs announced in April 2025 raised inflation and growth worries and lifted gold to a record near 3,500 dollars an ounce. The strategy gained because investors and central banks bought gold as a store of value outside the US dollar system."
+  }
+ ],
+ "worstWhen": "December 2015",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Gold-backed funds and gold futures; held continuously; rebalanced quarterly",
+ "rules": "Fixed 90% weight in gold with no market timing; rebalanced when the weight drifts more than 3 points from target",
+ "costs": "Estimated fund fees of 0.4% a year, storage costs and futures roll costs deducted",
+ "constructionTitle": "Strategy construction, from store of value to rebalancing discipline",
+ "legs": [
+  {
+   "position": "Gold-backed fund holding bullion",
+   "instrument": "Gold-backed ETFs",
+   "purpose": "Provides core gold exposure",
+   "allocation": "65%"
+  },
+  {
+   "position": "Long gold futures, nearest contract",
+   "instrument": "COMEX gold futures",
+   "purpose": "Adds gold exposure at lower cost",
+   "allocation": "25%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Holds the cash reserve and margin",
+   "allocation": "10%"
+  }
+ ],
+ "entry": "Gold bought to target weight at the start and at each rebalance",
+ "size": "90% in gold and 10% in cash",
+ "exit": "Gold sold only to restore the target weight",
+ "stop": "No price stop; weight reviewed after a 25% fall from the peak",
+ "marketWatch": "Real yields on inflation-linked Treasuries, the US dollar and central bank gold purchases are the indicators that matter most for gold. Fed meetings, inflation releases, and tariff or sanctions decisions can move all three within days. Rehyn also watches flows into gold-backed funds as a measure of investor demand.",
+ "favourable": [
+  {
+   "heading": "Falling real yields",
+   "text": "Falling real yields favour gold because they reduce the return given up by holding an asset that pays no income. Between 2019 and August 2020, the US ten year real yield fell below zero and gold rose by more than 50 per cent."
+  },
+  {
+   "heading": "Sanctions and reserve diversification",
+   "text": "Sanctions on a government's reserves favour gold because central banks then prefer an asset that cannot be frozen. After Russia's foreign currency reserves were frozen in February 2022, central bank gold purchases in 2022 and 2023 were the highest in decades."
+  },
+  {
+   "heading": "A weaker US dollar",
+   "text": "A weaker dollar favours gold because it makes gold cheaper for buyers using other currencies, which raises demand. In 2017 the dollar index fell about 10 per cent and gold rose about 13 per cent."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Rising real yields",
+   "text": "Rising real yields hurt gold because they raise the return available on cash and bonds, which pay income. Between 2011 and 2015, gold fell more than 40 per cent as the Fed ended asset purchases and prepared to raise rates."
+  },
+  {
+   "heading": "A strong US dollar",
+   "text": "A rising dollar hurts gold because it makes gold more expensive for buyers in other currencies and often accompanies tighter Fed policy. In 2022 the dollar index rose more than 15 per cent between January and September, and gold fell more than 20 per cent from its March high."
+  },
+  {
+   "heading": "Forced selling in a cash crisis",
+   "text": "A rush for cash hurts gold because investors sell liquid assets that have held their value to meet margin calls elsewhere. In March 2020, gold fell more than 10 per cent from its early March high to its low before recovering."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -3
+  },
+  {
+   "name": "Volatility spike, Feb 2018",
+   "value": -2
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": 7
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": 5
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": 2
+  }
+ ],
+ "ahead": [
+  6.5,
+  1.8,
+  0.4,
+  3.2
+ ],
+ "infoHist": "Historical results show the strategy's return over each event window, measured from the last market high before the shock to the market low using the default backtest parameters above. Positive figures mean gold gained while equities fell.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in real yields, the US dollar and the S&P 500, which are then applied to the strategy's current gold positions.",
+ "altTitle": "Where Else Can Investors Find Inflation Protection?",
+ "related": [
+  {
+   "id": "c4",
+   "why": "Holds gold only when real yields are falling. Bears timing risk, missing rallies when yields and gold rise together.",
+   "cue": "Same asset with a real yield signal"
+  },
+  {
+   "id": "d3",
+   "why": "Holds the Swiss franc and Japanese yen. Bears the interest rate gap, lagging when risk assets rally.",
+   "cue": "Safe haven through currencies instead of metal"
+  },
+  {
+   "id": "d6",
+   "why": "Holds long-dated Treasuries. Bears inflation risk, losing when stocks and bonds fall together.",
+   "cue": "Gains from falling yields, not debasement"
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "id": "i7",
+ "name": "Direct lending",
+ "heading": "The Structural Opportunity: Earning the Private Lending Premium",
+ "caseLead": "The investment case rests on the premium that private lenders earn over syndicated loans for lending directly to mid-sized companies that are too small or complex for public bond and loan markets. The premium persists because banks hold less mid-market lending under capital rules, borrowers pay for speed, certainty and a single lender to negotiate with, and trade policy and geopolitical shocks keep banks cautious about riskier credit.",
+ "caseRest": "The main risk is credit losses that build as borrowers with high debt face higher interest payments and weaker earnings. Because the loans are valued infrequently and cannot be sold quickly, reported volatility understates the true risk and losses appear with a delay. A rise in defaults in a recession could therefore reduce returns for several quarters after markets have recovered.",
+ "figNote": "The large figure on each card shows the upper limit of the Federal Reserve's target range for its policy rate at the end of the episode. Direct loans pay a floating rate set above this benchmark, so the policy rate largely determines the base income before the lending margin.",
+ "events": [
+  {
+   "date": "December 2018",
+   "theme": "Rate rise",
+   "fig": "2.5%",
+   "effect": "up",
+   "title": "Loan prices fall while floating coupons rise",
+   "text": "The Federal Reserve raised its policy rate to 2.5% in December 2018, and prices of traded leveraged loans fell as funds faced outflows. The strategy gained because floating coupons rose and private loans were not marked to market prices."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "0.25%",
+   "effect": "down",
+   "title": "Covid cuts rates to zero and raises defaults",
+   "text": "The Federal Reserve cut its policy rate to a range of zero to 0.25% in March 2020, and the leveraged loan default rate rose over the following months as companies lost revenue. The strategy lost because floating coupons fell and some loans were written down."
+  },
+  {
+   "date": "March 2022",
+   "theme": "Rate hikes",
+   "fig": "0.5%",
+   "effect": "up",
+   "title": "Rate rises lift floating loan coupons",
+   "text": "The Federal Reserve began raising rates in March 2022 as energy prices rose after Russia's invasion of Ukraine, and its policy rate reached a 0.25% to 0.5% range. The strategy gained because floating coupons reset higher while most borrowers still covered their interest."
+  },
+  {
+   "date": "March 2023",
+   "theme": "Banking stress",
+   "fig": "5.0%",
+   "effect": "mid",
+   "title": "Bank failures shift lending to private lenders",
+   "text": "The failure of Silicon Valley Bank in March 2023 led banks to tighten lending, and the Federal Reserve raised its policy rate to 5.0%. Results were mixed because lenders earned wider margins on new loans while higher rates strained borrowers' interest cover."
+  },
+  {
+   "date": "September 2024",
+   "theme": "Rate cuts",
+   "fig": "5.0%",
+   "effect": "mid",
+   "title": "Fed starts cutting rates with a large move",
+   "text": "The Federal Reserve cut its policy rate by 50 basis points to 5.0% in September 2024, which reduced the base rate paid on floating loans. Results were mixed because income fell with the base rate while credit quality stayed stable and few borrowers defaulted."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "4.5%",
+   "effect": "mid",
+   "title": "US tariffs raise credit risk for borrowers",
+   "text": "The US tariff announcement of April 2025 pressured margins at manufacturing and retail borrowers, while the policy rate stayed at 4.5%. Results were mixed because floating coupons remained high, but expected defaults rose and lenders widened margins on new loans."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 64 quarterly observations",
+ "instrument": "Senior secured floating-rate loans to mid-sized US and European companies; held to maturity; 3 to 5 years",
+ "rules": "Loans to companies with earnings above 25 million dollars; senior secured with leverage below 5.5 times earnings; at least two financial covenants; no borrower above 3% of the portfolio",
+ "costs": "Estimated management fees, origination costs and expected credit losses deducted from interest income",
+ "constructionTitle": "Strategy construction, from lending margin to credit loss control",
+ "legs": [
+  {
+   "position": "Senior secured unitranche loans",
+   "instrument": "Private floating-rate loans",
+   "purpose": "Earns the base rate plus a margin of 5% to 6%",
+   "allocation": "60%"
+  },
+  {
+   "position": "First lien loans to lower-leverage borrowers",
+   "instrument": "Private floating-rate loans",
+   "purpose": "Adds senior security and lower loss rates",
+   "allocation": "20%"
+  },
+  {
+   "position": "Leveraged loan fund",
+   "instrument": "Syndicated loans",
+   "purpose": "Provides liquidity for redemptions",
+   "allocation": "10%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Holds cash for new loans and fees",
+   "allocation": "10%"
+  }
+ ],
+ "entry": "Margin at least 4.5 points above the base rate; leverage below 5.5 times earnings",
+ "size": "No borrower above 3% and no sector above 15%",
+ "exit": "Held to maturity, or earlier on repayment",
+ "stop": "New lending paused if realised losses exceed 2% of the portfolio in a year",
+ "marketWatch": "Rehyn monitors the margin on new loans over the base rate, leverage and interest cover at borrowers, and the share of loans paying interest in kind, because these show whether the premium covers the credit risk. Central bank rate decisions, bank lending standards and tariff announcements are the events that matter most. Falling policy rates would reduce coupons, while a rise in defaults would test underwriting standards.",
+ "favourable": [
+  {
+   "heading": "Rising short-term interest rates",
+   "text": "Rising policy rates favour the strategy because floating coupons reset higher while the margin over the base rate stays fixed. In 2022 and 2023 the Federal Reserve raised its policy rate by more than 5 percentage points, which lifted the yield on new and existing loans."
+  },
+  {
+   "heading": "Bank retreat from mid-market lending",
+   "text": "Bank retrenchment favours the strategy because borrowers turn to private lenders that can underwrite quickly and charge wider margins. After the March 2023 bank failures, lenders reported wider margins and stronger protections on new loans."
+  },
+  {
+   "heading": "Low default rates",
+   "text": "Low default rates favour the strategy because most of the margin becomes income instead of credit losses. Between 2010 and 2019 default rates on leveraged loans mostly stayed between 1% and 3%, so lenders kept most of their margin."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Recession and rising defaults",
+   "text": "A recession hurts the strategy because borrowers with high debt see earnings fall while interest payments continue, which raises defaults and lowers recoveries. In 2020 the leveraged loan default rate rose to about 4% as Covid disrupted revenue."
+  },
+  {
+   "heading": "Falling policy rates",
+   "text": "Falling policy rates hurt the strategy because floating coupons reset lower, which reduces income even when credit quality is stable. After the Federal Reserve began cutting in September 2024, the base rate paid on floating loans fell by 1 percentage point by December."
+  },
+  {
+   "heading": "Higher interest burden on borrowers",
+   "text": "Higher borrowing costs hurt the strategy because the same floating rates that raise coupons also reduce borrowers' ability to pay. By 2024 many mid-sized borrowers paid a larger share of earnings in interest, and more of them asked lenders to accept interest in kind."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -8
+  },
+  {
+   "name": "Oil price slump, Feb 2016",
+   "value": -2.2
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -0.9
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -0.6
+  },
+  {
+   "name": "Bank failures, Mar 2023",
+   "value": 0.2
+  }
+ ],
+ "ahead": [
+  -5.8,
+  -0.4,
+  -0.1,
+  -0.3
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough decline during each event, measured from its reported value just before the event to its lowest point using the default backtest parameters above. Because loan valuations are updated infrequently, Rehyn adjusts reported values to reflect market prices for comparable loans.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects changes in policy rates, credit spreads and default rates, which are then applied to the strategy's current loans and fee costs.",
+ "altTitle": "Where Else Can Investors Find Private Credit Premiums?",
+ "related": [
+  {
+   "id": "i3",
+   "why": "Lends to high-quality listed companies at fixed coupons. Bears interest rate and spread risk, with daily prices.",
+   "cue": "Liquid credit without the illiquidity premium"
+  },
+  {
+   "id": "c6",
+   "why": "Holds short-maturity high yield bonds. Bears default risk, with tradable prices that fall quickly in a sell-off.",
+   "cue": "Similar credit risk, priced daily"
+  },
+  {
+   "id": "v5",
+   "why": "Buys bonds of stressed companies below recovery value. Bears legal and recovery risk, gaining when defaults rise.",
+   "cue": "Earns in credit downturns"
+  }
+ ]
+}

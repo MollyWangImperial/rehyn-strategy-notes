@@ -1,0 +1,172 @@
+{
+ "id": "v7",
+ "name": "REIT discount to NAV investing",
+ "heading": "The Structural Opportunity: Listed Property Discount Risk",
+ "caseLead": "The investment case rests on listed property companies trading below appraised net asset value because public markets reprice interest rates, leverage and tenant risk faster than private property valuations adjust. The discount persists because property transactions are infrequent, appraisals are slow to change and policy uncertainty around interest rates, taxation and planning rules keeps public investors cautious even when assets retain long-term value.",
+ "caseRest": "The main risk is that reported net asset value can overstate achievable sale prices when capitalisation rates rise, rents weaken or financing becomes less available. Discounts can therefore remain wide for years, while leveraged companies may issue equity or sell assets below appraisal values to meet refinancing needs. The indicative record returned 10.3% a year with 16.2% volatility, but its -0.5 return skew and -38.0% worst fall show that losses concentrate during property and funding stress.",
+ "figNote": "The large figure on each card shows the monthly total return of the FTSE EPRA Nareit Developed Index during the episode, rounded to the nearest percentage point. The index tracks listed property companies across developed markets, so its return shows how public property valuations responded before slower-moving appraisals adjusted.",
+ "events": [
+  {
+   "date": "October 2008",
+   "theme": "Credit crisis",
+   "fig": "−25%",
+   "effect": "down",
+   "title": "Frozen credit widens property discounts",
+   "text": "The global financial crisis closed property lending markets and raised fears that leveraged landlords would breach covenants or sell assets under pressure. The strategy lost because listed property prices fell much faster than appraised values, widening discounts despite lower government bond yields."
+  },
+  {
+   "date": "May 2013",
+   "theme": "Policy",
+   "fig": "−7%",
+   "effect": "down",
+   "title": "Taper guidance lifts long-term yields",
+   "text": "The Federal Reserve’s indication that asset purchases could slow drove government bond yields higher and reduced the relative appeal of property income. The strategy lost because expected capitalisation rates rose immediately, while reported asset values had not yet adjusted."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−22%",
+   "effect": "down",
+   "title": "Lockdowns threaten rent collection",
+   "text": "Covid lockdowns closed hotels, shops and offices while investors questioned whether tenants could continue paying rent. The strategy suffered its worst fall because discounts widened sharply and highly leveraged companies faced refinancing and equity issuance risk."
+  },
+  {
+   "date": "November 2020",
+   "theme": "Vaccine",
+   "fig": "+13%",
+   "effect": "up",
+   "title": "Vaccines support reopening assets",
+   "text": "Successful vaccine trials improved expectations for travel, retail activity and office use, supporting property sectors that had traded at severe discounts. The strategy gained because reopening prospects reduced expected rent losses and encouraged investors to price a recovery in asset values."
+  },
+  {
+   "date": "February 2022",
+   "theme": "War",
+   "fig": "−4%",
+   "effect": "down",
+   "title": "Ukraine invasion raises inflation pressure",
+   "text": "Russia’s invasion of Ukraine lifted energy costs and strengthened expectations for faster monetary tightening across developed markets. The strategy lost because higher bond yields reduced property valuations, while weaker growth expectations weighed on tenant demand and financing conditions."
+  },
+  {
+   "date": "December 2023",
+   "theme": "Monetary policy",
+   "fig": "+11%",
+   "effect": "up",
+   "title": "Fed guidance lowers expected rates",
+   "text": "Federal Reserve projections indicated that policy rates were likely to decline as inflation eased, pushing longer-term bond yields lower. The strategy gained because lower discount rates supported asset values and encouraged investors to reassess unusually wide listed property discounts."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Developed-market REITs and listed property companies; diversified across sectors and regions",
+ "rules": "Companies selected at discounts above 20% to adjusted NAV; balance sheets and appraisal assumptions reviewed quarterly; portfolio rebalanced semi-annually",
+ "costs": "Estimated bid-ask spreads, commissions, withholding taxes and foreign exchange costs deducted at each rebalance",
+ "constructionTitle": "Strategy construction, from discounted assets to diversified balance-sheet risk",
+ "legs": [
+  {
+   "position": "Core discounted property companies",
+   "instrument": "Large-cap developed-market REITs",
+   "purpose": "Captures broad discount convergence",
+   "allocation": "45%"
+  },
+  {
+   "position": "Catalyst property companies",
+   "instrument": "REITs with buybacks, disposals or takeover potential",
+   "purpose": "Accelerates value realisation",
+   "allocation": "25%"
+  },
+  {
+   "position": "Defensive property companies",
+   "instrument": "REITs with low leverage and long leases",
+   "purpose": "Limits refinancing and vacancy risk",
+   "allocation": "20%"
+  },
+  {
+   "position": "Liquidity reserve",
+   "instrument": "Short-dated government bills",
+   "purpose": "Funds rebalancing during market stress",
+   "allocation": "10%"
+  }
+ ],
+ "entry": "Adjusted NAV discount above 20%, loan-to-value below 45% and adequate interest coverage",
+ "size": "Maximum 5% per company, 20% per property sector and 35% per region",
+ "exit": "Discount narrows below 5%, the catalyst completes or relative value moves elsewhere",
+ "stop": "Exit after a 15% NAV reduction, covenant breach or material refinancing failure",
+ "marketWatch": "Property transaction volumes, lending spreads and appraisal revisions indicate whether reported NAVs are becoming more reliable and whether discounts can narrow. Central bank decisions, refinancing updates, results, asset sales and takeover proposals matter because they change funding costs or provide observable prices for underlying assets. Planning and tax policy also matter where they affect development supply or investor demand.",
+ "favourable": [
+  {
+   "heading": "Falling rates support valuations",
+   "text": "Lower government bond yields favour the strategy because they reduce property discount rates, ease refinancing pressure and increase the value of rental income. The December 2023 rally showed this mechanism as expected policy easing supported listed property prices before appraisals changed materially."
+  },
+  {
+   "heading": "Asset sales validate NAV",
+   "text": "Property disposals favour the strategy when sale prices confirm or exceed carrying values because they reduce uncertainty around reported NAV. European landlords used asset sales after the eurozone crisis to lower leverage, helping discounts narrow where transactions validated balance-sheet values."
+  },
+  {
+   "heading": "Corporate actions close discounts",
+   "text": "Buybacks and takeovers favour the strategy because they convert a public-market discount into value for remaining shareholders or acquisition proceeds. Reopening expectations in late 2020 encouraged transactions and buybacks across previously discounted retail, residential and logistics property companies."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Appraisals lag falling prices",
+   "text": "Stale appraisals hurt the strategy when transaction prices decline faster than reported property values, making the apparent discount less attractive than it looks. During 2022, rapid yield increases forced repeated NAV reductions across office, residential and logistics portfolios."
+  },
+  {
+   "heading": "Refinancing pressure forces sales",
+   "text": "High leverage hurts the strategy when debt matures during tight credit conditions because companies may sell assets below appraisal value or issue discounted equity. During the global financial crisis, refinancing pressure turned wide discounts into realised losses for shareholders."
+  },
+  {
+   "heading": "Structural vacancy weakens rents",
+   "text": "Persistent vacancy hurts the strategy because lower occupancy reduces cash flow and raises capital expenditure even if headline NAV changes slowly. After Covid, weaker office demand showed that a large discount could reflect lasting pressure on rents rather than temporary market caution."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -38
+  },
+  {
+   "name": "Global rate selloff, Jan-Oct 2022",
+   "value": -29
+  },
+  {
+   "name": "Eurozone crisis, Aug 2011",
+   "value": -15
+  },
+  {
+   "name": "Taper tantrum, May-Jun 2013",
+   "value": -11
+  },
+  {
+   "name": "China devaluation, Aug 2015",
+   "value": -9
+  }
+ ],
+ "ahead": [
+  -13.8,
+  -6.2,
+  -1.4,
+  5.8
+ ],
+ "infoHist": "Historical results show the strategy’s estimated peak-to-trough return during each event using listed property prices, dividends and contemporaneous NAV estimates under the default rules above. Each window begins at the last strategy high before the shock and ends at the subsequent low.",
+ "infoForward": "Scenario results show the estimated strategy return over the first month of each scenario. Rehyn’s scenario engine projects changes in government bond yields, credit spreads, property sectors and regional equity markets, then applies them to the portfolio’s sector, leverage and geographic exposures.",
+ "altTitle": "Where Else Can Investors Find Real Asset Value?",
+ "related": [
+  {
+   "id": "i6",
+   "why": "Emphasises distributable income rather than NAV convergence and bears tenant cash-flow and payout risk.",
+   "cue": "Income from the same underlying assets"
+  },
+  {
+   "id": "c9",
+   "why": "Earns regulated or contracted inflation-linked cash flows and bears policy, construction and valuation risk.",
+   "cue": "Real assets with stronger inflation linkage"
+  },
+  {
+   "id": "e1",
+   "why": "Earns announced takeover spreads rather than pre-deal discounts and bears transaction completion risk.",
+   "cue": "Takeovers can crystallise property discounts"
+  }
+ ]
+}

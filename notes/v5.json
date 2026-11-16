@@ -1,0 +1,178 @@
+{
+ "id": "v5",
+ "name": "Distressed debt investing",
+ "heading": "The Structural Opportunity: Forced Selling and Complexity",
+ "caseLead": "The investment case rests on buying stressed corporate bonds below the value likely to be realised through refinancing, asset sales or restructuring, so returns come from the gap between market price and recovery value. The discount persists because regulated funds and index portfolios must sell downgraded or defaulted debt, while sanctions, government support and changing insolvency policy increase the legal work and holding period that many investors cannot accept.",
+ "caseRest": "The main risk is that enterprise value falls below initial estimates or legal proceedings weaken creditor claims, leaving recoveries lower and later than expected. Indicative results show an 11.8% annual return with 12.2% volatility, but the strategy’s negative 0.7 return skew and 30.0% worst fall show that losses can be concentrated. Illiquidity compounds this risk because bid-ask spreads widen during defaults, preventing positions from being reduced without accepting a substantial discount.",
+ "figNote": "The large figure on each card shows the highest US high-yield option-adjusted spread during the episode, rounded to the nearest 10 basis points. The spread measures the additional yield over US Treasuries after allowing for embedded options, so a higher figure indicates greater default and liquidity risk.",
+ "events": [
+  {
+   "date": "December 2008",
+   "theme": "Financial crisis",
+   "fig": "2180bp",
+   "effect": "down",
+   "title": "Funding stress cuts expected recoveries",
+   "text": "The financial crisis closed refinancing markets and reduced the value of assets supporting leveraged companies, pushing high-yield spreads above 2,000 basis points. The strategy lost because expected recoveries fell while forced selling drove distressed bond prices below executable values."
+  },
+  {
+   "date": "June 2009",
+   "theme": "Policy",
+   "fig": "1220bp",
+   "effect": "up",
+   "title": "Policy support restores restructuring values",
+   "text": "Government support for banks and the restructuring of major US carmakers improved access to funding as high-yield spreads began to fall. The strategy gained because surviving companies refinanced debt and completed restructurings at recoveries above crisis prices."
+  },
+  {
+   "date": "October 2011",
+   "theme": "Sovereign crisis",
+   "fig": "910bp",
+   "effect": "down",
+   "title": "Euro crisis restricts corporate refinancing",
+   "text": "The euro-area sovereign crisis weakened banks and restricted credit to leveraged companies, lifting US high-yield spreads to about 910 basis points. The strategy lost because refinancing risk increased and buyers demanded larger discounts for illiquid claims."
+  },
+  {
+   "date": "February 2016",
+   "theme": "Oil",
+   "fig": "890bp",
+   "effect": "mid",
+   "title": "Oil defaults create uneven recoveries",
+   "text": "The oil price decline drove US energy producers into default and lifted high-yield spreads close to 890 basis points. Results were mixed because unsecured claims lost value, while senior secured debt bought near liquidation value later produced strong recoveries."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "1090bp",
+   "effect": "down",
+   "title": "Shutdowns reduce cash flow and liquidity",
+   "text": "Pandemic restrictions removed revenue from travel, retail and energy companies while high-yield spreads rose above 1,000 basis points. The strategy suffered its worst loss because recovery estimates fell rapidly and dealer liquidity weakened across distressed bonds."
+  },
+  {
+   "date": "May 2020",
+   "theme": "Policy",
+   "fig": "810bp",
+   "effect": "up",
+   "title": "Federal Reserve support reopens credit markets",
+   "text": "Federal Reserve credit facilities restored market access for many speculative-grade issuers as high-yield spreads retreated from their March peak. The strategy gained because refinancing reduced near-term defaults and raised the expected value of stressed bonds."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "US and European stressed corporate bonds, defaulted claims and restructuring debt",
+ "rules": "Debt bought at a material discount to estimated recovery value; seniority, collateral and legal jurisdiction assessed before entry; issuer and sector limits applied",
+ "costs": "Estimated bid-ask spreads, legal expenses, advisory fees and trading commissions deducted",
+ "constructionTitle": "Strategy construction, from recovery discounts to downside control",
+ "legs": [
+  {
+   "position": "Stressed performing bonds",
+   "instrument": "Senior secured and unsecured corporate bonds",
+   "purpose": "Captures recovery through refinancing or asset sales",
+   "allocation": "40%"
+  },
+  {
+   "position": "Defaulted senior claims",
+   "instrument": "Bonds and bank debt in restructuring",
+   "purpose": "Captures distributions above the purchase price",
+   "allocation": "30%"
+  },
+  {
+   "position": "Rescue and debtor financing",
+   "instrument": "Super-senior corporate credit",
+   "purpose": "Earns contractual income with priority over existing claims",
+   "allocation": "15%"
+  },
+  {
+   "position": "Credit market hedge",
+   "instrument": "High-yield credit index protection",
+   "purpose": "Reduces broad spread and recession risk",
+   "allocation": "5%"
+  },
+  {
+   "position": "Liquidity reserve",
+   "instrument": "US Treasury bills",
+   "purpose": "Funds legal costs and new distressed opportunities",
+   "allocation": "10%"
+  }
+ ],
+ "entry": "Market price at least 20% below a conservative estimate of recovery value",
+ "size": "Maximum 5% per issuer and 20% per sector at cost",
+ "exit": "Position closed when recovery value is reached or restructuring proceeds are distributed",
+ "stop": "Position reviewed for exit if estimated recovery value falls by 20%",
+ "marketWatch": "The key indicators are default rates, maturity schedules, bank lending standards, high-yield spreads and prices for loans that share the same collateral. Upcoming earnings, refinancing deadlines and court rulings will determine whether stressed issuers can preserve enterprise value. Sanctions, tariff changes and government support can also alter asset values or creditors’ legal rights.",
+ "favourable": [
+  {
+   "heading": "Refinancing markets reopen",
+   "text": "Improving credit access favours the strategy because stressed issuers can refinance near-term maturities before weak liquidity becomes insolvency. Federal Reserve support in 2020 reopened bond markets and raised the value of debt bought during the March sell-off."
+  },
+  {
+   "heading": "Recoveries exceed market prices",
+   "text": "Stable asset values favour the strategy when secured claims trade below the proceeds available from collateral sales or a reorganisation. Several energy restructurings after the 2016 oil slump produced gains for senior creditors even when equity holders were largely wiped out."
+  },
+  {
+   "heading": "Forced selling creates discounts",
+   "text": "Downgrades and index removal favour the strategy because constrained investors sell without waiting for the restructuring value to emerge. During the 2009 recovery, debt bought from forced sellers rose as refinancing markets reopened and default expectations declined."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Enterprise value falls sharply",
+   "text": "Falling revenue and asset prices hurt the strategy because less value remains available for creditors after secured claims and restructuring costs are paid. Pandemic shutdowns in March 2020 sharply reduced expected recoveries in travel, retail and energy debt."
+  },
+  {
+   "heading": "Proceedings delay creditor payments",
+   "text": "Long insolvency proceedings hurt returns because legal expenses rise and capital remains unavailable for new opportunities. Puerto Rico’s restructuring showed how litigation and competing creditor claims can delay distributions for several years."
+  },
+  {
+   "heading": "Policy weakens creditor rights",
+   "text": "Government intervention hurts the strategy when sanctions, emergency laws or political priorities restrict asset transfers and change the treatment of claims. Sanctions on Russian companies in 2022 reduced market access and complicated payments to foreign bondholders."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -30
+  },
+  {
+   "name": "Euro crisis, Oct 2011",
+   "value": -13
+  },
+  {
+   "name": "Energy default wave, Feb 2016",
+   "value": -11
+  },
+  {
+   "name": "Rate shock, Sep 2022",
+   "value": -10
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -7
+  }
+ ],
+ "ahead": [
+  -10.8,
+  -2.6,
+  -0.8,
+  2.7
+ ],
+ "infoHist": "Historical results show the strategy’s estimated peak-to-trough return during each event, using changes in distressed bond prices, high-yield spreads and expected recoveries under the default portfolio rules. Each window runs from the last portfolio high before the shock to the subsequent low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn’s scenario engine projects changes in credit spreads, default probabilities, interest rates, sector cash flows and recovery values, then applies them to the strategy’s positions and credit hedge.",
+ "altTitle": "Where Else Can Investors Find Credit Mispricing?",
+ "related": [
+  {
+   "id": "e5",
+   "why": "Trades defined corporate events and bears execution risk rather than waiting for a broad restructuring recovery.",
+   "cue": "Targets shorter corporate credit events"
+  },
+  {
+   "id": "r3",
+   "why": "Hedges convertible mispricing and bears model, funding and short-equity risk instead of outright recovery risk.",
+   "cue": "Adds hedged corporate credit exposure"
+  },
+  {
+   "id": "c6",
+   "why": "Earns income from short-maturity high-yield bonds and bears refinancing risk without relying on formal restructuring.",
+   "cue": "Uses the same refinancing cycle"
+  }
+ ]
+}

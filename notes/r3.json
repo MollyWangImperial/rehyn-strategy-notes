@@ -1,0 +1,172 @@
+{
+ "id": "r3",
+ "name": "Convertible bond arbitrage",
+ "heading": "The Structural Opportunity: Convertible Bond Pricing Discounts",
+ "caseLead": "The investment case rests on convertible bonds often trading below the combined value of their bond and share option components, so a buyer who hedges the share exposure earns the discount and the coupon. The discount persists because issuers sell new bonds at a discount to a narrow group of specialist buyers, and rules on short selling and bank leverage limit how much capital can be used to close it.",
+ "caseRest": "The main risk is that funds are forced to sell convertible bonds together, which pushes their prices lower even though the share hedge continues to work. This happened in 2008 and again in March 2020, when lenders cut financing, credit spreads widened and the bonds cheapened further. A second risk is that an issuer's credit quality deteriorates, so a rise in credit spreads can outweigh the gains from the hedge.",
+ "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "events": [
+  {
+   "date": "October 2008",
+   "theme": "Short selling",
+   "fig": "80",
+   "effect": "down",
+   "title": "Short-sale ban and fund selling hit convertibles",
+   "text": "The October 2008 sell-off followed the Lehman Brothers failure and a September ban on short sales of financial shares, and the VIX closed at 80. The strategy lost because hedging became difficult and leveraged funds sold convertible bonds into a market with few buyers."
+  },
+  {
+   "date": "August 2011",
+   "theme": "Sovereign downgrade",
+   "fig": "48",
+   "effect": "mid",
+   "title": "US credit downgrade widens credit spreads",
+   "text": "The August 2011 sell-off followed the downgrade of the US credit rating by Standard and Poor's, and the VIX closed at 48. Results were mixed because higher share volatility raised the value of the embedded options, while wider credit spreads reduced bond prices."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "83",
+   "effect": "down",
+   "title": "Covid forces funds to sell convertible bonds",
+   "text": "The March 2020 sell-off turned a health emergency into a rush for cash, and the VIX closed at 83. The strategy lost because lenders cut financing, funds sold convertible bonds together and prices fell below the value of their parts until central bank support arrived."
+  },
+  {
+   "date": "March 2022",
+   "theme": "War",
+   "fig": "36",
+   "effect": "mid",
+   "title": "Russian sanctions and rate rises weigh on convertibles",
+   "text": "Sanctions on Russia and the first Federal Reserve rate rise since 2018 lifted the VIX to a 36 close in March 2022. Results were mixed because higher volatility supported option values, while higher yields and weaker growth shares reduced bond prices."
+  },
+  {
+   "date": "August 2024",
+   "theme": "Carry trade",
+   "fig": "38",
+   "effect": "up",
+   "title": "Bank of Japan rate rise unwinds yen trades",
+   "text": "The August 2024 volatility spike followed a Bank of Japan rate rise that unwound yen-funded positions, and the VIX closed at 38 before falling back within days. The strategy gained because the share hedge earned from large daily moves while credit spreads widened only briefly."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "52",
+   "effect": "up",
+   "title": "US tariffs lift volatility and daily share swings",
+   "text": "The April 2025 announcement of broad US tariffs lifted the VIX to a 52 close and caused large daily moves in shares. The strategy gained because frequent adjustment of the share hedge earned more than the modest widening in credit spreads cost."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "Convertible bonds of US and European issuers; matching short positions in the underlying shares; positions held for several months",
+ "rules": "Convertibles bought when implied volatility is at least 3 points below recent realised volatility; shares sold short to keep share exposure near neutral; issuers screened for credit quality",
+ "costs": "Estimated bid-ask spreads on bonds, share borrowing fees and financing costs deducted on each trade",
+ "constructionTitle": "Strategy construction, from option mispricing to credit limits",
+ "legs": [
+  {
+   "position": "Long convertible bonds",
+   "instrument": "Convertible bonds",
+   "purpose": "Earns the coupon and the cheap embedded option",
+   "allocation": "60%"
+  },
+  {
+   "position": "Short underlying shares",
+   "instrument": "Listed shares",
+   "purpose": "Hedges share price moves and earns from trading around them",
+   "allocation": "30%"
+  },
+  {
+   "position": "Credit index protection",
+   "instrument": "High yield credit index swaps",
+   "purpose": "Limits losses if credit spreads widen",
+   "allocation": "2%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides liquidity and earns the cash rate",
+   "allocation": "8%"
+  }
+ ],
+ "entry": "Implied volatility at least 3 points below realised volatility",
+ "size": "Set to a 6% annualised volatility target, with at most 3% of capital per issuer",
+ "exit": "Position closed when the bond reaches fair value, or 6 months after entry",
+ "stop": "Issuer position closed if its credit spread widens by 300 basis points",
+ "marketWatch": "The indicators that matter are the gap between convertible bond prices and the value of their parts, high yield credit spreads, share borrowing costs and the pace of new convertible issuance. Upcoming central bank decisions and changes to short-selling rules can alter financing conditions and the cost of the hedge, which tends to widen discounts before they close.",
+ "favourable": [
+  {
+   "heading": "Rising volatility with stable credit",
+   "text": "Higher share volatility favours the strategy because the embedded option gains value and the hedge earns from frequent adjustment. In August 2024 the VIX closed at 38 and then fell within days, so the hedge earned more than the bonds lost."
+  },
+  {
+   "heading": "Steady new issuance",
+   "text": "Steady convertible issuance favours the strategy because new bonds are priced at a discount to fair value to attract buyers. Strong issuance in 2020 and 2021 gave managers a wide choice of bonds priced below the value of their parts."
+  },
+  {
+   "heading": "Policy support after a shock",
+   "text": "Central bank support favours the strategy because it narrows credit spreads and ends forced selling, so cheap bonds reprice quickly. After the Federal Reserve announced corporate credit facilities on 23 March 2020, convertible bond prices recovered within weeks."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Forced selling by funds",
+   "text": "Forced deleveraging hurts the strategy because many funds hold the same hedged bonds, so selling pushes prices below fair value. In October 2008, lenders cut financing and funds sold convertible bonds into a market with few buyers."
+  },
+  {
+   "heading": "Short-selling restrictions",
+   "text": "A ban on short selling hurts the strategy because the hedge can no longer be maintained, which leaves the bond exposed to falling share prices. In September 2008, regulators banned short sales of financial shares, which prevented hedging of bank convertibles."
+  },
+  {
+   "heading": "Rising rates and wider spreads",
+   "text": "Higher interest rates and wider credit spreads hurt the strategy because they lower the bond value of a convertible without a matching gain from the hedge. In 2022, rate rises and weaker growth shares reduced convertible prices across the market."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -14
+  },
+  {
+   "name": "Rate rise sell off, Jun 2022",
+   "value": -6
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": -5
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -3
+  },
+  {
+   "name": "Volatility spike, Feb 2018",
+   "value": 1
+  }
+ ],
+ "ahead": [
+  -7.5,
+  -0.6,
+  0.2,
+  1.1
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in equity indices, implied volatility, credit spreads and interest rates, which are then applied to the strategy's current convertible bonds and share hedges.",
+ "altTitle": "Where Else Can Investors Find Credit and Volatility Mispricing?",
+ "related": [
+  {
+   "id": "s4",
+   "why": "Owns options and hedges them repeatedly. Bears time decay, losing when markets stay calm.",
+   "cue": "Shares this strategy's option exposure, without credit"
+  },
+  {
+   "id": "c6",
+   "why": "Earns coupons on short-dated high yield bonds. Bears default risk, losing when credit spreads widen sharply.",
+   "cue": "Same credit exposure, without the share hedge"
+  },
+  {
+   "id": "e5",
+   "why": "Trades bonds around refinancings and rating changes. Bears event risk, losing when forced selling continues.",
+   "cue": "Different credit events, similar illiquidity"
+  }
+ ]
+}

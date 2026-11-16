@@ -1,0 +1,172 @@
+{
+ "id": "s5",
+ "name": "Index dispersion trading",
+ "heading": "The Structural Opportunity: Earning the Implied Correlation Premium",
+ "caseLead": "The investment case rests on index options usually pricing a higher correlation between stocks than the market delivers, so a seller of index volatility who buys volatility on the largest stocks earns the difference. The gap persists because pension funds and asset managers buy index options to hedge whole portfolios largely regardless of price, while geopolitical and policy risks keep that demand high even though most events affect companies and sectors unevenly.",
+ "caseRest": "The main risk is a sharp rise in correlation when markets sell off, because stocks then fall together and index volatility rises by more than the volatility of individual stocks. The strategy is short index volatility, so it loses in these episodes while the stock options it holds gain too little to offset the loss. Rehyn estimates that losses can build within days, so the gradual gains from many quiet months can be reversed in a single episode.",
+ "figNote": "The large figure on each card shows the largest one-day fall in the S&P 500 during the episode. Dispersion trades tend to lose when the index falls sharply because stocks then move together, and to gain when large single-stock moves are not matched by the index.",
+ "events": [
+  {
+   "date": "August 2011",
+   "theme": "Policy",
+   "fig": "−6.7%",
+   "effect": "down",
+   "title": "US credit downgrade pushes stocks together",
+   "text": "Standard and Poor's downgraded the US credit rating on 5 August 2011, and the S&P 500 fell about 6.7% on 8 August as stocks fell together. The strategy lost because index volatility rose by more than the volatility of individual stocks."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "−12%",
+   "effect": "down",
+   "title": "Covid turns into a global funding crisis",
+   "text": "The March 2020 sell-off turned a health emergency into a global rush for cash, and the S&P 500 fell about 12% on 16 March. The strategy lost because almost all stocks fell together, so index volatility rose faster than the volatility of individual stocks."
+  },
+  {
+   "date": "January 2021",
+   "theme": "Retail trading",
+   "fig": "−2.6%",
+   "effect": "up",
+   "title": "Retail trading drives extreme single-stock moves",
+   "text": "Retail buying of GameStop and other heavily shorted stocks produced extreme moves in individual shares in January 2021, while the S&P 500 fell about 2.6% on 27 January. The strategy gained because the volatility of individual stocks rose by more than index volatility."
+  },
+  {
+   "date": "March 2022",
+   "theme": "War",
+   "fig": "−3%",
+   "effect": "mid",
+   "title": "Ukraine war splits stocks by sector",
+   "text": "Russia's invasion of Ukraine in February 2022 lifted energy shares while technology shares fell, and the S&P 500 fell about 3% on 7 March. Results were mixed because sector differences supported single-stock volatility while the falling market also raised correlation."
+  },
+  {
+   "date": "January 2025",
+   "theme": "Technology rivalry",
+   "fig": "−1.5%",
+   "effect": "up",
+   "title": "DeepSeek model hits chip stocks, not the index",
+   "text": "The release of China's DeepSeek artificial intelligence model in January 2025 cut Nvidia's share price by about 17% on 27 January, while the S&P 500 fell about 1.5%. The strategy gained because the volatility of individual stocks rose while index volatility rose by less."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "−6%",
+   "effect": "down",
+   "title": "US tariffs push stocks together",
+   "text": "The April 2025 announcement of sweeping US tariffs led the S&P 500 to fall about 6% on 4 April, as most sectors fell together. The strategy lost because correlation rose sharply and index volatility increased by more than the volatility of individual stocks."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "S&P 500 index options and options on its 30 largest stocks; about two months to expiry; positions held two to six weeks",
+ "rules": "Index straddles sold and single-stock straddles bought in vega-matched proportions when implied correlation exceeds realised correlation; stocks chosen across sectors; exposure reduced before earnings dates",
+ "costs": "Estimated bid-ask spreads on index and stock options and commissions deducted at each rebalance",
+ "constructionTitle": "Strategy construction, from correlation premium to vega balance",
+ "legs": [
+  {
+   "position": "Short straddle, 60 days",
+   "instrument": "S&P 500 index options",
+   "purpose": "Earns the premium priced into index volatility",
+   "allocation": "20% margin"
+  },
+  {
+   "position": "Long straddles, 30 largest stocks",
+   "instrument": "Single-stock options",
+   "purpose": "Gains when stocks move independently of one another",
+   "allocation": "3% premium"
+  },
+  {
+   "position": "Out-of-the-money puts, 10% below the index",
+   "instrument": "S&P 500 index options",
+   "purpose": "Limits losses when stocks fall together",
+   "allocation": "1%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides collateral and earns the cash rate",
+   "allocation": "76%"
+  }
+ ],
+ "entry": "Implied correlation at least 5 points above realised correlation over three months",
+ "size": "Index and stock volatility exposures matched; set to an 8% annualised volatility target",
+ "exit": "Closed when implied correlation falls within 2 points of realised correlation, or 15 days before expiry",
+ "stop": "All positions closed if the VIX closes above 30",
+ "marketWatch": "The gap between implied and realised correlation among the largest stocks is the main indicator for this strategy now. Scheduled central bank decisions, trade announcements and the peak weeks of earnings season matter because they can either raise correlation or increase differences between stocks. Rehyn also watches how closely the largest technology stocks move together, since their weight in the index affects the correlation priced into options.",
+ "favourable": [
+  {
+   "heading": "Stocks diverge on company news",
+   "text": "Company-specific news favours the strategy because it raises the volatility of individual stocks while the index stays steady. DeepSeek's release in January 2025 moved Nvidia by about 17% in a day while the S&P 500 fell about 1.5%."
+  },
+  {
+   "heading": "Sector rotation within the index",
+   "text": "Rotation between sectors favours the strategy because large moves in opposite directions offset each other at index level. In 2022 energy shares rose while technology shares fell, which supported single-stock volatility more than index volatility."
+  },
+  {
+   "heading": "Correlation normalises after a shock",
+   "text": "Implied correlation that falls back after a shock favours the strategy because the premium earned on index options is restored. After the Covid crash, implied correlation fell through 2021 as company-specific results drove share prices."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Global sell-offs lift correlation",
+   "text": "A global sell-off hurts the strategy because stocks fall together and index volatility rises faster than the volatility of individual stocks. In March 2020 the S&P 500 fell about 12% on 16 March, and almost all of its constituents fell with it."
+  },
+  {
+   "heading": "Policy shocks hit every sector",
+   "text": "Broad policy shocks hurt the strategy because they affect all companies at once, so stock-specific differences matter less. The April 2025 tariff announcement led the S&P 500 to fall about 6% on 4 April, with most sectors falling together."
+  },
+  {
+   "heading": "Crowded positions unwind together",
+   "text": "Crowded positioning hurts the strategy when many funds close dispersion trades at the same time, because they must buy index volatility and sell stock volatility together. Rehyn estimates that this raised losses in the February 2018 volatility spike, when index volatility rose by more than individual stock volatility."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -12
+  },
+  {
+   "name": "Volatility spike, Feb 2018",
+   "value": -8
+  },
+  {
+   "name": "US downgrade, Aug 2011",
+   "value": -7
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -4
+  },
+  {
+   "name": "Tariff shock, Apr 2025",
+   "value": -6
+  }
+ ],
+ "ahead": [
+  -9.4,
+  -1.6,
+  0.1,
+  -0.7
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, using index and single-stock option prices and the vega-matched positions above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in the S&P 500, implied volatility and the correlation between stocks, which are then applied to the strategy's index and single-stock options.",
+ "altTitle": "Where Else Can Investors Find Correlation Premiums?",
+ "related": [
+  {
+   "id": "s1",
+   "why": "Sells index volatility without buying stock volatility. Bears crash risk, losing when volatility rises sharply.",
+   "cue": "Same index leg, no stock hedge"
+  },
+  {
+   "id": "s2",
+   "why": "Buys single-stock volatility before results. Bears premium decay, losing when announcements move shares less than priced.",
+   "cue": "Mirrors this strategy's stock leg"
+  },
+  {
+   "id": "r1",
+   "why": "Trades the price gap between related stocks. Bears the risk that gaps widen, losing when stocks stop moving together.",
+   "cue": "Uses stock differences without options"
+  }
+ ]
+}
