@@ -1,172 +1,172 @@
 {
- "id": "c1",
- "name": "G10 FX carry trade",
- "heading": "The Structural Opportunity: Earning Interest Rate Differentials",
- "caseLead": "The investment case rests on the tendency of currencies with higher interest rates to fall by less than the rate differential implies, so holding them against low-yielding currencies earns the difference. The premium persists because central banks set rates for domestic inflation and growth rather than for exchange rate returns, while investors who need stable funding or safe assets accept low returns in the yen and Swiss franc, and policy divergence between the Federal Reserve, the Reserve Bank of Australia and the Bank of Japan keeps the gap open.",
- "caseRest": "The main risk is a return profile of steady monthly gains followed by sharp losses when investors reduce risk. In these episodes, high-yielding currencies fall while funding currencies such as the yen and Swiss franc rise, so the strategy loses on both sides of the trade within days. A high return relative to volatility therefore overstates the safety of the strategy, because the losses coincide with falls in equity markets and are hard to avoid by selling beforehand.",
- "figNote": "The large figure on each card shows the level of USD/JPY, the number of yen needed to buy one US dollar, at its high or low during the episode. A higher figure means a weaker yen, which favours investors who hold higher-yielding currencies funded in yen.",
- "events": [
-  {
-   "date": "October 2008",
-   "theme": "Financial crisis",
-   "fig": "91",
-   "effect": "down",
-   "title": "Lehman collapse forces a global carry unwind",
-   "text": "The failure of Lehman Brothers in September 2008 forced investors to repay yen borrowing, so USD/JPY fell to about 91 in October. The strategy lost because high-yielding currencies such as the Australian dollar fell sharply as positions were closed."
-  },
-  {
-   "date": "December 2014",
-   "theme": "Policy divergence",
-   "fig": "122",
-   "effect": "up",
-   "title": "Bank of Japan surprises with more easing",
-   "text": "The Bank of Japan's surprise easing on 31 October 2014, combined with the end of Federal Reserve bond purchases, lifted USD/JPY to about 122 by early December. The strategy gained because the widening rate gap favoured holding higher-yielding currencies against the yen."
-  },
-  {
-   "date": "June 2016",
-   "theme": "Brexit",
-   "fig": "99",
-   "effect": "mid",
-   "title": "Brexit vote sends investors into the yen",
-   "text": "The June 2016 vote to leave the European Union pushed USD/JPY to about 99 as investors bought the yen and sold sterling. Results were mixed because the strategy lost on the day but regained part of the loss as markets stabilised."
-  },
-  {
-   "date": "March 2020",
-   "theme": "Pandemic",
-   "fig": "101",
-   "effect": "down",
-   "title": "Covid sets off a global rush for dollars",
-   "text": "The March 2020 spread of Covid-19 drove USD/JPY to about 101 as US yields collapsed, then a global rush for dollars hit commodity currencies. The strategy lost because the Australian, New Zealand and Norwegian currencies fell sharply against both the dollar and the yen."
-  },
-  {
-   "date": "October 2022",
-   "theme": "Rate differentials",
-   "fig": "152",
-   "effect": "up",
-   "title": "Fed rate rises widen the gap with Japan",
-   "text": "A widening gap between the Federal Reserve's rate rises and the Bank of Japan's negative policy rate lifted USD/JPY to about 152 in October 2022. The strategy gained on the rate gap, although Japanese intervention caused sharp but brief reversals."
-  },
-  {
-   "date": "August 2024",
-   "theme": "Carry unwind",
-   "fig": "142",
-   "effect": "down",
-   "title": "Yen surges as funded positions are closed",
-   "text": "A Bank of Japan rate rise on 31 July 2024 and weak US jobs data pushed USD/JPY from about 162 in July to 142 on 5 August. The strategy lost because positions funded in yen were closed within days."
-  }
- ],
- "worstWhen": "March 2020",
- "startYear": 2010,
- "period": "January 2010 to December 2025; 192 monthly observations",
- "instrument": "G10 currency forwards; one to three months to expiry; rolled monthly",
- "rules": "Long the three highest-yielding currencies and short the three lowest-yielding, ranked by three-month interest rate; sized by volatility; put options bought on the long basket",
- "costs": "Estimated bid-ask spreads and forward points deducted at each roll",
- "constructionTitle": "Strategy construction, from interest rate differentials to loss limits",
- "legs": [
-  {
-   "position": "Long forwards, three highest-yielding currencies",
-   "instrument": "G10 currency forwards",
-   "purpose": "Earns the interest rate differential",
-   "allocation": "10% margin"
-  },
-  {
-   "position": "Short forwards, three lowest-yielding currencies",
-   "instrument": "G10 currency forwards",
-   "purpose": "Funds the long positions at low rates",
-   "allocation": "10% margin"
-  },
-  {
-   "position": "Put options on the long basket",
-   "instrument": "G10 currency options",
-   "purpose": "Limits losses in a sudden fall in risk appetite",
-   "allocation": "2%"
-  },
-  {
-   "position": "Treasury bills",
-   "instrument": "US Treasury bills",
-   "purpose": "Provides collateral and earns the cash rate",
-   "allocation": "78%"
-  }
- ],
- "entry": "Interest rate gap of at least 2 percentage points between long and short currencies",
- "size": "Set to an 8% annualised volatility target",
- "exit": "Positions rebalanced monthly, or closed when the rate ranking changes",
- "stop": "Exposure halved if the VIX closes above 30",
- "marketWatch": "The gap between the highest and lowest policy rates among G10 currencies, the pace of central bank rate decisions and implied currency volatility are the main indicators for this strategy. Rehyn tracks the Federal Reserve, the Bank of Japan and the Reserve Bank of Australia because changes in expected policy rates alter the gap that the strategy earns. Upcoming central bank meetings and warnings of intervention in the yen matter most because they can reverse positions within days.",
- "favourable": [
-  {
-   "heading": "Stable policy rate differences",
-   "text": "Persistent gaps between policy rates favour the strategy because it earns the differential each month while exchange rates change little. A widening gap between US and Japanese rates supported returns in 2014 and again in 2022."
-  },
-  {
-   "heading": "Low currency volatility",
-   "text": "Low implied volatility favours the strategy because exchange rates move by less than the rate gap over a month, so most of the differential is kept. This was the pattern in 2017, when currency volatility stayed close to record lows and higher-yielding currencies gained steadily."
-  },
-  {
-   "heading": "Regional tension stays contained",
-   "text": "Regional tension favours the strategy when it does not change global risk appetite, because funding currencies do not rally. After Russia's invasion of Ukraine in 2022, higher energy prices lifted the Norwegian and Canadian currencies while the yen weakened as US yields rose."
-  }
- ],
- "adverse": [
-  {
-   "heading": "Sudden global risk aversion",
-   "text": "A sharp fall in risk appetite hurts the strategy because investors buy funding currencies and sell high-yielding ones at the same time. In March 2020, the Australian dollar fell by more than 15% against the US dollar within weeks as the dollar rose against most G10 currencies."
-  },
-  {
-   "heading": "Central bank action in funding countries",
-   "text": "A rate rise or intervention in a funding-currency country hurts the strategy because it raises the cost of borrowing in that currency and prompts positions to close together. The Bank of Japan's rate rise in July 2024 helped lift the yen by about 12% against the US dollar in five weeks."
-  },
-  {
-   "heading": "Narrowing policy rate gaps",
-   "text": "A narrowing of rate gaps hurts the strategy because it reduces the income earned and removes the reason to hold the higher-yielding currency. In March 2020, the central banks of Australia and New Zealand cut rates to 0.25%, removing most of the yield advantage over the yen and Swiss franc."
-  }
- ],
- "past": [
-  {
-   "name": "Covid crash, Mar 2020",
-   "value": -15
-  },
-  {
-   "name": "Euro crisis, Aug 2011",
-   "value": -9
-  },
-  {
-   "name": "Carry unwind, Aug 2024",
-   "value": -8
-  },
-  {
-   "name": "China devaluation, Aug 2015",
-   "value": -6
-  },
-  {
-   "name": "Brexit vote, Jun 2016",
-   "value": -5
-  }
- ],
- "ahead": [
-  -7.8,
-  0.9,
-  -0.3,
-  -1.2
- ],
- "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
- "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in G10 exchange rates, interest rate differentials and implied currency volatility, which are then applied to the strategy's current positions, including the protective options.",
- "altTitle": "Where Else Can Investors Find Carry Returns?",
- "related": [
-  {
-   "id": "v6",
-   "why": "Holds currencies below fair value for years. Bears slow convergence, losing when they move further from it.",
-   "cue": "Pays for valuation, not interest rates"
-  },
-  {
-   "id": "m4",
-   "why": "Follows sustained currency moves in either direction. Bears reversals, losing when trends break down.",
-   "cue": "Trends often form as carry unwinds"
-  },
-  {
-   "id": "d3",
-   "why": "Holds yen and Swiss franc, the funding currencies this strategy sells. Bears negative carry, paying in calm markets.",
-   "cue": "Offsets this strategy's worst months"
-  }
- ]
+  "id": "c1",
+  "name": "G10 FX carry trade",
+  "heading": "The Structural Opportunity: Earning Interest Rate Differentials",
+  "caseLead": "Higher-yielding currencies have historically fallen by less than their interest rate advantage would imply, allowing carry investors to earn the difference when exchange rates remain relatively stable. The premium persists because central banks set rates for domestic inflation and growth rather than for exchange rate returns, while investors who need stable funding or safe assets accept low returns in the yen and Swiss franc, and policy divergence between the Federal Reserve, the Reserve Bank of Australia and the Bank of Japan keeps the gap open.",
+  "caseRest": "The strategy typically earns modest carry returns but can suffer sharp losses when investors reduce risk. In these episodes, high-yielding currencies fall while funding currencies such as the yen and Swiss franc rise, so the strategy loses on both sides of the trade within days. A strong risk-adjusted return can therefore understate the downside risk, as the losses coincide with falls in equity markets and are hard to avoid by selling beforehand.",
+  "figNote": "The large figure on each card shows the level of USD/JPY, the number of yen needed to buy one US dollar, at its high or low during the episode. A higher figure means a weaker yen, which favours investors who hold higher-yielding currencies funded in yen.",
+  "events": [
+    {
+      "date": "October 2008",
+      "theme": "Financial crisis",
+      "fig": "91",
+      "effect": "down",
+      "title": "Lehman collapse forces a global carry unwind",
+      "text": "The failure of Lehman Brothers in September 2008 forced investors to repay yen borrowing, so USD/JPY fell to about 91 in October. The strategy lost because high-yielding currencies such as the Australian dollar fell sharply as positions were closed."
+    },
+    {
+      "date": "December 2014",
+      "theme": "Policy divergence",
+      "fig": "122",
+      "effect": "up",
+      "title": "Bank of Japan surprises with more easing",
+      "text": "The Bank of Japan's surprise easing on 31 October 2014, combined with the end of Federal Reserve bond purchases, lifted USD/JPY to about 122 by early December. The strategy gained because the widening rate gap favoured holding higher-yielding currencies against the yen."
+    },
+    {
+      "date": "June 2016",
+      "theme": "Brexit",
+      "fig": "99",
+      "effect": "mid",
+      "title": "Brexit vote sends investors into the yen",
+      "text": "The June 2016 vote to leave the European Union pushed USD/JPY to about 99 as investors bought the yen and sold sterling. Results were mixed because the strategy lost on the day but regained part of the loss as markets stabilised."
+    },
+    {
+      "date": "March 2020",
+      "theme": "Pandemic",
+      "fig": "101",
+      "effect": "down",
+      "title": "Covid sets off a global rush for dollars",
+      "text": "The March 2020 spread of Covid-19 drove USD/JPY to about 101 as US yields collapsed, then a global rush for dollars hit commodity currencies. The strategy lost because the Australian, New Zealand and Norwegian currencies fell sharply against both the dollar and the yen."
+    },
+    {
+      "date": "October 2022",
+      "theme": "Rate differentials",
+      "fig": "152",
+      "effect": "up",
+      "title": "Fed rate rises widen the gap with Japan",
+      "text": "A widening gap between the Federal Reserve's rate rises and the Bank of Japan's negative policy rate lifted USD/JPY to about 152 in October 2022. The strategy gained on the rate gap, although Japanese intervention caused sharp but brief reversals."
+    },
+    {
+      "date": "August 2024",
+      "theme": "Carry unwind",
+      "fig": "142",
+      "effect": "down",
+      "title": "Yen surges as funded positions are closed",
+      "text": "A Bank of Japan rate rise on 31 July 2024 and weak US jobs data pushed USD/JPY from about 162 in July to 142 on 5 August. The strategy lost because positions funded in yen were closed within days."
+    }
+  ],
+  "worstWhen": "March 2020",
+  "startYear": 2010,
+  "period": "January 2010 to December 2025; 192 monthly observations",
+  "instrument": "G10 currency forwards; one to three months to expiry; rolled monthly",
+  "rules": "Long the three highest-yielding currencies and short the three lowest-yielding, ranked by three-month interest rate; sized by volatility; put options bought on the long basket",
+  "costs": "Estimated bid-ask spreads and forward points deducted at each roll",
+  "constructionTitle": "Strategy construction, from interest rate differentials to loss limits",
+  "legs": [
+    {
+      "position": "Long forwards, three highest-yielding currencies",
+      "instrument": "G10 currency forwards",
+      "purpose": "Earns the interest rate differential",
+      "allocation": "10% margin"
+    },
+    {
+      "position": "Short forwards, three lowest-yielding currencies",
+      "instrument": "G10 currency forwards",
+      "purpose": "Funds the long positions at low rates",
+      "allocation": "10% margin"
+    },
+    {
+      "position": "Put options on the long basket",
+      "instrument": "G10 currency options",
+      "purpose": "Limits losses in a sudden fall in risk appetite",
+      "allocation": "2%"
+    },
+    {
+      "position": "Treasury bills",
+      "instrument": "US Treasury bills",
+      "purpose": "Provides collateral and earns the cash rate",
+      "allocation": "78%"
+    }
+  ],
+  "entry": "Interest rate gap of at least 2 percentage points between long and short currencies",
+  "size": "Set to an 8% annualised volatility target",
+  "exit": "Positions rebalanced monthly, or closed when the rate ranking changes",
+  "stop": "Exposure halved if the VIX closes above 30",
+  "marketWatch": "G10 interest rate differentials, central bank decisions and implied currency volatility are the key indicators for this strategy. Rehyn tracks the Federal Reserve, the Bank of Japan and the Reserve Bank of Australia because changes in expected policy rates alter the gap that the strategy earns. Upcoming central bank meetings and warnings of intervention in the yen matter most because they can reverse positions within days.",
+  "favourable": [
+    {
+      "heading": "Stable policy rate differences",
+      "text": "Persistent gaps between policy rates favour the strategy because it earns the differential each month while exchange rates change little. A widening gap between US and Japanese rates supported returns in 2014 and again in 2022."
+    },
+    {
+      "heading": "Low currency volatility",
+      "text": "Low implied volatility favours the strategy because exchange rates move by less than the rate gap over a month, so most of the differential is kept. This was the pattern in 2017, when currency volatility stayed close to record lows and higher-yielding currencies gained steadily."
+    },
+    {
+      "heading": "Regional tension stays contained",
+      "text": "Regional tension favours the strategy when it does not change global risk appetite, because funding currencies do not rally. After Russia's invasion of Ukraine in 2022, higher energy prices lifted the Norwegian and Canadian currencies while the yen weakened as US yields rose."
+    }
+  ],
+  "adverse": [
+    {
+      "heading": "Sudden global risk aversion",
+      "text": "A sharp fall in risk appetite hurts the strategy because investors buy funding currencies and sell high-yielding ones at the same time. In March 2020, the Australian dollar fell by more than 15% against the US dollar within weeks as the dollar rose against most G10 currencies."
+    },
+    {
+      "heading": "Central bank action in funding countries",
+      "text": "A rate rise or intervention in a funding-currency country hurts the strategy because it raises the cost of borrowing in that currency and prompts positions to close together. The Bank of Japan's rate rise in July 2024 helped lift the yen by about 12% against the US dollar in five weeks."
+    },
+    {
+      "heading": "Narrowing policy rate gaps",
+      "text": "A narrowing of rate gaps hurts the strategy because it reduces the income earned and removes the reason to hold the higher-yielding currency. In March 2020, the central banks of Australia and New Zealand cut rates to 0.25%, removing most of the yield advantage over the yen and Swiss franc."
+    }
+  ],
+  "past": [
+    {
+      "name": "Covid crash, Mar 2020",
+      "value": -15
+    },
+    {
+      "name": "Euro crisis, Aug 2011",
+      "value": -9
+    },
+    {
+      "name": "Carry unwind, Aug 2024",
+      "value": -8
+    },
+    {
+      "name": "China devaluation, Aug 2015",
+      "value": -6
+    },
+    {
+      "name": "Brexit vote, Jun 2016",
+      "value": -5
+    }
+  ],
+  "ahead": [
+    -7.8,
+    0.9,
+    -0.3,
+    -1.2
+  ],
+  "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+  "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in G10 exchange rates, interest rate differentials and implied currency volatility, which are then applied to the strategy's current positions, including the protective options.",
+  "altTitle": "Where Else Can Investors Find Carry Returns?",
+  "related": [
+    {
+      "id": "v6",
+      "why": "Holds currencies below fair value for years. Bears slow convergence, losing when they move further from it.",
+      "cue": "Pays for valuation, not interest rates"
+    },
+    {
+      "id": "m4",
+      "why": "Follows sustained currency moves in either direction. Bears reversals, losing when trends break down.",
+      "cue": "Trends often form as carry unwinds"
+    },
+    {
+      "id": "d3",
+      "why": "Holds yen and Swiss franc, the funding currencies this strategy sells. Bears negative carry, paying in calm markets.",
+      "cue": "Offsets this strategy's worst months"
+    }
+  ]
 }
