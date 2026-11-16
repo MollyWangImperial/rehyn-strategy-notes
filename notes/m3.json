@@ -2,9 +2,9 @@
  "id": "m3",
  "name": "Sector rotation strategy",
  "heading": "The Structural Opportunity: Slow Shifts in Sector Leadership",
- "caseLead": "The investment case rests on sector leadership persisting for one to three months, because earnings revisions, fund flows and economic data move through the market gradually rather than being priced at once. The pattern is strongest around turns in the economic cycle and in energy, defence and technology policy, where changes in interest rates, tariffs and government spending shift expected profits sector by sector.",
- "caseRest": "The main risk is a sudden change in leadership, which leaves the portfolio in last quarter's winners as the market favours other sectors. Rotations that last only a few weeks produce frequent small losses and trading costs, because the signal reverses before positions can earn a premium. In a broad sell-off the strategy also falls with the market, because moving between sectors does not remove equity risk.",
- "figNote": "The large figure on each card shows how far the S&P 500 moved during the episode, over the period described in the text. Sector rotation depends on which sectors lead or lag the index, so the index move shows the market backdrop rather than the strategy's return.",
+ "caseLead": "Sector performance can remain strong for several months as earnings expectations, economic data and fund flows change gradually. The pattern is strongest around turns in the economic cycle and in energy, defence and technology policy, where changes in interest rates, tariffs and government spending shift expected profits sector by sector.",
+ "caseRest": "An abrupt rotation in sector leadership can leave the portfolio exposed to recent winners just as their performance weakens. Rotations that last only a few weeks produce frequent small losses and trading costs, because the signal reverses before positions can earn a premium. In a broad sell-off the strategy also falls with the market, because moving between sectors does not remove equity risk.",
+ "figNote": "Each card shows how far the S&P 500 moved during the episode, over the period described in the text. Sector rotation depends on which sectors lead or lag the index, so the index move shows the market backdrop rather than the strategy's return.",
  "events": [
   {
    "date": "March 2009",
