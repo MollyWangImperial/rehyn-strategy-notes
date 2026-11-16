@@ -2,7 +2,7 @@
  "id": "g2",
  "name": "AI supply chain thematic equity",
  "heading": "The Structural Opportunity: AI Infrastructure Investment Cycle",
- "caseLead": "Growth in demand for AI computing supports investment across semiconductors, memory, networking, power equipment, cooling and data centres. The opportunity persists because the largest cloud platforms compete on computing capacity, while US, European and Asian industrial policies support domestic supply chains and strategic control over advanced technology.",
+ "caseLead": "Growth in demand for AI computing supports investment across semiconductors, memory, networking, power equipment, cooling and data centres. Competition among major cloud providers and government support for domestic technology supply chains can sustain demand, although the pace of customer spending remains the main driver of supplier earnings.",
  "caseRest": "The strategy relies heavily on capital spending by a small group of major technology companies, so weaker investment plans can affect suppliers across the sector. Valuation risk compounds this exposure because expected growth is often priced several years ahead, making the basket sensitive to interest rates and evidence that customers are using capacity more efficiently. The indicative profile of 19.0% annual return, 31.0% volatility, a 55.0% worst fall and 0.1 return skew shows that strong long-term growth comes with large cyclical drawdowns.",
  "figNote": "Each card shows the percentage change in the PHLX Semiconductor Sector Index, or SOX, over the episode described. The SOX tracks major listed semiconductor companies and provides a consistent market measure of changing demand, earnings expectations and valuation across the AI supply chain.",
  "events": [
