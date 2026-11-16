@@ -1,172 +1,172 @@
 {
- "id": "c8",
- "name": "Autocallable note laddering",
- "heading": "The Structural Opportunity: Selling Equity Downside Risk",
- "caseLead": "The investment case rests on the coupon that autocallable notes pay in return for the investor accepting losses if an equity index falls below a barrier, a coupon that has usually exceeded the losses investors have suffered in practice. The premium persists because long-dated index options are consistently priced above the losses they pay out, as institutional investors buy protection against falls regardless of price, and geopolitical and policy uncertainty keeps that demand high.",
- "caseRest": "The main risk is a loss of principal if an index closes below its barrier on the final date, because the loss is then the full fall in the index from its starting level. Several notes can reach their barriers at the same time because they refer to the same markets, so a single market fall affects the whole ladder. A high coupon therefore overstates the safety of the return, as it does not compensate for the rare periods when equity indices fall by more than 30%.",
- "figNote": "The large figure on each card shows the change in the S&P 500 over the episode, measured from the last high to the low in a fall and from the low to the high in a rally. Autocallable notes depend on where the index closes on set observation dates, so the figure shows how close the index came to the level that triggers early redemption or a loss of principal.",
- "events": [
-  {
-   "date": "August 2011",
-   "theme": "US downgrade",
-   "fig": "−17%",
-   "effect": "mid",
-   "title": "US downgrade delays early redemption of notes",
-   "text": "The US credit rating downgrade and the euro area debt crisis cut the S&P 500 by 17% in August 2011, so many notes missed early redemption dates. Results were mixed because the barriers held, but coupons were deferred and note prices fell."
-  },
-  {
-   "date": "March 2020",
-   "theme": "Pandemic",
-   "fig": "−34%",
-   "effect": "down",
-   "title": "Covid sell-off pushes indices close to barriers",
-   "text": "The S&P 500 fell 34% from 19 February to 23 March 2020, and the Euro Stoxx 50 fell 38%, bringing both close to the barriers that protect note principal. The strategy lost because note prices fell sharply and early redemptions stopped."
-  },
-  {
-   "date": "November 2020",
-   "theme": "Vaccine rally",
-   "fig": "+11%",
-   "effect": "up",
-   "title": "Vaccine news lifts shares and triggers redemptions",
-   "text": "Positive Covid-19 vaccine results and the end of US election uncertainty lifted the S&P 500 by 11% in November 2020. The strategy gained because the index closed above the redemption level on many observation dates, so notes were repaid early with coupons."
-  },
-  {
-   "date": "June 2022",
-   "theme": "Inflation",
-   "fig": "−24%",
-   "effect": "down",
-   "title": "Rate rises cut note prices and delay redemption",
-   "text": "The S&P 500 fell 24% from January to 16 June 2022 as the Federal Reserve raised rates and the war in Ukraine lifted energy prices. The strategy lost because the notes moved closer to their barriers and higher volatility reduced their prices."
-  },
-  {
-   "date": "November 2023",
-   "theme": "Rate cut hopes",
-   "fig": "+9%",
-   "effect": "up",
-   "title": "Rate cut hopes lift shares and redemptions",
-   "text": "Falling inflation and signs that the Federal Reserve had stopped raising rates lifted the S&P 500 by 9% in November 2023. The strategy gained because many notes passed their redemption levels and were repaid with coupons."
-  },
-  {
-   "date": "April 2025",
-   "theme": "Trade policy",
-   "fig": "−19%",
-   "effect": "mid",
-   "title": "US tariffs push indices towards note barriers",
-   "text": "US tariff announcements cut the S&P 500 by 19% from 19 February to 8 April 2025, and the index recovered most of the fall by late May. Results were mixed because note prices fell sharply, but barriers held and redemptions resumed."
-  }
- ],
- "worstWhen": "March 2020",
- "startYear": 2010,
- "period": "January 2010 to December 2025; 192 monthly observations",
- "instrument": "Autocallable notes on the S&P 500, Euro Stoxx 50 and Nikkei 225; one to three years to maturity; staggered maturities",
- "rules": "Notes bought with barriers at 65% of the starting level and quarterly observation dates; no more than 20% of capital in one note; issuers rated A or higher",
- "costs": "Estimated issuer margin and bid-ask spreads deducted at each purchase and sale",
- "constructionTitle": "Strategy construction, from coupon income to barrier limits",
- "legs": [
-  {
-   "position": "Autocallable notes on the S&P 500",
-   "instrument": "Structured notes",
-   "purpose": "Earns the coupon for bearing index losses below the barrier",
-   "allocation": "30%"
-  },
-  {
-   "position": "Autocallable notes on the Euro Stoxx 50",
-   "instrument": "Structured notes",
-   "purpose": "Diversifies the coupon across regions",
-   "allocation": "25%"
-  },
-  {
-   "position": "Autocallable notes on the Nikkei 225",
-   "instrument": "Structured notes",
-   "purpose": "Diversifies the coupon across regions",
-   "allocation": "15%"
-  },
-  {
-   "position": "Treasury bills",
-   "instrument": "US Treasury bills",
-   "purpose": "Provides liquidity as notes mature and are redeemed",
-   "allocation": "30%"
-  }
- ],
- "entry": "Barrier at 65% or lower and an annual coupon of at least 7%",
- "size": "No more than 20% of capital in one note and 70% in all notes",
- "exit": "Notes held until early redemption or maturity, whichever comes first",
- "stop": "New notes paused if any index is more than 15% below its 12-month high",
- "marketWatch": "The level of each index relative to its note barrier, implied volatility and the coupon offered on new notes are the main indicators for this strategy. Rehyn tracks central bank decisions and geopolitical events because they can move several indices below their redemption levels at once. A rise in correlation between the S&P 500, the Euro Stoxx 50 and the Nikkei 225 matters because it reduces the benefit of holding notes on different markets.",
- "favourable": [
-  {
-   "heading": "Steady equity market gains",
-   "text": "Steady index gains favour the strategy because notes are redeemed early with their coupons and the capital can be reinvested in new notes. From 2012 to 2019, the S&P 500 recorded a positive total return in seven of eight years."
-  },
-  {
-   "heading": "High implied volatility at purchase",
-   "text": "High implied volatility favours the strategy because it raises the coupon that issuers can pay on new notes for the same barrier. In March 2020, the VIX closed above 50 on most days between 12 March and 2 April, so notes bought then carried much higher coupons."
-  },
-  {
-   "heading": "Quick market recoveries",
-   "text": "Fast recoveries favour the strategy because index levels return above the redemption level before the final observation date. The S&P 500 regained its February 2020 high by August 2020, and notes with later observation dates were redeemed with their coupons."
-  }
- ],
- "adverse": [
-  {
-   "heading": "Index falls below the barrier",
-   "text": "A fall below the barrier hurts the strategy because the investor then bears the full loss in the index, not just the amount beyond the barrier. In March 2020, the Euro Stoxx 50 fell 38% in four weeks, close to the barriers of 60% to 65% set on many notes."
-  },
-  {
-   "heading": "Rising correlation between indices",
-   "text": "A rise in correlation hurts the strategy because falls in different indices happen together, so the loss is not diversified across the ladder. In March 2020, the S&P 500, Euro Stoxx 50 and Nikkei 225 each fell by more than 25% within five weeks."
-  },
-  {
-   "heading": "Rising implied volatility",
-   "text": "A rise in implied volatility hurts the strategy because the options sold inside each note increase in price, so notes lose value before maturity even if barriers are not breached. In 2022 the S&P 500 fell at most 25% from its high, so barriers at 65% held, yet note prices fell as volatility rose."
-  }
- ],
- "past": [
-  {
-   "name": "Covid crash, Mar 2020",
-   "value": -14
-  },
-  {
-   "name": "Rate rises, Jun 2022",
-   "value": -9
-  },
-  {
-   "name": "Year end sell off, Dec 2018",
-   "value": -7
-  },
-  {
-   "name": "US downgrade, Aug 2011",
-   "value": -6
-  },
-  {
-   "name": "Tariff shock, Apr 2025",
-   "value": -5
-  }
- ],
- "ahead": [
-  -8.5,
-  -1.4,
-  -0.1,
-  1.1
- ],
- "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
- "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in the S&P 500, Euro Stoxx 50, Nikkei 225 and implied volatility, which are then applied to the current notes, including their barriers, coupons and redemption levels.",
- "altTitle": "Where Else Can Investors Find Structured Returns?",
- "related": [
-  {
-   "id": "s1",
-   "why": "Sells short-dated index options directly. Bears volatility spikes, losing in sharp sell-offs.",
-   "cue": "Similar premium, shorter and more liquid"
-  },
-  {
-   "id": "i5",
-   "why": "Sells call options against shares. Bears equity falls and capped gains, losing when stocks decline.",
-   "cue": "Keeps equity exposure, with no barrier"
-  },
-  {
-   "id": "e7",
-   "why": "Earns insurance premiums from catastrophe risk. Bears disaster losses, largely unrelated to financial markets.",
-   "cue": "Structured income from a different risk"
-  }
- ]
+  "id": "c8",
+  "name": "Autocallable note laddering",
+  "heading": "The Structural Opportunity: Selling Equity Downside Risk",
+  "caseLead": "Autocallable notes offer higher coupons in exchange for the risk of substantial capital losses if the underlying equity index breaches its barrier at maturity. The premium persists because long-dated index options are consistently priced above the losses they pay out, as institutional investors buy protection against falls regardless of price, and geopolitical and policy uncertainty keeps that demand high.",
+  "caseRest": "The main risk is a loss of principal if an index closes below its barrier on the final date, because the loss is then the full fall in the index from its starting level. Several notes can reach their barriers at the same time because they refer to the same markets, so a single market fall affects the whole ladder. A high coupon therefore overstates the safety of the return, as it does not compensate for the rare periods when equity indices fall by more than 30%.",
+  "figNote": "The large figure on each card shows the change in the S&P 500 over the episode, measured from the last high to the low in a fall and from the low to the high in a rally. Autocallable notes depend on where the index closes on set observation dates, so the figure shows how close the index came to the level that triggers early redemption or a loss of principal.",
+  "events": [
+    {
+      "date": "August 2011",
+      "theme": "US downgrade",
+      "fig": "−17%",
+      "effect": "mid",
+      "title": "US downgrade delays early redemption of notes",
+      "text": "The US credit rating downgrade and the euro area debt crisis cut the S&P 500 by 17% in August 2011, so many notes missed early redemption dates. Results were mixed because the barriers held, but coupons were deferred and note prices fell."
+    },
+    {
+      "date": "March 2020",
+      "theme": "Pandemic",
+      "fig": "−34%",
+      "effect": "down",
+      "title": "Covid sell-off pushes indices close to barriers",
+      "text": "The S&P 500 fell 34% from 19 February to 23 March 2020, and the Euro Stoxx 50 fell 38%, bringing both close to the barriers that protect note principal. The strategy lost because note prices fell sharply and early redemptions stopped."
+    },
+    {
+      "date": "November 2020",
+      "theme": "Vaccine rally",
+      "fig": "+11%",
+      "effect": "up",
+      "title": "Vaccine news lifts shares and triggers redemptions",
+      "text": "Positive Covid-19 vaccine results and the end of US election uncertainty lifted the S&P 500 by 11% in November 2020. The strategy gained because the index closed above the redemption level on many observation dates, so notes were repaid early with coupons."
+    },
+    {
+      "date": "June 2022",
+      "theme": "Inflation",
+      "fig": "−24%",
+      "effect": "down",
+      "title": "Rate rises cut note prices and delay redemption",
+      "text": "The S&P 500 fell 24% from January to 16 June 2022 as the Federal Reserve raised rates and the war in Ukraine lifted energy prices. The strategy lost because the notes moved closer to their barriers and higher volatility reduced their prices."
+    },
+    {
+      "date": "November 2023",
+      "theme": "Rate cut hopes",
+      "fig": "+9%",
+      "effect": "up",
+      "title": "Rate cut hopes lift shares and redemptions",
+      "text": "Falling inflation and signs that the Federal Reserve had stopped raising rates lifted the S&P 500 by 9% in November 2023. The strategy gained because many notes passed their redemption levels and were repaid with coupons."
+    },
+    {
+      "date": "April 2025",
+      "theme": "Trade policy",
+      "fig": "−19%",
+      "effect": "mid",
+      "title": "US tariffs push indices towards note barriers",
+      "text": "US tariff announcements cut the S&P 500 by 19% from 19 February to 8 April 2025, and the index recovered most of the fall by late May. Results were mixed because note prices fell sharply, but barriers held and redemptions resumed."
+    }
+  ],
+  "worstWhen": "March 2020",
+  "startYear": 2010,
+  "period": "January 2010 to December 2025; 192 monthly observations",
+  "instrument": "Autocallable notes on the S&P 500, Euro Stoxx 50 and Nikkei 225; one to three years to maturity; staggered maturities",
+  "rules": "Notes bought with barriers at 65% of the starting level and quarterly observation dates; no more than 20% of capital in one note; issuers rated A or higher",
+  "costs": "Estimated issuer margin and bid-ask spreads deducted at each purchase and sale",
+  "constructionTitle": "Strategy construction, from coupon income to barrier limits",
+  "legs": [
+    {
+      "position": "Autocallable notes on the S&P 500",
+      "instrument": "Structured notes",
+      "purpose": "Earns the coupon for bearing index losses below the barrier",
+      "allocation": "30%"
+    },
+    {
+      "position": "Autocallable notes on the Euro Stoxx 50",
+      "instrument": "Structured notes",
+      "purpose": "Diversifies the coupon across regions",
+      "allocation": "25%"
+    },
+    {
+      "position": "Autocallable notes on the Nikkei 225",
+      "instrument": "Structured notes",
+      "purpose": "Diversifies the coupon across regions",
+      "allocation": "15%"
+    },
+    {
+      "position": "Treasury bills",
+      "instrument": "US Treasury bills",
+      "purpose": "Provides liquidity as notes mature and are redeemed",
+      "allocation": "30%"
+    }
+  ],
+  "entry": "Barrier at 65% or lower and an annual coupon of at least 7%",
+  "size": "No more than 20% of capital in one note and 70% in all notes",
+  "exit": "Notes held until early redemption or maturity, whichever comes first",
+  "stop": "New notes paused if any index is more than 15% below its 12-month high",
+  "marketWatch": "The level of each index relative to its note barrier, implied volatility and the coupon offered on new notes are the main indicators for this strategy. Rehyn tracks central bank decisions and geopolitical events because they can move several indices below their redemption levels at once. A rise in correlation between the S&P 500, the Euro Stoxx 50 and the Nikkei 225 matters because it reduces the benefit of holding notes on different markets.",
+  "favourable": [
+    {
+      "heading": "Steady equity market gains",
+      "text": "Steady index gains favour the strategy because notes are redeemed early with their coupons and the capital can be reinvested in new notes. From 2012 to 2019, the S&P 500 recorded a positive total return in seven of eight years."
+    },
+    {
+      "heading": "High implied volatility at purchase",
+      "text": "High implied volatility favours the strategy because it raises the coupon that issuers can pay on new notes for the same barrier. In March 2020, the VIX closed above 50 on most days between 12 March and 2 April, so notes bought then carried much higher coupons."
+    },
+    {
+      "heading": "Quick market recoveries",
+      "text": "Fast recoveries favour the strategy because index levels return above the redemption level before the final observation date. The S&P 500 regained its February 2020 high by August 2020, and notes with later observation dates were redeemed with their coupons."
+    }
+  ],
+  "adverse": [
+    {
+      "heading": "Index falls below the barrier",
+      "text": "A fall below the barrier hurts the strategy because the investor then bears the full loss in the index, not just the amount beyond the barrier. In March 2020, the Euro Stoxx 50 fell 38% in four weeks, close to the barriers of 60% to 65% set on many notes."
+    },
+    {
+      "heading": "Rising correlation between indices",
+      "text": "A rise in correlation hurts the strategy because falls in different indices happen together, so the loss is not diversified across the ladder. In March 2020, the S&P 500, Euro Stoxx 50 and Nikkei 225 each fell by more than 25% within five weeks."
+    },
+    {
+      "heading": "Rising implied volatility",
+      "text": "A rise in implied volatility hurts the strategy because the options sold inside each note increase in price, so notes lose value before maturity even if barriers are not breached. In 2022 the S&P 500 fell at most 25% from its high, so barriers at 65% held, yet note prices fell as volatility rose."
+    }
+  ],
+  "past": [
+    {
+      "name": "Covid crash, Mar 2020",
+      "value": -14
+    },
+    {
+      "name": "Rate rises, Jun 2022",
+      "value": -9
+    },
+    {
+      "name": "Year end sell off, Dec 2018",
+      "value": -7
+    },
+    {
+      "name": "US downgrade, Aug 2011",
+      "value": -6
+    },
+    {
+      "name": "Tariff shock, Apr 2025",
+      "value": -5
+    }
+  ],
+  "ahead": [
+    -8.5,
+    -1.4,
+    -0.1,
+    1.1
+  ],
+  "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+  "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in the S&P 500, Euro Stoxx 50, Nikkei 225 and implied volatility, which are then applied to the current notes, including their barriers, coupons and redemption levels.",
+  "altTitle": "Where Else Can Investors Find Structured Returns?",
+  "related": [
+    {
+      "id": "s1",
+      "why": "Sells short-dated index options directly. Bears volatility spikes, losing in sharp sell-offs.",
+      "cue": "Similar premium, shorter and more liquid"
+    },
+    {
+      "id": "i5",
+      "why": "Sells call options against shares. Bears equity falls and capped gains, losing when stocks decline.",
+      "cue": "Keeps equity exposure, with no barrier"
+    },
+    {
+      "id": "e7",
+      "why": "Earns insurance premiums from catastrophe risk. Bears disaster losses, largely unrelated to financial markets.",
+      "cue": "Structured income from a different risk"
+    }
+  ]
 }
