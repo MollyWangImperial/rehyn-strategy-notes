@@ -2,9 +2,9 @@
  "id": "m6",
  "name": "Crypto trend following",
  "heading": "The Structural Opportunity: Persistent Crypto Price Trends",
- "caseLead": "The investment case rests on digital asset prices trending for weeks or months, because demand is driven by retail flows, borrowed money and news that spread gradually across markets that trade at all hours. The trends persist because rising prices draw in new buyers and falling prices force leveraged holders to sell, while regulatory and policy decisions, such as fund approvals and trading bans, set the direction for long periods.",
- "caseRest": "The main risk is a sharp reversal after the strategy has entered a trend, because digital assets can fall 30% or more within days. The strategy exits only after the trend turns, so it gives back part of each decline and then misses part of the rebound that follows. Exchange failures, hacks and regulatory action can also cause price gaps that no exit rule can avoid.",
- "figNote": "The large figure on each card shows the change in the Bitcoin price over the period described in the text. Bitcoin is the largest digital asset and sets the direction for most others, so its move shows how large the trend was.",
+ "caseLead": "Digital asset prices can sustain trends as investor flows, leverage and market sentiment reinforce movements in both directions. The trends persist because rising prices draw in new buyers and falling prices force leveraged holders to sell, while regulatory and policy decisions, such as fund approvals and trading bans, set the direction for long periods.",
+ "caseRest": "Digital asset trends can reverse sharply, with large price moves often occurring before a trend-following strategy can exit. The strategy exits only after the trend turns, so it gives back part of each decline and then misses part of the rebound that follows. Exchange failures, hacks and regulatory action can also cause price gaps that no exit rule can avoid.",
+ "figNote": "Each card shows the change in the Bitcoin price over the period described in the text. Bitcoin is the largest digital asset and sets the direction for most others, so its move shows how large the trend was.",
  "events": [
   {
    "date": "December 2017",
