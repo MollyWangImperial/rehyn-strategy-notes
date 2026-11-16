@@ -2,9 +2,9 @@
  "id": "r7",
  "name": "Index futures mean reversion",
  "heading": "The Structural Opportunity: Short-Term Index Overreaction",
- "caseLead": "The investment case rests on the tendency of stock index futures to reverse part of a sharp one-day move that company earnings or economic data do not explain, because forced selling and large orders push prices past fair value. The reversal persists because index funds, leveraged investors and options hedgers trade at set times regardless of price, while policy announcements, tariff headlines and geopolitical news trigger moves that often fade as the information is absorbed.",
- "caseRest": "The main risk is that a large fall marks the start of a sustained decline instead of a temporary overreaction, so buying after the fall adds to losses. This happened in October 2008 and March 2020, when falls continued for days or weeks as funding conditions worsened. Because the strategy earns small gains in most months, a single such episode can erase several months of returns.",
- "figNote": "The large figure on each card shows the largest one-day fall in the S&P 500 during the episode. A one-day fall of more than 3% is uncommon, and it usually means that forced selling is driving prices.",
+ "caseLead": "Index futures can reverse part of a sharp one-day move when forced trading briefly pushes prices away from fundamentals. The reversal persists because index funds, leveraged investors and options hedgers trade at set times regardless of price, while policy announcements, tariff headlines and geopolitical news trigger moves that often fade as the information is absorbed.",
+ "caseRest": "A sharp index decline can mark the start of a sustained sell-off rather than a temporary overreaction. This happened in October 2008 and March 2020, when falls continued for days or weeks as funding conditions worsened. Because the strategy earns small gains in most months, a single such episode can erase several months of returns.",
+ "figNote": "Each card shows the largest one-day fall in the S&P 500 during the episode. A one-day fall of more than 3% is uncommon, and it usually means that forced selling is driving prices.",
  "events": [
   {
    "date": "October 2008",
