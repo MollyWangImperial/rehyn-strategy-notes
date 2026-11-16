@@ -2,7 +2,7 @@
  "id": "r5",
  "name": "Yield curve butterfly trading",
  "heading": "The Structural Opportunity: Temporary Yield Curve Kinks",
- "caseLead": "A Treasury yield curve butterfly seeks to benefit when one maturity's yield moves back into line with neighbouring maturities. The gaps persist because pension funds, insurers and banks buy specific maturities for liability and regulatory reasons, and changes in Treasury issuance or central bank purchases can distort individual maturities for months.",
+ "caseLead": "A Treasury yield curve butterfly seeks to benefit when one maturity's yield moves back into line with neighbouring maturities. Pension fund demand, Treasury issuance and central bank purchases can affect individual maturities differently, creating relative pricing gaps that may narrow over time.",
  "caseRest": "A yield curve butterfly can lose money if relative yields continue to diverge or leveraged investors unwind similar positions simultaneously. Losses can also build quickly when leveraged funds close similar positions at the same time and liquidity falls, as in March 2020. Because each trade uses leverage to earn a small gap, a few such episodes can outweigh months of gains.",
  "figNote": "Each card shows the change in the 10-year US Treasury yield over the month of the episode, in basis points. A basis point is one hundredth of a percentage point, so +50bp means the yield rose by half a percentage point.",
  "events": [
