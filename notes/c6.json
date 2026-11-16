@@ -1,172 +1,172 @@
 {
-  "id": "c6",
-  "name": "Short-duration high yield investing",
-  "heading": "The Structural Opportunity: Earning High Yield Credit Spreads",
-  "caseLead": "High-yield corporate bonds offer additional income over government bonds to compensate for default risk, and this spread has historically exceeded realised credit losses. The premium persists because many pension funds and insurers are restricted from holding lower-rated bonds, so borrowers must offer higher yields to attract other buyers, while short maturities limit the loss from higher interest rates and give the investor frequent chances to reassess credit quality.",
-  "caseRest": "The main risk is credit losses, which rise when economic growth slows or financing becomes more expensive, so defaults can increase within months. Short maturities limit the effect of interest rate changes but do not reduce the risk of default, and bond prices can fall sharply when investors sell in a weak market. The headline yield can therefore understate the downside risk, as losses on lower-rated bonds can equal a year or more of coupon income, as in 2008 and March 2020.",
-  "figNote": "The large figure on each card shows the widest level reached by the US high-yield credit spread during the episode, in basis points, where 100 basis points equal one percentage point. The spread is the extra yield that high-yield bonds pay over US Treasuries, so a higher figure means investors demanded more compensation for default risk.",
-  "events": [
-    {
-      "date": "October 2011",
-      "theme": "Euro crisis",
-      "fig": "880",
-      "effect": "down",
-      "title": "Euro crisis widens high-yield spreads",
-      "text": "Fears that Greece would default and the crisis would spread to Italy and Spain widened the US high-yield spread to about 880 basis points in early October 2011. The strategy lost because bond prices fell by more than the coupons earned in the period."
-    },
-    {
-      "date": "February 2016",
-      "theme": "Oil collapse",
-      "fig": "890",
-      "effect": "down",
-      "title": "Oil price collapse raises default fears",
-      "text": "Brent crude near 28 dollars threatened defaults among US energy producers and lifted the US high-yield spread to about 890 basis points in February 2016. The strategy lost because energy bonds, about 14% of the market, fell sharply despite short maturities."
-    },
-    {
-      "date": "December 2018",
-      "theme": "Policy tightening",
-      "fig": "530",
-      "effect": "mid",
-      "title": "Rate rises and falling oil widen spreads",
-      "text": "Federal Reserve rate rises, a 40% fall in oil prices from October and falling equity prices widened the US high-yield spread to about 530 basis points in December 2018. Results were mixed because short maturities limited price losses, but energy bonds still lost value."
-    },
-    {
-      "date": "March 2020",
-      "theme": "Pandemic",
-      "fig": "1,090",
-      "effect": "down",
-      "title": "Covid triples the high-yield credit spread",
-      "text": "The US high-yield spread rose from about 360 basis points in February to 1,090 on 23 March 2020 as lockdowns and a fall in oil prices raised default fears. The strategy lost because bond liquidity fell and even short-dated bonds declined in price."
-    },
-    {
-      "date": "July 2022",
-      "theme": "Rate rises",
-      "fig": "600",
-      "effect": "mid",
-      "title": "Rising rates and war lift borrowing costs",
-      "text": "The Federal Reserve's rate rises and the war in Ukraine lifted the US high-yield spread to about 600 basis points in July 2022. Results were mixed because short maturities limited losses from higher Treasury yields, but wider spreads still reduced bond prices."
-    },
-    {
-      "date": "April 2025",
-      "theme": "Trade policy",
-      "fig": "460",
-      "effect": "up",
-      "title": "Tariff announcement briefly widens spreads",
-      "text": "US tariff announcements widened the US high-yield spread to about 460 basis points on 7 April 2025, before it fell back within weeks as tariffs were paused. The strategy gained because short-dated bonds lost little and coupons continued to accrue."
-    }
-  ],
-  "worstWhen": "March 2020",
-  "startYear": 2010,
-  "period": "January 2010 to December 2025; 192 monthly observations",
-  "instrument": "US and European high-yield bonds; up to three years to maturity; rebalanced monthly",
-  "rules": "Bonds rated BB to B with at most three years to maturity; energy issuers capped at 10%; exposure reduced when the spread widens by 150 basis points in a month",
-  "costs": "Estimated bid-ask spreads, commissions and fund fees deducted at each monthly rebalance",
-  "constructionTitle": "Strategy construction, from coupon income to default control",
-  "legs": [
-    {
-      "position": "Short-dated BB bonds, up to 3 years",
-      "instrument": "High-yield corporate bonds",
-      "purpose": "Earns coupons with lower default risk",
-      "allocation": "49%"
-    },
-    {
-      "position": "Short-dated B bonds, up to 3 years",
-      "instrument": "High-yield corporate bonds",
-      "purpose": "Earns higher coupons with more default risk",
-      "allocation": "30%"
-    },
-    {
-      "position": "Credit default swap index protection",
-      "instrument": "CDX High Yield index",
-      "purpose": "Limits losses when credit spreads widen sharply",
-      "allocation": "1%"
-    },
-    {
-      "position": "Treasury bills",
-      "instrument": "US Treasury bills",
-      "purpose": "Provides liquidity and earns the cash rate",
-      "allocation": "20%"
-    }
-  ],
-  "entry": "Bond yield at least 3 percentage points above Treasuries of the same maturity",
-  "size": "Set to a 5.5% annualised volatility target",
-  "exit": "Bonds sold when maturity falls below 6 months or the rating is cut",
-  "stop": "Exposure halved if the high-yield spread widens by 150 basis points in a month",
-  "marketWatch": "The high-yield credit spread, the rate of corporate defaults and lender surveys on credit standards are the main indicators for this strategy. Rehyn tracks energy prices and central bank policy because they affect borrowing costs and cash flow for lower-rated companies. A rise in refinancing needs in the coming year matters because it raises the share of companies that cannot refinance on current terms.",
-  "favourable": [
-    {
-      "heading": "Low defaults and narrow spreads",
-      "text": "Steady growth favours the strategy because defaults stay low and coupons accumulate without price losses. In 2013 and 2014, the US high-yield default rate stayed below 3% and the strategy earned most of its return from coupons."
-    },
-    {
-      "heading": "Rising rates with short maturities",
-      "text": "Rising interest rates favour the strategy compared with long-dated bonds because short maturities lose little price and the portfolio reinvests at higher coupons. In 2022, US high-yield bonds with maturities under three years lost less than half as much as the broader high-yield market."
-    },
-    {
-      "heading": "Fast recoveries after credit scares",
-      "text": "Quick recoveries favour the strategy because bonds that mature within three years return to par before default risk materialises. After the March 2020 sell-off, the Federal Reserve's purchases of corporate bonds helped narrow the spread from 1,090 to about 500 basis points by August."
-    }
-  ],
-  "adverse": [
-    {
-      "heading": "Recession and rising defaults",
-      "text": "A recession hurts the strategy because lower-rated companies lose revenue, default more often and repay less on their bonds. In 2009, the US high-yield default rate peaked above 10%, so coupon income was not enough to offset losses on bonds issued by weaker borrowers."
-    },
-    {
-      "heading": "Commodity price collapse",
-      "text": "A fall in commodity prices hurts the strategy because energy and mining companies make up a large share of high-yield issuers. Brent fell from about 115 dollars in mid-2014 to about 28 dollars in January 2016, energy defaults rose sharply and the spread widened to 890 basis points."
-    },
-    {
-      "heading": "Credit market liquidity stress",
-      "text": "A loss of market liquidity hurts the strategy because investors can sell bonds only at large discounts, even if the bonds mature soon. In March 2020, the high-yield spread rose by about 700 basis points in a month as bid-ask spreads on corporate bonds widened sharply."
-    }
-  ],
-  "past": [
-    {
-      "name": "Covid crash, Mar 2020",
-      "value": -11
-    },
-    {
-      "name": "Oil collapse, Jan 2016",
-      "value": -6
-    },
-    {
-      "name": "Euro crisis, Aug 2011",
-      "value": -5
-    },
-    {
-      "name": "Rate rises, Jun 2022",
-      "value": -4
-    },
-    {
-      "name": "Year end sell off, Dec 2018",
-      "value": -3
-    }
-  ],
-  "ahead": [
-    -5.6,
-    0.4,
-    -0.2,
-    0.9
-  ],
-  "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
-  "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in credit spreads, default rates and Treasury yields, which are then applied to the strategy's current holdings, including the credit protection.",
-  "altTitle": "Where Else Can Investors Find Credit Premiums?",
-  "related": [
-    {
-      "id": "i3",
-      "why": "Holds higher-rated corporate bonds with staggered maturities. Bears interest rate risk, losing when Treasury yields rise.",
-      "cue": "Lower default risk, lower yield"
-    },
-    {
-      "id": "v5",
-      "why": "Buys stressed bonds below expected recovery value. Bears legal and liquidity risk, losing when recoveries disappoint.",
-      "cue": "Often buys bonds this strategy avoids"
-    },
-    {
-      "id": "r3",
-      "why": "Buys convertible bonds and hedges the shares. Bears credit and liquidity risk, losing when funds reduce leverage.",
-      "cue": "Trades the equity option inside bonds"
-    }
-  ]
+ "id": "c6",
+ "name": "Short-duration high yield investing",
+ "heading": "The Structural Opportunity: Earning High Yield Credit Spreads",
+ "caseLead": "High-yield corporate bonds offer additional income over government bonds to compensate for default risk, and this spread has historically exceeded realised credit losses. The premium can persist because many institutional investors face restrictions on lower-rated debt, while shorter maturities reduce interest rate sensitivity and create more frequent opportunities to reassess credit quality.",
+ "caseRest": "Credit losses tend to rise when economic growth weakens and financing costs increase, especially for lower-rated issuers. Short maturities limit the effect of interest rate changes but do not reduce the risk of default, and bond prices can fall sharply when investors sell in a weak market. The headline yield can therefore understate the downside risk, as losses on lower-rated bonds can equal a year or more of coupon income, as in 2008 and March 2020.",
+ "figNote": "Each card shows the widest level reached by the US high-yield credit spread during the episode, in basis points, where 100 basis points equal one percentage point. The spread is the extra yield that high-yield bonds pay over US Treasuries, so a higher figure means investors demanded more compensation for default risk.",
+ "events": [
+  {
+   "date": "October 2011",
+   "theme": "Euro crisis",
+   "fig": "880",
+   "effect": "down",
+   "title": "Euro crisis widens high-yield spreads",
+   "text": "Fears that Greece would default and the crisis would spread to Italy and Spain widened the US high-yield spread to about 880 basis points in early October 2011. The strategy lost because bond prices fell by more than the coupons earned in the period."
+  },
+  {
+   "date": "February 2016",
+   "theme": "Oil collapse",
+   "fig": "890",
+   "effect": "down",
+   "title": "Oil price collapse raises default fears",
+   "text": "Brent crude near 28 dollars threatened defaults among US energy producers and lifted the US high-yield spread to about 890 basis points in February 2016. The strategy lost because energy bonds, about 14% of the market, fell sharply despite short maturities."
+  },
+  {
+   "date": "December 2018",
+   "theme": "Policy tightening",
+   "fig": "530",
+   "effect": "mid",
+   "title": "Rate rises and falling oil widen spreads",
+   "text": "Federal Reserve rate rises, a 40% fall in oil prices from October and falling equity prices widened the US high-yield spread to about 530 basis points in December 2018. Results were mixed because short maturities limited price losses, but energy bonds still lost value."
+  },
+  {
+   "date": "March 2020",
+   "theme": "Pandemic",
+   "fig": "1,090",
+   "effect": "down",
+   "title": "Covid triples the high-yield credit spread",
+   "text": "The US high-yield spread rose from about 360 basis points in February to 1,090 on 23 March 2020 as lockdowns and a fall in oil prices raised default fears. The strategy lost because bond liquidity fell and even short-dated bonds declined in price."
+  },
+  {
+   "date": "July 2022",
+   "theme": "Rate rises",
+   "fig": "600",
+   "effect": "mid",
+   "title": "Rising rates and war lift borrowing costs",
+   "text": "The Federal Reserve's rate rises and the war in Ukraine lifted the US high-yield spread to about 600 basis points in July 2022. Results were mixed because short maturities limited losses from higher Treasury yields, but wider spreads still reduced bond prices."
+  },
+  {
+   "date": "April 2025",
+   "theme": "Trade policy",
+   "fig": "460",
+   "effect": "up",
+   "title": "Tariff announcement briefly widens spreads",
+   "text": "US tariff announcements widened the US high-yield spread to about 460 basis points on 7 April 2025, before it fell back within weeks as tariffs were paused. The strategy gained because short-dated bonds lost little and coupons continued to accrue."
+  }
+ ],
+ "worstWhen": "March 2020",
+ "startYear": 2010,
+ "period": "January 2010 to December 2025; 192 monthly observations",
+ "instrument": "US and European high-yield bonds; up to three years to maturity; rebalanced monthly",
+ "rules": "Bonds rated BB to B with at most three years to maturity; energy issuers capped at 10%; exposure reduced when the spread widens by 150 basis points in a month",
+ "costs": "Estimated bid-ask spreads, commissions and fund fees deducted at each monthly rebalance",
+ "constructionTitle": "Strategy construction, from coupon income to default control",
+ "legs": [
+  {
+   "position": "Short-dated BB bonds, up to 3 years",
+   "instrument": "High-yield corporate bonds",
+   "purpose": "Earns coupons with lower default risk",
+   "allocation": "49%"
+  },
+  {
+   "position": "Short-dated B bonds, up to 3 years",
+   "instrument": "High-yield corporate bonds",
+   "purpose": "Earns higher coupons with more default risk",
+   "allocation": "30%"
+  },
+  {
+   "position": "Credit default swap index protection",
+   "instrument": "CDX High Yield index",
+   "purpose": "Limits losses when credit spreads widen sharply",
+   "allocation": "1%"
+  },
+  {
+   "position": "Treasury bills",
+   "instrument": "US Treasury bills",
+   "purpose": "Provides liquidity and earns the cash rate",
+   "allocation": "20%"
+  }
+ ],
+ "entry": "Bond yield at least 3 percentage points above Treasuries of the same maturity",
+ "size": "Set to a 5.5% annualised volatility target",
+ "exit": "Bonds sold when maturity falls below 6 months or the rating is cut",
+ "stop": "Exposure halved if the high-yield spread widens by 150 basis points in a month",
+ "marketWatch": "The high-yield credit spread, the rate of corporate defaults and lender surveys on credit standards are key indicators. Rehyn tracks energy prices and central bank policy because they affect borrowing costs and cash flow for lower-rated companies. A rise in refinancing needs in the coming year matters because it raises the share of companies that cannot refinance on current terms.",
+ "favourable": [
+  {
+   "heading": "Low defaults and narrow spreads",
+   "text": "Steady growth favours the strategy because defaults stay low and coupons accumulate without price losses. In 2013 and 2014, the US high-yield default rate stayed below 3% and the strategy earned most of its return from coupons."
+  },
+  {
+   "heading": "Rising rates with short maturities",
+   "text": "Rising interest rates favour the strategy compared with long-dated bonds because short maturities lose little price and the portfolio reinvests at higher coupons. In 2022, US high-yield bonds with maturities under three years lost less than half as much as the broader high-yield market."
+  },
+  {
+   "heading": "Fast recoveries after credit scares",
+   "text": "Quick recoveries favour the strategy because bonds that mature within three years return to par before default risk materialises. After the March 2020 sell-off, the Federal Reserve's purchases of corporate bonds helped narrow the spread from 1,090 to about 500 basis points by August."
+  }
+ ],
+ "adverse": [
+  {
+   "heading": "Recession and rising defaults",
+   "text": "A recession hurts the strategy because lower-rated companies lose revenue, default more often and repay less on their bonds. In 2009, the US high-yield default rate peaked above 10%, so coupon income was not enough to offset losses on bonds issued by weaker borrowers."
+  },
+  {
+   "heading": "Commodity price collapse",
+   "text": "A fall in commodity prices hurts the strategy because energy and mining companies make up a large share of high-yield issuers. Brent fell from about 115 dollars in mid-2014 to about 28 dollars in January 2016, energy defaults rose sharply and the spread widened to 890 basis points."
+  },
+  {
+   "heading": "Credit market liquidity stress",
+   "text": "A loss of market liquidity hurts the strategy because investors can sell bonds only at large discounts, even if the bonds mature soon. In March 2020, the high-yield spread rose by about 700 basis points in a month as bid-ask spreads on corporate bonds widened sharply."
+  }
+ ],
+ "past": [
+  {
+   "name": "Covid crash, Mar 2020",
+   "value": -11
+  },
+  {
+   "name": "Oil collapse, Jan 2016",
+   "value": -6
+  },
+  {
+   "name": "Euro crisis, Aug 2011",
+   "value": -5
+  },
+  {
+   "name": "Rate rises, Jun 2022",
+   "value": -4
+  },
+  {
+   "name": "Year end sell off, Dec 2018",
+   "value": -3
+  }
+ ],
+ "ahead": [
+  -5.6,
+  0.4,
+  -0.2,
+  0.9
+ ],
+ "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+ "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in credit spreads, default rates and Treasury yields, which are then applied to the strategy's current holdings, including the credit protection.",
+ "altTitle": "Where Else Can Investors Find Credit Premiums?",
+ "related": [
+  {
+   "id": "i3",
+   "why": "Holds higher-rated corporate bonds with staggered maturities. Bears interest rate risk, losing when Treasury yields rise.",
+   "cue": "Lower default risk, lower yield"
+  },
+  {
+   "id": "v5",
+   "why": "Buys stressed bonds below expected recovery value. Bears legal and liquidity risk, losing when recoveries disappoint.",
+   "cue": "Often buys bonds this strategy avoids"
+  },
+  {
+   "id": "r3",
+   "why": "Buys convertible bonds and hedges the shares. Bears credit and liquidity risk, losing when funds reduce leverage.",
+   "cue": "Trades the equity option inside bonds"
+  }
+ ]
 }
