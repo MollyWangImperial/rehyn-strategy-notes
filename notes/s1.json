@@ -2,7 +2,7 @@
  "id": "s1",
  "name": "Variance risk premium harvesting",
  "heading": "The Structural Opportunity: Monetizing Volatility Risk",
- "caseLead": "Short-dated S&P 500 index options tend to price in larger market moves than actually occur, allowing sellers of protection to earn the variance risk premium. This premium persists because institutional investors have a steady demand for downside protection, while relatively few investors are willing to take on crash risk. Geopolitical and policy uncertainty can increase demand even when the underlying events have limited impact on the market.",
+ "caseLead": "Short-dated S&P 500 index options tend to price in larger market moves than actually occur, allowing sellers of protection to earn the variance risk premium. This premium persists because institutional investors have a steady demand for downside protection, while relatively few investors are willing to bear crash risk, and geopolitical or policy uncertainty can increase that demand even when the market impact is limited.",
  "caseRest": "The strategy typically earns small, frequent premiums but can suffer large losses when equity markets fall and volatility rises sharply. During periods of market stress, option prices and realised volatility can rise together, potentially wiping out years of accumulated premiums within days. A high Sharpe ratio can therefore understate the strategy's downside risk, particularly the size and speed of losses during market crises.",
  "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
