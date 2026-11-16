@@ -2,7 +2,7 @@
  "id": "s5",
  "name": "Index dispersion trading",
  "heading": "The Structural Opportunity: Earning the Implied Correlation Premium",
- "caseLead": "Index dispersion trading seeks to earn the difference between implied correlation in index options and the lower correlation often realised between individual stocks. The gap persists because pension funds and asset managers buy index options to hedge whole portfolios largely regardless of price, while geopolitical and policy risks keep that demand high even though most events affect companies and sectors unevenly.",
+ "caseLead": "Index dispersion trading seeks to earn the difference between implied correlation in index options and the lower correlation often realised between individual stocks. Index protection is often in strong demand from institutional investors, while company-specific earnings and sector developments can keep realised stock correlations below the level priced into index options.",
  "caseRest": "A sharp rise in stock correlations during an equity sell-off can make index options more expensive relative to the individual-stock options held as hedges. The strategy is short index volatility, so it loses in these episodes while the stock options it holds gain too little to offset the loss. Rehyn estimates that losses can build within days, so the gradual gains from many quiet months can be reversed in a single episode.",
  "figNote": "Each card shows the largest one-day fall in the S&P 500 during the episode. Dispersion trades tend to lose when the index falls sharply because stocks then move together, and to gain when large single-stock moves are not matched by the index.",
  "events": [
