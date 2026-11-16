@@ -2,7 +2,7 @@
  "id": "v4",
  "name": "Sovereign bond relative value",
  "heading": "The Structural Opportunity: Mispriced Sovereign Yield Spreads",
- "caseLead": "Sovereign bond relative value strategies seek to profit from differences between government bond prices and the outlook for growth, inflation and fiscal policy. The opportunity persists because central bank purchases, regulatory demand, benchmark constraints and geopolitical risk can move government bond prices away from fundamentals for long periods.",
+ "caseLead": "Sovereign bond relative value strategies seek to profit from differences between government bond prices and the outlook for growth, inflation and fiscal policy. Central bank purchases, regulatory demand and benchmark constraints can sustain yield differences, while fiscal policy and geopolitical risks alter the outlook for government borrowing and creditworthiness.",
  "caseRest": "A government bond that appears cheap can become cheaper if inflation, fiscal policy or political risks change more than expected. Losses can also rise when investors seek liquidity in the safest bonds, because spreads often widen before policy support restores convergence. Leverage makes this timing risk important even when the long-term valuation view is correct, so several years of expected return can be lost during a sharp divergence.",
  "figNote": "Each card shows the change in the relevant 10-year sovereign yield spread from its pre-event level to the widest point during the episode. A positive figure means the higher-yielding bond became cheaper relative to the lower-yielding bond, while a negative figure means the spread narrowed.",
  "events": [
