@@ -2,9 +2,9 @@
  "id": "g4",
  "name": "Core digital asset allocation",
  "heading": "The Structural Opportunity: Long-Term Digital Asset Adoption",
- "caseLead": "The investment case rests on the continued adoption of scarce digital assets as stores of value, settlement networks and collateral, allowing a diversified core allocation to participate in growth across the crypto market. The opportunity persists because network adoption remains early, institutional access is expanding, and governments are developing different rules for ownership, taxation and payments, creating recurring policy-driven repricing.",
- "caseRest": "The main risk is extreme price volatility, with annualised volatility around 48% and past cycle drawdowns exceeding 70% as leverage, liquidity and investor confidence reversed together. Losses can deepen when exchange failures or tighter regulation force investors to reduce exposure across otherwise distinct assets. Positive return skew does not make the allocation defensive because Bitcoin and Ether remain closely correlated during broad crypto sell-offs.",
- "figNote": "The large figure on each card shows Bitcoin’s return during the calendar month. Bitcoin is the largest digital asset and the main driver of a core crypto allocation, although Ether and smaller positions can produce different returns.",
+ "caseLead": "A diversified digital asset allocation provides exposure to the adoption of blockchain networks and digital assets used for investment, settlement and collateral. The opportunity persists because network adoption remains early, institutional access is expanding, and governments are developing different rules for ownership, taxation and payments, creating recurring policy-driven repricing.",
+ "caseRest": "Digital assets carry substantial price and liquidity risk, particularly when leverage and investor confidence reverse together. Losses can deepen when exchange failures or tighter regulation force investors to reduce exposure across otherwise distinct assets. Positive return skew does not make the allocation defensive because Bitcoin and Ether remain closely correlated during broad crypto sell-offs.",
+ "figNote": "Each card shows Bitcoin’s return during the calendar month. Bitcoin is the largest digital asset and the main driver of a core crypto allocation, although Ether and smaller positions can produce different returns.",
  "events": [
   {
    "date": "March 2013",
@@ -138,10 +138,10 @@
   }
  ],
  "ahead": [
-  -28.0,
+  -28,
   -9.5,
-  -2.0,
-  12.0
+  -2,
+  12
  ],
  "infoHist": "Historical results show the strategy’s estimated return during each event using monthly Bitcoin, Ether and Treasury bill returns at the default weights. The calculation includes scheduled rebalancing and estimated trading and custody costs.",
  "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn’s scenario engine projects moves in global liquidity, real yields, risk appetite and crypto leverage, which are then applied to Bitcoin, Ether and the cash reserve.",
