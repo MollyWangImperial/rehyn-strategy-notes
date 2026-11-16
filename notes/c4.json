@@ -1,172 +1,172 @@
 {
- "id": "c4",
- "name": "Gold real yield allocation",
- "heading": "The Structural Opportunity: Linking Gold to Real Yields",
- "caseLead": "The investment case rests on the tendency of gold, which pays no interest, to rise when real yields fall because the cost of holding it falls, so sizing a gold allocation from real yields, the US dollar and central bank purchases earns the return linked to these drivers. The relationship persists because investors treat gold as an alternative to government bonds when inflation protection is scarce, and sanctions on reserve assets and geopolitical tension have raised central bank demand since 2022, which supports prices independently of real yields.",
- "caseRest": "The main risk is that the link between real yields and gold breaks down for long periods, because central bank purchases and safe haven demand can lift prices while real yields stay high. A model that reduces gold because real yields are high would then miss gains, as it did in 2024 and 2025. Gold also falls sharply when yields and the dollar rise together, as in 2013 and 2022, so the allocation can lose 10% or more within a quarter.",
- "figNote": "The large figure on each card shows the price of gold in US dollars per ounce at the close of the peak or trough of the episode. Gold is priced in dollars and pays no income, so its price reflects what investors expect to earn from holding other assets instead.",
- "events": [
-  {
-   "date": "September 2011",
-   "theme": "Euro crisis",
-   "fig": "1,900",
-   "effect": "up",
-   "title": "US downgrade and euro crisis lift gold",
-   "text": "The US credit rating downgrade and the euro area debt crisis lifted gold to about 1,900 dollars in September 2011 as real yields fell. The strategy gained because lower real yields reduce the cost of holding gold, which pays no interest."
-  },
-  {
-   "date": "April 2013",
-   "theme": "Price crash",
-   "fig": "1,360",
-   "effect": "down",
-   "title": "Gold falls 9% in one day",
-   "text": "Gold fell 9% on 15 April 2013 to about 1,360 dollars, its largest one-day fall since 1980, as investors sold gold funds and inflation expectations fell. The strategy lost because lower inflation expectations and a firmer US dollar weakened the case for holding gold."
-  },
-  {
-   "date": "December 2015",
-   "theme": "Fed tightening",
-   "fig": "1,050",
-   "effect": "down",
-   "title": "Fed rate rise sends gold to five-year low",
-   "text": "Gold fell to about 1,050 dollars in December 2015, a five-year low, as the Federal Reserve raised rates for the first time since 2006. The strategy lost because higher US real yields and a stronger dollar reduced demand for gold."
-  },
-  {
-   "date": "August 2020",
-   "theme": "Negative real yields",
-   "fig": "2,070",
-   "effect": "up",
-   "title": "Zero rates push gold to a record high",
-   "text": "Gold reached a record of about 2,070 dollars in August 2020 as the Federal Reserve held rates at zero and the 10-year real yield fell to minus 1.1%. The strategy gained because negative real yields reduce the cost of holding gold."
-  },
-  {
-   "date": "September 2022",
-   "theme": "Rate rises",
-   "fig": "1,620",
-   "effect": "down",
-   "title": "Real yields and the dollar push gold lower",
-   "text": "Gold fell to about 1,620 dollars in September 2022 as the 10-year US real yield rose from minus 1% at the start of the year to above 1.5%. The strategy lost because higher real yields and a 20-year high in the dollar both weighed on gold."
-  },
-  {
-   "date": "April 2025",
-   "theme": "Trade policy",
-   "fig": "3,500",
-   "effect": "mid",
-   "title": "US tariffs lift gold above 3,500 dollars",
-   "text": "Gold reached about 3,500 dollars in April 2025 as US tariffs weakened the dollar and central banks kept buying. Results were mixed because real yields near 2% limited the allocation while the other signals supported it."
-  }
- ],
- "worstWhen": "April 2013",
- "startYear": 2010,
- "period": "January 2010 to December 2025; 192 monthly observations",
- "instrument": "Gold futures and gold-backed ETFs; rebalanced monthly",
- "rules": "Gold weight set from the 10-year US real yield, the US dollar trend and central bank gold purchases; raised when real yields fall and reduced when they rise; put options bought on the position",
- "costs": "Estimated bid-ask spreads, commissions and fund fees deducted at each monthly rebalance",
- "constructionTitle": "Strategy construction, from real yield signals to loss limits",
- "legs": [
-  {
-   "position": "Gold futures, variable weight",
-   "instrument": "COMEX gold futures",
-   "purpose": "Earns the return linked to real yields",
-   "allocation": "20% margin"
-  },
-  {
-   "position": "Gold-backed ETF",
-   "instrument": "Physical gold ETF",
-   "purpose": "Holds gold without roll costs when the signal is strong",
-   "allocation": "10%"
-  },
-  {
-   "position": "Put options on gold",
-   "instrument": "Gold options",
-   "purpose": "Limits losses in a sharp fall in the gold price",
-   "allocation": "2%"
-  },
-  {
-   "position": "Treasury bills",
-   "instrument": "US Treasury bills",
-   "purpose": "Provides collateral and earns the cash rate",
-   "allocation": "68%"
-  }
- ],
- "entry": "10-year real yield below its 12-month average and a stable or weaker dollar",
- "size": "Set to a 13% annualised volatility target",
- "exit": "Position halved when the real yield exceeds its 12-month average by 30 basis points",
- "stop": "Position closed if gold falls 12% from its monthly high",
- "marketWatch": "The 10-year US real yield, the US dollar index and central bank gold purchases are the main indicators for this strategy. Rehyn also tracks sanctions on reserve assets and geopolitical tension because they can raise official demand for gold without any change in real yields. Federal Reserve meetings and inflation data matter most because they move real yields within hours.",
- "favourable": [
-  {
-   "heading": "Falling real yields",
-   "text": "Falling real yields favour the strategy because they reduce the return on inflation-protected bonds, so gold becomes relatively more attractive. In 2019, the 10-year real yield fell by about 1 percentage point and gold rose by about 18%."
-  },
-  {
-   "heading": "Central bank gold buying",
-   "text": "Official purchases favour the strategy because central banks buy regardless of price, which provides steady demand that is not tied to real yields. Central banks bought more than 1,000 tonnes a year in each year from 2022 to 2024, helping lift gold to records while real yields were high."
-  },
-  {
-   "heading": "A weaker US dollar",
-   "text": "A weaker dollar favours the strategy because gold is priced in dollars, so it becomes cheaper for buyers in other currencies. In the first half of 2025, the dollar index fell by about 11% and gold rose by about 25%."
-  }
- ],
- "adverse": [
-  {
-   "heading": "Rapid rises in real yields",
-   "text": "Rapid increases in real yields hurt the strategy because they raise the cost of holding gold and prompt sales by funds. Between April and June 2013, the 10-year real yield rose from about minus 0.7% to about 0.5% and gold fell by about 20%."
-  },
-  {
-   "heading": "A break in the link with yields",
-   "text": "A break in the link with real yields hurts the strategy because the model can reduce gold exposure just as other buyers lift prices. In 2024, real yields stayed above 1.8% while gold rose by about 27%, so an allocation based on real yields alone missed much of the gain."
-  },
-  {
-   "heading": "Forced selling in a market crisis",
-   "text": "A rush for cash hurts the strategy because investors sell gold to meet margin calls elsewhere, even though it is a defensive asset. In March 2020, gold fell by more than 10% in ten days as the dollar rose."
-  }
- ],
- "past": [
-  {
-   "name": "Taper tantrum, Jun 2013",
-   "value": -14
-  },
-  {
-   "name": "Rate rises, Sep 2022",
-   "value": -9
-  },
-  {
-   "name": "Gold crash, Apr 2013",
-   "value": -8
-  },
-  {
-   "name": "Covid crash, Mar 2020",
-   "value": -7
-  },
-  {
-   "name": "Fed rate rise, Dec 2015",
-   "value": -5
-  }
- ],
- "ahead": [
-  4.2,
-  1.1,
-  0.3,
-  3.6
- ],
- "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
- "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in real yields, the US dollar and the gold price, which are then applied to the strategy's current positions, including the protective options.",
- "altTitle": "Where Else Can Investors Find Safe Haven Returns?",
- "related": [
-  {
-   "id": "d2",
-   "why": "Holds a fixed gold weight whatever real yields do. Bears long drawdowns, losing when gold falls for years.",
-   "cue": "Same asset, without signal-based sizing"
-  },
-  {
-   "id": "m5",
-   "why": "Follows price trends in commodities, long or short. Bears reversals, losing when prices change direction.",
-   "cue": "Follows price trends instead of real yields"
-  },
-  {
-   "id": "d6",
-   "why": "Holds long Treasuries, which gain when real yields fall. Bears inflation, losing when yields rise.",
-   "cue": "Shares exposure to falling real yields"
-  }
- ]
+  "id": "c4",
+  "name": "Gold real yield allocation",
+  "heading": "The Structural Opportunity: Linking Gold to Real Yields",
+  "caseLead": "Gold often benefits from falling real yields because lower inflation-adjusted interest rates reduce the opportunity cost of holding an asset that pays no income. The relationship persists because investors treat gold as an alternative to government bonds when inflation protection is scarce, and sanctions on reserve assets and geopolitical tension have raised central bank demand since 2022, which supports prices independently of real yields.",
+  "caseRest": "The main risk is that the link between real yields and gold breaks down for long periods, because central bank purchases and safe haven demand can lift prices while real yields stay high. A model that reduces gold because real yields are high would then miss gains, as it did in 2024 and 2025. Gold also falls sharply when yields and the dollar rise together, as in 2013 and 2022, so the allocation can lose 10% or more within a quarter.",
+  "figNote": "The large figure on each card shows the price of gold in US dollars per ounce at the close of the peak or trough of the episode. Gold is priced in dollars and pays no income, so its price reflects what investors expect to earn from holding other assets instead.",
+  "events": [
+    {
+      "date": "September 2011",
+      "theme": "Euro crisis",
+      "fig": "1,900",
+      "effect": "up",
+      "title": "US downgrade and euro crisis lift gold",
+      "text": "The US credit rating downgrade and the euro area debt crisis lifted gold to about 1,900 dollars in September 2011 as real yields fell. The strategy gained because lower real yields reduce the cost of holding gold, which pays no interest."
+    },
+    {
+      "date": "April 2013",
+      "theme": "Price crash",
+      "fig": "1,360",
+      "effect": "down",
+      "title": "Gold falls 9% in one day",
+      "text": "Gold fell 9% on 15 April 2013 to about 1,360 dollars, its largest one-day fall since 1980, as investors sold gold funds and inflation expectations fell. The strategy lost because lower inflation expectations and a firmer US dollar weakened the case for holding gold."
+    },
+    {
+      "date": "December 2015",
+      "theme": "Fed tightening",
+      "fig": "1,050",
+      "effect": "down",
+      "title": "Fed rate rise sends gold to five-year low",
+      "text": "Gold fell to about 1,050 dollars in December 2015, a five-year low, as the Federal Reserve raised rates for the first time since 2006. The strategy lost because higher US real yields and a stronger dollar reduced demand for gold."
+    },
+    {
+      "date": "August 2020",
+      "theme": "Negative real yields",
+      "fig": "2,070",
+      "effect": "up",
+      "title": "Zero rates push gold to a record high",
+      "text": "Gold reached a record of about 2,070 dollars in August 2020 as the Federal Reserve held rates at zero and the 10-year real yield fell to minus 1.1%. The strategy gained because negative real yields reduce the cost of holding gold."
+    },
+    {
+      "date": "September 2022",
+      "theme": "Rate rises",
+      "fig": "1,620",
+      "effect": "down",
+      "title": "Real yields and the dollar push gold lower",
+      "text": "Gold fell to about 1,620 dollars in September 2022 as the 10-year US real yield rose from minus 1% at the start of the year to above 1.5%. The strategy lost because higher real yields and a 20-year high in the dollar both weighed on gold."
+    },
+    {
+      "date": "April 2025",
+      "theme": "Trade policy",
+      "fig": "3,500",
+      "effect": "mid",
+      "title": "US tariffs lift gold above 3,500 dollars",
+      "text": "Gold reached about 3,500 dollars in April 2025 as US tariffs weakened the dollar and central banks kept buying. Results were mixed because real yields near 2% limited the allocation while the other signals supported it."
+    }
+  ],
+  "worstWhen": "April 2013",
+  "startYear": 2010,
+  "period": "January 2010 to December 2025; 192 monthly observations",
+  "instrument": "Gold futures and gold-backed ETFs; rebalanced monthly",
+  "rules": "Gold weight set from the 10-year US real yield, the US dollar trend and central bank gold purchases; raised when real yields fall and reduced when they rise; put options bought on the position",
+  "costs": "Estimated bid-ask spreads, commissions and fund fees deducted at each monthly rebalance",
+  "constructionTitle": "Strategy construction, from real yield signals to loss limits",
+  "legs": [
+    {
+      "position": "Gold futures, variable weight",
+      "instrument": "COMEX gold futures",
+      "purpose": "Earns the return linked to real yields",
+      "allocation": "20% margin"
+    },
+    {
+      "position": "Gold-backed ETF",
+      "instrument": "Physical gold ETF",
+      "purpose": "Holds gold without roll costs when the signal is strong",
+      "allocation": "10%"
+    },
+    {
+      "position": "Put options on gold",
+      "instrument": "Gold options",
+      "purpose": "Limits losses in a sharp fall in the gold price",
+      "allocation": "2%"
+    },
+    {
+      "position": "Treasury bills",
+      "instrument": "US Treasury bills",
+      "purpose": "Provides collateral and earns the cash rate",
+      "allocation": "68%"
+    }
+  ],
+  "entry": "10-year real yield below its 12-month average and a stable or weaker dollar",
+  "size": "Set to a 13% annualised volatility target",
+  "exit": "Position halved when the real yield exceeds its 12-month average by 30 basis points",
+  "stop": "Position closed if gold falls 12% from its monthly high",
+  "marketWatch": "The 10-year US real yield, the US dollar index and central bank gold purchases are the main indicators for this strategy. Rehyn also tracks sanctions on reserve assets and geopolitical tension because they can raise official demand for gold without any change in real yields. Federal Reserve meetings and inflation data matter most because they move real yields within hours.",
+  "favourable": [
+    {
+      "heading": "Falling real yields",
+      "text": "Falling real yields favour the strategy because they reduce the return on inflation-protected bonds, so gold becomes relatively more attractive. In 2019, the 10-year real yield fell by about 1 percentage point and gold rose by about 18%."
+    },
+    {
+      "heading": "Central bank gold buying",
+      "text": "Official purchases favour the strategy because central banks buy regardless of price, which provides steady demand that is not tied to real yields. Central banks bought more than 1,000 tonnes a year in each year from 2022 to 2024, helping lift gold to records while real yields were high."
+    },
+    {
+      "heading": "A weaker US dollar",
+      "text": "A weaker dollar favours the strategy because gold is priced in dollars, so it becomes cheaper for buyers in other currencies. In the first half of 2025, the dollar index fell by about 11% and gold rose by about 25%."
+    }
+  ],
+  "adverse": [
+    {
+      "heading": "Rapid rises in real yields",
+      "text": "Rapid increases in real yields hurt the strategy because they raise the cost of holding gold and prompt sales by funds. Between April and June 2013, the 10-year real yield rose from about minus 0.7% to about 0.5% and gold fell by about 20%."
+    },
+    {
+      "heading": "A break in the link with yields",
+      "text": "A break in the link with real yields hurts the strategy because the model can reduce gold exposure just as other buyers lift prices. In 2024, real yields stayed above 1.8% while gold rose by about 27%, so an allocation based on real yields alone missed much of the gain."
+    },
+    {
+      "heading": "Forced selling in a market crisis",
+      "text": "A rush for cash hurts the strategy because investors sell gold to meet margin calls elsewhere, even though it is a defensive asset. In March 2020, gold fell by more than 10% in ten days as the dollar rose."
+    }
+  ],
+  "past": [
+    {
+      "name": "Taper tantrum, Jun 2013",
+      "value": -14
+    },
+    {
+      "name": "Rate rises, Sep 2022",
+      "value": -9
+    },
+    {
+      "name": "Gold crash, Apr 2013",
+      "value": -8
+    },
+    {
+      "name": "Covid crash, Mar 2020",
+      "value": -7
+    },
+    {
+      "name": "Fed rate rise, Dec 2015",
+      "value": -5
+    }
+  ],
+  "ahead": [
+    4.2,
+    1.1,
+    0.3,
+    3.6
+  ],
+  "infoHist": "Historical results show the strategy's peak-to-trough drawdown during each event, measured from its value just before the event to its lowest point using the default backtest parameters above. Each event window runs from the last market high before the shock to the market low.",
+  "infoForward": "Scenario results show the estimated profit or loss over the first month of each scenario. Rehyn's scenario engine projects moves in real yields, the US dollar and the gold price, which are then applied to the strategy's current positions, including the protective options.",
+  "altTitle": "Where Else Can Investors Find Safe Haven Returns?",
+  "related": [
+    {
+      "id": "d2",
+      "why": "Holds a fixed gold weight whatever real yields do. Bears long drawdowns, losing when gold falls for years.",
+      "cue": "Same asset, without signal-based sizing"
+    },
+    {
+      "id": "m5",
+      "why": "Follows price trends in commodities, long or short. Bears reversals, losing when prices change direction.",
+      "cue": "Follows price trends instead of real yields"
+    },
+    {
+      "id": "d6",
+      "why": "Holds long Treasuries, which gain when real yields fall. Bears inflation, losing when yields rise.",
+      "cue": "Shares exposure to falling real yields"
+    }
+  ]
 }
