@@ -2,9 +2,9 @@
  "id": "r5",
  "name": "Yield curve butterfly trading",
  "heading": "The Structural Opportunity: Temporary Yield Curve Kinks",
- "caseLead": "The investment case rests on the tendency of one maturity on the Treasury yield curve to trade cheap or expensive against its neighbours, so buying the cheap maturity and selling the two on either side earns the gap closing without a view on the level of interest rates. The gaps persist because pension funds, insurers and banks buy specific maturities for liability and regulatory reasons, and changes in Treasury issuance or central bank purchases can distort individual maturities for months.",
- "caseRest": "The main risk is that the curve changes shape against the position, for example when the five-year maturity cheapens as the market reprices the path of Federal Reserve rates. Losses can also build quickly when leveraged funds close similar positions at the same time and liquidity falls, as in March 2020. Because each trade uses leverage to earn a small gap, a few such episodes can outweigh months of gains.",
- "figNote": "The large figure on each card shows the change in the 10-year US Treasury yield over the month of the episode, in basis points. A basis point is one hundredth of a percentage point, so +50bp means the yield rose by half a percentage point.",
+ "caseLead": "A Treasury yield curve butterfly seeks to benefit when one maturity's yield moves back into line with neighbouring maturities. The gaps persist because pension funds, insurers and banks buy specific maturities for liability and regulatory reasons, and changes in Treasury issuance or central bank purchases can distort individual maturities for months.",
+ "caseRest": "A yield curve butterfly can lose money if relative yields continue to diverge or leveraged investors unwind similar positions simultaneously. Losses can also build quickly when leveraged funds close similar positions at the same time and liquidity falls, as in March 2020. Because each trade uses leverage to earn a small gap, a few such episodes can outweigh months of gains.",
+ "figNote": "Each card shows the change in the 10-year US Treasury yield over the month of the episode, in basis points. A basis point is one hundredth of a percentage point, so +50bp means the yield rose by half a percentage point.",
  "events": [
   {
    "date": "June 2013",
