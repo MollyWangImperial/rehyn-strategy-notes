@@ -2,9 +2,9 @@
  "id": "r4",
  "name": "ETF arbitrage",
  "heading": "The Structural Opportunity: Temporary ETF Pricing Gaps",
- "caseLead": "The investment case rests on authorised participants creating and redeeming ETF shares at the value of their holdings, which keeps the ETF price close to that value while leaving small gaps that can be traded. The gaps persist because they widen when markets are stressed, when the underlying market is closed or when arbitrage capital is limited, and they are largest in bond and international funds where the holdings are costly to trade, while trading halts and central bank purchases can also move them.",
- "caseRest": "The main risk is that a gap widens before it closes because the hedge cannot be executed at the quoted price. This is most likely in stressed bond or foreign markets, where the underlying holdings stop trading while the ETF keeps trading, as in March 2020. Because the return on each trade is small, a few such episodes can offset months of steady gains.",
- "figNote": "The large figure on each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
+ "caseLead": "ETF arbitrage seeks to profit from small differences between an ETF's market price and the value of its underlying holdings. The gaps persist because they widen when markets are stressed, when the underlying market is closed or when arbitrage capital is limited, and they are largest in bond and international funds where the holdings are costly to trade, while trading halts and central bank purchases can also move them.",
+ "caseRest": "A pricing gap can widen rather than close when the underlying securities are illiquid or cannot be traded at quoted prices. This is most likely in stressed bond or foreign markets, where the underlying holdings stop trading while the ETF keeps trading, as in March 2020. Because the return on each trade is small, a few such episodes can offset months of steady gains.",
+ "figNote": "Each card shows the highest closing level of the VIX during the episode. The VIX measures the volatility that S&P 500 options price in for the next 30 days: it has averaged about 19 over the long run, while readings above 30 signal market stress.",
  "events": [
   {
    "date": "August 2011",
